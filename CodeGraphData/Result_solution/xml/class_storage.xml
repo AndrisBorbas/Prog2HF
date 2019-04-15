@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_storage" kind="class" prot="public">
+    <compoundname>Storage</compoundname>
+    <basecompoundref refid="class_alkatresz" prot="public" virt="non-virtual">Alkatresz</basecompoundref>
+    <includes refid="_parts_8h" local="no">Parts.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_storage_1a80ef6af5e4c9fd4424ae16e808d05291" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Storage::Storage</definition>
+        <argsstring>()</argsstring>
+        <name>Storage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_storage_1a73cf30f0a34250396f9eabee7dc5c93d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Storage::~Storage</definition>
+        <argsstring>()</argsstring>
+        <name>~Storage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="36" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="24">
+        <label>Storage</label>
+        <link refid="class_storage"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Alkatresz</label>
+        <link refid="class_alkatresz"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="28">
+        <label>String</label>
+        <link refid="class_string"/>
+      </node>
+      <node id="26">
+        <label>Storage</label>
+        <link refid="class_storage"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>Alkatresz</label>
+        <link refid="class_alkatresz"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>Nev</edgelabel>
+          <edgelabel>Gyarto</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="32" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="32" bodyend="37"/>
+    <listofallmembers>
+      <member refid="class_alkatresz_1ace416bfd871cfee9c7d7a94681ca04d7" prot="public" virt="non-virtual"><scope>Storage</scope><name>Alkatresz</name></member>
+      <member refid="class_storage_1a80ef6af5e4c9fd4424ae16e808d05291" prot="public" virt="non-virtual"><scope>Storage</scope><name>Storage</name></member>
+      <member refid="class_alkatresz_1a02cdc7f105e7e1348784e657398ccb50" prot="public" virt="non-virtual"><scope>Storage</scope><name>~Alkatresz</name></member>
+      <member refid="class_storage_1a73cf30f0a34250396f9eabee7dc5c93d" prot="public" virt="non-virtual"><scope>Storage</scope><name>~Storage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

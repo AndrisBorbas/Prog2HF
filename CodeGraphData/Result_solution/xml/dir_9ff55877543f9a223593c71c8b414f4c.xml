@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_9ff55877543f9a223593c71c8b414f4c" kind="dir">
+    <compoundname>Prog2HF</compoundname>
+    <innerfile refid="gtest__lite_8h">gtest_lite.h</innerfile>
+    <innerfile refid="main_8h">main.h</innerfile>
+    <innerfile refid="memtrace_8cpp">memtrace.cpp</innerfile>
+    <innerfile refid="memtrace_8h">memtrace.h</innerfile>
+    <innerfile refid="_parts_8cpp">Parts.cpp</innerfile>
+    <innerfile refid="_parts_8h">Parts.h</innerfile>
+    <innerfile refid="_prog2_h_f_8cpp">Prog2HF.cpp</innerfile>
+    <innerfile refid="schtring_8cpp">schtring.cpp</innerfile>
+    <innerfile refid="schtring_8h">schtring.h</innerfile>
+    <innerfile refid="_s_f_m_l__test_8cpp">SFML_test.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="schtring_8h" kind="file">
+    <compoundname>schtring.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">cstring</includes>
+    <includedby refid="_parts_8h" local="yes">Prog2HF/Parts.h</includedby>
+    <includedby refid="_prog2_h_f_8cpp" local="yes">Prog2HF/Prog2HF.cpp</includedby>
+    <includedby refid="schtring_8cpp" local="yes">Prog2HF/schtring.cpp</includedby>
+    <incdepgraph>
+      <node id="39">
+        <label>Prog2HF/schtring.h</label>
+        <link refid="schtring.h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>iostream</label>
+      </node>
+      <node id="41">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="45">
+        <label>Prog2HF/schtring.cpp</label>
+        <link refid="schtring_8cpp"/>
+      </node>
+      <node id="42">
+        <label>Prog2HF/schtring.h</label>
+        <link refid="schtring.h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>Prog2HF/Prog2HF.cpp</label>
+        <link refid="_prog2_h_f_8cpp"/>
+      </node>
+      <node id="43">
+        <label>Prog2HF/Parts.h</label>
+        <link refid="_parts_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_string" prot="public">String</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="schtring_8h_1aef14876e55f43fb4ffa7b91664467ecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const String &amp;s0)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_string" kindref="compound">String</ref> &amp;</type>
+          <declname>s0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="61" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp" bodystart="89" bodyend="92"/>
+        <references refid="class_string_1a4d236d8f9b907db1822064fe0037e267" compoundref="schtring_8h" startline="26" endline="26">String::c_str</references>
+      </memberdef>
+      <memberdef kind="function" id="schtring_8h_1aea8ed420ad5e70828bc42b0fb9b49366" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::istream &amp;</type>
+        <definition>std::istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(std::istream &amp;is, String &amp;s0)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref> &amp;</type>
+          <declname>s0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="64" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp" bodystart="95" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="schtring_8h_1a8d89d501f582c3a65df894dbd030bbcf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_string" kindref="compound">String</ref></type>
+        <definition>String operator+</definition>
+        <argsstring>(char ch, const String &amp;str)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>char</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_string" kindref="compound">String</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="67" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_string" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_string" kindref="compound">String</ref><sp/>{</highlight></codeline>
+<codeline lineno="7" refid="class_string_1abdb8b1fb25347f7046a27f0773392495" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="8" refid="class_string_1a19c7dc3e73f362a699de38845b386296" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_string_1a59653a61e472a466b6d788aebd59c4b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_string_1a59653a61e472a466b6d788aebd59c4b4" kindref="member">size</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" kindref="member">String</ref>()<sp/>:<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>(0),<sp/><ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref>(0)<sp/>{}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" kindref="member">String</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" kindref="member">String</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" kindref="member">String</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/>s1);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_string_1a4d236d8f9b907db1822064fe0037e267" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_string_1a4d236d8f9b907db1822064fe0037e267" kindref="member">c_str</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>;<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_string_1ac40b2a3fb58c2d8556f5e6ff73510036" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1ac40b2a3fb58c2d8556f5e6ff73510036" kindref="member">~String</ref>()<sp/>{<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="class_string_1a9b1ee7005e897e950c1d4cdd368eb647" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_string_1a9b1ee7005e897e950c1d4cdd368eb647" kindref="member">printDbg</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*txt<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>txt<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;],<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>(<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref><sp/>?<sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;(NULL)&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/><ref refid="class_string_1a803e6112834d4c0cdb0da6c6a4000e6e" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/>rhs_s);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="class_string_1ac203e7c52e04bb86f62f9dd75527b361" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/><ref refid="class_string_1ac203e7c52e04bb86f62f9dd75527b361" kindref="member">operator+=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/>rhs_s)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>=<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>+<sp/>rhs_s;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_string_1a189071e4e59316603d720413ea166c77" kindref="member">operator+</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/>rhs_s)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_string_1af6fbf1371a16606902e3f6a394650a8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_string_1af6fbf1371a16606902e3f6a394650a8b" kindref="member">operator+</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>rhs_c)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>+<sp/><ref refid="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" kindref="member">String</ref>(rhs_c);<sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">&amp;<sp/><ref refid="class_string_1a1a7c5c39d4dafbbf8516f5058a253f1a" kindref="member">operator[]</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">&amp;<sp/><ref refid="class_string_1a1a7c5c39d4dafbbf8516f5058a253f1a" kindref="member">operator[]</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="class_string_1a3ce2ea55be9ec912bb2dbc88d461b479" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_string_1a3ce2ea55be9ec912bb2dbc88d461b479" kindref="member">erase</ref>()<sp/>{<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">std::ostream&amp;<sp/><ref refid="schtring_8h_1aef14876e55f43fb4ffa7b91664467ecb" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/>s0);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">std::istream&amp;<sp/><ref refid="schtring_8h_1aea8ed420ad5e70828bc42b0fb9b49366" kindref="member">operator&gt;&gt;</ref>(std::istream&amp;<sp/>is,<sp/><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/>s0);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="schtring_8h_1a8d89d501f582c3a65df894dbd030bbcf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="schtring_8h_1a8d89d501f582c3a65df894dbd030bbcf" kindref="member">operator+</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/>str)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_string" kindref="compound">String</ref>(ch)<sp/>+<sp/>str;<sp/>}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,153 @@
+\begin{theindex}
+
+  \item {$\sim$Part}
+    \subitem {Part}, \hyperpage{12}
+  \item {$\sim$String}
+    \subitem {String}, \hyperpage{18}
+
+  \indexspace
+
+  \item {brand}
+    \subitem {Part}, \hyperpage{12}
+
+  \indexspace
+
+  \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp}, 
+		\hyperpage{21}
+  \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h}, 
+		\hyperpage{21}
+  \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp}, 
+		\hyperpage{21}
+  \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h}, 
+		\hyperpage{22}
+  \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp}, 
+		\hyperpage{22}
+  \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h}, 
+		\hyperpage{23}
+  \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/SFML\_test.cpp}, 
+		\hyperpage{24}
+  \item {c\_str}
+    \subitem {String}, \hyperpage{18}
+  \item {Case}, \hyperpage{7}
+    \subitem {Case}, \hyperpage{7}
+  \item {CPU}, \hyperpage{8}
+    \subitem {CPU}, \hyperpage{8}
+
+  \indexspace
+
+  \item {erase}
+    \subitem {String}, \hyperpage{19}
+
+  \indexspace
+
+  \item {get\_gyarto}
+    \subitem {Part}, \hyperpage{12}
+  \item {get\_nev}
+    \subitem {Part}, \hyperpage{12}
+  \item {GPU}, \hyperpage{8}
+    \subitem {GPU}, \hyperpage{9}
+
+  \indexspace
+
+  \item {HDD}, \hyperpage{9}
+    \subitem {HDD}, \hyperpage{10}
+
+  \indexspace
+
+  \item {length}
+    \subitem {String}, \hyperpage{19}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{21}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{21}
+  \item {MOBO}, \hyperpage{10}
+    \subitem {MOBO}, \hyperpage{10}
+
+  \indexspace
+
+  \item {operator$<$$<$}
+    \subitem {schtring.cpp}, \hyperpage{22}
+    \subitem {schtring.h}, \hyperpage{23}
+  \item {operator$>$$>$}
+    \subitem {schtring.cpp}, \hyperpage{22}
+    \subitem {schtring.h}, \hyperpage{24}
+  \item {operator+}
+    \subitem {schtring.h}, \hyperpage{23}
+    \subitem {String}, \hyperpage{19}
+  \item {operator+=}
+    \subitem {String}, \hyperpage{19}
+  \item {operator=}
+    \subitem {String}, \hyperpage{19}
+  \item {operator==}
+    \subitem {String}, \hyperpage{20}
+  \item {operator[]}
+    \subitem {String}, \hyperpage{20}
+
+  \indexspace
+
+  \item {Part}, \hyperpage{11}
+    \subitem {$\sim$Part}, \hyperpage{12}
+    \subitem {brand}, \hyperpage{12}
+    \subitem {get\_gyarto}, \hyperpage{12}
+    \subitem {get\_nev}, \hyperpage{12}
+    \subitem {Part}, \hyperpage{11}
+    \subitem {price}, \hyperpage{12}
+    \subitem {type}, \hyperpage{12}
+  \item {price}
+    \subitem {Part}, \hyperpage{12}
+  \item {PSU}, \hyperpage{13}
+    \subitem {PSU}, \hyperpage{13}
+
+  \indexspace
+
+  \item {RAM}, \hyperpage{14}
+    \subitem {RAM}, \hyperpage{14}
+  \item {readspeed}
+    \subitem {Storage}, \hyperpage{16}
+
+  \indexspace
+
+  \item {schtring.cpp}
+    \subitem {operator$<$$<$}, \hyperpage{22}
+    \subitem {operator$>$$>$}, \hyperpage{22}
+  \item {schtring.h}
+    \subitem {operator$<$$<$}, \hyperpage{23}
+    \subitem {operator$>$$>$}, \hyperpage{24}
+    \subitem {operator+}, \hyperpage{23}
+  \item {size}
+    \subitem {Storage}, \hyperpage{16}
+    \subitem {String}, \hyperpage{20}
+  \item {SSD}, \hyperpage{14}
+    \subitem {SSD}, \hyperpage{15}
+  \item {Storage}, \hyperpage{15}
+    \subitem {readspeed}, \hyperpage{16}
+    \subitem {size}, \hyperpage{16}
+    \subitem {Storage}, \hyperpage{16}
+    \subitem {writespeed}, \hyperpage{16}
+  \item {String}, \hyperpage{17}
+    \subitem {$\sim$String}, \hyperpage{18}
+    \subitem {c\_str}, \hyperpage{18}
+    \subitem {erase}, \hyperpage{19}
+    \subitem {length}, \hyperpage{19}
+    \subitem {operator+}, \hyperpage{19}
+    \subitem {operator+=}, \hyperpage{19}
+    \subitem {operator=}, \hyperpage{19}
+    \subitem {operator==}, \hyperpage{20}
+    \subitem {operator[]}, \hyperpage{20}
+    \subitem {size}, \hyperpage{20}
+    \subitem {String}, \hyperpage{17, 18}
+
+  \indexspace
+
+  \item {type}
+    \subitem {Part}, \hyperpage{12}
+
+  \indexspace
+
+  \item {writespeed}
+    \subitem {Storage}, \hyperpage{16}
+
+\end{theindex}

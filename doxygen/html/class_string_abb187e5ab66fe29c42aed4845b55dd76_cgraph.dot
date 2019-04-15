@@ -1,0 +1,10 @@
+digraph "String::operator+"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node18 [label="String::operator+",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node18 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="String::String",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_string.html#a8a7ef356e05eb9b1ea1ab518baee3095",tooltip="Default konstruktor:"];
+}

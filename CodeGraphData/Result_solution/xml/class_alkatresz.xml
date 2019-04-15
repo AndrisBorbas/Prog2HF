@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_alkatresz" kind="class" prot="public">
+    <compoundname>Alkatresz</compoundname>
+    <derivedcompoundref refid="class_c_p_u" prot="public" virt="non-virtual">CPU</derivedcompoundref>
+    <derivedcompoundref refid="class_g_p_u" prot="public" virt="non-virtual">GPU</derivedcompoundref>
+    <derivedcompoundref refid="class_m_o_b_o" prot="public" virt="non-virtual">MOBO</derivedcompoundref>
+    <derivedcompoundref refid="class_storage" prot="public" virt="non-virtual">Storage</derivedcompoundref>
+    <includes refid="_parts_8h" local="no">Parts.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_alkatresz_1accf1a75e0771e93efcb9ce3c534e5e59" prot="private" static="no" mutable="no">
+        <type><ref refid="class_string" kindref="compound">String</ref></type>
+        <definition>String Alkatresz::Gyarto</definition>
+        <argsstring></argsstring>
+        <name>Gyarto</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="5" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_alkatresz_1ab23ef02b8768253d4c2511d77188582a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_string" kindref="compound">String</ref></type>
+        <definition>String Alkatresz::Nev</definition>
+        <argsstring></argsstring>
+        <name>Nev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="5" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_alkatresz_1ace416bfd871cfee9c7d7a94681ca04d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Alkatresz::Alkatresz</definition>
+        <argsstring>()</argsstring>
+        <name>Alkatresz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="7" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_alkatresz_1a02cdc7f105e7e1348784e657398ccb50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Alkatresz::~Alkatresz</definition>
+        <argsstring>()</argsstring>
+        <name>~Alkatresz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="8" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>Storage</label>
+        <link refid="class_storage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CPU</label>
+        <link refid="class_c_p_u"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>GPU</label>
+        <link refid="class_g_p_u"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Alkatresz</label>
+        <link refid="class_alkatresz"/>
+      </node>
+      <node id="5">
+        <label>MOBO</label>
+        <link refid="class_m_o_b_o"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>String</label>
+        <link refid="class_string"/>
+      </node>
+      <node id="7">
+        <label>Alkatresz</label>
+        <link refid="class_alkatresz"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Nev</edgelabel>
+          <edgelabel>Gyarto</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="4" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="4" bodyend="9"/>
+    <listofallmembers>
+      <member refid="class_alkatresz_1ace416bfd871cfee9c7d7a94681ca04d7" prot="public" virt="non-virtual"><scope>Alkatresz</scope><name>Alkatresz</name></member>
+      <member refid="class_alkatresz_1accf1a75e0771e93efcb9ce3c534e5e59" prot="private" virt="non-virtual"><scope>Alkatresz</scope><name>Gyarto</name></member>
+      <member refid="class_alkatresz_1ab23ef02b8768253d4c2511d77188582a" prot="private" virt="non-virtual"><scope>Alkatresz</scope><name>Nev</name></member>
+      <member refid="class_alkatresz_1a02cdc7f105e7e1348784e657398ccb50" prot="public" virt="non-virtual"><scope>Alkatresz</scope><name>~Alkatresz</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

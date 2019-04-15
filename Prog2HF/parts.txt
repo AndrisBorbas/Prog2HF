@@ -1,0 +1,14 @@
+﻿Any manual edits could cause the file to get corrupted and not load correctly.
+NumberOfParts: 1
+
+IntelCompatibilityList: Z-97,Z-170,Z-270;
+AMDCompatibilityList: AM4;
+
+CPU:
+	Brand: Intel
+	Type: i7-4790
+	clockSpeed: 3600
+	Cores: 4
+	HyperThreading: yes
+	Socket: LGA1150
+	price: 300

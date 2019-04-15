@@ -1,0 +1,225 @@
+\hypertarget{class_string}{}\section{String Class Reference}
+\label{class_string}\index{String@{String}}
+
+
+{\ttfamily \#include $<$schtring.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{class_string_a588c5cc9faededbb9d938662d354feed}{size}} () const
+\begin{DoxyCompactList}\small\item\em hossz lezáró nulla nélkül \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_string_ad3b888edbfb3bab21d4bae4663d2211a}{length}} () const
+\begin{DoxyCompactList}\small\item\em Visszaadja a string hosszát. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_string_a8a7ef356e05eb9b1ea1ab518baee3095}{String}} ()
+\begin{DoxyCompactList}\small\item\em Default konstruktor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_string_a62a77180f8df2547e8be1313654abcee}{String}} (char ch)
+\begin{DoxyCompactList}\small\item\em Konstruktor\+: egy char karakterre. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_string_a09ca4f1436a83ecb1c273a836b7cd4c6}{String}} (const char $\ast$p)
+\begin{DoxyCompactList}\small\item\em Konstruktor\+: egy karakter tömbre. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_string_a3c682dc983b45bdbb7f3858fe4cbf221}{String}} (const \mbox{\hyperlink{class_string}{String}} \&s1)
+\begin{DoxyCompactList}\small\item\em Konstruktor\+: egy másik Stringre. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{class_string_a0274f3e61533d15086816fb7f47ccb54}{c\+\_\+str}} () const
+\begin{DoxyCompactList}\small\item\em C-\/stringet ad vissza. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_string_ac40b2a3fb58c2d8556f5e6ff73510036}{$\sim$\+String}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_string}{String}} \& \mbox{\hyperlink{class_string_a803e6112834d4c0cdb0da6c6a4000e6e}{operator=}} (const \mbox{\hyperlink{class_string}{String}} \&rhs\+\_\+s)
+\begin{DoxyCompactList}\small\item\em Egyenlőség operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_string}{String}} \& \mbox{\hyperlink{class_string_ac203e7c52e04bb86f62f9dd75527b361}{operator+=}} (const \mbox{\hyperlink{class_string}{String}} \&rhs\+\_\+s)
+\begin{DoxyCompactList}\small\item\em Pluszegyenlő operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{class_string_a28a020f061e5f25317af47488bfb7de8}{operator+}} (const \mbox{\hyperlink{class_string}{String}} \&rhs\+\_\+s) const
+\begin{DoxyCompactList}\small\item\em string + string \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{class_string_abb187e5ab66fe29c42aed4845b55dd76}{operator+}} (char rhs\+\_\+c) const
+\begin{DoxyCompactList}\small\item\em string + karakter \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_string_a1006dbb8a123aed87b8edb33d5cbcee4}{operator==}} (\mbox{\hyperlink{class_string}{String}} \&rhs\+\_\+s)
+\begin{DoxyCompactList}\small\item\em hasonlító operator stringgel \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_string_ade9af860a809548214837e33367e8835}{operator==}} (const char $\ast$rhs\+\_\+s)
+\begin{DoxyCompactList}\small\item\em hasonlító operator char tömbbel \end{DoxyCompactList}\item 
+char \& \mbox{\hyperlink{class_string_a1a7c5c39d4dafbbf8516f5058a253f1a}{operator\mbox{[}$\,$\mbox{]}}} (unsigned int idx)
+\begin{DoxyCompactList}\small\item\em index operator \end{DoxyCompactList}\item 
+const char \& \mbox{\hyperlink{class_string_aaa249e62641872197679cfc7c66118c0}{operator\mbox{[}$\,$\mbox{]}}} (unsigned int idx) const
+\begin{DoxyCompactList}\small\item\em index operator \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_string_a3ce2ea55be9ec912bb2dbc88d461b479}{erase}} ()
+\begin{DoxyCompactList}\small\item\em törli a stringben lévő karaktereket \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_string_a8a7ef356e05eb9b1ea1ab518baee3095}\label{class_string_a8a7ef356e05eb9b1ea1ab518baee3095}} 
+\index{String@{String}!String@{String}}
+\index{String@{String}!String@{String}}
+\subsubsection{\texorpdfstring{String()}{String()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily String\+::\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default konstruktor. 
+
+\mbox{\Hypertarget{class_string_a62a77180f8df2547e8be1313654abcee}\label{class_string_a62a77180f8df2547e8be1313654abcee}} 
+\index{String@{String}!String@{String}}
+\index{String@{String}!String@{String}}
+\subsubsection{\texorpdfstring{String()}{String()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily String\+::\+String (\begin{DoxyParamCaption}\item[{char}]{ch }\end{DoxyParamCaption})}
+
+
+
+Konstruktor\+: egy char karakterre. 
+
+\mbox{\Hypertarget{class_string_a09ca4f1436a83ecb1c273a836b7cd4c6}\label{class_string_a09ca4f1436a83ecb1c273a836b7cd4c6}} 
+\index{String@{String}!String@{String}}
+\index{String@{String}!String@{String}}
+\subsubsection{\texorpdfstring{String()}{String()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily String\+::\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Konstruktor\+: egy karakter tömbre. 
+
+\mbox{\Hypertarget{class_string_a3c682dc983b45bdbb7f3858fe4cbf221}\label{class_string_a3c682dc983b45bdbb7f3858fe4cbf221}} 
+\index{String@{String}!String@{String}}
+\index{String@{String}!String@{String}}
+\subsubsection{\texorpdfstring{String()}{String()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily String\+::\+String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_string}{String}} \&}]{s1 }\end{DoxyParamCaption})}
+
+
+
+Konstruktor\+: egy másik Stringre. 
+
+\mbox{\Hypertarget{class_string_ac40b2a3fb58c2d8556f5e6ff73510036}\label{class_string_ac40b2a3fb58c2d8556f5e6ff73510036}} 
+\index{String@{String}!````~String@{$\sim$String}}
+\index{````~String@{$\sim$String}!String@{String}}
+\subsubsection{\texorpdfstring{$\sim$String()}{~String()}}
+{\footnotesize\ttfamily String\+::$\sim$\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destruktor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_string_a0274f3e61533d15086816fb7f47ccb54}\label{class_string_a0274f3e61533d15086816fb7f47ccb54}} 
+\index{String@{String}!c\_str@{c\_str}}
+\index{c\_str@{c\_str}!String@{String}}
+\subsubsection{\texorpdfstring{c\_str()}{c\_str()}}
+{\footnotesize\ttfamily const char$\ast$ String\+::c\+\_\+str (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+C-\/stringet ad vissza. 
+
+\mbox{\Hypertarget{class_string_a3ce2ea55be9ec912bb2dbc88d461b479}\label{class_string_a3ce2ea55be9ec912bb2dbc88d461b479}} 
+\index{String@{String}!erase@{erase}}
+\index{erase@{erase}!String@{String}}
+\subsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily void String\+::erase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+törli a stringben lévő karaktereket 
+
+\mbox{\Hypertarget{class_string_ad3b888edbfb3bab21d4bae4663d2211a}\label{class_string_ad3b888edbfb3bab21d4bae4663d2211a}} 
+\index{String@{String}!length@{length}}
+\index{length@{length}!String@{String}}
+\subsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily size\+\_\+t String\+::length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Visszaadja a string hosszát. 
+
+\mbox{\Hypertarget{class_string_a28a020f061e5f25317af47488bfb7de8}\label{class_string_a28a020f061e5f25317af47488bfb7de8}} 
+\index{String@{String}!operator+@{operator+}}
+\index{operator+@{operator+}!String@{String}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_string}{String}} String\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_string}{String}} \&}]{rhs\+\_\+s }\end{DoxyParamCaption}) const}
+
+
+
+string + string 
+
+\mbox{\Hypertarget{class_string_abb187e5ab66fe29c42aed4845b55dd76}\label{class_string_abb187e5ab66fe29c42aed4845b55dd76}} 
+\index{String@{String}!operator+@{operator+}}
+\index{operator+@{operator+}!String@{String}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_string}{String}} String\+::operator+ (\begin{DoxyParamCaption}\item[{char}]{rhs\+\_\+c }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+string + karakter 
+
+\mbox{\Hypertarget{class_string_ac203e7c52e04bb86f62f9dd75527b361}\label{class_string_ac203e7c52e04bb86f62f9dd75527b361}} 
+\index{String@{String}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!String@{String}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_string}{String}}\& String\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_string}{String}} \&}]{rhs\+\_\+s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pluszegyenlő operator. 
+
+\mbox{\Hypertarget{class_string_a803e6112834d4c0cdb0da6c6a4000e6e}\label{class_string_a803e6112834d4c0cdb0da6c6a4000e6e}} 
+\index{String@{String}!operator=@{operator=}}
+\index{operator=@{operator=}!String@{String}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_string}{String}} \& String\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_string}{String}} \&}]{rhs\+\_\+s }\end{DoxyParamCaption})}
+
+
+
+Egyenlőség operator. 
+
+\mbox{\Hypertarget{class_string_a1006dbb8a123aed87b8edb33d5cbcee4}\label{class_string_a1006dbb8a123aed87b8edb33d5cbcee4}} 
+\index{String@{String}!operator==@{operator==}}
+\index{operator==@{operator==}!String@{String}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool String\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_string}{String}} \&}]{rhs\+\_\+s }\end{DoxyParamCaption})}
+
+
+
+hasonlító operator stringgel 
+
+\mbox{\Hypertarget{class_string_ade9af860a809548214837e33367e8835}\label{class_string_ade9af860a809548214837e33367e8835}} 
+\index{String@{String}!operator==@{operator==}}
+\index{operator==@{operator==}!String@{String}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool String\+::operator== (\begin{DoxyParamCaption}\item[{const char $\ast$}]{rhs\+\_\+s }\end{DoxyParamCaption})}
+
+
+
+hasonlító operator char tömbbel 
+
+\mbox{\Hypertarget{class_string_a1a7c5c39d4dafbbf8516f5058a253f1a}\label{class_string_a1a7c5c39d4dafbbf8516f5058a253f1a}} 
+\index{String@{String}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!String@{String}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily char \& String\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{unsigned int}]{idx }\end{DoxyParamCaption})}
+
+
+
+index operator 
+
+\mbox{\Hypertarget{class_string_aaa249e62641872197679cfc7c66118c0}\label{class_string_aaa249e62641872197679cfc7c66118c0}} 
+\index{String@{String}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!String@{String}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const char \& String\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{unsigned int}]{idx }\end{DoxyParamCaption}) const}
+
+
+
+index operator 
+
+\mbox{\Hypertarget{class_string_a588c5cc9faededbb9d938662d354feed}\label{class_string_a588c5cc9faededbb9d938662d354feed}} 
+\index{String@{String}!size@{size}}
+\index{size@{size}!String@{String}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t String\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+hossz lezáró nulla nélkül 
+
+Visszaadja a string hosszát 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/cxl20/\+Documents/\+Visual Studio 2017/\+Prog2\+H\+F/\+Prog2\+H\+F/\mbox{\hyperlink{schtring_8h}{schtring.\+h}}\item 
+C\+:/\+Users/cxl20/\+Documents/\+Visual Studio 2017/\+Prog2\+H\+F/\+Prog2\+H\+F/\mbox{\hyperlink{schtring_8cpp}{schtring.\+cpp}}\end{DoxyCompactItemize}

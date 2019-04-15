@@ -1,0 +1,158 @@
+.TH "String" 3 "Wed Apr 3 2019" "Prog2HF" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+String
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <schtring\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "size_t \fBsize\fP () const"
+.br
+.RI "hossz lezáró nulla nélkül "
+.ti -1c
+.RI "size_t \fBlength\fP () const"
+.br
+.RI "Visszaadja a string hosszát\&. "
+.ti -1c
+.RI "\fBString\fP ()"
+.br
+.RI "Default konstruktor\&. "
+.ti -1c
+.RI "\fBString\fP (char ch)"
+.br
+.RI "Konstruktor: egy char karakterre\&. "
+.ti -1c
+.RI "\fBString\fP (const char *p)"
+.br
+.RI "Konstruktor: egy karakter tömbre\&. "
+.ti -1c
+.RI "\fBString\fP (const \fBString\fP &s1)"
+.br
+.RI "Konstruktor: egy másik Stringre\&. "
+.ti -1c
+.RI "const char * \fBc_str\fP () const"
+.br
+.RI "C-stringet ad vissza\&. "
+.ti -1c
+.RI "\fB~String\fP ()"
+.br
+.RI "Destruktor\&. "
+.ti -1c
+.RI "\fBString\fP & \fBoperator=\fP (const \fBString\fP &rhs_s)"
+.br
+.RI "Egyenlőség operator\&. "
+.ti -1c
+.RI "\fBString\fP & \fBoperator+=\fP (const \fBString\fP &rhs_s)"
+.br
+.RI "Pluszegyenlő operator\&. "
+.ti -1c
+.RI "\fBString\fP \fBoperator+\fP (const \fBString\fP &rhs_s) const"
+.br
+.RI "string + string "
+.ti -1c
+.RI "\fBString\fP \fBoperator+\fP (char rhs_c) const"
+.br
+.RI "string + karakter "
+.ti -1c
+.RI "bool \fBoperator==\fP (\fBString\fP &rhs_s)"
+.br
+.RI "hasonlító operator stringgel "
+.ti -1c
+.RI "bool \fBoperator==\fP (const char *rhs_s)"
+.br
+.RI "hasonlító operator char tömbbel "
+.ti -1c
+.RI "char & \fBoperator[]\fP (unsigned int idx)"
+.br
+.RI "index operator "
+.ti -1c
+.RI "const char & \fBoperator[]\fP (unsigned int idx) const"
+.br
+.RI "index operator "
+.ti -1c
+.RI "void \fBerase\fP ()"
+.br
+.RI "törli a stringben lévő karaktereket "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "String::String ()\fC [inline]\fP"
+
+.PP
+Default konstruktor\&. 
+.SS "String::String (char ch)"
+
+.PP
+Konstruktor: egy char karakterre\&. 
+.SS "String::String (const char * p)"
+
+.PP
+Konstruktor: egy karakter tömbre\&. 
+.SS "String::String (const \fBString\fP & s1)"
+
+.PP
+Konstruktor: egy másik Stringre\&. 
+.SS "String::~String ()\fC [inline]\fP"
+
+.PP
+Destruktor\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "const char* String::c_str () const\fC [inline]\fP"
+
+.PP
+C-stringet ad vissza\&. 
+.SS "void String::erase ()\fC [inline]\fP"
+
+.PP
+törli a stringben lévő karaktereket 
+.SS "size_t String::length () const\fC [inline]\fP"
+
+.PP
+Visszaadja a string hosszát\&. 
+.SS "\fBString\fP String::operator+ (const \fBString\fP & rhs_s) const"
+
+.PP
+string + string 
+.SS "\fBString\fP String::operator+ (char rhs_c) const\fC [inline]\fP"
+
+.PP
+string + karakter 
+.SS "\fBString\fP& String::operator+= (const \fBString\fP & rhs_s)\fC [inline]\fP"
+
+.PP
+Pluszegyenlő operator\&. 
+.SS "\fBString\fP & String::operator= (const \fBString\fP & rhs_s)"
+
+.PP
+Egyenlőség operator\&. 
+.SS "bool String::operator== (\fBString\fP & rhs_s)"
+
+.PP
+hasonlító operator stringgel 
+.SS "bool String::operator== (const char * rhs_s)"
+
+.PP
+hasonlító operator char tömbbel 
+.SS "char & String::operator[] (unsigned int idx)"
+
+.PP
+index operator 
+.SS "const char & String::operator[] (unsigned int idx) const"
+
+.PP
+index operator 
+.SS "size_t String::size () const\fC [inline]\fP"
+
+.PP
+hossz lezáró nulla nélkül Visszaadja a string hosszát 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Prog2HF from the source code\&.

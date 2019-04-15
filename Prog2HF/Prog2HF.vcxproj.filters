@@ -15,10 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Prog2HF.cpp">
+    <ClCompile Include="SFML_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SFML_test.cpp">
+    <ClCompile Include="memtrace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="schtring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Parts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Compatibility.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -26,8 +38,28 @@
     <ClInclude Include="main.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Ingredient.h">
+    <ClInclude Include="gtest_lite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="memtrace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="schtring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Parts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Compatibility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="parts.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

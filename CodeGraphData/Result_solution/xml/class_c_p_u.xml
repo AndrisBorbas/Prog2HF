@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_c_p_u" kind="class" prot="public">
+    <compoundname>CPU</compoundname>
+    <basecompoundref refid="class_alkatresz" prot="public" virt="non-virtual">Alkatresz</basecompoundref>
+    <includes refid="_parts_8h" local="no">Parts.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_p_u_1a2fdd8153d0979ccad9ed8452897267f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CPU::CPU</definition>
+        <argsstring>()</argsstring>
+        <name>CPU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1aa32e0ed85bebabb167ace09050d20707" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CPU::~CPU</definition>
+        <argsstring>()</argsstring>
+        <name>~CPU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="15" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9">
+        <label>CPU</label>
+        <link refid="class_c_p_u"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Alkatresz</label>
+        <link refid="class_alkatresz"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="13">
+        <label>String</label>
+        <link refid="class_string"/>
+      </node>
+      <node id="11">
+        <label>CPU</label>
+        <link refid="class_c_p_u"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Alkatresz</label>
+        <link refid="class_alkatresz"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>Nev</edgelabel>
+          <edgelabel>Gyarto</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="11" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="11" bodyend="16"/>
+    <listofallmembers>
+      <member refid="class_alkatresz_1ace416bfd871cfee9c7d7a94681ca04d7" prot="public" virt="non-virtual"><scope>CPU</scope><name>Alkatresz</name></member>
+      <member refid="class_c_p_u_1a2fdd8153d0979ccad9ed8452897267f4" prot="public" virt="non-virtual"><scope>CPU</scope><name>CPU</name></member>
+      <member refid="class_alkatresz_1a02cdc7f105e7e1348784e657398ccb50" prot="public" virt="non-virtual"><scope>CPU</scope><name>~Alkatresz</name></member>
+      <member refid="class_c_p_u_1aa32e0ed85bebabb167ace09050d20707" prot="public" virt="non-virtual"><scope>CPU</scope><name>~CPU</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

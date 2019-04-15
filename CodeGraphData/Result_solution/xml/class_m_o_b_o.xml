@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_m_o_b_o" kind="class" prot="public">
+    <compoundname>MOBO</compoundname>
+    <basecompoundref refid="class_alkatresz" prot="public" virt="non-virtual">Alkatresz</basecompoundref>
+    <includes refid="_parts_8h" local="no">Parts.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_m_o_b_o_1a785715cdbe072e78aa783951b0e0f0ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MOBO::MOBO</definition>
+        <argsstring>()</argsstring>
+        <name>MOBO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_o_b_o_1adb87a6b0f0cac1c3437e5ada3fe8caa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MOBO::~MOBO</definition>
+        <argsstring>()</argsstring>
+        <name>~MOBO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="22" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="20">
+        <label>Alkatresz</label>
+        <link refid="class_alkatresz"/>
+      </node>
+      <node id="19">
+        <label>MOBO</label>
+        <link refid="class_m_o_b_o"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="23">
+        <label>String</label>
+        <link refid="class_string"/>
+      </node>
+      <node id="22">
+        <label>Alkatresz</label>
+        <link refid="class_alkatresz"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>Nev</edgelabel>
+          <edgelabel>Gyarto</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>MOBO</label>
+        <link refid="class_m_o_b_o"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="18" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="18" bodyend="23"/>
+    <listofallmembers>
+      <member refid="class_alkatresz_1ace416bfd871cfee9c7d7a94681ca04d7" prot="public" virt="non-virtual"><scope>MOBO</scope><name>Alkatresz</name></member>
+      <member refid="class_m_o_b_o_1a785715cdbe072e78aa783951b0e0f0ca" prot="public" virt="non-virtual"><scope>MOBO</scope><name>MOBO</name></member>
+      <member refid="class_alkatresz_1a02cdc7f105e7e1348784e657398ccb50" prot="public" virt="non-virtual"><scope>MOBO</scope><name>~Alkatresz</name></member>
+      <member refid="class_m_o_b_o_1adb87a6b0f0cac1c3437e5ada3fe8caa0" prot="public" virt="non-virtual"><scope>MOBO</scope><name>~MOBO</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

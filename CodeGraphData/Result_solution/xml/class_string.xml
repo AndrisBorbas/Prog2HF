@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_string" kind="class" prot="public">
+    <compoundname>String</compoundname>
+    <includes refid="schtring_8h" local="no">schtring.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_string_1abdb8b1fb25347f7046a27f0773392495" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* String::pData</definition>
+        <argsstring></argsstring>
+        <name>pData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="7" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_string_1a4d236d8f9b907db1822064fe0037e267" compoundref="schtring_8h" startline="26" endline="26">c_str</referencedby>
+        <referencedby refid="class_string_1a189071e4e59316603d720413ea166c77" compoundref="schtring_8cpp" startline="72" endline="87">operator+</referencedby>
+        <referencedby refid="class_string_1a803e6112834d4c0cdb0da6c6a4000e6e" compoundref="schtring_8cpp" startline="49" endline="58">operator=</referencedby>
+        <referencedby refid="class_string_1a1a7c5c39d4dafbbf8516f5058a253f1a" compoundref="schtring_8cpp" startline="61" endline="64">operator[]</referencedby>
+        <referencedby refid="class_string_1a9b1ee7005e897e950c1d4cdd368eb647" compoundref="schtring_8h" startline="32" endline="35">printDbg</referencedby>
+        <referencedby refid="class_string_1a62a77180f8df2547e8be1313654abcee" compoundref="schtring_8cpp" startline="18" endline="26">String</referencedby>
+        <referencedby refid="class_string_1ac40b2a3fb58c2d8556f5e6ff73510036" compoundref="schtring_8h" startline="29" endline="29">~String</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_string_1a19c7dc3e73f362a699de38845b386296" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t String::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+<para>pointer az adatra </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="8" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_string_1a189071e4e59316603d720413ea166c77" compoundref="schtring_8cpp" startline="72" endline="87">operator+</referencedby>
+        <referencedby refid="class_string_1a803e6112834d4c0cdb0da6c6a4000e6e" compoundref="schtring_8cpp" startline="49" endline="58">operator=</referencedby>
+        <referencedby refid="class_string_1a1a7c5c39d4dafbbf8516f5058a253f1a" compoundref="schtring_8cpp" startline="61" endline="64">operator[]</referencedby>
+        <referencedby refid="class_string_1a9b1ee7005e897e950c1d4cdd368eb647" compoundref="schtring_8h" startline="32" endline="35">printDbg</referencedby>
+        <referencedby refid="class_string_1a59653a61e472a466b6d788aebd59c4b4" compoundref="schtring_8h" startline="11" endline="11">size</referencedby>
+        <referencedby refid="class_string_1a62a77180f8df2547e8be1313654abcee" compoundref="schtring_8cpp" startline="18" endline="26">String</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_string_1a59653a61e472a466b6d788aebd59c4b4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t String::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>hossz lezáró nulla nélkül </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="11" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" bodystart="11" bodyend="11"/>
+        <references refid="class_string_1a19c7dc3e73f362a699de38845b386296" compoundref="schtring_8h" startline="8">len</references>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>String::String</definition>
+        <argsstring>()</argsstring>
+        <name>String</name>
+        <briefdescription>
+<para>Default konstruktor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="14" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" bodystart="14" bodyend="14"/>
+        <referencedby refid="class_string_1af6fbf1371a16606902e3f6a394650a8b" compoundref="schtring_8h" startline="49" endline="49">operator+</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1a62a77180f8df2547e8be1313654abcee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>String::String</definition>
+        <argsstring>(char ch)</argsstring>
+        <name>String</name>
+        <param>
+          <type>char</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+<para>Konstruktor: egy char karakterre. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="17" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp" bodystart="18" bodyend="26"/>
+        <references refid="class_string_1a19c7dc3e73f362a699de38845b386296" compoundref="schtring_8h" startline="8">len</references>
+        <references refid="class_string_1abdb8b1fb25347f7046a27f0773392495" compoundref="schtring_8h" startline="7">pData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1a09ca4f1436a83ecb1c273a836b7cd4c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>String::String</definition>
+        <argsstring>(const char *p)</argsstring>
+        <name>String</name>
+        <param>
+          <type>const char *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Konstruktor: egy karakter tömbre. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="20" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp" bodystart="30" bodyend="37"/>
+        <references refid="class_string_1a19c7dc3e73f362a699de38845b386296" compoundref="schtring_8h" startline="8">len</references>
+        <references refid="class_string_1abdb8b1fb25347f7046a27f0773392495" compoundref="schtring_8h" startline="7">pData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1a3c682dc983b45bdbb7f3858fe4cbf221" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>String::String</definition>
+        <argsstring>(const String &amp;s1)</argsstring>
+        <name>String</name>
+        <param>
+          <type>const <ref refid="class_string" kindref="compound">String</ref> &amp;</type>
+          <declname>s1</declname>
+        </param>
+        <briefdescription>
+<para>Konstruktor: egy másik Stringre. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="23" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp" bodystart="39" bodyend="46"/>
+        <references refid="class_string_1a19c7dc3e73f362a699de38845b386296" compoundref="schtring_8h" startline="8">len</references>
+        <references refid="class_string_1abdb8b1fb25347f7046a27f0773392495" compoundref="schtring_8h" startline="7">pData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1a4d236d8f9b907db1822064fe0037e267" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* String::c_str</definition>
+        <argsstring>() const </argsstring>
+        <name>c_str</name>
+        <briefdescription>
+<para>C-stringet ad vissza. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="26" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" bodystart="26" bodyend="26"/>
+        <references refid="class_string_1abdb8b1fb25347f7046a27f0773392495" compoundref="schtring_8h" startline="7">pData</references>
+        <referencedby refid="schtring_8h_1aef14876e55f43fb4ffa7b91664467ecb" compoundref="schtring_8cpp" startline="89" endline="92">operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1ac40b2a3fb58c2d8556f5e6ff73510036" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>String::~String</definition>
+        <argsstring>()</argsstring>
+        <name>~String</name>
+        <briefdescription>
+<para>Destruktor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="29" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" bodystart="29" bodyend="29"/>
+        <references refid="class_string_1abdb8b1fb25347f7046a27f0773392495" compoundref="schtring_8h" startline="7">pData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1a9b1ee7005e897e950c1d4cdd368eb647" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void String::printDbg</definition>
+        <argsstring>(const char *txt=&quot;&quot;) const </argsstring>
+        <name>printDbg</name>
+        <param>
+          <type>const char *</type>
+          <declname>txt</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="32" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" bodystart="32" bodyend="35"/>
+        <references refid="class_string_1a19c7dc3e73f362a699de38845b386296" compoundref="schtring_8h" startline="8">len</references>
+        <references refid="class_string_1abdb8b1fb25347f7046a27f0773392495" compoundref="schtring_8h" startline="7">pData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1a803e6112834d4c0cdb0da6c6a4000e6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_string" kindref="compound">String</ref> &amp;</type>
+        <definition>String &amp; String::operator=</definition>
+        <argsstring>(const String &amp;rhs_s)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_string" kindref="compound">String</ref> &amp;</type>
+          <declname>rhs_s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="38" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp" bodystart="49" bodyend="58"/>
+        <references refid="class_string_1a19c7dc3e73f362a699de38845b386296" compoundref="schtring_8h" startline="8">len</references>
+        <references refid="class_string_1abdb8b1fb25347f7046a27f0773392495" compoundref="schtring_8h" startline="7">pData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1ac203e7c52e04bb86f62f9dd75527b361" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_string" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; String::operator+=</definition>
+        <argsstring>(const String &amp;rhs_s)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="class_string" kindref="compound">String</ref> &amp;</type>
+          <declname>rhs_s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="40" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1a189071e4e59316603d720413ea166c77" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_string" kindref="compound">String</ref></type>
+        <definition>String String::operator+</definition>
+        <argsstring>(const String &amp;rhs_s) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="class_string" kindref="compound">String</ref> &amp;</type>
+          <declname>rhs_s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="46" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp" bodystart="72" bodyend="87"/>
+        <references refid="class_string_1a19c7dc3e73f362a699de38845b386296" compoundref="schtring_8h" startline="8">len</references>
+        <references refid="class_string_1abdb8b1fb25347f7046a27f0773392495" compoundref="schtring_8h" startline="7">pData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1af6fbf1371a16606902e3f6a394650a8b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_string" kindref="compound">String</ref></type>
+        <definition>String String::operator+</definition>
+        <argsstring>(char rhs_c) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type>char</type>
+          <declname>rhs_c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="49" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" bodystart="49" bodyend="49"/>
+        <references refid="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" compoundref="schtring_8h" startline="14" endline="14">String</references>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1a1a7c5c39d4dafbbf8516f5058a253f1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char &amp;</type>
+        <definition>char &amp; String::operator[]</definition>
+        <argsstring>(unsigned int idx)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="52" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp" bodystart="61" bodyend="64"/>
+        <references refid="class_string_1a19c7dc3e73f362a699de38845b386296" compoundref="schtring_8h" startline="8">len</references>
+        <references refid="class_string_1abdb8b1fb25347f7046a27f0773392495" compoundref="schtring_8h" startline="7">pData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1aa2cd8e755a2bc70e8ad11708a154d7a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char &amp;</type>
+        <definition>const char &amp; String::operator[]</definition>
+        <argsstring>(unsigned int idx) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="55" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp" bodystart="66" bodyend="69"/>
+        <references refid="class_string_1a19c7dc3e73f362a699de38845b386296" compoundref="schtring_8h" startline="8">len</references>
+        <references refid="class_string_1abdb8b1fb25347f7046a27f0773392495" compoundref="schtring_8h" startline="7">pData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_string_1a3ce2ea55be9ec912bb2dbc88d461b479" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void String::erase</definition>
+        <argsstring>()</argsstring>
+        <name>erase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="57" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" line="6" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.h" bodystart="6" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_string_1a4d236d8f9b907db1822064fe0037e267" prot="public" virt="non-virtual"><scope>String</scope><name>c_str</name></member>
+      <member refid="class_string_1a3ce2ea55be9ec912bb2dbc88d461b479" prot="public" virt="non-virtual"><scope>String</scope><name>erase</name></member>
+      <member refid="class_string_1a19c7dc3e73f362a699de38845b386296" prot="private" virt="non-virtual"><scope>String</scope><name>len</name></member>
+      <member refid="class_string_1a189071e4e59316603d720413ea166c77" prot="public" virt="non-virtual"><scope>String</scope><name>operator+</name></member>
+      <member refid="class_string_1af6fbf1371a16606902e3f6a394650a8b" prot="public" virt="non-virtual"><scope>String</scope><name>operator+</name></member>
+      <member refid="class_string_1ac203e7c52e04bb86f62f9dd75527b361" prot="public" virt="non-virtual"><scope>String</scope><name>operator+=</name></member>
+      <member refid="class_string_1a803e6112834d4c0cdb0da6c6a4000e6e" prot="public" virt="non-virtual"><scope>String</scope><name>operator=</name></member>
+      <member refid="class_string_1a1a7c5c39d4dafbbf8516f5058a253f1a" prot="public" virt="non-virtual"><scope>String</scope><name>operator[]</name></member>
+      <member refid="class_string_1aa2cd8e755a2bc70e8ad11708a154d7a3" prot="public" virt="non-virtual"><scope>String</scope><name>operator[]</name></member>
+      <member refid="class_string_1abdb8b1fb25347f7046a27f0773392495" prot="private" virt="non-virtual"><scope>String</scope><name>pData</name></member>
+      <member refid="class_string_1a9b1ee7005e897e950c1d4cdd368eb647" prot="public" virt="non-virtual"><scope>String</scope><name>printDbg</name></member>
+      <member refid="class_string_1a59653a61e472a466b6d788aebd59c4b4" prot="public" virt="non-virtual"><scope>String</scope><name>size</name></member>
+      <member refid="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" prot="public" virt="non-virtual"><scope>String</scope><name>String</name></member>
+      <member refid="class_string_1a62a77180f8df2547e8be1313654abcee" prot="public" virt="non-virtual"><scope>String</scope><name>String</name></member>
+      <member refid="class_string_1a09ca4f1436a83ecb1c273a836b7cd4c6" prot="public" virt="non-virtual"><scope>String</scope><name>String</name></member>
+      <member refid="class_string_1a3c682dc983b45bdbb7f3858fe4cbf221" prot="public" virt="non-virtual"><scope>String</scope><name>String</name></member>
+      <member refid="class_string_1ac40b2a3fb58c2d8556f5e6ff73510036" prot="public" virt="non-virtual"><scope>String</scope><name>~String</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

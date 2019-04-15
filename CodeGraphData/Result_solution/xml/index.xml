@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="struct___is___types" kind="struct"><name>_Is_Types</name>
+    <member refid="struct___is___types_1aef853f15f013611d0890cb6fc408ae47" kind="variable"><name>convertable</name></member>
+    <member refid="struct___is___types_1a1bd22cb90b9438997283201839aec09f" kind="function"><name>f</name></member>
+    <member refid="struct___is___types_1a013da65c5a92e9bd02f5d361c10d376d" kind="function"><name>f</name></member>
+  </compound>
+  <compound refid="class_alkatresz" kind="class"><name>Alkatresz</name>
+    <member refid="class_alkatresz_1accf1a75e0771e93efcb9ce3c534e5e59" kind="variable"><name>Gyarto</name></member>
+    <member refid="class_alkatresz_1ab23ef02b8768253d4c2511d77188582a" kind="variable"><name>Nev</name></member>
+    <member refid="class_alkatresz_1ace416bfd871cfee9c7d7a94681ca04d7" kind="function"><name>Alkatresz</name></member>
+    <member refid="class_alkatresz_1a02cdc7f105e7e1348784e657398ccb50" kind="function"><name>~Alkatresz</name></member>
+  </compound>
+  <compound refid="class_c_p_u" kind="class"><name>CPU</name>
+    <member refid="class_c_p_u_1a2fdd8153d0979ccad9ed8452897267f4" kind="function"><name>CPU</name></member>
+    <member refid="class_c_p_u_1aa32e0ed85bebabb167ace09050d20707" kind="function"><name>~CPU</name></member>
+  </compound>
+  <compound refid="class_g_p_u" kind="class"><name>GPU</name>
+    <member refid="class_g_p_u_1a2ca7973e32f63ba3472166a007419a75" kind="function"><name>GPU</name></member>
+    <member refid="class_g_p_u_1ac4d153a08d3b9f40e5a8f1634f4a9e78" kind="function"><name>~GPU</name></member>
+  </compound>
+  <compound refid="class_m_o_b_o" kind="class"><name>MOBO</name>
+    <member refid="class_m_o_b_o_1a785715cdbe072e78aa783951b0e0f0ca" kind="function"><name>MOBO</name></member>
+    <member refid="class_m_o_b_o_1adb87a6b0f0cac1c3437e5ada3fe8caa0" kind="function"><name>~MOBO</name></member>
+  </compound>
+  <compound refid="class_storage" kind="class"><name>Storage</name>
+    <member refid="class_storage_1a80ef6af5e4c9fd4424ae16e808d05291" kind="function"><name>Storage</name></member>
+    <member refid="class_storage_1a73cf30f0a34250396f9eabee7dc5c93d" kind="function"><name>~Storage</name></member>
+  </compound>
+  <compound refid="class_string" kind="class"><name>String</name>
+    <member refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kind="variable"><name>pData</name></member>
+    <member refid="class_string_1a19c7dc3e73f362a699de38845b386296" kind="variable"><name>len</name></member>
+    <member refid="class_string_1a59653a61e472a466b6d788aebd59c4b4" kind="function"><name>size</name></member>
+    <member refid="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" kind="function"><name>String</name></member>
+    <member refid="class_string_1a62a77180f8df2547e8be1313654abcee" kind="function"><name>String</name></member>
+    <member refid="class_string_1a09ca4f1436a83ecb1c273a836b7cd4c6" kind="function"><name>String</name></member>
+    <member refid="class_string_1a3c682dc983b45bdbb7f3858fe4cbf221" kind="function"><name>String</name></member>
+    <member refid="class_string_1a4d236d8f9b907db1822064fe0037e267" kind="function"><name>c_str</name></member>
+    <member refid="class_string_1ac40b2a3fb58c2d8556f5e6ff73510036" kind="function"><name>~String</name></member>
+    <member refid="class_string_1a9b1ee7005e897e950c1d4cdd368eb647" kind="function"><name>printDbg</name></member>
+    <member refid="class_string_1a803e6112834d4c0cdb0da6c6a4000e6e" kind="function"><name>operator=</name></member>
+    <member refid="class_string_1ac203e7c52e04bb86f62f9dd75527b361" kind="function"><name>operator+=</name></member>
+    <member refid="class_string_1a189071e4e59316603d720413ea166c77" kind="function"><name>operator+</name></member>
+    <member refid="class_string_1af6fbf1371a16606902e3f6a394650a8b" kind="function"><name>operator+</name></member>
+    <member refid="class_string_1a1a7c5c39d4dafbbf8516f5058a253f1a" kind="function"><name>operator[]</name></member>
+    <member refid="class_string_1aa2cd8e755a2bc70e8ad11708a154d7a3" kind="function"><name>operator[]</name></member>
+    <member refid="class_string_1a3ce2ea55be9ec912bb2dbc88d461b479" kind="function"><name>erase</name></member>
+  </compound>
+  <compound refid="structgtest__lite_1_1_test" kind="struct"><name>gtest_lite::Test</name>
+    <member refid="structgtest__lite_1_1_test_1a6da678d43b72b9e2bff1c99e1d3c48f5" kind="variable"><name>sum</name></member>
+    <member refid="structgtest__lite_1_1_test_1a4fb6ee7bd903717d970e3f0504cdeeab" kind="variable"><name>failed</name></member>
+    <member refid="structgtest__lite_1_1_test_1a91d9c63794d2b9b49e0c48d897208560" kind="variable"><name>ablocks</name></member>
+    <member refid="structgtest__lite_1_1_test_1a59a9a7f0ef7867af604ce5678f7a2c13" kind="variable"><name>status</name></member>
+    <member refid="structgtest__lite_1_1_test_1a1145ceb335a60a808b7b4d5d1624b2a5" kind="variable"><name>tmp</name></member>
+    <member refid="structgtest__lite_1_1_test_1a8d495a42580e3ae337f9c4982136b700" kind="variable"><name>name</name></member>
+    <member refid="structgtest__lite_1_1_test_1af4784302d78bb004bcb20b7f75ec06c3" kind="variable"><name>null</name></member>
+    <member refid="structgtest__lite_1_1_test_1a532aa4c5e33e41ce8139b9c9098aa6f2" kind="function"><name>getTest</name></member>
+    <member refid="structgtest__lite_1_1_test_1a99fb3f2338e4e0512beb6e19c5409078" kind="function"><name>Test</name></member>
+    <member refid="structgtest__lite_1_1_test_1aad083ed9e389aeac2d526460ac301c7a" kind="function"><name>Test</name></member>
+    <member refid="structgtest__lite_1_1_test_1a35faf2d45ab88d096f0eb25ee5b80b13" kind="function"><name>operator=</name></member>
+    <member refid="structgtest__lite_1_1_test_1a2227b70fcc5dfb3c326bf117dd8f7e79" kind="function"><name>begin</name></member>
+    <member refid="structgtest__lite_1_1_test_1a658c1eee35f170294c354ebf4d3fc1ba" kind="function"><name>end</name></member>
+    <member refid="structgtest__lite_1_1_test_1aadbfd0f53c56d975f793602996631195" kind="function"><name>fail</name></member>
+    <member refid="structgtest__lite_1_1_test_1a0bca03315e5963f7fdfffd92d2daed6a" kind="function"><name>expect</name></member>
+    <member refid="structgtest__lite_1_1_test_1a5a879233c2aa110626668c06140f6e71" kind="function"><name>~Test</name></member>
+  </compound>
+  <compound refid="namespacegtest__lite" kind="namespace"><name>gtest_lite</name>
+    <member refid="namespacegtest__lite_1a819c9a4e5bf13b0f5d81734978336ca0" kind="variable"><name>test</name></member>
+    <member refid="namespacegtest__lite_1a73d2ede1d983327aea4fdd5b1d2709ce" kind="function"><name>EXPECT_</name></member>
+    <member refid="namespacegtest__lite_1a835d542f226b31cf5cd28033303aa7d7" kind="function"><name>EXPECT_</name></member>
+    <member refid="namespacegtest__lite_1aea477921e4c26d2a2806bc3011066270" kind="function"><name>EXPECTSTR</name></member>
+    <member refid="namespacegtest__lite_1a884f0c7c25d80d78a73c759a8fc43a3d" kind="function"><name>eq</name></member>
+    <member refid="namespacegtest__lite_1a34055f353dabbe4ed9063f1d36af6022" kind="function"><name>eqstr</name></member>
+    <member refid="namespacegtest__lite_1a2f36af995c570e62f68c148f7393eb54" kind="function"><name>ne</name></member>
+    <member refid="namespacegtest__lite_1a0a34b1bb0d55bc0c6a3e878ec2bcd49f" kind="function"><name>nestr</name></member>
+    <member refid="namespacegtest__lite_1a5cd2ce368021471b16b4814b179c9c34" kind="function"><name>le</name></member>
+    <member refid="namespacegtest__lite_1afb471377c0d2d30aeeaf8912db72f0ff" kind="function"><name>lt</name></member>
+    <member refid="namespacegtest__lite_1a77c1a7cf1d34c46c1d97ed39b9f06050" kind="function"><name>ge</name></member>
+    <member refid="namespacegtest__lite_1aa0100ec9e095a9403a7b70ad4a162fdd" kind="function"><name>gt</name></member>
+    <member refid="namespacegtest__lite_1affbf9748c4e4dec6db137f7c147fee61" kind="function"><name>almostEQ</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="gtest__lite_8h" kind="file"><name>gtest_lite.h</name>
+    <member refid="gtest__lite_8h_1a379a7b57e74521cb2c8e99f0e2779a72" kind="define"><name>TEST</name></member>
+    <member refid="gtest__lite_8h_1a29fd18bed01c4d836c7ebfe73a125c3f" kind="define"><name>END</name></member>
+    <member refid="gtest__lite_8h_1acc9065c889d0797062317b30fd8767d4" kind="define"><name>ENDM</name></member>
+    <member refid="gtest__lite_8h_1ad2e2f10cb2a494ff7ae23938dfdfc41a" kind="define"><name>ENDMsg</name></member>
+    <member refid="gtest__lite_8h_1a75adcdf89f69b0b615e395daafc315af" kind="define"><name>SUCCEED</name></member>
+    <member refid="gtest__lite_8h_1a3e26a8d27caa386ed0ea7ce9d5b7c4ed" kind="define"><name>FAIL</name></member>
+    <member refid="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" kind="define"><name>EXPECT_EQ</name></member>
+    <member refid="gtest__lite_8h_1adb8a724f2c5c63ead11073c21fd51198" kind="define"><name>EXPECT_NE</name></member>
+    <member refid="gtest__lite_8h_1ac680be4a2404c20cae831740779d11cd" kind="define"><name>EXPECT_LE</name></member>
+    <member refid="gtest__lite_8h_1a46603095284e7bcd2f114cfdc7c79b4f" kind="define"><name>EXPECT_LT</name></member>
+    <member refid="gtest__lite_8h_1aad891c6b36689d35ee54de65351ab224" kind="define"><name>EXPECT_GE</name></member>
+    <member refid="gtest__lite_8h_1ac2262f96c4664cf3e170d2edaaba6c44" kind="define"><name>EXPECT_GT</name></member>
+    <member refid="gtest__lite_8h_1ab400890edc9f419e40c28a224e8ed79f" kind="define"><name>EXPECT_TRUE</name></member>
+    <member refid="gtest__lite_8h_1a58cae60fff88d713c4850b50d3e592a6" kind="define"><name>EXPECT_FALSE</name></member>
+    <member refid="gtest__lite_8h_1a5ce7d58df8cb696aa05e77c2370de7a8" kind="define"><name>EXPECT_FLOAT_EQ</name></member>
+    <member refid="gtest__lite_8h_1a6e6277442d96cd18300619c321614397" kind="define"><name>EXPECT_DOUBLE_EQ</name></member>
+    <member refid="gtest__lite_8h_1a5b4b193a92c39b99d7b9404c49feef0b" kind="define"><name>EXPECT_STREQ</name></member>
+    <member refid="gtest__lite_8h_1aa511aad7b6a6a8e8d0279f16d925b094" kind="define"><name>EXPECT_STRNE</name></member>
+    <member refid="gtest__lite_8h_1a4b4fe697f312ef7d2618905a9bc12f04" kind="define"><name>EXPECT_THROW</name></member>
+    <member refid="gtest__lite_8h_1a9be43f44d148e8a8d6a89c864bf4e461" kind="define"><name>EXPECT_ANY_THROW</name></member>
+    <member refid="gtest__lite_8h_1a2743a1438137ad857aa3f9fec3ff67ec" kind="define"><name>EXPECT_NO_THROW</name></member>
+    <member refid="gtest__lite_8h_1a895c34d9b192cdc2ba46d2680623485d" kind="define"><name>ASSERT_NO_THROW</name></member>
+    <member refid="gtest__lite_8h_1a5129ea3a961fbd7fe71e6621452047bf" kind="define"><name>EXPECT_THROW_THROW</name></member>
+    <member refid="gtest__lite_8h_1a34bf9a881eb6b2800b0e6cb0abdbd319" kind="define"><name>CREATE_Has_</name></member>
+    <member refid="gtest__lite_8h_1a59f6c1f1654aa9d5adf5c143efd1a454" kind="define"><name>EXPECTTHROW</name></member>
+    <member refid="gtest__lite_8h_1a428e5e5ea2b7f67a0b68fbf57ea0faa7" kind="define"><name>GTINIT</name></member>
+    <member refid="gtest__lite_8h_1a20ba54bca307f985eb448f71e6896dd5" kind="define"><name>GTEND</name></member>
+    <member refid="gtest__lite_8h_1aa57e54fc7cbf742de576263d90ee1660" kind="function"><name>hasMember</name></member>
+  </compound>
+  <compound refid="main_8h" kind="file"><name>main.h</name>
+  </compound>
+  <compound refid="memtrace_8cpp" kind="file"><name>memtrace.cpp</name>
+  </compound>
+  <compound refid="memtrace_8h" kind="file"><name>memtrace.h</name>
+  </compound>
+  <compound refid="_parts_8cpp" kind="file"><name>Parts.cpp</name>
+  </compound>
+  <compound refid="_parts_8h" kind="file"><name>Parts.h</name>
+  </compound>
+  <compound refid="_prog2_h_f_8cpp" kind="file"><name>Prog2HF.cpp</name>
+    <member refid="_prog2_h_f_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="schtring_8cpp" kind="file"><name>schtring.cpp</name>
+    <member refid="schtring_8cpp_1aef14876e55f43fb4ffa7b91664467ecb" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="schtring_8cpp_1aea8ed420ad5e70828bc42b0fb9b49366" kind="function"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="schtring_8h" kind="file"><name>schtring.h</name>
+    <member refid="schtring_8h_1aef14876e55f43fb4ffa7b91664467ecb" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="schtring_8h_1aea8ed420ad5e70828bc42b0fb9b49366" kind="function"><name>operator&gt;&gt;</name></member>
+    <member refid="schtring_8h_1a8d89d501f582c3a65df894dbd030bbcf" kind="function"><name>operator+</name></member>
+  </compound>
+  <compound refid="_s_f_m_l__test_8cpp" kind="file"><name>SFML_test.cpp</name>
+  </compound>
+  <compound refid="dir_9ff55877543f9a223593c71c8b414f4c" kind="dir"><name>Prog2HF</name>
+  </compound>
+</doxygenindex>
