@@ -36,6 +36,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Compatibility.cpp" />
+    <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="Parts.cpp" />
     <ClCompile Include="memtrace.cpp" />
     <ClCompile Include="main.cpp">

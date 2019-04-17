@@ -10,19 +10,14 @@
 #define _CRT_SECURE_NO_WARNINGS
 #endif
 
-#include "schtring.h"
-#include <iostream>
-#include <fstream>
-#include "Compatibility.h"
-#include "Parts.h"
-#include "Inventory.h"
+#include "main.h"
 
 CompatibilityList IntelCompatList;
 
 int main(int argc, char ** argv)
 {
-
 	std::cout << "hi" << std::endl;
+
 	///Default parts file name
 	char partsfilename[52] = "parts.txt";
 	///Set parts file name from command line
@@ -33,15 +28,17 @@ int main(int argc, char ** argv)
 	if (!partsFile) {
 		std::cout << "Could not open parts file: " << partsfilename;
 	}
+
+	enumPart e = eInvalid;
 	TempInput tmp;
 	Part** inventory = new Part*[1];
+
 	while (partsFile >> tmp.instruction) {
 		std::cout << tmp.instruction << std::endl;
-		if (tmp.instruction[tmp.instruction.length()-1]==':') {
-			std::cout << "---instruction found---" << std::endl;
-			if (tmp.instruction=="CPU:") {
-				std::cout << "---processor found---" << std::endl;
-				loadCPU(partsFile, inventory, tmp);
+		if (tmp.instruction[tmp.instruction.length() - 1] == ':') {
+			setEnum(tmp.instruction, e);
+			if (e != eInvalid) {
+				inventory[0] = loadPart(partsFile, tmp, e);
 				std::cout << *(inventory[0]);
 			}
 		}
