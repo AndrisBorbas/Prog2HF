@@ -72,10 +72,7 @@ public:
 	explicit GPU(String brand, String type, int price, int clk, int vram) : Part(brand, type, price), clk(clk), vram(vram) {}
 	explicit GPU(TempInput & tmp) :Part(tmp.brand, tmp.type, tmp.price), clk(tmp.clk), vram(tmp.size) {}
 
-	virtual void print(std::ostream& os) const {
-		Part::print(os);
-		os << clk << vram;
-	}
+	void print(std::ostream& os) const;
 };
 
 std::ostream& operator<<(std::ostream&, const GPU&);
@@ -88,6 +85,8 @@ public:
 	explicit MOBO(String brand, String type, int price, String socket, String chipset, String formfactor) : Part(brand, type, price),
 		socket(socket), chipset(chipset), formfactor(formfactor) {}
 	explicit MOBO(TempInput tmp) :Part(tmp.brand, tmp.type, tmp.price), socket(tmp.socket), chipset(tmp.chipset), formfactor(tmp.formfactor) {}
+
+	void print(std::ostream& os) const;
 };
 
 std::ostream& operator<<(std::ostream&, const MOBO&);
@@ -98,6 +97,8 @@ class RAM : public Part {
 public:
 	explicit RAM(String brand, String type, int price, int clk, int size) : Part(brand, type, price), clk(clk), size(size) {}
 	explicit RAM(TempInput tmp) :Part(tmp.brand, tmp.type, tmp.price), clk(tmp.clk), size(tmp.size) {}
+
+	void print(std::ostream& os) const;
 };
 
 std::ostream& operator<<(std::ostream&, const RAM&);
@@ -107,6 +108,8 @@ class Case : public Part {
 public:
 	explicit Case(String brand, String type, int price, String formfactor) : Part(brand, type, price), formfactor(formfactor) {}
 	explicit Case(TempInput tmp) :Part(tmp.brand, tmp.type, tmp.price), formfactor(tmp.formfactor) {}
+
+	void print(std::ostream& os) const;
 };
 
 std::ostream& operator<<(std::ostream&, const Case&);
@@ -116,6 +119,8 @@ class PSU : public Part {
 public:
 	explicit PSU(String brand, String type, int price, String wattage) : Part(brand, type, price), wattage(wattage) {}
 	explicit PSU(TempInput tmp) :Part(tmp.brand, tmp.type, tmp.price), wattage(tmp.wattage) {}
+
+	void print(std::ostream& os) const;
 };
 
 std::ostream& operator<<(std::ostream&, const PSU&);
@@ -128,6 +133,8 @@ protected:
 public:
 	explicit Storage(String brand, String type, int price, int size, int readspeed, int writespeed) : Part(brand, type, price),
 		size(size), readspeed(readspeed), writespeed(writespeed) {}
+
+	virtual void print(std::ostream& os) const;
 };
 
 class SSD : public Storage {
@@ -137,6 +144,8 @@ public:
 	explicit SSD(String brand, String type, int price, int size, int readspeed, int writespeed, String formfactor, String flashtype) :
 		Storage(brand, type, price, size, readspeed, writespeed), formfactor(formfactor), flashtype(flashtype) {}
 	explicit SSD(TempInput tmp) :Storage(tmp.brand, tmp.type, tmp.price, tmp.size, tmp.readspeed, tmp.writespeed), formfactor(tmp.formfactor), flashtype(tmp.flashtype) {}
+
+	void print(std::ostream& os) const;
 };
 
 std::ostream& operator<<(std::ostream&, const SSD&);
@@ -147,6 +156,8 @@ public:
 	explicit HDD(String brand, String type, int price, int size, int readspeed, int writespeed, int rpm) :
 		Storage(brand, type, price, size, readspeed, writespeed), rpm(rpm) {}
 	explicit HDD(TempInput tmp) :Storage(tmp.brand, tmp.type, tmp.price, tmp.size, tmp.readspeed, tmp.writespeed), rpm(tmp.rpm) {}
+
+	void print(std::ostream& os) const;
 };
 
 std::ostream& operator<<(std::ostream&, const HDD&);

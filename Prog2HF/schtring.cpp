@@ -29,7 +29,7 @@ String::String(char ch) {
 
 
 
-String::String(const char *p) {
+String::String(const char* p) {
 
 	len = strlen(p);
 
@@ -90,12 +90,12 @@ bool String::operator==(String& rhs_s) {
 	return (!strcmp(this->pData, rhs_s.pData));
 }
 
-bool String::operator==(const char * rhs_s)
+bool String::operator==(const char* rhs_s)
 {
-	char * tempr = new char[strlen(rhs_s) + 1];
+	char* tempr = new char[strlen(rhs_s) + 1];
 	strcpy(tempr, rhs_s);
 	strlwr(tempr);
-	char * templ = new char[len + 1];
+	char* templ = new char[len + 1];
 	strcpy(templ, pData);
 	strlwr(templ);
 	return (!strcmp(templ, tempr));
@@ -103,17 +103,27 @@ bool String::operator==(const char * rhs_s)
 	delete[] templ;
 }
 
-bool String::operator==(const char * rhs_s) const
+bool String::operator==(const char* rhs_s) const
 {
-	char * tempr = new char[strlen(rhs_s) + 1];
+	char* tempr = new char[strlen(rhs_s) + 1];
 	strcpy(tempr, rhs_s);
 	strlwr(tempr);
-	char * templ = new char[len + 1];
+	char* templ = new char[len + 1];
 	strcpy(templ, pData);
 	strlwr(templ);
 	return (!strcmp(templ, tempr));
 	delete[] tempr;
 	delete[] templ;
+}
+
+String String::operator--(int a) {
+	char* temp = new char[len];
+	strncpy(temp, pData, len - 1);
+	temp[len - 1] = '\0';
+	delete pData;
+	pData = temp;
+	len--;
+	return *this;
 }
 
 std::ostream& operator<<(std::ostream& os, const String& s0) {

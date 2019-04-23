@@ -51,6 +51,9 @@ public:
 	bool operator==(const char *rhs_s);
 	bool operator==(const char *rhs_s) const;
 
+	/// kitörli az utolsó karaktert a stringből
+	String operator--(int a);
+
 	/// index operator
 	char& operator[](unsigned int idx);
 	/// index operator

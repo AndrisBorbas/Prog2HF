@@ -2,7 +2,7 @@
 
 
 
-Part* loadPart(std::istream & is, TempInput & tmp, enum enumPart e) {
+Part* loadPart(std::istream& is, TempInput& tmp, enum enumPart e) {
 	switch (e)
 	{
 	case eCPU:
@@ -33,7 +33,7 @@ Part* loadPart(std::istream & is, TempInput & tmp, enum enumPart e) {
 	throw std::logic_error("how did you get here?");
 }
 
-void setEnum(String inst, enum enumPart & e)
+void setEnum(String inst, enum enumPart& e)
 {
 	if (inst == "CPU:") {
 		e = eCPU;
@@ -71,17 +71,19 @@ void setEnum(String inst, enum enumPart & e)
 	return;
 }
 
-void LoadParams(std::istream & is, TempInput & tmp, int const params) {
+void LoadParams(std::istream& is, TempInput& tmp, int const params) {
 	int i = 0;
 	while (i < params) {
 		is >> tmp.instruction;
 		if (tmp.instruction == "Brand:") {
 			is >> tmp.brand;
+			if (tmp.brand[tmp.brand.length() - 1] == ',') tmp.brand--;
 			i++;
 			continue;
 		}
 		if (tmp.instruction == "Type:") {
 			is >> tmp.type;
+			if (tmp.type[tmp.type.length() - 1] == ',') tmp.type--;
 			i++;
 			continue;
 		}
@@ -90,7 +92,7 @@ void LoadParams(std::istream & is, TempInput & tmp, int const params) {
 			i++;
 			continue;
 		}
-		if (tmp.instruction == "ClockSpeed:" || tmp.instruction == "Speed:" || tmp.instruction == "Clock:" || tmp.instruction == "CLK:" || tmp.instruction == "BaseClock:") {
+		if (tmp.instruction == "ClockSpeed:" || tmp.instruction == "Clock:" || tmp.instruction == "CLK:" || tmp.instruction == "BaseClock:") {
 			is >> tmp.clk;
 			i++;
 			continue;
@@ -102,6 +104,7 @@ void LoadParams(std::istream & is, TempInput & tmp, int const params) {
 		}
 		if (tmp.instruction == "Socket:") {
 			is >> tmp.socket;
+			if (tmp.socket[tmp.socket.length() - 1] == ',') tmp.socket--;
 			i++;
 			continue;
 		}
@@ -127,11 +130,39 @@ void LoadParams(std::istream & is, TempInput & tmp, int const params) {
 		}
 		if (tmp.instruction == "Chipset:") {
 			is >> tmp.chipset;
+			if (tmp.chipset[tmp.chipset.length() - 1] == ',') tmp.chipset--;
 			i++;
 			continue;
 		}
 		if (tmp.instruction == "FormFactor:") {
 			is >> tmp.formfactor;
+			if (tmp.formfactor[tmp.formfactor.length() - 1] == ',') tmp.formfactor--;
+			i++;
+			continue;
+		}
+		if (tmp.instruction == "Wattage:") {
+			is >> tmp.wattage;
+			i++;
+			continue;
+		}
+		if (tmp.instruction == "ReadSpeed:" || tmp.instruction == "Speed:") {
+			is >> tmp.readspeed;
+			i++;
+			continue;
+		}
+		if (tmp.instruction == "WriteSpeed:" || tmp.instruction == "Speed:") {
+			is >> tmp.writespeed;
+			i++;
+			continue;
+		}
+		if (tmp.instruction == "RPM:") {
+			is >> tmp.rpm;
+			i++;
+			continue;
+		}
+		if (tmp.instruction == "FlashType:" || tmp.instruction == "Flash:") {
+			is >> tmp.flashtype;
+			if (tmp.flashtype[tmp.flashtype.length() - 1] == ',') tmp.flashtype--;
 			i++;
 			continue;
 		}

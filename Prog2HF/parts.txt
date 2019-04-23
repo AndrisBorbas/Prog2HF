@@ -5,10 +5,10 @@ IntelCompatibilityList: Z-97,Z-170,Z-270;
 AMDCompatibilityList: AM4;
 
 CPU:
-	Brand: Intel
-	Type: i7-4790
-	clockSpeed: 3600
-	Cores: 4
-	HyperThreading: yes
-	Socket: LGA1150
-	price: 300
+	Brand: AMD
+	Type: Ryzen7
+	clockSpeed: 4600
+	Cores: 16
+	MultiThreading: yes
+	Socket: AM4
+	price: 500

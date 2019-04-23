@@ -18,3 +18,5 @@ enum enumPart {
 	eSSD = 7,
 	eHDD = 8
 };
+
+int main(int argc, char** argv);

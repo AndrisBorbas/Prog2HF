@@ -49,7 +49,7 @@ bool compatible(T1 is, T2 with, CompatibilityList cl) {
 	case "Intel":
 	case "intel":
 		if (true) {
-			throw "erroe";
+			throw std::logic_error("incompatible");
 		}
 	}
 	*/
