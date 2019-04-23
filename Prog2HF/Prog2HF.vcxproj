@@ -35,6 +35,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="atest.cpp" />
     <ClCompile Include="Compatibility.cpp" />
     <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="Parts.cpp" />
@@ -46,6 +47,7 @@
     <ClCompile Include="schtring.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="atest.h" />
     <ClInclude Include="Compatibility.h" />
     <ClInclude Include="gtest_lite.h" />
     <ClInclude Include="Inventory.h" />

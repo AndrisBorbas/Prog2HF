@@ -1,7 +1,5 @@
 #include "Inventory.h"
 
-
-
 Part* loadPart(std::istream& is, TempInput& tmp, enum enumPart e) {
 	switch (e)
 	{

@@ -61,6 +61,9 @@ void HDD::print(std::ostream& os)const {
 	os << "RPM: " << rpm << " rpm";
 }
 
+void CPU::burn()const {
+	std::cout << "\n\n\nBurn\n\n\n";
+}
 
 std::ostream& operator<<(std::ostream& os, const Part& p) {
 	p.print(os);

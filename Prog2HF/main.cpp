@@ -25,15 +25,8 @@ int main(int argc, char** argv)
 
 	std::fstream partsFile;
 	partsFile.open(partsfilename, std::ios::in | std::ios::out);
-	if (!partsFile) {
-		std::cout << "Could not open parts file: " << partsfilename << "\nTrying to create it. \n\n";
-		partsFile.open(partsfilename, std::ios::out | std::ios::trunc | std::ios::in);
-		if (!partsFile) {
-			std::cout << "Could not create parts file: " << partsfilename;
-			partsFile.open(partsfilename, std::ios::out | std::ios::trunc | std::ios::in);
-			throw std::logic_error("Couldn't read/create parts file");
-		}
-	}
+
+	test1(partsFile, partsfilename);
 
 	enumPart e = eInvalid;
 	TempInput tmp;
@@ -49,6 +42,17 @@ int main(int argc, char** argv)
 			}
 		}
 	}
+	dynamic_cast<CPU*>(inventory[0])->burn();
+
+	{
+		Inventory inv;
+		CPU* i34330 = new CPU("intel", "i3-4330", 800, 200, 2, "LGA1152", true);
+		inv.push_back(i34330);
+		i34330 = dynamic_cast<CPU*>(inv[0]);
+		std::cout << *(inv[0]);
+		std::cout << *(i34330);
+	}
+
 	/*
 	std::cout << "hi" << std::endl;
 	String a = "1";
@@ -60,25 +64,18 @@ int main(int argc, char** argv)
 	std::cout << std::boolalpha << (intellist == "10") << (intellist == "2");
 	*/
 	CPU i74790("intel", "i3-4330", 800, 200, 2, "LGA1152", true);
-	//Part part("brand", "type", 1);
 
-	//std::cout << part << std::endl << i74790;
-	/*
+
 	String asd("wasd,");
 	asd--;
-	std::cout << asd;
-	*/
-	//std::streampos pos = partsFile.tellg();
-	/*
-	partsFile.seekp(1);
-	partsFile.seekg(1);*/
+	std::cout << std::boolalpha << (asd == "wasd") << (asd == "wasd,");
+
 	partsFile.clear();
 	std::streampos pos = partsFile.tellg();
 	partsFile << std::endl << "CPU: \n";
 	partsFile << i74790 << "\n";
 
 	partsFile.flush();
-	//partsFile.clear();
 
 	partsFile.seekg(pos);
 

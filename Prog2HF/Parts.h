@@ -61,6 +61,8 @@ public:
 	explicit CPU(TempInput & tmp) :Part(tmp.brand, tmp.type, tmp.price), clk(tmp.clk), cores(tmp.cores), socket(tmp.socket), multithreading(tmp.multithreading) {}
 
 	void print(std::ostream& os) const;
+
+	void burn() const;
 };
 
 std::ostream& operator<<(std::ostream&, const CPU&);

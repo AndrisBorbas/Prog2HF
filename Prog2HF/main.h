@@ -6,6 +6,7 @@
 #include "Compatibility.h"
 #include "Parts.h"
 #include "Inventory.h"
+#include "atest.h"
 
 enum enumPart {
 	eInvalid = 0,
