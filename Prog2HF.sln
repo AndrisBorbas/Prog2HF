@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.329
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28822.285
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Prog2HF", "Prog2HF\Prog2HF.vcxproj", "{A02F83B7-37E8-46DC-82E4-E4913AF15E67}"
 EndProject
@@ -9,6 +9,8 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		DebugMEM|x64 = DebugMEM|x64
+		DebugMEM|x86 = DebugMEM|x86
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 		SFML_Debug|x64 = SFML_Debug|x64
@@ -21,6 +23,10 @@ Global
 		{A02F83B7-37E8-46DC-82E4-E4913AF15E67}.Debug|x64.Build.0 = Debug|x64
 		{A02F83B7-37E8-46DC-82E4-E4913AF15E67}.Debug|x86.ActiveCfg = Debug|Win32
 		{A02F83B7-37E8-46DC-82E4-E4913AF15E67}.Debug|x86.Build.0 = Debug|Win32
+		{A02F83B7-37E8-46DC-82E4-E4913AF15E67}.DebugMEM|x64.ActiveCfg = DebugMEM|x64
+		{A02F83B7-37E8-46DC-82E4-E4913AF15E67}.DebugMEM|x64.Build.0 = DebugMEM|x64
+		{A02F83B7-37E8-46DC-82E4-E4913AF15E67}.DebugMEM|x86.ActiveCfg = DebugMEM|Win32
+		{A02F83B7-37E8-46DC-82E4-E4913AF15E67}.DebugMEM|x86.Build.0 = DebugMEM|Win32
 		{A02F83B7-37E8-46DC-82E4-E4913AF15E67}.Release|x64.ActiveCfg = Release|x64
 		{A02F83B7-37E8-46DC-82E4-E4913AF15E67}.Release|x64.Build.0 = Release|x64
 		{A02F83B7-37E8-46DC-82E4-E4913AF15E67}.Release|x86.ActiveCfg = Release|Win32

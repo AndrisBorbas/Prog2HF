@@ -11,3 +11,39 @@ void test1(std::fstream& partsFile, char partsfilename[52]) {
 		}
 	}
 }
+
+bool test2(Inventory inventory) {
+	if (nullptr == (dynamic_cast<CPU*>(inventory[0]))) {
+		std::cerr << "The first item wasnt a CPU";
+		return false;
+	}
+	if (nullptr == (dynamic_cast<GPU*>(inventory[1]))) {
+		std::cerr << "The first item wasnt a CPU";
+		return false;
+	}
+	if (!(nullptr == (dynamic_cast<GPU*>(inventory[0])))) {
+		std::cerr << "The first item was a GPU instead of a CPU";
+		return false;
+	}
+	if (!(nullptr == (dynamic_cast<CPU*>(inventory[1])))) {
+		std::cerr << "The first item was a CPU instead of a GPU";
+		return false;
+	}
+	return true;
+}
+
+bool test3(String test1, String test2) {
+	bool temp = (test1 == test2);
+	if (!temp) {
+		std::cerr << "Result does not equal the expected result";
+	}
+	return temp;
+}
+
+bool test4(String asd, const char* test) {
+	bool temp = (asd == test);
+	if (!temp) {
+		std::cerr << "Result does not equal the expected result";
+	}
+	return temp;
+}

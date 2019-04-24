@@ -1,10 +1,13 @@
 #pragma once
 
 #include <iostream>             
-#include <cstring>            
+#include <cstring>
+#include <ctype.h>
+
+char* stolower(char* s);
 
 class String {
-	char *pData;         /// pointer az adatra
+	char* pData;         /// pointer az adatra
 	size_t len;    /// hossz lezáró nulla nélkül
 public:
 	/// Visszaadja a string hosszát
@@ -19,7 +22,7 @@ public:
 	String(char ch);
 
 	/// Konstruktor: egy karakter tömbre
-	String(const char *p);
+	String(const char* p);
 
 	/// Konstruktor: egy másik Stringre
 	String(const String& s1);
@@ -48,8 +51,8 @@ public:
 	/// hasonlító operator stringgel
 	bool operator==(String& rhs_s);
 	/// hasonlító operator char tömbbel
-	bool operator==(const char *rhs_s);
-	bool operator==(const char *rhs_s) const;
+	bool operator==(const char* rhs_s);
+	bool operator==(const char* rhs_s) const;
 
 	/// kitörli az utolsó karaktert a stringből
 	String operator--(int a);

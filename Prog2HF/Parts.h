@@ -1,5 +1,8 @@
 ﻿#pragma once
 
+#ifdef MEMTRACE
+#include "memtrace.h"
+#endif
 #include "schtring.h"
 #include "Compatibility.h"
 #include <cctype>
@@ -51,9 +54,9 @@ public:
 std::ostream& operator<<(std::ostream&, const Part&);
 
 class CPU : public Part {
-	String socket;			///Foglalat
 	int clk;				///Órajel
 	int cores;				///Magok száma
+	String socket;			///Foglalat
 	bool multithreading;	///Multithreading support
 public:
 	explicit CPU(String brand, String type, int price, int clk, int cores, String socket, bool multithreading) : Part(brand, type, price),

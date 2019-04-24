@@ -27,8 +27,11 @@ Part* loadPart(std::istream& is, TempInput& tmp, enum enumPart e) {
 	case eHDD:
 		LoadParams(is, tmp, 7);
 		return (new HDD(tmp));
+	case eInvalid:
+		throw std::logic_error("how did you get here?");
 	}
 	throw std::logic_error("how did you get here?");
+	return(new Part);
 }
 
 void setEnum(String inst, enum enumPart& e)

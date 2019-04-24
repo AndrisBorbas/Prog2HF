@@ -15,3 +15,81 @@ CPU:
 
 CPU: 
 Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+
+CPU: 
+Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes

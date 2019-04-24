@@ -16,6 +16,12 @@
 using std::cin;
 using std::ios_base;
 
+char* stolower(char* s) {
+	char* p = s;
+	while (*p = tolower(*p)) p++;
+	return s;
+}
+
 ///Konstruktor: egy char karakterre
 String::String(char ch) {
 
@@ -87,40 +93,51 @@ String String::operator+(const String& rhs_s) const {
 }
 
 bool String::operator==(String& rhs_s) {
-	return (!strcmp(this->pData, rhs_s.pData));
+	char* tempr = new char[rhs_s.length() + 1];
+	strcpy(tempr, rhs_s.c_str());
+	stolower(tempr);
+	char* templ = new char[len + 1];
+	strcpy(templ, pData);
+	stolower(templ);
+	bool temp = strcmp(templ, tempr);
+	delete[] tempr;
+	delete[] templ;
+	return (!temp);
 }
 
 bool String::operator==(const char* rhs_s)
 {
 	char* tempr = new char[strlen(rhs_s) + 1];
 	strcpy(tempr, rhs_s);
-	strlwr(tempr);
+	stolower(tempr);
 	char* templ = new char[len + 1];
 	strcpy(templ, pData);
-	strlwr(templ);
-	return (!strcmp(templ, tempr));
+	stolower(templ);
+	bool temp = strcmp(templ, tempr);
 	delete[] tempr;
 	delete[] templ;
+	return (!temp);
 }
 
 bool String::operator==(const char* rhs_s) const
 {
 	char* tempr = new char[strlen(rhs_s) + 1];
 	strcpy(tempr, rhs_s);
-	strlwr(tempr);
+	stolower(tempr);
 	char* templ = new char[len + 1];
 	strcpy(templ, pData);
-	strlwr(templ);
-	return (!strcmp(templ, tempr));
+	stolower(templ);
+	bool temp = strcmp(templ, tempr);
 	delete[] tempr;
 	delete[] templ;
+	return (!temp);
 }
 
 String String::operator--(int a) {
 	char* temp = new char[len];
 	strncpy(temp, pData, len - 1);
 	temp[len - 1] = '\0';
-	delete pData;
+	delete[] pData;
 	pData = temp;
 	len--;
 	return *this;

@@ -39,12 +39,12 @@
     <ClCompile Include="atest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Builds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="gtest_lite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="memtrace.h">
@@ -63,6 +63,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="atest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Builds.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

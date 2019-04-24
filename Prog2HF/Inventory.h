@@ -1,17 +1,36 @@
 #pragma once
 
-#include "main.h"
+#include "Parts.h"
+
+enum enumPart {
+	eInvalid = 0,
+	eCPU = 1,
+	eGPU = 2,
+	eMOBO = 3,
+	eRAM = 4,
+	eCase = 5,
+	ePSU = 6,
+	eSSD = 7,
+	eHDD = 8
+};
 
 class Inventory {
 	Part** stock;
 	size_t capacity;
-	int size;
+	unsigned int size;
 public:
 	Inventory(size_t capacity = 1) :capacity(capacity), size(0) {
 		stock = new Part * [capacity];
 	}
 	~Inventory() {
+		for (size_t i = 0; i < size; i++) {
+			delete stock[i];
+		}
 		delete[] stock;
+	}
+
+	int get_size() {
+		return size;
 	}
 
 	template<typename T>
@@ -28,6 +47,7 @@ public:
 		stock[size] = part;
 		size++;
 	}
+
 	const Part* operator[](int idx) const {
 		return stock[idx];
 	}
