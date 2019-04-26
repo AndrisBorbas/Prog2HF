@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="atest_8h" kind="file">
+    <compoundname>atest.h</compoundname>
+    <includes refid="main_8h" local="yes">main.h</includes>
+    <includedby refid="atest_8cpp" local="yes">C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/atest.cpp</includedby>
+    <includedby refid="main_8h" local="yes">C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h</includedby>
+    <incdepgraph>
+      <node id="15">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/atest.h</label>
+        <link refid="atest.h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Compatibility.h</label>
+        <link refid="_compatibility_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>schtring.h</label>
+        <link refid="schtring_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>fstream</label>
+      </node>
+      <node id="26">
+        <label>Inventory.h</label>
+        <link refid="_inventory_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>sstream</label>
+      </node>
+      <node id="25">
+        <label>cctype</label>
+      </node>
+      <node id="18">
+        <label>iostream</label>
+      </node>
+      <node id="20">
+        <label>ctype.h</label>
+      </node>
+      <node id="23">
+        <label>Parts.h</label>
+        <link refid="_parts_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>Builds.h</label>
+        <link refid="_builds_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="28">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/atest.h</label>
+        <link refid="atest.h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/atest.cpp</label>
+        <link refid="atest_8cpp"/>
+      </node>
+      <node id="31">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="atest_8h_1a4d0a2ed3083cba8b7ff2167d580bd759" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test1</definition>
+        <argsstring>(std::fstream &amp;partsFile, char partsfilename[52])</argsstring>
+        <name>test1</name>
+        <param>
+          <type>std::fstream &amp;</type>
+          <declname>partsFile</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>partsfilename</declname>
+          <array>[52]</array>
+        </param>
+        <briefdescription>
+<para>Test the if the parts file could be opened. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/atest.h" line="6" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/atest.cpp" bodystart="3" bodyend="16"/>
+        <referencedby refid="main_8h_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="7" endline="114">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="atest_8h_1a4e5e4ea94633fee304b7f4490e655591" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool test2</definition>
+        <argsstring>(Inventory &amp;inventory)</argsstring>
+        <name>test2</name>
+        <param>
+          <type><ref refid="class_inventory" kindref="compound">Inventory</ref> &amp;</type>
+          <declname>inventory</declname>
+        </param>
+        <briefdescription>
+<para>Test whether the heterogenous collection contains the derived classes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/atest.h" line="8" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/atest.cpp" bodystart="18" bodyend="39"/>
+        <referencedby refid="main_8h_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="7" endline="114">main</referencedby>
+        <referencedby refid="atest_8h_1a6e6df2af48d16780853d6eddcb8c8bc4" compoundref="atest_8cpp" startline="41" endline="50">test3</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="atest_8h_1a6e6df2af48d16780853d6eddcb8c8bc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool test3</definition>
+        <argsstring>(String test1, String test2)</argsstring>
+        <name>test3</name>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>test1</declname>
+        </param>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>test2</declname>
+        </param>
+        <briefdescription>
+<para>Test the non case sensitive <ref refid="class_string" kindref="compound">String</ref> compare. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/atest.h" line="10" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/atest.cpp" bodystart="41" bodyend="50"/>
+        <references refid="atest_8cpp_1a4e5e4ea94633fee304b7f4490e655591" compoundref="atest_8cpp" startline="18" endline="39">test2</references>
+        <referencedby refid="main_8h_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="7" endline="114">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="atest_8h_1ab545ece7a108a6470a3dc2161ba0008b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool test4</definition>
+        <argsstring>(String asd, const char *test)</argsstring>
+        <name>test4</name>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>asd</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>test</declname>
+        </param>
+        <briefdescription>
+<para>Test the string shortener. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/atest.h" line="12" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/atest.cpp" bodystart="52" bodyend="61"/>
+        <referencedby refid="main_8h_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="7" endline="114">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="main_8h" kindref="compound">main.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="atest_8h_1a4d0a2ed3083cba8b7ff2167d580bd759" kindref="member">test1</ref>(std::fstream&amp;<sp/>partsFile,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>partsfilename[52]);</highlight></codeline>
+<codeline lineno="8"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="atest_8h_1a4e5e4ea94633fee304b7f4490e655591" kindref="member">test2</ref>(<ref refid="class_inventory" kindref="compound">Inventory</ref><sp/>&amp;<sp/>inventory);</highlight></codeline>
+<codeline lineno="10"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="atest_8h_1a6e6df2af48d16780853d6eddcb8c8bc4" kindref="member">test3</ref>(<ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="atest_8h_1a4d0a2ed3083cba8b7ff2167d580bd759" kindref="member">test1</ref>,<sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="atest_8h_1a4e5e4ea94633fee304b7f4490e655591" kindref="member">test2</ref>);</highlight></codeline>
+<codeline lineno="12"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="atest_8h_1ab545ece7a108a6470a3dc2161ba0008b" kindref="member">test4</ref>(<ref refid="class_string" kindref="compound">String</ref><sp/>asd,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>test);</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/atest.h"/>
+  </compounddef>
+</doxygen>

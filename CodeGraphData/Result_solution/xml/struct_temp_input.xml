@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_temp_input" kind="struct" prot="public">
+    <compoundname>TempInput</compoundname>
+    <includes refid="_parts_8h" local="no">Parts.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_temp_input_1a693f4a5b4215b51144174287aecab527" prot="public" static="no" mutable="no">
+        <type><ref refid="class_string" kindref="compound">String</ref></type>
+        <definition>String TempInput::instruction</definition>
+        <argsstring></argsstring>
+        <name>instruction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="11" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="_inventory_8h_1a027b287b99619c750f30b4765ec929e5" compoundref="_inventory_8cpp" startline="75" endline="172">LoadParams</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_temp_input_1a623b1fe5692319aad5c58cbc42bedf9c" prot="public" static="no" mutable="no">
+        <type><ref refid="class_string" kindref="compound">String</ref></type>
+        <definition>String TempInput::clname</definition>
+        <argsstring></argsstring>
+        <name>clname</name>
+        <briefdescription>
+<para>Mihez tartozik a változó </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="12" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_temp_input_1ae61ec1c3c483e583e4975e5c728e4886" prot="public" static="no" mutable="no">
+        <type><ref refid="class_string" kindref="compound">String</ref></type>
+        <definition>String TempInput::brand</definition>
+        <argsstring></argsstring>
+        <name>brand</name>
+        <briefdescription>
+<para>Kompatibilitás lista neve. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="13" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="_inventory_8h_1a027b287b99619c750f30b4765ec929e5" compoundref="_inventory_8cpp" startline="75" endline="172">LoadParams</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_temp_input_1a1a73f4b9c84caa8c463a4bad03cf433d" prot="public" static="no" mutable="no">
+        <type><ref refid="class_string" kindref="compound">String</ref></type>
+        <definition>String TempInput::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Gyártó </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="14" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="_inventory_8h_1a027b287b99619c750f30b4765ec929e5" compoundref="_inventory_8cpp" startline="75" endline="172">LoadParams</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_temp_input_1a6d049ee814f00b43e1d951317261e357" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TempInput::price</definition>
+        <argsstring></argsstring>
+        <name>price</name>
+        <briefdescription>
+<para>Típus. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="15" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="_inventory_8h_1a027b287b99619c750f30b4765ec929e5" compoundref="_inventory_8cpp" startline="75" endline="172">LoadParams</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_temp_input_1a5142af446776f87e454134511f681887" prot="public" static="no" mutable="no">
+        <type><ref refid="class_string" kindref="compound">String</ref></type>
+        <definition>String TempInput::socket</definition>
+        <argsstring></argsstring>
+        <name>socket</name>
+        <briefdescription>
+<para>Ár. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="16" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="_inventory_8h_1a027b287b99619c750f30b4765ec929e5" compoundref="_inventory_8cpp" startline="75" endline="172">LoadParams</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_temp_input_1aa76fe14a614fef6e9239ce2283d6b102" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TempInput::clk</definition>
+        <argsstring></argsstring>
+        <name>clk</name>
+        <briefdescription>
+<para>Foglalat. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="17" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="_inventory_8h_1a027b287b99619c750f30b4765ec929e5" compoundref="_inventory_8cpp" startline="75" endline="172">LoadParams</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_temp_input_1a9b99532e6c984fb19c34ed943a6d5750" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TempInput::cores</definition>
+        <argsstring></argsstring>
+        <name>cores</name>
+        <briefdescription>
+<para>Órajel. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="18" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="_inventory_8h_1a027b287b99619c750f30b4765ec929e5" compoundref="_inventory_8cpp" startline="75" endline="172">LoadParams</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_temp_input_1ad8957d3af0ed714844abf3f37cbfc719" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TempInput::multithreading</definition>
+        <argsstring></argsstring>
+        <name>multithreading</name>
+        <briefdescription>
+<para>Magok száma. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="19" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="_inventory_8h_1a027b287b99619c750f30b4765ec929e5" compoundref="_inventory_8cpp" startline="75" endline="172">LoadParams</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_temp_input_1a29da394f96dae5eaa49e145207362a9c" prot="public" static="no" mutable="no">
+        <type><ref refid="class_string" kindref="compound">String</ref></type>
+        <definition>String TempInput::chipset</definition>
+        <argsstring></argsstring>
+        <name>chipset</name>
+        <briefdescription>
+<para>Multithreading support. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="20" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="_inventory_8h_1a027b287b99619c750f30b4765ec929e5" compoundref="_inventory_8cpp" startline="75" endline="172">LoadParams</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_temp_input_1a402c6984d9e94d4c76e460d0368613f3" prot="public" static="no" mutable="no">
+        <type><ref refid="class_string" kindref="compound">String</ref></type>
+        <definition>String TempInput::formfactor</definition>
+        <argsstring></argsstring>
+        <name>formfactor</name>
+        <briefdescription>
+<para>Chipset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="21" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="_inventory_8h_1a027b287b99619c750f30b4765ec929e5" compoundref="_inventory_8cpp" startline="75" endline="172">LoadParams</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_temp_input_1adfc0eb32fac7de584c3872875b452550" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TempInput::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Méret szabvány. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="22" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="_inventory_8h_1a027b287b99619c750f30b4765ec929e5" compoundref="_inventory_8cpp" startline="75" endline="172">LoadParams</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_temp_input_1afbaccb88c8eee8a1f4d5d2b6ec692c94" prot="public" static="no" mutable="no">
+        <type><ref refid="class_string" kindref="compound">String</ref></type>
+        <definition>String TempInput::wattage</definition>
+        <argsstring></argsstring>
+        <name>wattage</name>
+        <briefdescription>
+<para>Memória méret. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="23" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="_inventory_8h_1a027b287b99619c750f30b4765ec929e5" compoundref="_inventory_8cpp" startline="75" endline="172">LoadParams</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_temp_input_1a75c5e55813802a9d6af6818de81e6001" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TempInput::readspeed</definition>
+        <argsstring></argsstring>
+        <name>readspeed</name>
+        <briefdescription>
+<para>Teljesítmény. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="24" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="_inventory_8h_1a027b287b99619c750f30b4765ec929e5" compoundref="_inventory_8cpp" startline="75" endline="172">LoadParams</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_temp_input_1a3d5511c959e7c3531ce3bea3a6248d62" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TempInput::writespeed</definition>
+        <argsstring></argsstring>
+        <name>writespeed</name>
+        <briefdescription>
+<para>Olvasási sebesség. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="25" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="_inventory_8h_1a027b287b99619c750f30b4765ec929e5" compoundref="_inventory_8cpp" startline="75" endline="172">LoadParams</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_temp_input_1aca0d9830369aab845fc274c6b54ffe33" prot="public" static="no" mutable="no">
+        <type><ref refid="class_string" kindref="compound">String</ref></type>
+        <definition>String TempInput::flashtype</definition>
+        <argsstring></argsstring>
+        <name>flashtype</name>
+        <briefdescription>
+<para>Írási sebesség. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="26" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="_inventory_8h_1a027b287b99619c750f30b4765ec929e5" compoundref="_inventory_8cpp" startline="75" endline="172">LoadParams</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_temp_input_1a661104db14326156bbb2ffa5a7c6f468" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TempInput::rpm</definition>
+        <argsstring></argsstring>
+        <name>rpm</name>
+        <briefdescription>
+<para>Flash csip típusa. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="27" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="_inventory_8h_1a027b287b99619c750f30b4765ec929e5" compoundref="_inventory_8cpp" startline="75" endline="172">LoadParams</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="83">
+        <label>String</label>
+        <link refid="class_string"/>
+      </node>
+      <node id="82">
+        <label>TempInput</label>
+        <link refid="struct_temp_input"/>
+        <childnode refid="83" relation="usage">
+          <edgelabel>formfactor</edgelabel>
+          <edgelabel>socket</edgelabel>
+          <edgelabel>brand</edgelabel>
+          <edgelabel>clname</edgelabel>
+          <edgelabel>chipset</edgelabel>
+          <edgelabel>wattage</edgelabel>
+          <edgelabel>type</edgelabel>
+          <edgelabel>flashtype</edgelabel>
+          <edgelabel>instruction</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="10" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="10" bodyend="28"/>
+    <listofallmembers>
+      <member refid="struct_temp_input_1ae61ec1c3c483e583e4975e5c728e4886" prot="public" virt="non-virtual"><scope>TempInput</scope><name>brand</name></member>
+      <member refid="struct_temp_input_1a29da394f96dae5eaa49e145207362a9c" prot="public" virt="non-virtual"><scope>TempInput</scope><name>chipset</name></member>
+      <member refid="struct_temp_input_1aa76fe14a614fef6e9239ce2283d6b102" prot="public" virt="non-virtual"><scope>TempInput</scope><name>clk</name></member>
+      <member refid="struct_temp_input_1a623b1fe5692319aad5c58cbc42bedf9c" prot="public" virt="non-virtual"><scope>TempInput</scope><name>clname</name></member>
+      <member refid="struct_temp_input_1a9b99532e6c984fb19c34ed943a6d5750" prot="public" virt="non-virtual"><scope>TempInput</scope><name>cores</name></member>
+      <member refid="struct_temp_input_1aca0d9830369aab845fc274c6b54ffe33" prot="public" virt="non-virtual"><scope>TempInput</scope><name>flashtype</name></member>
+      <member refid="struct_temp_input_1a402c6984d9e94d4c76e460d0368613f3" prot="public" virt="non-virtual"><scope>TempInput</scope><name>formfactor</name></member>
+      <member refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" prot="public" virt="non-virtual"><scope>TempInput</scope><name>instruction</name></member>
+      <member refid="struct_temp_input_1ad8957d3af0ed714844abf3f37cbfc719" prot="public" virt="non-virtual"><scope>TempInput</scope><name>multithreading</name></member>
+      <member refid="struct_temp_input_1a6d049ee814f00b43e1d951317261e357" prot="public" virt="non-virtual"><scope>TempInput</scope><name>price</name></member>
+      <member refid="struct_temp_input_1a75c5e55813802a9d6af6818de81e6001" prot="public" virt="non-virtual"><scope>TempInput</scope><name>readspeed</name></member>
+      <member refid="struct_temp_input_1a661104db14326156bbb2ffa5a7c6f468" prot="public" virt="non-virtual"><scope>TempInput</scope><name>rpm</name></member>
+      <member refid="struct_temp_input_1adfc0eb32fac7de584c3872875b452550" prot="public" virt="non-virtual"><scope>TempInput</scope><name>size</name></member>
+      <member refid="struct_temp_input_1a5142af446776f87e454134511f681887" prot="public" virt="non-virtual"><scope>TempInput</scope><name>socket</name></member>
+      <member refid="struct_temp_input_1a1a73f4b9c84caa8c463a4bad03cf433d" prot="public" virt="non-virtual"><scope>TempInput</scope><name>type</name></member>
+      <member refid="struct_temp_input_1afbaccb88c8eee8a1f4d5d2b6ec692c94" prot="public" virt="non-virtual"><scope>TempInput</scope><name>wattage</name></member>
+      <member refid="struct_temp_input_1a3d5511c959e7c3531ce3bea3a6248d62" prot="public" virt="non-virtual"><scope>TempInput</scope><name>writespeed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

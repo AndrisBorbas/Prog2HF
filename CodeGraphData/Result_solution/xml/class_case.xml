@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_case" kind="class" prot="public">
+    <compoundname>Case</compoundname>
+    <basecompoundref refid="class_part" prot="public" virt="non-virtual">Part</basecompoundref>
+    <includes refid="_parts_8h" local="no">Parts.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_case_1a4749cb5d50a2889cad99fb893cc43b37" prot="private" static="no" mutable="no">
+        <type><ref refid="class_string" kindref="compound">String</ref></type>
+        <definition>String Case::formfactor</definition>
+        <argsstring></argsstring>
+        <name>formfactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="112" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="112" bodyend="-1"/>
+        <referencedby refid="class_case_1a2786162425c1f7c92b37011b091e2d46" compoundref="_parts_8cpp" startline="39" endline="42">print</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_case_1a0d953adffc664636549235d729f13260" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Case::Case</definition>
+        <argsstring>(String brand, String type, int price, String formfactor)</argsstring>
+        <name>Case</name>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>brand</declname>
+        </param>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>formfactor</declname>
+        </param>
+        <briefdescription>
+<para>Méret szabvány. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="114" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_case_1a300362691710d1f9312f9d31d56ea53e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Case::Case</definition>
+        <argsstring>(TempInput tmp)</argsstring>
+        <name>Case</name>
+        <param>
+          <type><ref refid="struct_temp_input" kindref="compound">TempInput</ref></type>
+          <declname>tmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="115" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="115" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_case_1a2786162425c1f7c92b37011b091e2d46" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Case::print</definition>
+        <argsstring>(std::ostream &amp;os) const </argsstring>
+        <name>print</name>
+        <reimplements refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd">print</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="117" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="39" bodyend="42"/>
+        <references refid="class_case_1a4749cb5d50a2889cad99fb893cc43b37" compoundref="_parts_8h" startline="112">formfactor</references>
+        <references refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd" compoundref="_parts_8cpp" startline="3" endline="5">Part::print</references>
+        <referencedby refid="_parts_8h_1a095fc6bc853799360bba8d744652202a" compoundref="_parts_8cpp" startline="88" endline="91">operator&lt;&lt;</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>Part</label>
+        <link refid="class_part"/>
+      </node>
+      <node id="4">
+        <label>Case</label>
+        <link refid="class_case"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>String</label>
+        <link refid="class_string"/>
+      </node>
+      <node id="7">
+        <label>Part</label>
+        <link refid="class_part"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>brand</edgelabel>
+          <edgelabel>type</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Case</label>
+        <link refid="class_case"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>formfactor</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="111" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="111" bodyend="118"/>
+    <listofallmembers>
+      <member refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" prot="protected" virt="non-virtual"><scope>Case</scope><name>brand</name></member>
+      <member refid="class_case_1a0d953adffc664636549235d729f13260" prot="public" virt="non-virtual"><scope>Case</scope><name>Case</name></member>
+      <member refid="class_case_1a300362691710d1f9312f9d31d56ea53e" prot="public" virt="non-virtual"><scope>Case</scope><name>Case</name></member>
+      <member refid="class_case_1a4749cb5d50a2889cad99fb893cc43b37" prot="private" virt="non-virtual"><scope>Case</scope><name>formfactor</name></member>
+      <member refid="class_part_1abdaeb1db5ba55c184f39802c163e9ebc" prot="public" virt="non-virtual"><scope>Case</scope><name>get_brand</name></member>
+      <member refid="class_part_1abb7c8371883825ad46773f219db3523e" prot="public" virt="non-virtual"><scope>Case</scope><name>get_price</name></member>
+      <member refid="class_part_1a97117fd470cd694ae0897fb2f4391786" prot="public" virt="non-virtual"><scope>Case</scope><name>get_type</name></member>
+      <member refid="class_part_1aae5224ee782134c4ecb60f23ec38698f" prot="public" virt="non-virtual"><scope>Case</scope><name>Part</name></member>
+      <member refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" prot="protected" virt="non-virtual"><scope>Case</scope><name>price</name></member>
+      <member refid="class_case_1a2786162425c1f7c92b37011b091e2d46" prot="public" virt="virtual"><scope>Case</scope><name>print</name></member>
+      <member refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" prot="protected" virt="non-virtual"><scope>Case</scope><name>type</name></member>
+      <member refid="class_part_1aaecbb747a7227f7ce3b44caeaf1801c2" prot="public" virt="virtual"><scope>Case</scope><name>~Part</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

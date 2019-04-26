@@ -2,12 +2,372 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="main_8h" kind="file">
     <compoundname>main.h</compoundname>
+    <includes refid="schtring_8h" local="yes">schtring.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">sstream</includes>
+    <includes refid="_parts_8h" local="yes">Parts.h</includes>
+    <includes refid="_inventory_8h" local="yes">Inventory.h</includes>
+    <includes refid="atest_8h" local="yes">atest.h</includes>
+    <includes refid="_builds_8h" local="yes">Builds.h</includes>
+    <includedby refid="atest_8h" local="yes">C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/atest.h</includedby>
+    <includedby refid="main_8cpp" local="yes">C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp</includedby>
+    <incdepgraph>
+      <node id="130">
+        <label>atest.h</label>
+        <link refid="atest_8h"/>
+        <childnode refid="119" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>Compatibility.h</label>
+        <link refid="_compatibility_8h"/>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h</label>
+        <link refid="main.h"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>schtring.h</label>
+        <link refid="schtring_8h"/>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>fstream</label>
+      </node>
+      <node id="129">
+        <label>Inventory.h</label>
+        <link refid="_inventory_8h"/>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>sstream</label>
+      </node>
+      <node id="128">
+        <label>cctype</label>
+      </node>
+      <node id="121">
+        <label>iostream</label>
+      </node>
+      <node id="123">
+        <label>ctype.h</label>
+      </node>
+      <node id="126">
+        <label>Parts.h</label>
+        <link refid="_parts_8h"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>Builds.h</label>
+        <link refid="_builds_8h"/>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="133">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/atest.h</label>
+        <link refid="atest_8h"/>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h</label>
+        <link refid="main.h"/>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/atest.cpp</label>
+        <link refid="atest_8cpp"/>
+      </node>
+      <node id="135">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="main_8h_1adbc27074b7dcd54cd4578936c6329d02" prot="public" static="no">
+        <name>enumMenu</name>
+        <enumvalue id="main_8h_1adbc27074b7dcd54cd4578936c6329d02a51060f19a5d0006e2cb20df8786a330b" prot="public">
+          <name>eMain</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1adbc27074b7dcd54cd4578936c6329d02a8d35c4ba2bd3370a44513dbdbdbd0ff6" prot="public">
+          <name>ePartsList</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1adbc27074b7dcd54cd4578936c6329d02a1fedbd15c99125bee9cb78cffbf7228b" prot="public">
+          <name>ePartsAdd</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1adbc27074b7dcd54cd4578936c6329d02af19f793fac63215e67f31045c7371d1c" prot="public">
+          <name>ePartsRemove</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1adbc27074b7dcd54cd4578936c6329d02a34f49f61c9b4bdb2fe1be11758138084" prot="public">
+          <name>eBuildsList</name>
+          <initializer>= 21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1adbc27074b7dcd54cd4578936c6329d02a18af4c5278fb8ad13d84f598c68e766e" prot="public">
+          <name>eBuildsAdd</name>
+          <initializer>= 22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1adbc27074b7dcd54cd4578936c6329d02af2f1713ca51324f5000bf36d36bfd684" prot="public">
+          <name>eExit</name>
+          <initializer>= 99</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h" line="28" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h" bodystart="28" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8h_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Default parts file name</para><para>Set parts file name from command line </para>        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h" line="38" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp" bodystart="7" bodyend="114"/>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a18af4c5278fb8ad13d84f598c68e766e" compoundref="main_8h" startline="34">eBuildsAdd</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a34f49f61c9b4bdb2fe1be11758138084" compoundref="main_8h" startline="33">eBuildsList</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02af2f1713ca51324f5000bf36d36bfd684" compoundref="main_8h" startline="35">eExit</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a51060f19a5d0006e2cb20df8786a330b" compoundref="main_8h" startline="29">eMain</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a1fedbd15c99125bee9cb78cffbf7228b" compoundref="main_8h" startline="31">ePartsAdd</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a8d35c4ba2bd3370a44513dbdbdbd0ff6" compoundref="main_8h" startline="30">ePartsList</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02af19f793fac63215e67f31045c7371d1c" compoundref="main_8h" startline="32">ePartsRemove</references>
+        <references refid="main_8cpp_1af4bf55c7933ba857c5d67526038aed45" compoundref="main_8cpp" startline="129" endline="164">evaluateCommand</references>
+        <references refid="main_8cpp_1a388f572c62279f839ee138a9afbdeeb5" compoundref="main_8cpp" startline="116" endline="119">print</references>
+        <references refid="main_8cpp_1a70c4e63bce818eb0a35f6403066b4263" compoundref="main_8cpp" startline="121" endline="127">printPartsList</references>
+        <references refid="class_inventory_1a90cb96a50ebc28f0de4a009004e9b192" compoundref="_inventory_8h" startline="37" endline="49">Inventory::push_back</references>
+        <references refid="atest_8cpp_1a4d0a2ed3083cba8b7ff2167d580bd759" compoundref="atest_8cpp" startline="3" endline="16">test1</references>
+        <references refid="atest_8cpp_1a4e5e4ea94633fee304b7f4490e655591" compoundref="atest_8cpp" startline="18" endline="39">test2</references>
+        <references refid="atest_8cpp_1a6e6df2af48d16780853d6eddcb8c8bc4" compoundref="atest_8cpp" startline="41" endline="50">test3</references>
+        <references refid="atest_8cpp_1ab545ece7a108a6470a3dc2161ba0008b" compoundref="atest_8cpp" startline="52" endline="61">test4</references>
+      </memberdef>
+      <memberdef kind="function" id="main_8h_1a388f572c62279f839ee138a9afbdeeb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h" line="41" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp" bodystart="116" bodyend="119"/>
+        <referencedby refid="main_8h_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="7" endline="114">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="main_8h_1aed630b39565f9b935d3148b396fd862d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void evaluateCommand</definition>
+        <argsstring>(enum enumMenu &amp;)</argsstring>
+        <name>evaluateCommand</name>
+        <param>
+          <type>enum <ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02" kindref="member">enumMenu</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h" line="42" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp" bodystart="129" bodyend="164"/>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a18af4c5278fb8ad13d84f598c68e766e" compoundref="main_8h" startline="34">eBuildsAdd</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a34f49f61c9b4bdb2fe1be11758138084" compoundref="main_8h" startline="33">eBuildsList</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02af2f1713ca51324f5000bf36d36bfd684" compoundref="main_8h" startline="35">eExit</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a51060f19a5d0006e2cb20df8786a330b" compoundref="main_8h" startline="29">eMain</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a1fedbd15c99125bee9cb78cffbf7228b" compoundref="main_8h" startline="31">ePartsAdd</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a8d35c4ba2bd3370a44513dbdbdbd0ff6" compoundref="main_8h" startline="30">ePartsList</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02af19f793fac63215e67f31045c7371d1c" compoundref="main_8h" startline="32">ePartsRemove</references>
+        <referencedby refid="main_8h_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="7" endline="114">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="main_8h_1a54c74422af05849f9d508c0a5ccd468b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printPartsList</definition>
+        <argsstring>(Inventory &amp;)</argsstring>
+        <name>printPartsList</name>
+        <param>
+          <type><ref refid="class_inventory" kindref="compound">Inventory</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h" line="43" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp" bodystart="121" bodyend="127"/>
+        <references refid="class_inventory_1a3ccacc9422b01b2c17836ca804bcaafc" compoundref="_inventory_8h" startline="32" endline="34">Inventory::get_size</references>
+        <referencedby refid="main_8h_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="7" endline="114">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="main_8h_1ae1fd94f91e6af6d41057704277c9d9e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void saveParts</definition>
+        <argsstring>(const Inventory &amp;)</argsstring>
+        <name>saveParts</name>
+        <param>
+          <type>const <ref refid="class_inventory" kindref="compound">Inventory</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8h_1a91fe9752814ecad7d04d2cf550123d17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void saveOrders</definition>
+        <argsstring>(const Orders &amp;)</argsstring>
+        <name>saveOrders</name>
+        <param>
+          <type>const <ref refid="class_orders" kindref="compound">Orders</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h" line="45" column="1"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(WIN32)<sp/>||<sp/>defined(_WIN32)<sp/>||<sp/>defined(WIN64)<sp/>||<sp/>defined(_WIN64)</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_CRT_SECURE_NO_WARNINGS</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifdef<sp/>_MSC_VER</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_CRT_SECURE_NO_WARNINGS</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MEMTRACE</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="memtrace_8h" kindref="compound">memtrace.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>isSFML</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/Graphics.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="schtring_8h" kindref="compound">schtring.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;Compatibility.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_parts_8h" kindref="compound">Parts.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_inventory_8h" kindref="compound">Inventory.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="atest_8h" kindref="compound">atest.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_builds_8h" kindref="compound">Builds.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02" kindref="member">enumMenu</ref><sp/>{</highlight></codeline>
+<codeline lineno="29" refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a51060f19a5d0006e2cb20df8786a330b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a51060f19a5d0006e2cb20df8786a330b" kindref="member">eMain</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="30" refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a8d35c4ba2bd3370a44513dbdbdbd0ff6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a8d35c4ba2bd3370a44513dbdbdbd0ff6" kindref="member">ePartsList</ref><sp/>=<sp/>11,</highlight></codeline>
+<codeline lineno="31" refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a1fedbd15c99125bee9cb78cffbf7228b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a1fedbd15c99125bee9cb78cffbf7228b" kindref="member">ePartsAdd</ref><sp/>=<sp/>12,</highlight></codeline>
+<codeline lineno="32" refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02af19f793fac63215e67f31045c7371d1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02af19f793fac63215e67f31045c7371d1c" kindref="member">ePartsRemove</ref><sp/>=<sp/>13,</highlight></codeline>
+<codeline lineno="33" refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a34f49f61c9b4bdb2fe1be11758138084" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a34f49f61c9b4bdb2fe1be11758138084" kindref="member">eBuildsList</ref><sp/>=<sp/>21,</highlight></codeline>
+<codeline lineno="34" refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a18af4c5278fb8ad13d84f598c68e766e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a18af4c5278fb8ad13d84f598c68e766e" kindref="member">eBuildsAdd</ref><sp/>=<sp/>22,</highlight></codeline>
+<codeline lineno="35" refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02af2f1713ca51324f5000bf36d36bfd684" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02af2f1713ca51324f5000bf36d36bfd684" kindref="member">eExit</ref><sp/>=<sp/>99</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8h_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>argv);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8h_1a388f572c62279f839ee138a9afbdeeb5" kindref="member">print</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8h_1aed630b39565f9b935d3148b396fd862d" kindref="member">evaluateCommand</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02" kindref="member">enumMenu</ref>&amp;);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8h_1a54c74422af05849f9d508c0a5ccd468b" kindref="member">printPartsList</ref>(<ref refid="class_inventory" kindref="compound">Inventory</ref>&amp;);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8h_1ae1fd94f91e6af6d41057704277c9d9e6" kindref="member">saveParts</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_inventory" kindref="compound">Inventory</ref>&amp;);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8h_1a91fe9752814ecad7d04d2cf550123d17" kindref="member">saveOrders</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_orders" kindref="compound">Orders</ref>&amp;);</highlight></codeline>
     </programlisting>
     <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h"/>
   </compounddef>

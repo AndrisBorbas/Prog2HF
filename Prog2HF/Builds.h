@@ -17,6 +17,7 @@ public:
 			delete components[i];
 		}
 		delete[] components;
+		delete[] count;
 	}
 
 	template<typename T>
@@ -45,6 +46,7 @@ public:
 	}
 	~Orders() {
 		delete[] builds;
+		delete[] completed;
 	}
 
 	template<typename T>

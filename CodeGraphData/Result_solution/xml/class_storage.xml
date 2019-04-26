@@ -2,34 +2,117 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="class_storage" kind="class" prot="public">
     <compoundname>Storage</compoundname>
-    <basecompoundref refid="class_alkatresz" prot="public" virt="non-virtual">Alkatresz</basecompoundref>
+    <basecompoundref refid="class_part" prot="public" virt="non-virtual">Part</basecompoundref>
+    <derivedcompoundref refid="class_h_d_d" prot="public" virt="non-virtual">HDD</derivedcompoundref>
+    <derivedcompoundref refid="class_s_s_d" prot="public" virt="non-virtual">SSD</derivedcompoundref>
     <includes refid="_parts_8h" local="no">Parts.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_storage_1abcc80ce58a21fa884035617ee0b6cb67" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Storage::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="135" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="135" bodyend="-1"/>
+        <referencedby refid="class_storage_1a07ace7dc4916ea4f6b00be1ffee63430" compoundref="_parts_8cpp" startline="49" endline="52">print</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_storage_1a41073842ff16961dad3903e6dd49bb0c" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Storage::readspeed</definition>
+        <argsstring></argsstring>
+        <name>readspeed</name>
+        <briefdescription>
+<para>Méret. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="136" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="136" bodyend="-1"/>
+        <referencedby refid="class_storage_1a07ace7dc4916ea4f6b00be1ffee63430" compoundref="_parts_8cpp" startline="49" endline="52">print</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_storage_1a0198a1483ccf849d48c76da88599ba8b" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Storage::writespeed</definition>
+        <argsstring></argsstring>
+        <name>writespeed</name>
+        <briefdescription>
+<para>Olvasási sebesség. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="137" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="137" bodyend="-1"/>
+        <referencedby refid="class_storage_1a07ace7dc4916ea4f6b00be1ffee63430" compoundref="_parts_8cpp" startline="49" endline="52">print</referencedby>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="class_storage_1a80ef6af5e4c9fd4424ae16e808d05291" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_storage_1a502a2ec76e09d48a87da6ed1b91cdaa8" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
         <definition>Storage::Storage</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(String brand, String type, int price, int size, int readspeed, int writespeed)</argsstring>
         <name>Storage</name>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>brand</declname>
+        </param>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>readspeed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>writespeed</declname>
+        </param>
         <briefdescription>
-        </briefdescription>
+<para>Írási sebesség. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="35" column="1"/>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="139" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="139" bodyend="140"/>
       </memberdef>
-      <memberdef kind="function" id="class_storage_1a73cf30f0a34250396f9eabee7dc5c93d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Storage::~Storage</definition>
-        <argsstring>()</argsstring>
-        <name>~Storage</name>
+      <memberdef kind="function" id="class_storage_1a07ace7dc4916ea4f6b00be1ffee63430" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Storage::print</definition>
+        <argsstring>(std::ostream &amp;os) const </argsstring>
+        <name>print</name>
+        <reimplements refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd">print</reimplements>
+        <reimplementedby refid="class_s_s_d_1a551b59fa58e2e5b0de0d21fdc1ebf892">print</reimplementedby>
+        <reimplementedby refid="class_h_d_d_1acb1d2f519b016319f98375e6dd1c7d88">print</reimplementedby>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="36" column="1"/>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="142" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="49" bodyend="52"/>
+        <references refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd" compoundref="_parts_8cpp" startline="3" endline="5">Part::print</references>
+        <references refid="class_storage_1a41073842ff16961dad3903e6dd49bb0c" compoundref="_parts_8h" startline="136">readspeed</references>
+        <references refid="class_storage_1abcc80ce58a21fa884035617ee0b6cb67" compoundref="_parts_8h" startline="135">size</references>
+        <references refid="class_storage_1a0198a1483ccf849d48c76da88599ba8b" compoundref="_parts_8h" startline="137">writespeed</references>
+        <referencedby refid="class_s_s_d_1a551b59fa58e2e5b0de0d21fdc1ebf892" compoundref="_parts_8cpp" startline="54" endline="57">SSD::print</referencedby>
+        <referencedby refid="class_h_d_d_1acb1d2f519b016319f98375e6dd1c7d88" compoundref="_parts_8cpp" startline="59" endline="62">HDD::print</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -37,43 +120,64 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="24">
+      <node id="72">
         <label>Storage</label>
         <link refid="class_storage"/>
-        <childnode refid="25" relation="public-inheritance">
+        <childnode refid="73" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="25">
-        <label>Alkatresz</label>
-        <link refid="class_alkatresz"/>
+      <node id="73">
+        <label>Part</label>
+        <link refid="class_part"/>
+      </node>
+      <node id="74">
+        <label>HDD</label>
+        <link refid="class_h_d_d"/>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>SSD</label>
+        <link refid="class_s_s_d"/>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="28">
+      <node id="78">
         <label>String</label>
         <link refid="class_string"/>
       </node>
-      <node id="26">
+      <node id="76">
         <label>Storage</label>
         <link refid="class_storage"/>
-        <childnode refid="27" relation="public-inheritance">
+        <childnode refid="77" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="27">
-        <label>Alkatresz</label>
-        <link refid="class_alkatresz"/>
-        <childnode refid="28" relation="usage">
-          <edgelabel>Nev</edgelabel>
-          <edgelabel>Gyarto</edgelabel>
+      <node id="77">
+        <label>Part</label>
+        <link refid="class_part"/>
+        <childnode refid="78" relation="usage">
+          <edgelabel>brand</edgelabel>
+          <edgelabel>type</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="32" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="32" bodyend="37"/>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="133" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="133" bodyend="143"/>
     <listofallmembers>
-      <member refid="class_alkatresz_1ace416bfd871cfee9c7d7a94681ca04d7" prot="public" virt="non-virtual"><scope>Storage</scope><name>Alkatresz</name></member>
-      <member refid="class_storage_1a80ef6af5e4c9fd4424ae16e808d05291" prot="public" virt="non-virtual"><scope>Storage</scope><name>Storage</name></member>
-      <member refid="class_alkatresz_1a02cdc7f105e7e1348784e657398ccb50" prot="public" virt="non-virtual"><scope>Storage</scope><name>~Alkatresz</name></member>
-      <member refid="class_storage_1a73cf30f0a34250396f9eabee7dc5c93d" prot="public" virt="non-virtual"><scope>Storage</scope><name>~Storage</name></member>
+      <member refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" prot="protected" virt="non-virtual"><scope>Storage</scope><name>brand</name></member>
+      <member refid="class_part_1abdaeb1db5ba55c184f39802c163e9ebc" prot="public" virt="non-virtual"><scope>Storage</scope><name>get_brand</name></member>
+      <member refid="class_part_1abb7c8371883825ad46773f219db3523e" prot="public" virt="non-virtual"><scope>Storage</scope><name>get_price</name></member>
+      <member refid="class_part_1a97117fd470cd694ae0897fb2f4391786" prot="public" virt="non-virtual"><scope>Storage</scope><name>get_type</name></member>
+      <member refid="class_part_1aae5224ee782134c4ecb60f23ec38698f" prot="public" virt="non-virtual"><scope>Storage</scope><name>Part</name></member>
+      <member refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" prot="protected" virt="non-virtual"><scope>Storage</scope><name>price</name></member>
+      <member refid="class_storage_1a07ace7dc4916ea4f6b00be1ffee63430" prot="public" virt="virtual"><scope>Storage</scope><name>print</name></member>
+      <member refid="class_storage_1a41073842ff16961dad3903e6dd49bb0c" prot="protected" virt="non-virtual"><scope>Storage</scope><name>readspeed</name></member>
+      <member refid="class_storage_1abcc80ce58a21fa884035617ee0b6cb67" prot="protected" virt="non-virtual"><scope>Storage</scope><name>size</name></member>
+      <member refid="class_storage_1a502a2ec76e09d48a87da6ed1b91cdaa8" prot="public" virt="non-virtual"><scope>Storage</scope><name>Storage</name></member>
+      <member refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" prot="protected" virt="non-virtual"><scope>Storage</scope><name>type</name></member>
+      <member refid="class_storage_1a0198a1483ccf849d48c76da88599ba8b" prot="protected" virt="non-virtual"><scope>Storage</scope><name>writespeed</name></member>
+      <member refid="class_part_1aaecbb747a7227f7ce3b44caeaf1801c2" prot="public" virt="virtual"><scope>Storage</scope><name>~Part</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

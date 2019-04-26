@@ -1,95 +1,17 @@
 ﻿Any manual edits could cause the file to get corrupted and not load correctly.
 NumberOfParts: 1
 
-IntelCompatibilityList: Z-97,Z-170,Z-270;
-AMDCompatibilityList: AM4;
+CPU:
+	Brand: Intel
+	Type: i7-4790
+	clockSpeed: 3600
+	Cores: 4
+	MultiThreading: yes
+	Socket: LGA1151
+	price: 300
+
+GPU:
+	Brand: Nvidia, Type: RTX2080, Price: 600, ClockSpeed: 2200, VRAM: 12
 
 CPU:
-	Brand: AMD
-	Type: Ryzen7
-	clockSpeed: 4600
-	Cores: 16
-	MultiThreading: yes
-	Socket: AM4
-	price: 500
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
-
-CPU: 
-Brand: Intel, Type: i3-4330, Price: 800 USD, Base clock: 200 MHz, Number of Cores: 2, Socket: LGA1152, Supports Hyper-Threading: Yes
+	Brand: AMD, Type: Ryzen7-2700, Price: 500, Speed: 4200, SMT: yes, Socket: AM4, Cores: 8 

@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_compatibility_list" kind="class" prot="public">
+    <compoundname>CompatibilityList</compoundname>
+    <includes refid="_compatibility_8h" local="no">Compatibility.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_compatibility_list_1a2b6ab701b2b867d0e802fd3b35b11565" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CompatibilityList::capacity</definition>
+        <argsstring></argsstring>
+        <name>capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" line="7" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_compatibility_list_1a7d9dbeada758ed1fc4849d77058ff69d" compoundref="_compatibility_8cpp" startline="39" endline="72">addItems</referencedby>
+        <referencedby refid="class_compatibility_list_1af34d724919febac11f933a4d42f3d550" compoundref="_compatibility_8cpp" startline="3" endline="37">CompatibilityList</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_compatibility_list_1a71b295c2a2dd599cadf6724615f97619" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CompatibilityList::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" line="8" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_compatibility_list_1a7d9dbeada758ed1fc4849d77058ff69d" compoundref="_compatibility_8cpp" startline="39" endline="72">addItems</referencedby>
+        <referencedby refid="class_compatibility_list_1af34d724919febac11f933a4d42f3d550" compoundref="_compatibility_8cpp" startline="3" endline="37">CompatibilityList</referencedby>
+        <referencedby refid="class_compatibility_list_1a1fbb37dc96c89c113a03624445480a68" compoundref="_compatibility_8h" startline="16" endline="16">get_length</referencedby>
+        <referencedby refid="class_compatibility_list_1a3836f2aaefc1753287dd4d6052e17469" compoundref="_compatibility_8h" startline="22" endline="29">operator==</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_compatibility_list_1a76fcf2c888d5435b89124e9ec5d4402a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_string" kindref="compound">String</ref> *</type>
+        <definition>String* CompatibilityList::list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" line="9" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_compatibility_list_1a7d9dbeada758ed1fc4849d77058ff69d" compoundref="_compatibility_8cpp" startline="39" endline="72">addItems</referencedby>
+        <referencedby refid="class_compatibility_list_1af34d724919febac11f933a4d42f3d550" compoundref="_compatibility_8cpp" startline="3" endline="37">CompatibilityList</referencedby>
+        <referencedby refid="class_compatibility_list_1abb51e26ec0d83fff36553fe0e6712c48" compoundref="_compatibility_8h" startline="18" endline="18">get_listp</referencedby>
+        <referencedby refid="class_compatibility_list_1a3836f2aaefc1753287dd4d6052e17469" compoundref="_compatibility_8h" startline="22" endline="29">operator==</referencedby>
+        <referencedby refid="class_compatibility_list_1ac3f2eebda805a5b587c498a4915161fc" compoundref="_compatibility_8h" startline="14" endline="14">~CompatibilityList</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_compatibility_list_1a077f7dc792a5419fbd9a0d105133cfbd" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CompatibilityList::CompatibilityList</definition>
+        <argsstring>()</argsstring>
+        <name>CompatibilityList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" line="11" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" bodystart="11" bodyend="11"/>
+        <references refid="class_compatibility_list_1a2b6ab701b2b867d0e802fd3b35b11565" compoundref="_compatibility_8h" startline="7">capacity</references>
+        <references refid="class_compatibility_list_1a76fcf2c888d5435b89124e9ec5d4402a" compoundref="_compatibility_8h" startline="9">list</references>
+      </memberdef>
+      <memberdef kind="function" id="class_compatibility_list_1af34d724919febac11f933a4d42f3d550" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CompatibilityList::CompatibilityList</definition>
+        <argsstring>(String &amp;)</argsstring>
+        <name>CompatibilityList</name>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref> &amp;</type>
+          <defname>slist</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" line="12" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.cpp" bodystart="3" bodyend="37"/>
+        <references refid="class_compatibility_list_1a2b6ab701b2b867d0e802fd3b35b11565" compoundref="_compatibility_8h" startline="7">capacity</references>
+        <references refid="class_compatibility_list_1a76fcf2c888d5435b89124e9ec5d4402a" compoundref="_compatibility_8h" startline="9">list</references>
+        <references refid="class_compatibility_list_1a71b295c2a2dd599cadf6724615f97619" compoundref="_compatibility_8h" startline="8">size</references>
+        <references refid="class_string_1a59653a61e472a466b6d788aebd59c4b4" compoundref="schtring_8h" startline="14" endline="14">String::size</references>
+      </memberdef>
+      <memberdef kind="function" id="class_compatibility_list_1ac3f2eebda805a5b587c498a4915161fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CompatibilityList::~CompatibilityList</definition>
+        <argsstring>()</argsstring>
+        <name>~CompatibilityList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" line="14" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" bodystart="14" bodyend="14"/>
+        <references refid="class_compatibility_list_1a76fcf2c888d5435b89124e9ec5d4402a" compoundref="_compatibility_8h" startline="9">list</references>
+      </memberdef>
+      <memberdef kind="function" id="class_compatibility_list_1a1fbb37dc96c89c113a03624445480a68" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CompatibilityList::get_length</definition>
+        <argsstring>() const </argsstring>
+        <name>get_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" line="16" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" bodystart="16" bodyend="16"/>
+        <references refid="class_compatibility_list_1a71b295c2a2dd599cadf6724615f97619" compoundref="_compatibility_8h" startline="8">size</references>
+        <referencedby refid="_compatibility_8h_1a4dba78c90980468354692db49af6847b" compoundref="_compatibility_8cpp" startline="74" endline="80">operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_compatibility_list_1abb51e26ec0d83fff36553fe0e6712c48" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_string" kindref="compound">String</ref> *</type>
+        <definition>String* CompatibilityList::get_listp</definition>
+        <argsstring>() const </argsstring>
+        <name>get_listp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" line="18" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" bodystart="18" bodyend="18"/>
+        <references refid="class_compatibility_list_1a76fcf2c888d5435b89124e9ec5d4402a" compoundref="_compatibility_8h" startline="9">list</references>
+        <referencedby refid="_compatibility_8h_1a4dba78c90980468354692db49af6847b" compoundref="_compatibility_8cpp" startline="74" endline="80">operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_compatibility_list_1a7d9dbeada758ed1fc4849d77058ff69d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CompatibilityList::addItems</definition>
+        <argsstring>(String &amp;)</argsstring>
+        <name>addItems</name>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref> &amp;</type>
+          <defname>slist</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" line="20" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.cpp" bodystart="39" bodyend="72"/>
+        <references refid="class_compatibility_list_1a2b6ab701b2b867d0e802fd3b35b11565" compoundref="_compatibility_8h" startline="7">capacity</references>
+        <references refid="class_compatibility_list_1a76fcf2c888d5435b89124e9ec5d4402a" compoundref="_compatibility_8h" startline="9">list</references>
+        <references refid="class_compatibility_list_1a71b295c2a2dd599cadf6724615f97619" compoundref="_compatibility_8h" startline="8">size</references>
+        <references refid="class_string_1a59653a61e472a466b6d788aebd59c4b4" compoundref="schtring_8h" startline="14" endline="14">String::size</references>
+      </memberdef>
+      <memberdef kind="function" id="class_compatibility_list_1a3836f2aaefc1753287dd4d6052e17469" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CompatibilityList::operator==</definition>
+        <argsstring>(String &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" line="22" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" bodystart="22" bodyend="29"/>
+        <references refid="class_compatibility_list_1a76fcf2c888d5435b89124e9ec5d4402a" compoundref="_compatibility_8h" startline="9">list</references>
+        <references refid="class_compatibility_list_1a71b295c2a2dd599cadf6724615f97619" compoundref="_compatibility_8h" startline="8">size</references>
+      </memberdef>
+      <memberdef kind="function" id="class_compatibility_list_1ad476ceb7026c6316112d5f11b283357e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CompatibilityList::operator==</definition>
+        <argsstring>(const char *rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const char *</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" line="31" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" bodystart="31" bodyend="38"/>
+        <references refid="class_compatibility_list_1a76fcf2c888d5435b89124e9ec5d4402a" compoundref="_compatibility_8h" startline="9">list</references>
+        <references refid="class_compatibility_list_1a71b295c2a2dd599cadf6724615f97619" compoundref="_compatibility_8h" startline="8">size</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>String</label>
+        <link refid="class_string"/>
+      </node>
+      <node id="10">
+        <label>CompatibilityList</label>
+        <link refid="class_compatibility_list"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" line="6" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h" bodystart="6" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_compatibility_list_1a7d9dbeada758ed1fc4849d77058ff69d" prot="public" virt="non-virtual"><scope>CompatibilityList</scope><name>addItems</name></member>
+      <member refid="class_compatibility_list_1a2b6ab701b2b867d0e802fd3b35b11565" prot="private" virt="non-virtual"><scope>CompatibilityList</scope><name>capacity</name></member>
+      <member refid="class_compatibility_list_1a077f7dc792a5419fbd9a0d105133cfbd" prot="public" virt="non-virtual"><scope>CompatibilityList</scope><name>CompatibilityList</name></member>
+      <member refid="class_compatibility_list_1af34d724919febac11f933a4d42f3d550" prot="public" virt="non-virtual"><scope>CompatibilityList</scope><name>CompatibilityList</name></member>
+      <member refid="class_compatibility_list_1a1fbb37dc96c89c113a03624445480a68" prot="public" virt="non-virtual"><scope>CompatibilityList</scope><name>get_length</name></member>
+      <member refid="class_compatibility_list_1abb51e26ec0d83fff36553fe0e6712c48" prot="public" virt="non-virtual"><scope>CompatibilityList</scope><name>get_listp</name></member>
+      <member refid="class_compatibility_list_1a76fcf2c888d5435b89124e9ec5d4402a" prot="private" virt="non-virtual"><scope>CompatibilityList</scope><name>list</name></member>
+      <member refid="class_compatibility_list_1a3836f2aaefc1753287dd4d6052e17469" prot="public" virt="non-virtual"><scope>CompatibilityList</scope><name>operator==</name></member>
+      <member refid="class_compatibility_list_1ad476ceb7026c6316112d5f11b283357e" prot="public" virt="non-virtual"><scope>CompatibilityList</scope><name>operator==</name></member>
+      <member refid="class_compatibility_list_1a71b295c2a2dd599cadf6724615f97619" prot="private" virt="non-virtual"><scope>CompatibilityList</scope><name>size</name></member>
+      <member refid="class_compatibility_list_1ac3f2eebda805a5b587c498a4915161fc" prot="public" virt="non-virtual"><scope>CompatibilityList</scope><name>~CompatibilityList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

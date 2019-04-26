@@ -4,7 +4,7 @@
 #include "memtrace.h"
 #endif
 #include "schtring.h"
-#include "Compatibility.h"
+//#include "Compatibility.h"
 #include <cctype>
 
 struct TempInput {

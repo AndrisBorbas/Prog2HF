@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_r_a_m" kind="class" prot="public">
+    <compoundname>RAM</compoundname>
+    <basecompoundref refid="class_part" prot="public" virt="non-virtual">Part</basecompoundref>
+    <includes refid="_parts_8h" local="no">Parts.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_a_m_1ab1c0c9bd9d09e1d08d4e47f823145cba" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RAM::clk</definition>
+        <argsstring></argsstring>
+        <name>clk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="100" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="100" bodyend="-1"/>
+        <referencedby refid="class_r_a_m_1a826cedfb4978b7ea352bdd0eccacf674" compoundref="_parts_8cpp" startline="34" endline="37">print</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_a_m_1a879e4cd586dcdfafa402868c444e7c6e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RAM::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Órajel. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="101" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="101" bodyend="-1"/>
+        <referencedby refid="class_r_a_m_1a826cedfb4978b7ea352bdd0eccacf674" compoundref="_parts_8cpp" startline="34" endline="37">print</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_a_m_1a1869d6bd505e7fb58b809270626c82f2" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RAM::RAM</definition>
+        <argsstring>(String brand, String type, int price, int clk, int size)</argsstring>
+        <name>RAM</name>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>brand</declname>
+        </param>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>clk</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Memória. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="103" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="103" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_a_m_1a9c54d554dfa8c3fc9c7c2d87e8dbe28f" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RAM::RAM</definition>
+        <argsstring>(TempInput tmp)</argsstring>
+        <name>RAM</name>
+        <param>
+          <type><ref refid="struct_temp_input" kindref="compound">TempInput</ref></type>
+          <declname>tmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="104" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_a_m_1a826cedfb4978b7ea352bdd0eccacf674" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RAM::print</definition>
+        <argsstring>(std::ostream &amp;os) const </argsstring>
+        <name>print</name>
+        <reimplements refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd">print</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="106" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="34" bodyend="37"/>
+        <references refid="class_r_a_m_1ab1c0c9bd9d09e1d08d4e47f823145cba" compoundref="_parts_8h" startline="100">clk</references>
+        <references refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd" compoundref="_parts_8cpp" startline="3" endline="5">Part::print</references>
+        <references refid="class_r_a_m_1a879e4cd586dcdfafa402868c444e7c6e" compoundref="_parts_8h" startline="101">size</references>
+        <referencedby refid="_parts_8h_1a119a3c9e22eaeee7ac8e0e0400429fe2" compoundref="_parts_8cpp" startline="84" endline="87">operator&lt;&lt;</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="61">
+        <label>Part</label>
+        <link refid="class_part"/>
+      </node>
+      <node id="60">
+        <label>RAM</label>
+        <link refid="class_r_a_m"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="64">
+        <label>String</label>
+        <link refid="class_string"/>
+      </node>
+      <node id="63">
+        <label>Part</label>
+        <link refid="class_part"/>
+        <childnode refid="64" relation="usage">
+          <edgelabel>brand</edgelabel>
+          <edgelabel>type</edgelabel>
+        </childnode>
+      </node>
+      <node id="62">
+        <label>RAM</label>
+        <link refid="class_r_a_m"/>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="99" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="99" bodyend="107"/>
+    <listofallmembers>
+      <member refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" prot="protected" virt="non-virtual"><scope>RAM</scope><name>brand</name></member>
+      <member refid="class_r_a_m_1ab1c0c9bd9d09e1d08d4e47f823145cba" prot="private" virt="non-virtual"><scope>RAM</scope><name>clk</name></member>
+      <member refid="class_part_1abdaeb1db5ba55c184f39802c163e9ebc" prot="public" virt="non-virtual"><scope>RAM</scope><name>get_brand</name></member>
+      <member refid="class_part_1abb7c8371883825ad46773f219db3523e" prot="public" virt="non-virtual"><scope>RAM</scope><name>get_price</name></member>
+      <member refid="class_part_1a97117fd470cd694ae0897fb2f4391786" prot="public" virt="non-virtual"><scope>RAM</scope><name>get_type</name></member>
+      <member refid="class_part_1aae5224ee782134c4ecb60f23ec38698f" prot="public" virt="non-virtual"><scope>RAM</scope><name>Part</name></member>
+      <member refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" prot="protected" virt="non-virtual"><scope>RAM</scope><name>price</name></member>
+      <member refid="class_r_a_m_1a826cedfb4978b7ea352bdd0eccacf674" prot="public" virt="virtual"><scope>RAM</scope><name>print</name></member>
+      <member refid="class_r_a_m_1a1869d6bd505e7fb58b809270626c82f2" prot="public" virt="non-virtual"><scope>RAM</scope><name>RAM</name></member>
+      <member refid="class_r_a_m_1a9c54d554dfa8c3fc9c7c2d87e8dbe28f" prot="public" virt="non-virtual"><scope>RAM</scope><name>RAM</name></member>
+      <member refid="class_r_a_m_1a879e4cd586dcdfafa402868c444e7c6e" prot="private" virt="non-virtual"><scope>RAM</scope><name>size</name></member>
+      <member refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" prot="protected" virt="non-virtual"><scope>RAM</scope><name>type</name></member>
+      <member refid="class_part_1aaecbb747a7227f7ce3b44caeaf1801c2" prot="public" virt="virtual"><scope>RAM</scope><name>~Part</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

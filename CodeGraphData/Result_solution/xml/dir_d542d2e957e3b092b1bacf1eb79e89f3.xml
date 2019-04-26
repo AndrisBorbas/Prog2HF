@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_d542d2e957e3b092b1bacf1eb79e89f3" kind="dir">
+    <compoundname>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF</compoundname>
+    <innerfile refid="atest_8cpp">atest.cpp</innerfile>
+    <innerfile refid="atest_8h">atest.h</innerfile>
+    <innerfile refid="_builds_8cpp">Builds.cpp</innerfile>
+    <innerfile refid="_builds_8h">Builds.h</innerfile>
+    <innerfile refid="_compatibility_8cpp">Compatibility.cpp</innerfile>
+    <innerfile refid="_compatibility_8h">Compatibility.h</innerfile>
+    <innerfile refid="_inventory_8cpp">Inventory.cpp</innerfile>
+    <innerfile refid="_inventory_8h">Inventory.h</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="main_8h">main.h</innerfile>
+    <innerfile refid="memtrace_8cpp">memtrace.cpp</innerfile>
+    <innerfile refid="memtrace_8h">memtrace.h</innerfile>
+    <innerfile refid="_parts_8cpp">Parts.cpp</innerfile>
+    <innerfile refid="_parts_8h">Parts.h</innerfile>
+    <innerfile refid="schtring_8cpp">schtring.cpp</innerfile>
+    <innerfile refid="schtring_8h">schtring.h</innerfile>
+    <innerfile refid="_s_f_m_l__test_8cpp">SFML_test.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/"/>
+  </compounddef>
+</doxygen>

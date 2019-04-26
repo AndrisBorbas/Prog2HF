@@ -2,34 +2,162 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="class_c_p_u" kind="class" prot="public">
     <compoundname>CPU</compoundname>
-    <basecompoundref refid="class_alkatresz" prot="public" virt="non-virtual">Alkatresz</basecompoundref>
+    <basecompoundref refid="class_part" prot="public" virt="non-virtual">Part</basecompoundref>
     <includes refid="_parts_8h" local="no">Parts.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_p_u_1ac733562aad380889ae0d175e2b0179c2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPU::clk</definition>
+        <argsstring></argsstring>
+        <name>clk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="57" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_c_p_u_1ae8b92e567b87bf3889798e4dcc83d4c6" compoundref="_parts_8cpp" startline="7" endline="22">print</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_p_u_1a2e310df8c8c7044b4e46d3b4dd28b57e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPU::cores</definition>
+        <argsstring></argsstring>
+        <name>cores</name>
+        <briefdescription>
+<para>Órajel. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="58" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="class_c_p_u_1ae8b92e567b87bf3889798e4dcc83d4c6" compoundref="_parts_8cpp" startline="7" endline="22">print</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_p_u_1a57208b3d2f312ccc5a8f21e585a5bcd7" prot="private" static="no" mutable="no">
+        <type><ref refid="class_string" kindref="compound">String</ref></type>
+        <definition>String CPU::socket</definition>
+        <argsstring></argsstring>
+        <name>socket</name>
+        <briefdescription>
+<para>Magok száma. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="59" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="class_c_p_u_1ae8b92e567b87bf3889798e4dcc83d4c6" compoundref="_parts_8cpp" startline="7" endline="22">print</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_p_u_1a8df4efeddb85f19f2ceee8b6085a0a0a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CPU::multithreading</definition>
+        <argsstring></argsstring>
+        <name>multithreading</name>
+        <briefdescription>
+<para>Foglalat. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="60" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="class_c_p_u_1ae8b92e567b87bf3889798e4dcc83d4c6" compoundref="_parts_8cpp" startline="7" endline="22">print</referencedby>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="class_c_p_u_1a2fdd8153d0979ccad9ed8452897267f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_c_p_u_1a1aa85a6c976fe5b665dcb9fd6d8fdd1e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
         <definition>CPU::CPU</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(String brand, String type, int price, int clk, int cores, String socket, bool multithreading)</argsstring>
         <name>CPU</name>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>brand</declname>
+        </param>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>clk</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cores</declname>
+        </param>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>socket</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>multithreading</declname>
+        </param>
         <briefdescription>
-        </briefdescription>
+<para>Multithreading support. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="14" column="1"/>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="62" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="62" bodyend="63"/>
       </memberdef>
-      <memberdef kind="function" id="class_c_p_u_1aa32e0ed85bebabb167ace09050d20707" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_c_p_u_1a9147d84f815b9a242ba618877e6b2673" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
-        <definition>CPU::~CPU</definition>
-        <argsstring>()</argsstring>
-        <name>~CPU</name>
+        <definition>CPU::CPU</definition>
+        <argsstring>(TempInput &amp;tmp)</argsstring>
+        <name>CPU</name>
+        <param>
+          <type><ref refid="struct_temp_input" kindref="compound">TempInput</ref> &amp;</type>
+          <declname>tmp</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="15" column="1"/>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="64" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1ae8b92e567b87bf3889798e4dcc83d4c6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CPU::print</definition>
+        <argsstring>(std::ostream &amp;os) const </argsstring>
+        <name>print</name>
+        <reimplements refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd">print</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="66" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="7" bodyend="22"/>
+        <references refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" compoundref="_parts_8h" startline="32">Part::brand</references>
+        <references refid="class_c_p_u_1ac733562aad380889ae0d175e2b0179c2" compoundref="_parts_8h" startline="57">clk</references>
+        <references refid="class_c_p_u_1a2e310df8c8c7044b4e46d3b4dd28b57e" compoundref="_parts_8h" startline="58">cores</references>
+        <references refid="class_c_p_u_1a8df4efeddb85f19f2ceee8b6085a0a0a" compoundref="_parts_8h" startline="60">multithreading</references>
+        <references refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd" compoundref="_parts_8cpp" startline="3" endline="5">Part::print</references>
+        <references refid="class_c_p_u_1a57208b3d2f312ccc5a8f21e585a5bcd7" compoundref="_parts_8h" startline="59">socket</references>
+        <referencedby refid="_parts_8h_1a63166a2a7d326683af5fc64dfaa7aa65" compoundref="_parts_8cpp" startline="72" endline="75">operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_p_u_1ae3dc1f075f60b84744a93a6c0046bdd9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPU::burn</definition>
+        <argsstring>() const </argsstring>
+        <name>burn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="68" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="64" bodyend="66"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -37,43 +165,58 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="9">
+      <node id="13">
+        <label>Part</label>
+        <link refid="class_part"/>
+      </node>
+      <node id="12">
         <label>CPU</label>
         <link refid="class_c_p_u"/>
-        <childnode refid="10" relation="public-inheritance">
+        <childnode refid="13" relation="public-inheritance">
         </childnode>
-      </node>
-      <node id="10">
-        <label>Alkatresz</label>
-        <link refid="class_alkatresz"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="13">
+      <node id="16">
         <label>String</label>
         <link refid="class_string"/>
       </node>
-      <node id="11">
-        <label>CPU</label>
-        <link refid="class_c_p_u"/>
-        <childnode refid="12" relation="public-inheritance">
+      <node id="15">
+        <label>Part</label>
+        <link refid="class_part"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>brand</edgelabel>
+          <edgelabel>type</edgelabel>
         </childnode>
       </node>
-      <node id="12">
-        <label>Alkatresz</label>
-        <link refid="class_alkatresz"/>
-        <childnode refid="13" relation="usage">
-          <edgelabel>Nev</edgelabel>
-          <edgelabel>Gyarto</edgelabel>
+      <node id="14">
+        <label>CPU</label>
+        <link refid="class_c_p_u"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>socket</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="11" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="11" bodyend="16"/>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="56" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="56" bodyend="69"/>
     <listofallmembers>
-      <member refid="class_alkatresz_1ace416bfd871cfee9c7d7a94681ca04d7" prot="public" virt="non-virtual"><scope>CPU</scope><name>Alkatresz</name></member>
-      <member refid="class_c_p_u_1a2fdd8153d0979ccad9ed8452897267f4" prot="public" virt="non-virtual"><scope>CPU</scope><name>CPU</name></member>
-      <member refid="class_alkatresz_1a02cdc7f105e7e1348784e657398ccb50" prot="public" virt="non-virtual"><scope>CPU</scope><name>~Alkatresz</name></member>
-      <member refid="class_c_p_u_1aa32e0ed85bebabb167ace09050d20707" prot="public" virt="non-virtual"><scope>CPU</scope><name>~CPU</name></member>
+      <member refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" prot="protected" virt="non-virtual"><scope>CPU</scope><name>brand</name></member>
+      <member refid="class_c_p_u_1ae3dc1f075f60b84744a93a6c0046bdd9" prot="public" virt="non-virtual"><scope>CPU</scope><name>burn</name></member>
+      <member refid="class_c_p_u_1ac733562aad380889ae0d175e2b0179c2" prot="private" virt="non-virtual"><scope>CPU</scope><name>clk</name></member>
+      <member refid="class_c_p_u_1a2e310df8c8c7044b4e46d3b4dd28b57e" prot="private" virt="non-virtual"><scope>CPU</scope><name>cores</name></member>
+      <member refid="class_c_p_u_1a1aa85a6c976fe5b665dcb9fd6d8fdd1e" prot="public" virt="non-virtual"><scope>CPU</scope><name>CPU</name></member>
+      <member refid="class_c_p_u_1a9147d84f815b9a242ba618877e6b2673" prot="public" virt="non-virtual"><scope>CPU</scope><name>CPU</name></member>
+      <member refid="class_part_1abdaeb1db5ba55c184f39802c163e9ebc" prot="public" virt="non-virtual"><scope>CPU</scope><name>get_brand</name></member>
+      <member refid="class_part_1abb7c8371883825ad46773f219db3523e" prot="public" virt="non-virtual"><scope>CPU</scope><name>get_price</name></member>
+      <member refid="class_part_1a97117fd470cd694ae0897fb2f4391786" prot="public" virt="non-virtual"><scope>CPU</scope><name>get_type</name></member>
+      <member refid="class_c_p_u_1a8df4efeddb85f19f2ceee8b6085a0a0a" prot="private" virt="non-virtual"><scope>CPU</scope><name>multithreading</name></member>
+      <member refid="class_part_1aae5224ee782134c4ecb60f23ec38698f" prot="public" virt="non-virtual"><scope>CPU</scope><name>Part</name></member>
+      <member refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" prot="protected" virt="non-virtual"><scope>CPU</scope><name>price</name></member>
+      <member refid="class_c_p_u_1ae8b92e567b87bf3889798e4dcc83d4c6" prot="public" virt="virtual"><scope>CPU</scope><name>print</name></member>
+      <member refid="class_c_p_u_1a57208b3d2f312ccc5a8f21e585a5bcd7" prot="private" virt="non-virtual"><scope>CPU</scope><name>socket</name></member>
+      <member refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" prot="protected" virt="non-virtual"><scope>CPU</scope><name>type</name></member>
+      <member refid="class_part_1aaecbb747a7227f7ce3b44caeaf1801c2" prot="public" virt="virtual"><scope>CPU</scope><name>~Part</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

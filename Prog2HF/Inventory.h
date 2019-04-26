@@ -33,6 +33,8 @@ public:
 		return size;
 	}
 
+	void loadPart(std::istream& is, TempInput& tmp, enum enumPart);
+
 	template<typename T>
 	void push_back(T* part) {
 		if (size == capacity) {
@@ -55,8 +57,6 @@ public:
 		return stock[idx];
 	}
 };
-
-Part* loadPart(std::istream& is, TempInput& tmp, enum enumPart);
 
 void setEnum(String inst, enum enumPart&);
 

@@ -4,6 +4,7 @@
 #include <cstring>
 #include <ctype.h>
 
+///char tömb kisbetűsítése
 char* stolower(char* s);
 
 class String {

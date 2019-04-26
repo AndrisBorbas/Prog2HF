@@ -23,7 +23,7 @@ void CPU::print(std::ostream& os) const {
 
 void GPU::print(std::ostream& os) const {
 	Part::print(os);
-	os << "Base Clock: " << clk << ", Video Memory: " << vram << " GB";
+	os << "Base Clock: " << clk << " MHz, Video Memory: " << vram << " GB";
 }
 
 void MOBO::print(std::ostream& os) const {

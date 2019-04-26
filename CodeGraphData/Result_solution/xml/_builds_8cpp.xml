@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_builds_8cpp" kind="file">
+    <compoundname>Builds.cpp</compoundname>
+    <includes refid="_builds_8h" local="yes">Builds.h</includes>
+    <incdepgraph>
+      <node id="39">
+        <label>Compatibility.h</label>
+        <link refid="_compatibility_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>schtring.h</label>
+        <link refid="schtring_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>cctype</label>
+      </node>
+      <node id="36">
+        <label>iostream</label>
+      </node>
+      <node id="38">
+        <label>ctype.h</label>
+      </node>
+      <node id="34">
+        <label>Parts.h</label>
+        <link refid="_parts_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>Builds.h</label>
+        <link refid="_builds_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>cstring</label>
+      </node>
+      <node id="32">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.cpp</label>
+        <link refid="Builds.cpp"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_builds_8h" kindref="compound">Builds.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="4" refid="class_build_1aba0548391a8c613ed2a9d81d4d3b2a4b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_build_1aba0548391a8c613ed2a9d81d4d3b2a4b" kindref="member">Build::push_back</ref>(T*<sp/>part)<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_build_1a44526f794449c6cf417d059991e45ff6" kindref="member">size</ref><sp/>==<sp/><ref refid="class_build_1afbe78494802a8a80b966508be8d7da2b" kindref="member">capacity</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_build_1afbe78494802a8a80b966508be8d7da2b" kindref="member">capacity</ref><sp/>+=<sp/>4;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_part" kindref="compound">Part</ref>**<sp/>temp<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_part" kindref="compound">Part</ref><sp/>*<sp/>[<ref refid="class_build_1afbe78494802a8a80b966508be8d7da2b" kindref="member">capacity</ref>];</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_build_1a44526f794449c6cf417d059991e45ff6" kindref="member">size</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp[i]<sp/>=<sp/><ref refid="class_build_1a4297537483b2965d3d4a3a74e9c90805" kindref="member">components</ref>[i];</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="class_build_1a4297537483b2965d3d4a3a74e9c90805" kindref="member">components</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_build_1a4297537483b2965d3d4a3a74e9c90805" kindref="member">components</ref><sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_build_1a4297537483b2965d3d4a3a74e9c90805" kindref="member">components</ref>[<ref refid="class_build_1a44526f794449c6cf417d059991e45ff6" kindref="member">size</ref>]<sp/>=<sp/>part;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_build_1a44526f794449c6cf417d059991e45ff6" kindref="member">size</ref>++;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="20" refid="class_orders_1a678969b0e57fd41f4ab0cc949d4500f6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_orders_1a678969b0e57fd41f4ab0cc949d4500f6" kindref="member">Orders::push_back</ref>(T*<sp/>part)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_orders_1ab1fd08a1c2760cb8479b82fc38809596" kindref="member">size</ref><sp/>==<sp/><ref refid="class_orders_1a60e58b1f066c216078f5670f9629d2f2" kindref="member">capacity</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_orders_1a60e58b1f066c216078f5670f9629d2f2" kindref="member">capacity</ref><sp/>*=<sp/>2;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_part" kindref="compound">Part</ref>**<sp/>temp<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_part" kindref="compound">Part</ref><sp/>*<sp/>[<ref refid="class_orders_1a60e58b1f066c216078f5670f9629d2f2" kindref="member">capacity</ref>];</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_orders_1ab1fd08a1c2760cb8479b82fc38809596" kindref="member">size</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp[i]<sp/>=<sp/><ref refid="class_orders_1a7eaf9e8d321fe94f433e40a3c29e332c" kindref="member">builds</ref>[i];</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="class_orders_1a7eaf9e8d321fe94f433e40a3c29e332c" kindref="member">builds</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_orders_1a7eaf9e8d321fe94f433e40a3c29e332c" kindref="member">builds</ref><sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_orders_1a7eaf9e8d321fe94f433e40a3c29e332c" kindref="member">builds</ref>[<ref refid="class_orders_1ab1fd08a1c2760cb8479b82fc38809596" kindref="member">size</ref>]<sp/>=<sp/>part;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_orders_1ab1fd08a1c2760cb8479b82fc38809596" kindref="member">size</ref>++;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.cpp"/>
+  </compounddef>
+</doxygen>

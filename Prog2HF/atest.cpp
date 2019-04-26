@@ -10,9 +10,12 @@ void test1(std::fstream& partsFile, char partsfilename[52]) {
 			exit(EXIT_FAILURE);
 		}
 	}
+#ifdef _DEBUG
+	std::cout << "Test 1 Succesful\n";
+#endif
 }
 
-bool test2(Inventory inventory) {
+bool test2(Inventory & inventory) {
 	if (nullptr == (dynamic_cast<CPU*>(inventory[0]))) {
 		std::cerr << "The first item wasnt a CPU";
 		return false;
@@ -29,6 +32,9 @@ bool test2(Inventory inventory) {
 		std::cerr << "The first item was a CPU instead of a GPU";
 		return false;
 	}
+#ifdef _DEBUG
+	std::cout << "Test 2 Succesful\n";
+#endif
 	return true;
 }
 
@@ -37,6 +43,9 @@ bool test3(String test1, String test2) {
 	if (!temp) {
 		std::cerr << "Result does not equal the expected result";
 	}
+#ifdef _DEBUG
+	std::cout << "Test 3 Succesful\n";
+#endif
 	return temp;
 }
 
@@ -45,5 +54,8 @@ bool test4(String asd, const char* test) {
 	if (!temp) {
 		std::cerr << "Result does not equal the expected result";
 	}
+#ifdef _DEBUG
+	std::cout << "Test 4 Succesful\n";
+#endif
 	return temp;
 }

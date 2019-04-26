@@ -2,11 +2,363 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="_parts_8cpp" kind="file">
     <compoundname>Parts.cpp</compoundname>
+    <includes refid="_parts_8h" local="yes">Parts.h</includes>
+    <incdepgraph>
+      <node id="152">
+        <label>Compatibility.h</label>
+        <link refid="_compatibility_8h"/>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>schtring.h</label>
+        <link refid="schtring_8h"/>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+      </node>
+      <node id="153">
+        <label>cctype</label>
+      </node>
+      <node id="149">
+        <label>iostream</label>
+      </node>
+      <node id="151">
+        <label>ctype.h</label>
+      </node>
+      <node id="147">
+        <label>Parts.h</label>
+        <link refid="_parts_8h"/>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp</label>
+        <link refid="Parts.cpp"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="150">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_parts_8cpp_1a545350ed97c61e94aefe4fff919dd749" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Part &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_part" kindref="compound">Part</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" line="68" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="68" bodyend="71"/>
+        <references refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd" compoundref="_parts_8cpp" startline="3" endline="5">Part::print</references>
+      </memberdef>
+      <memberdef kind="function" id="_parts_8cpp_1a4e72844a8f5f9e999222fcd2ce889cc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const CPU &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_c_p_u" kindref="compound">CPU</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" line="72" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="72" bodyend="75"/>
+        <references refid="class_c_p_u_1ae8b92e567b87bf3889798e4dcc83d4c6" compoundref="_parts_8cpp" startline="7" endline="22">CPU::print</references>
+      </memberdef>
+      <memberdef kind="function" id="_parts_8cpp_1a7b20bb2c543e3b9a7b73e788908a818d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const GPU &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_g_p_u" kindref="compound">GPU</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" line="76" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="76" bodyend="79"/>
+        <references refid="class_g_p_u_1a7a938f10f542b123b51419397556e896" compoundref="_parts_8cpp" startline="24" endline="27">GPU::print</references>
+      </memberdef>
+      <memberdef kind="function" id="_parts_8cpp_1a2692dd3fd4bb8169a98820ed4cb9e018" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const MOBO &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_m_o_b_o" kindref="compound">MOBO</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" line="80" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="80" bodyend="83"/>
+        <references refid="class_m_o_b_o_1ac1a3729cfdd02bebcf7f26394a6cb245" compoundref="_parts_8cpp" startline="29" endline="32">MOBO::print</references>
+      </memberdef>
+      <memberdef kind="function" id="_parts_8cpp_1a6fdebbd47f8bac238a905dc2cc26f16d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const RAM &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_r_a_m" kindref="compound">RAM</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" line="84" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="84" bodyend="87"/>
+        <references refid="class_r_a_m_1a826cedfb4978b7ea352bdd0eccacf674" compoundref="_parts_8cpp" startline="34" endline="37">RAM::print</references>
+      </memberdef>
+      <memberdef kind="function" id="_parts_8cpp_1a65c2ee003aa5edc6bbaf4c4c18df4166" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Case &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_case" kindref="compound">Case</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" line="88" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="88" bodyend="91"/>
+        <references refid="class_case_1a2786162425c1f7c92b37011b091e2d46" compoundref="_parts_8cpp" startline="39" endline="42">Case::print</references>
+      </memberdef>
+      <memberdef kind="function" id="_parts_8cpp_1aa5927379449df3d8bbc27e025c5d148f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const PSU &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_p_s_u" kindref="compound">PSU</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" line="92" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="92" bodyend="95"/>
+        <references refid="class_p_s_u_1aa6bbdb1a875c8ebdbefd07a8663c6961" compoundref="_parts_8cpp" startline="44" endline="47">PSU::print</references>
+      </memberdef>
+      <memberdef kind="function" id="_parts_8cpp_1ac6bdcededa1d9e3fdb9bf9e48a5eff40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const SSD &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_s_s_d" kindref="compound">SSD</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" line="96" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="96" bodyend="99"/>
+        <references refid="class_s_s_d_1a551b59fa58e2e5b0de0d21fdc1ebf892" compoundref="_parts_8cpp" startline="54" endline="57">SSD::print</references>
+      </memberdef>
+      <memberdef kind="function" id="_parts_8cpp_1ab32c05e13dae5fcc5abde983898567ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const HDD &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_h_d_d" kindref="compound">HDD</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" line="100" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="100" bodyend="103"/>
+        <references refid="class_h_d_d_1acb1d2f519b016319f98375e6dd1c7d88" compoundref="_parts_8cpp" startline="59" endline="62">HDD::print</references>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_parts_8h" kindref="compound">Parts.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd" kindref="member">Part::print</ref>(std::ostream&amp;<sp/>os)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Brand:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>Type:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>Price:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>USD,<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_c_p_u_1ae8b92e567b87bf3889798e4dcc83d4c6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_p_u_1ae8b92e567b87bf3889798e4dcc83d4c6" kindref="member">CPU::print</ref>(std::ostream&amp;<sp/>os)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd" kindref="member">Part::print</ref>(os);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Base<sp/>clock:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_c_p_u_1ac733562aad380889ae0d175e2b0179c2" kindref="member">clk</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>MHz,<sp/>Number<sp/>of<sp/>Cores:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_c_p_u_1a2e310df8c8c7044b4e46d3b4dd28b57e" kindref="member">cores</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>Socket:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_c_p_u_1a57208b3d2f312ccc5a8f21e585a5bcd7" kindref="member">socket</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;AMD&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>Supports<sp/>Simultaneous<sp/>Multithreading:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>Supports<sp/>Hyper-Threading:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_c_p_u_1a8df4efeddb85f19f2ceee8b6085a0a0a" kindref="member">multithreading</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Yes&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;No&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_g_p_u_1a7a938f10f542b123b51419397556e896" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a7a938f10f542b123b51419397556e896" kindref="member">GPU::print</ref>(std::ostream&amp;<sp/>os)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd" kindref="member">Part::print</ref>(os);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Base<sp/>Clock:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_g_p_u_1a6d02136c484446a6f5c3742c58c7f037" kindref="member">clk</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>Video<sp/>Memory:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_g_p_u_1a46bdfecb6fc7b932a9e6422c6372ae04" kindref="member">vram</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>GB&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_m_o_b_o_1ac1a3729cfdd02bebcf7f26394a6cb245" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_o_b_o_1ac1a3729cfdd02bebcf7f26394a6cb245" kindref="member">MOBO::print</ref>(std::ostream&amp;<sp/>os)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd" kindref="member">Part::print</ref>(os);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Socket:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_m_o_b_o_1a4a0bfd14857838f46a6e1ccbffa5f119" kindref="member">socket</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>Chipset:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_m_o_b_o_1a4820c2db91eb67239b108294c80cf5b3" kindref="member">chipset</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>Form<sp/>factor:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_m_o_b_o_1aca8364452881117a7d7c5b08cc47928b" kindref="member">formfactor</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_r_a_m_1a826cedfb4978b7ea352bdd0eccacf674" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m_1a826cedfb4978b7ea352bdd0eccacf674" kindref="member">RAM::print</ref>(std::ostream&amp;<sp/>os)</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd" kindref="member">Part::print</ref>(os);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Base<sp/>Clock:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_r_a_m_1ab1c0c9bd9d09e1d08d4e47f823145cba" kindref="member">clk</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>Memory:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_r_a_m_1a879e4cd586dcdfafa402868c444e7c6e" kindref="member">size</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>GB&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="class_case_1a2786162425c1f7c92b37011b091e2d46" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_case_1a2786162425c1f7c92b37011b091e2d46" kindref="member">Case::print</ref>(std::ostream&amp;<sp/>os)</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd" kindref="member">Part::print</ref>(os);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Form<sp/>factor:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_case_1a4749cb5d50a2889cad99fb893cc43b37" kindref="member">formfactor</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_p_s_u_1aa6bbdb1a875c8ebdbefd07a8663c6961" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_p_s_u_1aa6bbdb1a875c8ebdbefd07a8663c6961" kindref="member">PSU::print</ref>(std::ostream&amp;<sp/>os)</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd" kindref="member">Part::print</ref>(os);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Wattage:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_p_s_u_1a0318cbbbd0802ba97ca32db5360cb7d4" kindref="member">wattage</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>W&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_storage_1a07ace7dc4916ea4f6b00be1ffee63430" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_storage_1a07ace7dc4916ea4f6b00be1ffee63430" kindref="member">Storage::print</ref>(std::ostream&amp;<sp/>os)</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd" kindref="member">Part::print</ref>(os);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Capacity:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_storage_1abcc80ce58a21fa884035617ee0b6cb67" kindref="member">size</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>GB,<sp/>Random<sp/>Read<sp/>Speed:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_storage_1a41073842ff16961dad3903e6dd49bb0c" kindref="member">readspeed</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>MB/s,<sp/>Random<sp/>Write<sp/>Speed:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_storage_1a0198a1483ccf849d48c76da88599ba8b" kindref="member">writespeed</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>MB/s&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_s_s_d_1a551b59fa58e2e5b0de0d21fdc1ebf892" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_s_d_1a551b59fa58e2e5b0de0d21fdc1ebf892" kindref="member">SSD::print</ref>(std::ostream&amp;<sp/>os)</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_storage_1a07ace7dc4916ea4f6b00be1ffee63430" kindref="member">Storage::print</ref>(os);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Form<sp/>factor:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_s_s_d_1ae8e8be235266aebff618a4be69f11d52" kindref="member">formfactor</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>Flash:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_s_s_d_1a315019d2a400bf1588a09f551d090201" kindref="member">flashtype</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_h_d_d_1acb1d2f519b016319f98375e6dd1c7d88" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_h_d_d_1acb1d2f519b016319f98375e6dd1c7d88" kindref="member">HDD::print</ref>(std::ostream&amp;<sp/>os)</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_storage_1a07ace7dc4916ea4f6b00be1ffee63430" kindref="member">Storage::print</ref>(os);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;RPM:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_h_d_d_1a1b8eb236654027b883ddbce08c693a0a" kindref="member">rpm</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>rpm&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="class_c_p_u_1ae3dc1f075f60b84744a93a6c0046bdd9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_p_u_1ae3dc1f075f60b84744a93a6c0046bdd9" kindref="member">CPU::burn</ref>()</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n\n\nBurn\n\n\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="_parts_8h_1a41bf212a0001ee2061948fe863a2295b" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_parts_8cpp_1a545350ed97c61e94aefe4fff919dd749" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_part" kindref="compound">Part</ref>&amp;<sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>p.<ref refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd" kindref="member">print</ref>(os);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72" refid="_parts_8h_1a63166a2a7d326683af5fc64dfaa7aa65" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_parts_8cpp_1a545350ed97c61e94aefe4fff919dd749" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_p_u" kindref="compound">CPU</ref>&amp;<sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>p.<ref refid="class_c_p_u_1ae8b92e567b87bf3889798e4dcc83d4c6" kindref="member">print</ref>(os);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76" refid="_parts_8h_1a0de289ccec7d8750e588f0a5761252b0" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_parts_8cpp_1a545350ed97c61e94aefe4fff919dd749" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u" kindref="compound">GPU</ref>&amp;<sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>p.<ref refid="class_g_p_u_1a7a938f10f542b123b51419397556e896" kindref="member">print</ref>(os);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80" refid="_parts_8h_1a3b7a2a4db5c057c863872d61e15867ca" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_parts_8cpp_1a545350ed97c61e94aefe4fff919dd749" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_m_o_b_o" kindref="compound">MOBO</ref>&amp;<sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>p.<ref refid="class_m_o_b_o_1ac1a3729cfdd02bebcf7f26394a6cb245" kindref="member">print</ref>(os);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84" refid="_parts_8h_1a119a3c9e22eaeee7ac8e0e0400429fe2" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_parts_8cpp_1a545350ed97c61e94aefe4fff919dd749" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m" kindref="compound">RAM</ref>&amp;<sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>p.<ref refid="class_r_a_m_1a826cedfb4978b7ea352bdd0eccacf674" kindref="member">print</ref>(os);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88" refid="_parts_8h_1a095fc6bc853799360bba8d744652202a" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_parts_8cpp_1a545350ed97c61e94aefe4fff919dd749" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_case" kindref="compound">Case</ref>&amp;<sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>p.<ref refid="class_case_1a2786162425c1f7c92b37011b091e2d46" kindref="member">print</ref>(os);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92" refid="_parts_8h_1a1f7600c301fc3b2fbca76e13f0631ed7" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_parts_8cpp_1a545350ed97c61e94aefe4fff919dd749" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_p_s_u" kindref="compound">PSU</ref>&amp;<sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>p.<ref refid="class_p_s_u_1aa6bbdb1a875c8ebdbefd07a8663c6961" kindref="member">print</ref>(os);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96" refid="_parts_8h_1a58786e0f5831ee1afe7272e37221a12a" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_parts_8cpp_1a545350ed97c61e94aefe4fff919dd749" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_s_s_d" kindref="compound">SSD</ref>&amp;<sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>p.<ref refid="class_s_s_d_1a551b59fa58e2e5b0de0d21fdc1ebf892" kindref="member">print</ref>(os);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100" refid="_parts_8h_1aa60040b0f441945779699ec9ef31d0e5" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_parts_8cpp_1a545350ed97c61e94aefe4fff919dd749" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_h_d_d" kindref="compound">HDD</ref>&amp;<sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>p.<ref refid="class_h_d_d_1acb1d2f519b016319f98375e6dd1c7d88" kindref="member">print</ref>(os);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp"/>
   </compounddef>

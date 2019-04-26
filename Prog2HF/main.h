@@ -32,13 +32,13 @@ enum enumMenu {
 	ePartsRemove = 13,
 	eBuildsList = 21,
 	eBuildsAdd = 22,
-	eExit = 99
+	eExit = 9
 };
 
 int main(int argc, char** argv);
 
 
-void print();
+void printMain();
 void evaluateCommand(enum enumMenu&);
 void printPartsList(Inventory&);
 void saveParts(const Inventory&);

@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_h_d_d" kind="class" prot="public">
+    <compoundname>HDD</compoundname>
+    <basecompoundref refid="class_storage" prot="public" virt="non-virtual">Storage</basecompoundref>
+    <includes refid="_parts_8h" local="no">Parts.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_h_d_d_1a1b8eb236654027b883ddbce08c693a0a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int HDD::rpm</definition>
+        <argsstring></argsstring>
+        <name>rpm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="159" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="159" bodyend="-1"/>
+        <referencedby refid="class_h_d_d_1acb1d2f519b016319f98375e6dd1c7d88" compoundref="_parts_8cpp" startline="59" endline="62">print</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_h_d_d_1a375ad923cb64a11afc261fe1fac5276c" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>HDD::HDD</definition>
+        <argsstring>(String brand, String type, int price, int size, int readspeed, int writespeed, int rpm)</argsstring>
+        <name>HDD</name>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>brand</declname>
+        </param>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>readspeed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>writespeed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rpm</declname>
+        </param>
+        <briefdescription>
+<para>Fordulatszám. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="161" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="161" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="class_h_d_d_1a98374b087d6a74476b914dedb2de1ec4" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>HDD::HDD</definition>
+        <argsstring>(TempInput tmp)</argsstring>
+        <name>HDD</name>
+        <param>
+          <type><ref refid="struct_temp_input" kindref="compound">TempInput</ref></type>
+          <declname>tmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="163" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="163" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="class_h_d_d_1acb1d2f519b016319f98375e6dd1c7d88" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void HDD::print</definition>
+        <argsstring>(std::ostream &amp;os) const </argsstring>
+        <name>print</name>
+        <reimplements refid="class_storage_1a07ace7dc4916ea4f6b00be1ffee63430">print</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="165" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="59" bodyend="62"/>
+        <references refid="class_storage_1a07ace7dc4916ea4f6b00be1ffee63430" compoundref="_parts_8cpp" startline="49" endline="52">Storage::print</references>
+        <references refid="class_h_d_d_1a1b8eb236654027b883ddbce08c693a0a" compoundref="_parts_8h" startline="159">rpm</references>
+        <referencedby refid="_parts_8h_1aa60040b0f441945779699ec9ef31d0e5" compoundref="_parts_8cpp" startline="100" endline="103">operator&lt;&lt;</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="23">
+        <label>Storage</label>
+        <link refid="class_storage"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Part</label>
+        <link refid="class_part"/>
+      </node>
+      <node id="22">
+        <label>HDD</label>
+        <link refid="class_h_d_d"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="28">
+        <label>String</label>
+        <link refid="class_string"/>
+      </node>
+      <node id="26">
+        <label>Storage</label>
+        <link refid="class_storage"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>Part</label>
+        <link refid="class_part"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>brand</edgelabel>
+          <edgelabel>type</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>HDD</label>
+        <link refid="class_h_d_d"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="158" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="158" bodyend="166"/>
+    <listofallmembers>
+      <member refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" prot="protected" virt="non-virtual"><scope>HDD</scope><name>brand</name></member>
+      <member refid="class_part_1abdaeb1db5ba55c184f39802c163e9ebc" prot="public" virt="non-virtual"><scope>HDD</scope><name>get_brand</name></member>
+      <member refid="class_part_1abb7c8371883825ad46773f219db3523e" prot="public" virt="non-virtual"><scope>HDD</scope><name>get_price</name></member>
+      <member refid="class_part_1a97117fd470cd694ae0897fb2f4391786" prot="public" virt="non-virtual"><scope>HDD</scope><name>get_type</name></member>
+      <member refid="class_h_d_d_1a375ad923cb64a11afc261fe1fac5276c" prot="public" virt="non-virtual"><scope>HDD</scope><name>HDD</name></member>
+      <member refid="class_h_d_d_1a98374b087d6a74476b914dedb2de1ec4" prot="public" virt="non-virtual"><scope>HDD</scope><name>HDD</name></member>
+      <member refid="class_part_1aae5224ee782134c4ecb60f23ec38698f" prot="public" virt="non-virtual"><scope>HDD</scope><name>Part</name></member>
+      <member refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" prot="protected" virt="non-virtual"><scope>HDD</scope><name>price</name></member>
+      <member refid="class_h_d_d_1acb1d2f519b016319f98375e6dd1c7d88" prot="public" virt="virtual"><scope>HDD</scope><name>print</name></member>
+      <member refid="class_storage_1a41073842ff16961dad3903e6dd49bb0c" prot="protected" virt="non-virtual"><scope>HDD</scope><name>readspeed</name></member>
+      <member refid="class_h_d_d_1a1b8eb236654027b883ddbce08c693a0a" prot="private" virt="non-virtual"><scope>HDD</scope><name>rpm</name></member>
+      <member refid="class_storage_1abcc80ce58a21fa884035617ee0b6cb67" prot="protected" virt="non-virtual"><scope>HDD</scope><name>size</name></member>
+      <member refid="class_storage_1a502a2ec76e09d48a87da6ed1b91cdaa8" prot="public" virt="non-virtual"><scope>HDD</scope><name>Storage</name></member>
+      <member refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" prot="protected" virt="non-virtual"><scope>HDD</scope><name>type</name></member>
+      <member refid="class_storage_1a0198a1483ccf849d48c76da88599ba8b" prot="protected" virt="non-virtual"><scope>HDD</scope><name>writespeed</name></member>
+      <member refid="class_part_1aaecbb747a7227f7ce3b44caeaf1801c2" prot="public" virt="virtual"><scope>HDD</scope><name>~Part</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,37 +1,51 @@
 #include "Inventory.h"
 
-Part* loadPart(std::istream& is, TempInput& tmp, enum enumPart e) {
+void Inventory::loadPart(std::istream& is, TempInput& tmp, enum enumPart e) {
 	switch (e)
 	{
 	case eCPU:
 		LoadParams(is, tmp, 7);
-		return (new CPU(tmp));
+		this->push_back(new CPU(tmp));
+#ifdef _DEBUG
+		std::cout << *((*this)[size-1]) << std::endl;
+#endif 
+		return;
 	case eGPU:
 		LoadParams(is, tmp, 5);
-		return (new GPU(tmp));
+		this->push_back(new GPU(tmp));
+#ifdef _DEBUG
+		std::cout << *((*this)[size-1]) << std::endl;
+#endif 
+		return;
 	case eMOBO:
 		LoadParams(is, tmp, 6);
-		return (new MOBO(tmp));
+		this->push_back(new MOBO(tmp));
+		return;
 	case eRAM:
 		LoadParams(is, tmp, 5);
-		return (new RAM(tmp));
+		this->push_back(new RAM(tmp));
+		return;
 	case eCase:
 		LoadParams(is, tmp, 4);
-		return (new Case(tmp));
+		this->push_back(new Case(tmp));
+		return;
 	case ePSU:
 		LoadParams(is, tmp, 4);
-		return (new PSU(tmp));
+		this->push_back(new PSU(tmp));
+		return;
 	case eSSD:
 		LoadParams(is, tmp, 8);
-		return (new SSD(tmp));
+		this->push_back(new SSD(tmp));
+		return;
 	case eHDD:
 		LoadParams(is, tmp, 7);
-		return (new HDD(tmp));
+		this->push_back(new HDD(tmp));
+		return;
 	case eInvalid:
 		throw std::logic_error("how did you get here?");
 	}
 	throw std::logic_error("how did you get here?");
-	return(new Part);
+	return;
 }
 
 void setEnum(String inst, enum enumPart& e)
@@ -110,11 +124,12 @@ void LoadParams(std::istream& is, TempInput& tmp, int const params) {
 			continue;
 		}
 		if (tmp.instruction == "HyperThreading:" || tmp.instruction == "Hyper-Threading:" || tmp.instruction == "MultiThreading:" ||
-			tmp.instruction == "Multi-Threading:" || tmp.instruction == "SimultaneousMultiThreading" || tmp.instruction == "SimultaneousMulti-Threading" ||
-			tmp.instruction == "SMT" || tmp.instruction == "HT")
+			tmp.instruction == "Multi-Threading:" || tmp.instruction == "SimultaneousMultiThreading:" || tmp.instruction == "SimultaneousMulti-Threading:" ||
+			tmp.instruction == "SMT:" || tmp.instruction == "HT:")
 		{
 			String temp;
 			is >> temp;
+			if (temp[temp.length() - 1] == ',') temp--;
 			if (temp == "yes" || temp == "true" || temp == "1") {
 				tmp.multithreading = true;
 			}

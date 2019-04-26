@@ -2,34 +2,110 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="class_g_p_u" kind="class" prot="public">
     <compoundname>GPU</compoundname>
-    <basecompoundref refid="class_alkatresz" prot="public" virt="non-virtual">Alkatresz</basecompoundref>
+    <basecompoundref refid="class_part" prot="public" virt="non-virtual">Part</basecompoundref>
     <includes refid="_parts_8h" local="no">Parts.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_g_p_u_1a6d02136c484446a6f5c3742c58c7f037" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GPU::clk</definition>
+        <argsstring></argsstring>
+        <name>clk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="74" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="class_g_p_u_1a7a938f10f542b123b51419397556e896" compoundref="_parts_8cpp" startline="24" endline="27">print</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_p_u_1a46bdfecb6fc7b932a9e6422c6372ae04" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GPU::vram</definition>
+        <argsstring></argsstring>
+        <name>vram</name>
+        <briefdescription>
+<para>Órajel. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="75" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="75" bodyend="-1"/>
+        <referencedby refid="class_g_p_u_1a7a938f10f542b123b51419397556e896" compoundref="_parts_8cpp" startline="24" endline="27">print</referencedby>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="class_g_p_u_1a2ca7973e32f63ba3472166a007419a75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_g_p_u_1a358f512b1583399e68f76248bb305e61" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
         <definition>GPU::GPU</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(String brand, String type, int price, int clk, int vram)</argsstring>
         <name>GPU</name>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>brand</declname>
+        </param>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>clk</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>vram</declname>
+        </param>
         <briefdescription>
-        </briefdescription>
+<para>Videómemória. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="28" column="1"/>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="77" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="77" bodyend="77"/>
       </memberdef>
-      <memberdef kind="function" id="class_g_p_u_1ac4d153a08d3b9f40e5a8f1634f4a9e78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_g_p_u_1a9b1632e965c26051ae583c9b5e1c2e3c" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
-        <definition>GPU::~GPU</definition>
-        <argsstring>()</argsstring>
-        <name>~GPU</name>
+        <definition>GPU::GPU</definition>
+        <argsstring>(TempInput &amp;tmp)</argsstring>
+        <name>GPU</name>
+        <param>
+          <type><ref refid="struct_temp_input" kindref="compound">TempInput</ref> &amp;</type>
+          <declname>tmp</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="29" column="1"/>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="78" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_u_1a7a938f10f542b123b51419397556e896" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GPU::print</definition>
+        <argsstring>(std::ostream &amp;os) const </argsstring>
+        <name>print</name>
+        <reimplements refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd">print</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="80" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="24" bodyend="27"/>
+        <references refid="class_g_p_u_1a6d02136c484446a6f5c3742c58c7f037" compoundref="_parts_8h" startline="74">clk</references>
+        <references refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd" compoundref="_parts_8cpp" startline="3" endline="5">Part::print</references>
+        <references refid="class_g_p_u_1a46bdfecb6fc7b932a9e6422c6372ae04" compoundref="_parts_8h" startline="75">vram</references>
+        <referencedby refid="_parts_8h_1a0de289ccec7d8750e588f0a5761252b0" compoundref="_parts_8cpp" startline="76" endline="79">operator&lt;&lt;</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -37,43 +113,52 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="14">
+      <node id="18">
+        <label>Part</label>
+        <link refid="class_part"/>
+      </node>
+      <node id="17">
         <label>GPU</label>
         <link refid="class_g_p_u"/>
-        <childnode refid="15" relation="public-inheritance">
+        <childnode refid="18" relation="public-inheritance">
         </childnode>
-      </node>
-      <node id="15">
-        <label>Alkatresz</label>
-        <link refid="class_alkatresz"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="18">
+      <node id="21">
         <label>String</label>
         <link refid="class_string"/>
       </node>
-      <node id="16">
-        <label>GPU</label>
-        <link refid="class_g_p_u"/>
-        <childnode refid="17" relation="public-inheritance">
+      <node id="20">
+        <label>Part</label>
+        <link refid="class_part"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>brand</edgelabel>
+          <edgelabel>type</edgelabel>
         </childnode>
       </node>
-      <node id="17">
-        <label>Alkatresz</label>
-        <link refid="class_alkatresz"/>
-        <childnode refid="18" relation="usage">
-          <edgelabel>Nev</edgelabel>
-          <edgelabel>Gyarto</edgelabel>
+      <node id="19">
+        <label>GPU</label>
+        <link refid="class_g_p_u"/>
+        <childnode refid="20" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="25" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="25" bodyend="30"/>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="73" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="73" bodyend="81"/>
     <listofallmembers>
-      <member refid="class_alkatresz_1ace416bfd871cfee9c7d7a94681ca04d7" prot="public" virt="non-virtual"><scope>GPU</scope><name>Alkatresz</name></member>
-      <member refid="class_g_p_u_1a2ca7973e32f63ba3472166a007419a75" prot="public" virt="non-virtual"><scope>GPU</scope><name>GPU</name></member>
-      <member refid="class_alkatresz_1a02cdc7f105e7e1348784e657398ccb50" prot="public" virt="non-virtual"><scope>GPU</scope><name>~Alkatresz</name></member>
-      <member refid="class_g_p_u_1ac4d153a08d3b9f40e5a8f1634f4a9e78" prot="public" virt="non-virtual"><scope>GPU</scope><name>~GPU</name></member>
+      <member refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" prot="protected" virt="non-virtual"><scope>GPU</scope><name>brand</name></member>
+      <member refid="class_g_p_u_1a6d02136c484446a6f5c3742c58c7f037" prot="private" virt="non-virtual"><scope>GPU</scope><name>clk</name></member>
+      <member refid="class_part_1abdaeb1db5ba55c184f39802c163e9ebc" prot="public" virt="non-virtual"><scope>GPU</scope><name>get_brand</name></member>
+      <member refid="class_part_1abb7c8371883825ad46773f219db3523e" prot="public" virt="non-virtual"><scope>GPU</scope><name>get_price</name></member>
+      <member refid="class_part_1a97117fd470cd694ae0897fb2f4391786" prot="public" virt="non-virtual"><scope>GPU</scope><name>get_type</name></member>
+      <member refid="class_g_p_u_1a358f512b1583399e68f76248bb305e61" prot="public" virt="non-virtual"><scope>GPU</scope><name>GPU</name></member>
+      <member refid="class_g_p_u_1a9b1632e965c26051ae583c9b5e1c2e3c" prot="public" virt="non-virtual"><scope>GPU</scope><name>GPU</name></member>
+      <member refid="class_part_1aae5224ee782134c4ecb60f23ec38698f" prot="public" virt="non-virtual"><scope>GPU</scope><name>Part</name></member>
+      <member refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" prot="protected" virt="non-virtual"><scope>GPU</scope><name>price</name></member>
+      <member refid="class_g_p_u_1a7a938f10f542b123b51419397556e896" prot="public" virt="virtual"><scope>GPU</scope><name>print</name></member>
+      <member refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" prot="protected" virt="non-virtual"><scope>GPU</scope><name>type</name></member>
+      <member refid="class_g_p_u_1a46bdfecb6fc7b932a9e6422c6372ae04" prot="private" virt="non-virtual"><scope>GPU</scope><name>vram</name></member>
+      <member refid="class_part_1aaecbb747a7227f7ce3b44caeaf1801c2" prot="public" virt="virtual"><scope>GPU</scope><name>~Part</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

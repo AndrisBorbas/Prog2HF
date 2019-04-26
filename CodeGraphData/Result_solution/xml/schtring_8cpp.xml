@@ -7,38 +7,61 @@
     <includes refid="memtrace_8h" local="yes">memtrace.h</includes>
     <includes refid="schtring_8h" local="yes">schtring.h</includes>
     <incdepgraph>
-      <node id="33">
-        <label>Prog2HF/schtring.cpp</label>
+      <node id="172">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp</label>
         <link refid="schtring.cpp"/>
-        <childnode refid="34" relation="include">
+        <childnode refid="173" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="174" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="175" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="176" relation="include">
         </childnode>
       </node>
-      <node id="37">
+      <node id="176">
         <label>schtring.h</label>
         <link refid="schtring_8h"/>
-        <childnode refid="34" relation="include">
+        <childnode refid="173" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
         </childnode>
       </node>
-      <node id="34">
+      <node id="173">
         <label>iostream</label>
       </node>
-      <node id="36">
+      <node id="177">
+        <label>ctype.h</label>
+      </node>
+      <node id="175">
         <label>memtrace.h</label>
         <link refid="memtrace_8h"/>
       </node>
-      <node id="35">
+      <node id="174">
         <label>cstring</label>
       </node>
     </incdepgraph>
       <sectiondef kind="func">
+      <memberdef kind="function" id="schtring_8cpp_1a9d7d0d0ea2b8f0f7c6d53fe66fc0b301" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* stolower</definition>
+        <argsstring>(char *s)</argsstring>
+        <name>stolower</name>
+        <param>
+          <type>char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp" line="19" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp" bodystart="19" bodyend="23"/>
+        <referencedby refid="class_string_1a1006dbb8a123aed87b8edb33d5cbcee4" compoundref="schtring_8cpp" startline="95" endline="106">String::operator==</referencedby>
+      </memberdef>
       <memberdef kind="function" id="schtring_8cpp_1aef14876e55f43fb4ffa7b91664467ecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
         <definition>std::ostream&amp; operator&lt;&lt;</definition>
@@ -53,13 +76,13 @@
           <declname>s0</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>inserter operator </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp" line="89" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp" bodystart="89" bodyend="92"/>
-        <references refid="class_string_1a4d236d8f9b907db1822064fe0037e267" compoundref="schtring_8h" startline="26" endline="26">String::c_str</references>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp" line="146" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp" bodystart="146" bodyend="149"/>
+        <references refid="class_string_1a4d236d8f9b907db1822064fe0037e267" compoundref="schtring_8h" startline="31" endline="31">String::c_str</references>
       </memberdef>
       <memberdef kind="function" id="schtring_8cpp_1aea8ed420ad5e70828bc42b0fb9b49366" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::istream &amp;</type>
@@ -75,12 +98,12 @@
           <declname>s0</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>extractor operator </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp" line="95" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp" bodystart="95" bodyend="112"/>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp" line="151" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp" bodystart="151" bodyend="168"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -89,116 +112,172 @@
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#if<sp/>defined(WIN32)<sp/>||<sp/>defined(_WIN32)<sp/>||<sp/>defined(WIN64)<sp/>||<sp/>defined(_WIN64)</highlight></codeline>
-<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_CRT_SECURE_NO_WARNINGS</highlight></codeline>
-<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
-<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifdef<sp/>_MSC_VER</highlight></codeline>
-<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_CRT_SECURE_NO_WARNINGS</highlight></codeline>
-<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
-<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="memtrace_8h" kindref="compound">memtrace.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="schtring_8h" kindref="compound">schtring.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::cin;</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::ios_base;</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18" refid="class_string_1a62a77180f8df2547e8be1313654abcee" refkind="member"><highlight class="normal"><ref refid="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" kindref="member">String::String</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch)<sp/>{</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>+<sp/>1];</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>[0]<sp/>=<sp/>ch;</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>[1]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_CRT_SECURE_NO_WARNINGS<sp/><sp/><sp/><sp/><sp/>//disable<sp/>printf<sp/>unsecure<sp/>error</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>warning(disable<sp/>:<sp/>4996)<sp/><sp/><sp/><sp/><sp/>//disable<sp/>strlwr<sp/>deprecated<sp/>error</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifdef<sp/>_MSC_VER</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_CRT_SECURE_NO_WARNINGS</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>warning(disable<sp/>:<sp/>4996)</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="memtrace_8h" kindref="compound">memtrace.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="schtring_8h" kindref="compound">schtring.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::cin;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::ios_base;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="schtring_8h_1a9d7d0d0ea2b8f0f7c6d53fe66fc0b301" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="schtring_8cpp_1a9d7d0d0ea2b8f0f7c6d53fe66fc0b301" kindref="member">stolower</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>s)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>p<sp/>=<sp/>s;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(*p<sp/>=<sp/>tolower(*p))<sp/>p++;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_string_1a62a77180f8df2547e8be1313654abcee" refkind="member"><highlight class="normal"><ref refid="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" kindref="member">String::String</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch)<sp/>{</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>=<sp/>1;</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30" refid="class_string_1a09ca4f1436a83ecb1c273a836b7cd4c6" refkind="member"><highlight class="normal"><ref refid="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" kindref="member">String::String</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*p)<sp/>{</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>=<sp/>strlen(p);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>[0]<sp/>=<sp/>ch;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>[1]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>,<sp/>p);</highlight></codeline>
-<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39" refid="class_string_1a3c682dc983b45bdbb7f3858fe4cbf221" refkind="member"><highlight class="normal"><ref refid="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" kindref="member">String::String</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/>s1)<sp/>{</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>=<sp/>s1.<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref>;</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>+<sp/>1];</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>,<sp/>s1.<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>);</highlight></codeline>
-<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_string_1a09ca4f1436a83ecb1c273a836b7cd4c6" refkind="member"><highlight class="normal"><ref refid="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" kindref="member">String::String</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>=<sp/>strlen(p);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>,<sp/>p);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="class_string_1a3c682dc983b45bdbb7f3858fe4cbf221" refkind="member"><highlight class="normal"><ref refid="class_string_1a8a7ef356e05eb9b1ea1ab518baee3095" kindref="member">String::String</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/>s1)<sp/>{</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49" refid="class_string_1a803e6112834d4c0cdb0da6c6a4000e6e" refkind="member"><highlight class="normal"><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/><ref refid="class_string_1a803e6112834d4c0cdb0da6c6a4000e6e" kindref="member">String::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/>rhs_s)<sp/>{</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>!=<sp/>&amp;rhs_s)<sp/>{</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>;</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>=<sp/>rhs_s.<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref>;</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>+<sp/>1];</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy(<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>,<sp/>rhs_s.<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>);</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61" refid="class_string_1a1a7c5c39d4dafbbf8516f5058a253f1a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">&amp;<sp/><ref refid="class_string_1a1a7c5c39d4dafbbf8516f5058a253f1a" kindref="member">String::operator[]</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx)<sp/>{</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>&gt;=<sp/><ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref>)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;String:<sp/>indexelesi<sp/>hiba&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>[idx];</highlight></codeline>
-<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight></codeline>
-<codeline lineno="66" refid="class_string_1aa2cd8e755a2bc70e8ad11708a154d7a3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">&amp;<sp/><ref refid="class_string_1a1a7c5c39d4dafbbf8516f5058a253f1a" kindref="member">String::operator[]</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>&gt;=<sp/><ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref>)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;String:<sp/>indexelesi<sp/>hiba&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>[idx];</highlight></codeline>
-<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72" refid="class_string_1a189071e4e59316603d720413ea166c77" refkind="member"><highlight class="normal"><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_string_1a189071e4e59316603d720413ea166c77" kindref="member">String::operator+</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/>rhs_s)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/>temp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>temp.<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>=<sp/><ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>+<sp/>rhs_s.<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref>;</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]temp.<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>;</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>temp.<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[temp.<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>+<sp/>1];</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(temp.<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>,<sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>=<sp/>s1.<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>,<sp/>s1.<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="class_string_1a803e6112834d4c0cdb0da6c6a4000e6e" refkind="member"><highlight class="normal"><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/><ref refid="class_string_1a803e6112834d4c0cdb0da6c6a4000e6e" kindref="member">String::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/>rhs_s)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>!=<sp/>&amp;rhs_s)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>=<sp/>rhs_s.<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy(<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>,<sp/>rhs_s.<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="class_string_1a1a7c5c39d4dafbbf8516f5058a253f1a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">&amp;<sp/><ref refid="class_string_1a1a7c5c39d4dafbbf8516f5058a253f1a" kindref="member">String::operator[]</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>&gt;=<sp/><ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref>)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;String:<sp/>indexelesi<sp/>hiba&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>[idx];</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="class_string_1aa2cd8e755a2bc70e8ad11708a154d7a3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">&amp;<sp/><ref refid="class_string_1a1a7c5c39d4dafbbf8516f5058a253f1a" kindref="member">String::operator[]</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>&gt;=<sp/><ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref>)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;String:<sp/>indexelesi<sp/>hiba&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>[idx];</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="class_string_1a189071e4e59316603d720413ea166c77" refkind="member"><highlight class="normal"><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_string_1a189071e4e59316603d720413ea166c77" kindref="member">String::operator+</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/>rhs_s)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/>temp;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>temp.<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>=<sp/><ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>+<sp/>rhs_s.<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref>;</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>strcat(temp.<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>,<sp/>rhs_s.<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]temp.<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>;</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>temp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>temp.<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[temp.<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>+<sp/>1];</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(temp.<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>,<sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>);</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight></codeline>
-<codeline lineno="89" refid="schtring_8h_1aef14876e55f43fb4ffa7b91664467ecb" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="schtring_8cpp_1aef14876e55f43fb4ffa7b91664467ecb" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/>s0)<sp/>{</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>s0.<ref refid="class_string_1a4d236d8f9b907db1822064fe0037e267" kindref="member">c_str</ref>();</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os;</highlight></codeline>
-<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>strcat(temp.<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>,<sp/>rhs_s.<ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>temp;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95" refid="schtring_8h_1aea8ed420ad5e70828bc42b0fb9b49366" refkind="member"><highlight class="normal">std::istream&amp;<sp/><ref refid="schtring_8cpp_1aea8ed420ad5e70828bc42b0fb9b49366" kindref="member">operator&gt;&gt;</ref>(std::istream&amp;<sp/>is,<sp/><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/>s0)<sp/>{</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch;</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>s0<sp/>=<sp/><ref refid="class_string" kindref="compound">String</ref>(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ios_base::fmtflags<sp/>fl<sp/>=<sp/>is.flags();<sp/></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>is.setf(ios_base::skipws);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(is<sp/>&gt;&gt;<sp/>ch)<sp/>{</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is.unsetf(ios_base::skipws);<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isspace(ch))<sp/>{</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is.putback(ch);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s0<sp/>=<sp/>s0<sp/>+<sp/>ch;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>is.setf(fl);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>is;</highlight></codeline>
-<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95" refid="class_string_1a1006dbb8a123aed87b8edb33d5cbcee4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_string_1a1006dbb8a123aed87b8edb33d5cbcee4" kindref="member">String::operator==</ref>(<ref refid="class_string" kindref="compound">String</ref>&amp;<sp/>rhs_s)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>tempr<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[rhs_s.<ref refid="class_string_1ae844285e8985e015988e5944cc4e98a6" kindref="member">length</ref>()<sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(tempr,<sp/>rhs_s.<ref refid="class_string_1a4d236d8f9b907db1822064fe0037e267" kindref="member">c_str</ref>());</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="schtring_8cpp_1a9d7d0d0ea2b8f0f7c6d53fe66fc0b301" kindref="member">stolower</ref>(tempr);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>templ<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(templ,<sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="schtring_8cpp_1a9d7d0d0ea2b8f0f7c6d53fe66fc0b301" kindref="member">stolower</ref>(templ);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>temp<sp/>=<sp/>strcmp(templ,<sp/>tempr);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>tempr;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>templ;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(!temp);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="class_string_1ade9af860a809548214837e33367e8835" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_string_1a1006dbb8a123aed87b8edb33d5cbcee4" kindref="member">String::operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>rhs_s)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>tempr<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[strlen(rhs_s)<sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(tempr,<sp/>rhs_s);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="schtring_8cpp_1a9d7d0d0ea2b8f0f7c6d53fe66fc0b301" kindref="member">stolower</ref>(tempr);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>templ<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(templ,<sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="schtring_8cpp_1a9d7d0d0ea2b8f0f7c6d53fe66fc0b301" kindref="member">stolower</ref>(templ);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>temp<sp/>=<sp/>strcmp(templ,<sp/>tempr);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>tempr;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>templ;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(!temp);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="class_string_1a5209b1c79e7a865c71becef6710c3c16" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_string_1a1006dbb8a123aed87b8edb33d5cbcee4" kindref="member">String::operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>rhs_s)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="123"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>tempr<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[strlen(rhs_s)<sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(tempr,<sp/>rhs_s);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="schtring_8cpp_1a9d7d0d0ea2b8f0f7c6d53fe66fc0b301" kindref="member">stolower</ref>(tempr);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>templ<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(templ,<sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="schtring_8cpp_1a9d7d0d0ea2b8f0f7c6d53fe66fc0b301" kindref="member">stolower</ref>(templ);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>temp<sp/>=<sp/>strcmp(templ,<sp/>tempr);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>tempr;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>templ;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(!temp);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="class_string_1a79869b69dd0106b1b6d179f760d6527a" refkind="member"><highlight class="normal"><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_string_1a79869b69dd0106b1b6d179f760d6527a" kindref="member">String::operator--</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a)<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>temp<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref>];</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>strncpy(temp,<sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>,<sp/><ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>temp[<ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref><sp/>-<sp/>1]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1abdb8b1fb25347f7046a27f0773392495" kindref="member">pData</ref><sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string_1a19c7dc3e73f362a699de38845b386296" kindref="member">len</ref>--;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="schtring_8h_1aef14876e55f43fb4ffa7b91664467ecb" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="schtring_8cpp_1aef14876e55f43fb4ffa7b91664467ecb" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/>s0)<sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>s0.<ref refid="class_string_1a4d236d8f9b907db1822064fe0037e267" kindref="member">c_str</ref>();</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="schtring_8h_1aea8ed420ad5e70828bc42b0fb9b49366" refkind="member"><highlight class="normal">std::istream&amp;<sp/><ref refid="schtring_8cpp_1aea8ed420ad5e70828bc42b0fb9b49366" kindref="member">operator&gt;&gt;</ref>(std::istream&amp;<sp/>is,<sp/><ref refid="class_string" kindref="compound">String</ref>&amp;<sp/>s0)<sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>s0<sp/>=<sp/><ref refid="class_string" kindref="compound">String</ref>(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ios_base::fmtflags<sp/>fl<sp/>=<sp/>is.flags();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>is.setf(ios_base::skipws);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(is<sp/>&gt;&gt;<sp/>ch)<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is.unsetf(ios_base::skipws);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isspace(ch))<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is.putback(ch);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s0<sp/>=<sp/>s0<sp/>+<sp/>ch;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>is.setf(fl);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>is;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp"/>
   </compounddef>

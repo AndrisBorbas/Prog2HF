@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_build" kind="class" prot="public">
+    <compoundname>Build</compoundname>
+    <includes refid="_builds_8h" local="no">Builds.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_build_1a4297537483b2965d3d4a3a74e9c90805" prot="private" static="no" mutable="no">
+        <type><ref refid="class_part" kindref="compound">Part</ref> **</type>
+        <definition>Part** Build::components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h" line="6" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h" bodystart="6" bodyend="-1"/>
+        <referencedby refid="class_build_1ab9b72c3479d483c0b452af30bb544de8" compoundref="_builds_8h" startline="11" endline="14">Build</referencedby>
+        <referencedby refid="class_build_1abc05ac7410f21e70124b03513298fef0" compoundref="_builds_8h" startline="26" endline="28">operator[]</referencedby>
+        <referencedby refid="class_build_1aba0548391a8c613ed2a9d81d4d3b2a4b" compoundref="_builds_8cpp" startline="4" endline="16">push_back</referencedby>
+        <referencedby refid="class_build_1a8f1d400e9bc158b6339cc1785b18d07b" compoundref="_builds_8h" startline="15" endline="21">~Build</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_build_1ab50572698466acc1e2681dfa6b878c05" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* Build::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h" line="7" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_build_1ab9b72c3479d483c0b452af30bb544de8" compoundref="_builds_8h" startline="11" endline="14">Build</referencedby>
+        <referencedby refid="class_build_1a8f1d400e9bc158b6339cc1785b18d07b" compoundref="_builds_8h" startline="15" endline="21">~Build</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_build_1afbe78494802a8a80b966508be8d7da2b" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Build::capacity</definition>
+        <argsstring></argsstring>
+        <name>capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h" line="8" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_build_1ab9b72c3479d483c0b452af30bb544de8" compoundref="_builds_8h" startline="11" endline="14">Build</referencedby>
+        <referencedby refid="class_build_1aba0548391a8c613ed2a9d81d4d3b2a4b" compoundref="_builds_8cpp" startline="4" endline="16">push_back</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_build_1a44526f794449c6cf417d059991e45ff6" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Build::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h" line="9" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_build_1aba0548391a8c613ed2a9d81d4d3b2a4b" compoundref="_builds_8cpp" startline="4" endline="16">push_back</referencedby>
+        <referencedby refid="class_build_1a8f1d400e9bc158b6339cc1785b18d07b" compoundref="_builds_8h" startline="15" endline="21">~Build</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_build_1ab9b72c3479d483c0b452af30bb544de8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Build::Build</definition>
+        <argsstring>(size_t capacity=7)</argsstring>
+        <name>Build</name>
+        <param>
+          <type>size_t</type>
+          <declname>capacity</declname>
+          <defval>7</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h" line="11" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h" bodystart="11" bodyend="14"/>
+        <references refid="class_build_1afbe78494802a8a80b966508be8d7da2b" compoundref="_builds_8h" startline="8">capacity</references>
+        <references refid="class_build_1a4297537483b2965d3d4a3a74e9c90805" compoundref="_builds_8h" startline="6">components</references>
+        <references refid="class_build_1ab50572698466acc1e2681dfa6b878c05" compoundref="_builds_8h" startline="7">count</references>
+      </memberdef>
+      <memberdef kind="function" id="class_build_1a8f1d400e9bc158b6339cc1785b18d07b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Build::~Build</definition>
+        <argsstring>()</argsstring>
+        <name>~Build</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h" line="15" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h" bodystart="15" bodyend="21"/>
+        <references refid="class_build_1a4297537483b2965d3d4a3a74e9c90805" compoundref="_builds_8h" startline="6">components</references>
+        <references refid="class_build_1ab50572698466acc1e2681dfa6b878c05" compoundref="_builds_8h" startline="7">count</references>
+        <references refid="class_build_1a44526f794449c6cf417d059991e45ff6" compoundref="_builds_8h" startline="9">size</references>
+      </memberdef>
+      <memberdef kind="function" id="class_build_1aba0548391a8c613ed2a9d81d4d3b2a4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Build::push_back</definition>
+        <argsstring>(T *part)</argsstring>
+        <name>push_back</name>
+        <param>
+          <type>T *</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h" line="24" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.cpp" bodystart="4" bodyend="16"/>
+        <references refid="class_build_1afbe78494802a8a80b966508be8d7da2b" compoundref="_builds_8h" startline="8">capacity</references>
+        <references refid="class_build_1a4297537483b2965d3d4a3a74e9c90805" compoundref="_builds_8h" startline="6">components</references>
+        <references refid="class_build_1a44526f794449c6cf417d059991e45ff6" compoundref="_builds_8h" startline="9">size</references>
+      </memberdef>
+      <memberdef kind="function" id="class_build_1abc05ac7410f21e70124b03513298fef0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_part" kindref="compound">Part</ref> *</type>
+        <definition>const Part* Build::operator[]</definition>
+        <argsstring>(int idx) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h" line="26" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h" bodystart="26" bodyend="28"/>
+        <references refid="class_build_1a4297537483b2965d3d4a3a74e9c90805" compoundref="_builds_8h" startline="6">components</references>
+      </memberdef>
+      <memberdef kind="function" id="class_build_1aa48e871d88c60272ab5f6cd5b97aaad0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_part" kindref="compound">Part</ref> *</type>
+        <definition>Part* Build::operator[]</definition>
+        <argsstring>(int idx)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h" line="29" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h" bodystart="29" bodyend="31"/>
+        <references refid="class_build_1a4297537483b2965d3d4a3a74e9c90805" compoundref="_builds_8h" startline="6">components</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>String</label>
+        <link refid="class_string"/>
+      </node>
+      <node id="1">
+        <label>Build</label>
+        <link refid="class_build"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>components</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Part</label>
+        <link refid="class_part"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>brand</edgelabel>
+          <edgelabel>type</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h" line="5" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h" bodystart="5" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_build_1ab9b72c3479d483c0b452af30bb544de8" prot="public" virt="non-virtual"><scope>Build</scope><name>Build</name></member>
+      <member refid="class_build_1afbe78494802a8a80b966508be8d7da2b" prot="private" virt="non-virtual"><scope>Build</scope><name>capacity</name></member>
+      <member refid="class_build_1a4297537483b2965d3d4a3a74e9c90805" prot="private" virt="non-virtual"><scope>Build</scope><name>components</name></member>
+      <member refid="class_build_1ab50572698466acc1e2681dfa6b878c05" prot="private" virt="non-virtual"><scope>Build</scope><name>count</name></member>
+      <member refid="class_build_1abc05ac7410f21e70124b03513298fef0" prot="public" virt="non-virtual"><scope>Build</scope><name>operator[]</name></member>
+      <member refid="class_build_1aa48e871d88c60272ab5f6cd5b97aaad0" prot="public" virt="non-virtual"><scope>Build</scope><name>operator[]</name></member>
+      <member refid="class_build_1aba0548391a8c613ed2a9d81d4d3b2a4b" prot="public" virt="non-virtual"><scope>Build</scope><name>push_back</name></member>
+      <member refid="class_build_1a44526f794449c6cf417d059991e45ff6" prot="private" virt="non-virtual"><scope>Build</scope><name>size</name></member>
+      <member refid="class_build_1a8f1d400e9bc158b6339cc1785b18d07b" prot="public" virt="non-virtual"><scope>Build</scope><name>~Build</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

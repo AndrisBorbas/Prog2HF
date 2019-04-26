@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_p_s_u" kind="class" prot="public">
+    <compoundname>PSU</compoundname>
+    <basecompoundref refid="class_part" prot="public" virt="non-virtual">Part</basecompoundref>
+    <includes refid="_parts_8h" local="no">Parts.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_p_s_u_1a0318cbbbd0802ba97ca32db5360cb7d4" prot="private" static="no" mutable="no">
+        <type><ref refid="class_string" kindref="compound">String</ref></type>
+        <definition>String PSU::wattage</definition>
+        <argsstring></argsstring>
+        <name>wattage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="123" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="123" bodyend="-1"/>
+        <referencedby refid="class_p_s_u_1aa6bbdb1a875c8ebdbefd07a8663c6961" compoundref="_parts_8cpp" startline="44" endline="47">print</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_p_s_u_1a11ff8451c8cb51e61875fafb628e9f94" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PSU::PSU</definition>
+        <argsstring>(String brand, String type, int price, String wattage)</argsstring>
+        <name>PSU</name>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>brand</declname>
+        </param>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>wattage</declname>
+        </param>
+        <briefdescription>
+<para>Teljesítmény. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="125" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="125" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_s_u_1ac6b366346dc0d2263a94b832843ab6b2" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PSU::PSU</definition>
+        <argsstring>(TempInput tmp)</argsstring>
+        <name>PSU</name>
+        <param>
+          <type><ref refid="struct_temp_input" kindref="compound">TempInput</ref></type>
+          <declname>tmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="126" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="126" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_s_u_1aa6bbdb1a875c8ebdbefd07a8663c6961" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void PSU::print</definition>
+        <argsstring>(std::ostream &amp;os) const </argsstring>
+        <name>print</name>
+        <reimplements refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd">print</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="128" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="44" bodyend="47"/>
+        <references refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd" compoundref="_parts_8cpp" startline="3" endline="5">Part::print</references>
+        <references refid="class_p_s_u_1a0318cbbbd0802ba97ca32db5360cb7d4" compoundref="_parts_8h" startline="123">wattage</references>
+        <referencedby refid="_parts_8h_1a1f7600c301fc3b2fbca76e13f0631ed7" compoundref="_parts_8cpp" startline="92" endline="95">operator&lt;&lt;</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="56">
+        <label>Part</label>
+        <link refid="class_part"/>
+      </node>
+      <node id="55">
+        <label>PSU</label>
+        <link refid="class_p_s_u"/>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="59">
+        <label>String</label>
+        <link refid="class_string"/>
+      </node>
+      <node id="58">
+        <label>Part</label>
+        <link refid="class_part"/>
+        <childnode refid="59" relation="usage">
+          <edgelabel>brand</edgelabel>
+          <edgelabel>type</edgelabel>
+        </childnode>
+      </node>
+      <node id="57">
+        <label>PSU</label>
+        <link refid="class_p_s_u"/>
+        <childnode refid="58" relation="public-inheritance">
+        </childnode>
+        <childnode refid="59" relation="usage">
+          <edgelabel>wattage</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="122" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="122" bodyend="129"/>
+    <listofallmembers>
+      <member refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" prot="protected" virt="non-virtual"><scope>PSU</scope><name>brand</name></member>
+      <member refid="class_part_1abdaeb1db5ba55c184f39802c163e9ebc" prot="public" virt="non-virtual"><scope>PSU</scope><name>get_brand</name></member>
+      <member refid="class_part_1abb7c8371883825ad46773f219db3523e" prot="public" virt="non-virtual"><scope>PSU</scope><name>get_price</name></member>
+      <member refid="class_part_1a97117fd470cd694ae0897fb2f4391786" prot="public" virt="non-virtual"><scope>PSU</scope><name>get_type</name></member>
+      <member refid="class_part_1aae5224ee782134c4ecb60f23ec38698f" prot="public" virt="non-virtual"><scope>PSU</scope><name>Part</name></member>
+      <member refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" prot="protected" virt="non-virtual"><scope>PSU</scope><name>price</name></member>
+      <member refid="class_p_s_u_1aa6bbdb1a875c8ebdbefd07a8663c6961" prot="public" virt="virtual"><scope>PSU</scope><name>print</name></member>
+      <member refid="class_p_s_u_1a11ff8451c8cb51e61875fafb628e9f94" prot="public" virt="non-virtual"><scope>PSU</scope><name>PSU</name></member>
+      <member refid="class_p_s_u_1ac6b366346dc0d2263a94b832843ab6b2" prot="public" virt="non-virtual"><scope>PSU</scope><name>PSU</name></member>
+      <member refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" prot="protected" virt="non-virtual"><scope>PSU</scope><name>type</name></member>
+      <member refid="class_p_s_u_1a0318cbbbd0802ba97ca32db5360cb7d4" prot="private" virt="non-virtual"><scope>PSU</scope><name>wattage</name></member>
+      <member refid="class_part_1aaecbb747a7227f7ce3b44caeaf1801c2" prot="public" virt="virtual"><scope>PSU</scope><name>~Part</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

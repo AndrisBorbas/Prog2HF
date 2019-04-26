@@ -1,4 +1,4 @@
-﻿// Copyright 2019 © Andris Borbás™, All Rights ¯\_(ツ)_/¯®.
+﻿// Copyright 2019 © Andris Borbás™, All Rights ¯\_(ツ)_/¯®. (ง ͠° ل͜ °)ง
 
 #include "main.h"
 
@@ -16,36 +16,23 @@ int main(int argc, char** argv)
 
 	test1(partsFile, partsfilename);
 
-	//enumPart eP = eInvalid;
+	enumPart eP = eInvalid;
 	enumMenu eM = eMain;
 	TempInput tmp;
-	/*
-	Part** inv = new Part * [1];
+	Inventory inventory;
 	
 	while (partsFile >> tmp.instruction) {
+#ifdef _DEBUG
 		std::cout << tmp.instruction << std::endl;
+#endif
 		if (tmp.instruction[tmp.instruction.length() - 1] == ':') {
 			setEnum(tmp.instruction, eP);
 			if (eP != eInvalid) {
-				inv[0] = loadPart(partsFile, tmp, eP);
-				std::cout << *(inv[0]);
+				inventory.loadPart(partsFile, tmp, eP);
 			}
 		}
 	}
-	dynamic_cast<CPU*>(inv[0])->burn();
-	*/
 	
-	{
-		Inventory inventory2;
-		inventory2.push_back(new CPU("intel", "i3-4330", 800, 200, 2, "LGA1152", true));
-		inventory2.push_back(new GPU("nvidia", "asd", 800, 2000, 4));
-	}
-	
-	Inventory inventory;
-	inventory.push_back(new CPU("intel", "i3-4330", 800, 200, 2, "LGA1152", true));
-	inventory.push_back(new GPU("nvidia", "asd", 800, 2000, 4));
-
-	test2(inventory);
 	
 	/*
 	std::cout << "hi" << std::endl;
@@ -87,12 +74,10 @@ int main(int argc, char** argv)
 		switch (eM)
 		{
 		case eMain:
-			print();
+			printMain();
 			break;
 		case ePartsList:
 			printPartsList(inventory);
-			//ez azért van hogy végigfusson input nélkül is
-			return 0;
 			break;
 		case ePartsAdd:
 			system("cls");
@@ -113,7 +98,7 @@ int main(int argc, char** argv)
 	}
 }
 
-void print() {
+void printMain() {
 	system("cls");
 	std::cout << "11: Print all loaded parts \n12: Add new part \n13: Remove part \n\n21: Print a build \n22: Create new build \n\n9: Save&Exit\n";
 }
@@ -123,7 +108,7 @@ void printPartsList(Inventory& inventory) {
 	for (int i = 0; i < inventory.get_size(); i++) {
 		std::cout << i + 1 << ": " << *(inventory[i]) << std::endl;
 	}
-	std::cout << "\n1: Return";
+	std::cout << "\n1: Return\n";
 }
 
 void evaluateCommand(enum enumMenu& eM) {

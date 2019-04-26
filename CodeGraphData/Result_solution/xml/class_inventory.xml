@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_inventory" kind="class" prot="public">
+    <compoundname>Inventory</compoundname>
+    <includes refid="_inventory_8h" local="no">Inventory.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_inventory_1a7cc4b98870c1568db9f98c6779097c3f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_part" kindref="compound">Part</ref> **</type>
+        <definition>Part** Inventory::stock</definition>
+        <argsstring></argsstring>
+        <name>stock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" line="18" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_inventory_1af2c8bea3c8fbf97fec4d3f5ffb92f347" compoundref="_inventory_8h" startline="22" endline="24">Inventory</referencedby>
+        <referencedby refid="class_inventory_1a0943f73610680bfbceb408be137de300" compoundref="_inventory_8h" startline="51" endline="53">operator[]</referencedby>
+        <referencedby refid="class_inventory_1a90cb96a50ebc28f0de4a009004e9b192" compoundref="_inventory_8h" startline="37" endline="49">push_back</referencedby>
+        <referencedby refid="class_inventory_1a6c6dfcb6d977c74a7abf46809e892e3d" compoundref="_inventory_8h" startline="25" endline="30">~Inventory</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_inventory_1a1fa3711f1c96bb18d3d79cace3a639ff" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Inventory::capacity</definition>
+        <argsstring></argsstring>
+        <name>capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" line="19" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_inventory_1af2c8bea3c8fbf97fec4d3f5ffb92f347" compoundref="_inventory_8h" startline="22" endline="24">Inventory</referencedby>
+        <referencedby refid="class_inventory_1a90cb96a50ebc28f0de4a009004e9b192" compoundref="_inventory_8h" startline="37" endline="49">push_back</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_inventory_1a81264c27a9ab485d4ee021efd55d0e44" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Inventory::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" line="20" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_inventory_1a3ccacc9422b01b2c17836ca804bcaafc" compoundref="_inventory_8h" startline="32" endline="34">get_size</referencedby>
+        <referencedby refid="class_inventory_1a90cb96a50ebc28f0de4a009004e9b192" compoundref="_inventory_8h" startline="37" endline="49">push_back</referencedby>
+        <referencedby refid="class_inventory_1a6c6dfcb6d977c74a7abf46809e892e3d" compoundref="_inventory_8h" startline="25" endline="30">~Inventory</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_inventory_1af2c8bea3c8fbf97fec4d3f5ffb92f347" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Inventory::Inventory</definition>
+        <argsstring>(size_t capacity=1)</argsstring>
+        <name>Inventory</name>
+        <param>
+          <type>size_t</type>
+          <declname>capacity</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" line="22" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" bodystart="22" bodyend="24"/>
+        <references refid="class_inventory_1a1fa3711f1c96bb18d3d79cace3a639ff" compoundref="_inventory_8h" startline="19">capacity</references>
+        <references refid="class_inventory_1a7cc4b98870c1568db9f98c6779097c3f" compoundref="_inventory_8h" startline="18">stock</references>
+      </memberdef>
+      <memberdef kind="function" id="class_inventory_1a6c6dfcb6d977c74a7abf46809e892e3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Inventory::~Inventory</definition>
+        <argsstring>()</argsstring>
+        <name>~Inventory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" line="25" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" bodystart="25" bodyend="30"/>
+        <references refid="class_inventory_1a81264c27a9ab485d4ee021efd55d0e44" compoundref="_inventory_8h" startline="20">size</references>
+        <references refid="class_inventory_1a7cc4b98870c1568db9f98c6779097c3f" compoundref="_inventory_8h" startline="18">stock</references>
+      </memberdef>
+      <memberdef kind="function" id="class_inventory_1a3ccacc9422b01b2c17836ca804bcaafc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Inventory::get_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" line="32" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" bodystart="32" bodyend="34"/>
+        <references refid="class_inventory_1a81264c27a9ab485d4ee021efd55d0e44" compoundref="_inventory_8h" startline="20">size</references>
+        <referencedby refid="main_8h_1a54c74422af05849f9d508c0a5ccd468b" compoundref="main_8cpp" startline="121" endline="127">printPartsList</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_inventory_1a90cb96a50ebc28f0de4a009004e9b192" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Inventory::push_back</definition>
+        <argsstring>(T *part)</argsstring>
+        <name>push_back</name>
+        <param>
+          <type>T *</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" line="37" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" bodystart="37" bodyend="49"/>
+        <references refid="class_inventory_1a1fa3711f1c96bb18d3d79cace3a639ff" compoundref="_inventory_8h" startline="19">capacity</references>
+        <references refid="class_inventory_1a81264c27a9ab485d4ee021efd55d0e44" compoundref="_inventory_8h" startline="20">size</references>
+        <references refid="class_inventory_1a7cc4b98870c1568db9f98c6779097c3f" compoundref="_inventory_8h" startline="18">stock</references>
+        <referencedby refid="main_8h_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="7" endline="114">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_inventory_1a0943f73610680bfbceb408be137de300" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_part" kindref="compound">Part</ref> *</type>
+        <definition>const Part* Inventory::operator[]</definition>
+        <argsstring>(int idx) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" line="51" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" bodystart="51" bodyend="53"/>
+        <references refid="class_inventory_1a7cc4b98870c1568db9f98c6779097c3f" compoundref="_inventory_8h" startline="18">stock</references>
+      </memberdef>
+      <memberdef kind="function" id="class_inventory_1a86601b8ee999e78cdeea83431bab8f33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_part" kindref="compound">Part</ref> *</type>
+        <definition>Part* Inventory::operator[]</definition>
+        <argsstring>(int idx)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" line="54" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" bodystart="54" bodyend="56"/>
+        <references refid="class_inventory_1a7cc4b98870c1568db9f98c6779097c3f" compoundref="_inventory_8h" startline="18">stock</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="32">
+        <label>String</label>
+        <link refid="class_string"/>
+      </node>
+      <node id="31">
+        <label>Part</label>
+        <link refid="class_part"/>
+        <childnode refid="32" relation="usage">
+          <edgelabel>brand</edgelabel>
+          <edgelabel>type</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>Inventory</label>
+        <link refid="class_inventory"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>stock</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" line="17" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" bodystart="17" bodyend="57"/>
+    <listofallmembers>
+      <member refid="class_inventory_1a1fa3711f1c96bb18d3d79cace3a639ff" prot="private" virt="non-virtual"><scope>Inventory</scope><name>capacity</name></member>
+      <member refid="class_inventory_1a3ccacc9422b01b2c17836ca804bcaafc" prot="public" virt="non-virtual"><scope>Inventory</scope><name>get_size</name></member>
+      <member refid="class_inventory_1af2c8bea3c8fbf97fec4d3f5ffb92f347" prot="public" virt="non-virtual"><scope>Inventory</scope><name>Inventory</name></member>
+      <member refid="class_inventory_1a0943f73610680bfbceb408be137de300" prot="public" virt="non-virtual"><scope>Inventory</scope><name>operator[]</name></member>
+      <member refid="class_inventory_1a86601b8ee999e78cdeea83431bab8f33" prot="public" virt="non-virtual"><scope>Inventory</scope><name>operator[]</name></member>
+      <member refid="class_inventory_1a90cb96a50ebc28f0de4a009004e9b192" prot="public" virt="non-virtual"><scope>Inventory</scope><name>push_back</name></member>
+      <member refid="class_inventory_1a81264c27a9ab485d4ee021efd55d0e44" prot="private" virt="non-virtual"><scope>Inventory</scope><name>size</name></member>
+      <member refid="class_inventory_1a7cc4b98870c1568db9f98c6779097c3f" prot="private" virt="non-virtual"><scope>Inventory</scope><name>stock</name></member>
+      <member refid="class_inventory_1a6c6dfcb6d977c74a7abf46809e892e3d" prot="public" virt="non-virtual"><scope>Inventory</scope><name>~Inventory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

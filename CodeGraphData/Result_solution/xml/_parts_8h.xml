@@ -3,75 +3,486 @@
   <compounddef id="_parts_8h" kind="file">
     <compoundname>Parts.h</compoundname>
     <includes refid="schtring_8h" local="yes">schtring.h</includes>
+    <includes refid="_compatibility_8h" local="yes">Compatibility.h</includes>
+    <includes local="no">cctype</includes>
+    <includedby refid="main_8h" local="yes">C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h</includedby>
+    <includedby refid="_inventory_8h" local="yes">C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h</includedby>
+    <includedby refid="_builds_8h" local="yes">C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h</includedby>
+    <includedby refid="_parts_8cpp" local="yes">C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp</includedby>
     <incdepgraph>
-      <node id="24">
+      <node id="160">
+        <label>Compatibility.h</label>
+        <link refid="_compatibility_8h"/>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+      </node>
+      <node id="156">
         <label>schtring.h</label>
         <link refid="schtring_8h"/>
-        <childnode refid="25" relation="include">
+        <childnode refid="157" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
         </childnode>
       </node>
-      <node id="25">
+      <node id="161">
+        <label>cctype</label>
+      </node>
+      <node id="157">
         <label>iostream</label>
       </node>
-      <node id="23">
-        <label>Prog2HF/Parts.h</label>
+      <node id="159">
+        <label>ctype.h</label>
+      </node>
+      <node id="155">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h</label>
         <link refid="Parts.h"/>
-        <childnode refid="24" relation="include">
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
         </childnode>
       </node>
-      <node id="26">
+      <node id="158">
         <label>cstring</label>
       </node>
     </incdepgraph>
-    <innerclass refid="class_alkatresz" prot="public">Alkatresz</innerclass>
+    <invincdepgraph>
+      <node id="164">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/atest.h</label>
+        <link refid="atest_8h"/>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+      </node>
+      <node id="165">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/atest.cpp</label>
+        <link refid="atest_8cpp"/>
+      </node>
+      <node id="167">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h</label>
+        <link refid="_inventory_8h"/>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+      </node>
+      <node id="168">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.cpp</label>
+        <link refid="_inventory_8cpp"/>
+      </node>
+      <node id="162">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h</label>
+        <link refid="Parts.h"/>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h</label>
+        <link refid="_builds_8h"/>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp</label>
+        <link refid="_parts_8cpp"/>
+      </node>
+      <node id="166">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="170">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.cpp</label>
+        <link refid="_builds_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_temp_input" prot="public">TempInput</innerclass>
+    <innerclass refid="class_part" prot="public">Part</innerclass>
     <innerclass refid="class_c_p_u" prot="public">CPU</innerclass>
-    <innerclass refid="class_m_o_b_o" prot="public">MOBO</innerclass>
     <innerclass refid="class_g_p_u" prot="public">GPU</innerclass>
+    <innerclass refid="class_m_o_b_o" prot="public">MOBO</innerclass>
+    <innerclass refid="class_r_a_m" prot="public">RAM</innerclass>
+    <innerclass refid="class_case" prot="public">Case</innerclass>
+    <innerclass refid="class_p_s_u" prot="public">PSU</innerclass>
     <innerclass refid="class_storage" prot="public">Storage</innerclass>
+    <innerclass refid="class_s_s_d" prot="public">SSD</innerclass>
+    <innerclass refid="class_h_d_d" prot="public">HDD</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_parts_8h_1a41bf212a0001ee2061948fe863a2295b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const Part &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="class_part" kindref="compound">Part</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="54" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="68" bodyend="71"/>
+        <references refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd" compoundref="_parts_8cpp" startline="3" endline="5">Part::print</references>
+      </memberdef>
+      <memberdef kind="function" id="_parts_8h_1a63166a2a7d326683af5fc64dfaa7aa65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const CPU &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="class_c_p_u" kindref="compound">CPU</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="71" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="72" bodyend="75"/>
+        <references refid="class_c_p_u_1ae8b92e567b87bf3889798e4dcc83d4c6" compoundref="_parts_8cpp" startline="7" endline="22">CPU::print</references>
+      </memberdef>
+      <memberdef kind="function" id="_parts_8h_1a0de289ccec7d8750e588f0a5761252b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const GPU &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="class_g_p_u" kindref="compound">GPU</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="83" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="76" bodyend="79"/>
+        <references refid="class_g_p_u_1a7a938f10f542b123b51419397556e896" compoundref="_parts_8cpp" startline="24" endline="27">GPU::print</references>
+      </memberdef>
+      <memberdef kind="function" id="_parts_8h_1a3b7a2a4db5c057c863872d61e15867ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const MOBO &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="class_m_o_b_o" kindref="compound">MOBO</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="97" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="80" bodyend="83"/>
+        <references refid="class_m_o_b_o_1ac1a3729cfdd02bebcf7f26394a6cb245" compoundref="_parts_8cpp" startline="29" endline="32">MOBO::print</references>
+      </memberdef>
+      <memberdef kind="function" id="_parts_8h_1a119a3c9e22eaeee7ac8e0e0400429fe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const RAM &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="class_r_a_m" kindref="compound">RAM</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="109" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="84" bodyend="87"/>
+        <references refid="class_r_a_m_1a826cedfb4978b7ea352bdd0eccacf674" compoundref="_parts_8cpp" startline="34" endline="37">RAM::print</references>
+      </memberdef>
+      <memberdef kind="function" id="_parts_8h_1a095fc6bc853799360bba8d744652202a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const Case &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="class_case" kindref="compound">Case</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="120" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="88" bodyend="91"/>
+        <references refid="class_case_1a2786162425c1f7c92b37011b091e2d46" compoundref="_parts_8cpp" startline="39" endline="42">Case::print</references>
+      </memberdef>
+      <memberdef kind="function" id="_parts_8h_1a1f7600c301fc3b2fbca76e13f0631ed7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const PSU &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="class_p_s_u" kindref="compound">PSU</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="131" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="92" bodyend="95"/>
+        <references refid="class_p_s_u_1aa6bbdb1a875c8ebdbefd07a8663c6961" compoundref="_parts_8cpp" startline="44" endline="47">PSU::print</references>
+      </memberdef>
+      <memberdef kind="function" id="_parts_8h_1a58786e0f5831ee1afe7272e37221a12a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const SSD &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="class_s_s_d" kindref="compound">SSD</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="156" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="96" bodyend="99"/>
+        <references refid="class_s_s_d_1a551b59fa58e2e5b0de0d21fdc1ebf892" compoundref="_parts_8cpp" startline="54" endline="57">SSD::print</references>
+      </memberdef>
+      <memberdef kind="function" id="_parts_8h_1aa60040b0f441945779699ec9ef31d0e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const HDD &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="class_h_d_d" kindref="compound">HDD</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="168" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="100" bodyend="103"/>
+        <references refid="class_h_d_d_1acb1d2f519b016319f98375e6dd1c7d88" compoundref="_parts_8cpp" startline="59" endline="62">HDD::print</references>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
-<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="schtring_8h" kindref="compound">schtring.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4" refid="class_alkatresz" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_alkatresz" kindref="compound">Alkatresz</ref><sp/>{</highlight></codeline>
-<codeline lineno="5" refid="class_alkatresz_1ab23ef02b8768253d4c2511d77188582a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_alkatresz_1accf1a75e0771e93efcb9ce3c534e5e59" kindref="member">Gyarto</ref>,<sp/><ref refid="class_alkatresz_1ab23ef02b8768253d4c2511d77188582a" kindref="member">Nev</ref>;</highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_alkatresz_1ace416bfd871cfee9c7d7a94681ca04d7" kindref="member">Alkatresz</ref>();</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_alkatresz_1a02cdc7f105e7e1348784e657398ccb50" kindref="member">~Alkatresz</ref>();</highlight></codeline>
-<codeline lineno="9"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11" refid="class_c_p_u" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_c_p_u" kindref="compound">CPU</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_alkatresz" kindref="compound">Alkatresz</ref><sp/>{</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_p_u_1a2fdd8153d0979ccad9ed8452897267f4" kindref="member">CPU</ref>();</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_p_u_1aa32e0ed85bebabb167ace09050d20707" kindref="member">~CPU</ref>();</highlight></codeline>
-<codeline lineno="16"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18" refid="class_m_o_b_o" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_m_o_b_o" kindref="compound">MOBO</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_alkatresz" kindref="compound">Alkatresz</ref><sp/>{</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_o_b_o_1a785715cdbe072e78aa783951b0e0f0ca" kindref="member">MOBO</ref>();</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_o_b_o_1adb87a6b0f0cac1c3437e5ada3fe8caa0" kindref="member">~MOBO</ref>();</highlight></codeline>
-<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25" refid="class_g_p_u" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_g_p_u" kindref="compound">GPU</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_alkatresz" kindref="compound">Alkatresz</ref><sp/>{</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_p_u_1a2ca7973e32f63ba3472166a007419a75" kindref="member">GPU</ref>();</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_p_u_1ac4d153a08d3b9f40e5a8f1634f4a9e78" kindref="member">~GPU</ref>();</highlight></codeline>
-<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32" refid="class_storage" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_storage" kindref="compound">Storage</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_alkatresz" kindref="compound">Alkatresz</ref><sp/>{</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_storage_1a80ef6af5e4c9fd4424ae16e808d05291" kindref="member">Storage</ref>();</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_storage_1a73cf30f0a34250396f9eabee7dc5c93d" kindref="member">~Storage</ref>();</highlight></codeline>
-<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MEMTRACE</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="memtrace_8h" kindref="compound">memtrace.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="schtring_8h" kindref="compound">schtring.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_compatibility_8h" kindref="compound">Compatibility.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cctype&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="struct_temp_input" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_temp_input" kindref="compound">TempInput</ref><sp/>{</highlight></codeline>
+<codeline lineno="11" refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="12" refid="struct_temp_input_1a623b1fe5692319aad5c58cbc42bedf9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="struct_temp_input_1a623b1fe5692319aad5c58cbc42bedf9c" kindref="member">clname</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="13" refid="struct_temp_input_1ae61ec1c3c483e583e4975e5c728e4886" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="struct_temp_input_1ae61ec1c3c483e583e4975e5c728e4886" kindref="member">brand</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14" refid="struct_temp_input_1a1a73f4b9c84caa8c463a4bad03cf433d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="struct_temp_input_1a1a73f4b9c84caa8c463a4bad03cf433d" kindref="member">type</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15" refid="struct_temp_input_1a6d049ee814f00b43e1d951317261e357" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_temp_input_1a6d049ee814f00b43e1d951317261e357" kindref="member">price</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16" refid="struct_temp_input_1a5142af446776f87e454134511f681887" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="struct_temp_input_1a5142af446776f87e454134511f681887" kindref="member">socket</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17" refid="struct_temp_input_1aa76fe14a614fef6e9239ce2283d6b102" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_temp_input_1aa76fe14a614fef6e9239ce2283d6b102" kindref="member">clk</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18" refid="struct_temp_input_1a9b99532e6c984fb19c34ed943a6d5750" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_temp_input_1a9b99532e6c984fb19c34ed943a6d5750" kindref="member">cores</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19" refid="struct_temp_input_1ad8957d3af0ed714844abf3f37cbfc719" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_temp_input_1ad8957d3af0ed714844abf3f37cbfc719" kindref="member">multithreading</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20" refid="struct_temp_input_1a29da394f96dae5eaa49e145207362a9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="struct_temp_input_1a29da394f96dae5eaa49e145207362a9c" kindref="member">chipset</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21" refid="struct_temp_input_1a402c6984d9e94d4c76e460d0368613f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="struct_temp_input_1a402c6984d9e94d4c76e460d0368613f3" kindref="member">formfactor</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22" refid="struct_temp_input_1adfc0eb32fac7de584c3872875b452550" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_temp_input_1adfc0eb32fac7de584c3872875b452550" kindref="member">size</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23" refid="struct_temp_input_1afbaccb88c8eee8a1f4d5d2b6ec692c94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="struct_temp_input_1afbaccb88c8eee8a1f4d5d2b6ec692c94" kindref="member">wattage</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24" refid="struct_temp_input_1a75c5e55813802a9d6af6818de81e6001" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_temp_input_1a75c5e55813802a9d6af6818de81e6001" kindref="member">readspeed</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25" refid="struct_temp_input_1a3d5511c959e7c3531ce3bea3a6248d62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_temp_input_1a3d5511c959e7c3531ce3bea3a6248d62" kindref="member">writespeed</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26" refid="struct_temp_input_1aca0d9830369aab845fc274c6b54ffe33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="struct_temp_input_1aca0d9830369aab845fc274c6b54ffe33" kindref="member">flashtype</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27" refid="struct_temp_input_1a661104db14326156bbb2ffa5a7c6f468" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_temp_input_1a661104db14326156bbb2ffa5a7c6f468" kindref="member">rpm</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_part" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_part" kindref="compound">Part</ref><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32" refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33" refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34" refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36" refid="class_part_1aae5224ee782134c4ecb60f23ec38698f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_part_1aae5224ee782134c4ecb60f23ec38698f" kindref="member">Part</ref>(<ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref><sp/>=<sp/>0)<sp/>:<sp/><ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>(<ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>),<sp/><ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>(<ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>),<sp/><ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>(<ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>[0]<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">char</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(toupper(this-&gt;<ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>[0]));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39" refid="class_part_1aaecbb747a7227f7ce3b44caeaf1801c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_part_1aaecbb747a7227f7ce3b44caeaf1801c2" kindref="member">~Part</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="class_part_1abdaeb1db5ba55c184f39802c163e9ebc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1abdaeb1db5ba55c184f39802c163e9ebc" kindref="member">get_brand</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44" refid="class_part_1a97117fd470cd694ae0897fb2f4391786" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1a97117fd470cd694ae0897fb2f4391786" kindref="member">get_type</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47" refid="class_part_1abb7c8371883825ad46773f219db3523e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_part_1abb7c8371883825ad46773f219db3523e" kindref="member">get_price</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_part_1a9bf9e09abb938c78b59d39a37b5842fd" kindref="member">print</ref>(std::ostream&amp;<sp/>os)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_parts_8h_1a41bf212a0001ee2061948fe863a2295b" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_part" kindref="compound">Part</ref>&amp;);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="class_c_p_u" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_c_p_u" kindref="compound">CPU</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_part" kindref="compound">Part</ref><sp/>{</highlight></codeline>
+<codeline lineno="57" refid="class_c_p_u_1ac733562aad380889ae0d175e2b0179c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_c_p_u_1ac733562aad380889ae0d175e2b0179c2" kindref="member">clk</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="class_c_p_u_1a2e310df8c8c7044b4e46d3b4dd28b57e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_c_p_u_1a2e310df8c8c7044b4e46d3b4dd28b57e" kindref="member">cores</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="class_c_p_u_1a57208b3d2f312ccc5a8f21e585a5bcd7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_c_p_u_1a57208b3d2f312ccc5a8f21e585a5bcd7" kindref="member">socket</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="class_c_p_u_1a8df4efeddb85f19f2ceee8b6085a0a0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_c_p_u_1a8df4efeddb85f19f2ceee8b6085a0a0a" kindref="member">multithreading</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62" refid="class_c_p_u_1a1aa85a6c976fe5b665dcb9fd6d8fdd1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_c_p_u_1a1aa85a6c976fe5b665dcb9fd6d8fdd1e" kindref="member">CPU</ref>(<ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>,<sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_c_p_u_1ac733562aad380889ae0d175e2b0179c2" kindref="member">clk</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_c_p_u_1a2e310df8c8c7044b4e46d3b4dd28b57e" kindref="member">cores</ref>,<sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_c_p_u_1a57208b3d2f312ccc5a8f21e585a5bcd7" kindref="member">socket</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_c_p_u_1a8df4efeddb85f19f2ceee8b6085a0a0a" kindref="member">multithreading</ref>)<sp/>:<sp/><ref refid="class_part" kindref="compound">Part</ref>(brand,<sp/>type,<sp/>price),</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clk(clk),<sp/>cores(cores),<sp/>socket(socket),<sp/>multithreading(multithreading)<sp/>{}</highlight></codeline>
+<codeline lineno="64" refid="class_c_p_u_1a9147d84f815b9a242ba618877e6b2673" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_c_p_u_1a9147d84f815b9a242ba618877e6b2673" kindref="member">CPU</ref>(<ref refid="struct_temp_input" kindref="compound">TempInput</ref><sp/>&amp;<sp/>tmp)<sp/>:<ref refid="class_part" kindref="compound">Part</ref>(tmp.<ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>,<sp/>tmp.<ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>,<sp/>tmp.<ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>),<sp/><ref refid="class_c_p_u_1ac733562aad380889ae0d175e2b0179c2" kindref="member">clk</ref>(tmp.<ref refid="class_c_p_u_1ac733562aad380889ae0d175e2b0179c2" kindref="member">clk</ref>),<sp/><ref refid="class_c_p_u_1a2e310df8c8c7044b4e46d3b4dd28b57e" kindref="member">cores</ref>(tmp.<ref refid="class_c_p_u_1a2e310df8c8c7044b4e46d3b4dd28b57e" kindref="member">cores</ref>),<sp/><ref refid="class_c_p_u_1a57208b3d2f312ccc5a8f21e585a5bcd7" kindref="member">socket</ref>(tmp.<ref refid="class_c_p_u_1a57208b3d2f312ccc5a8f21e585a5bcd7" kindref="member">socket</ref>),<sp/><ref refid="class_c_p_u_1a8df4efeddb85f19f2ceee8b6085a0a0a" kindref="member">multithreading</ref>(tmp.<ref refid="class_c_p_u_1a8df4efeddb85f19f2ceee8b6085a0a0a" kindref="member">multithreading</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_p_u_1ae8b92e567b87bf3889798e4dcc83d4c6" kindref="member">print</ref>(std::ostream&amp;<sp/>os)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_p_u_1ae3dc1f075f60b84744a93a6c0046bdd9" kindref="member">burn</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_parts_8h_1a41bf212a0001ee2061948fe863a2295b" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_p_u" kindref="compound">CPU</ref>&amp;);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="class_g_p_u" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_g_p_u" kindref="compound">GPU</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_part" kindref="compound">Part</ref><sp/>{</highlight></codeline>
+<codeline lineno="74" refid="class_g_p_u_1a6d02136c484446a6f5c3742c58c7f037" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a6d02136c484446a6f5c3742c58c7f037" kindref="member">clk</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75" refid="class_g_p_u_1a46bdfecb6fc7b932a9e6422c6372ae04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a46bdfecb6fc7b932a9e6422c6372ae04" kindref="member">vram</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="77" refid="class_g_p_u_1a358f512b1583399e68f76248bb305e61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a358f512b1583399e68f76248bb305e61" kindref="member">GPU</ref>(<ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>,<sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a6d02136c484446a6f5c3742c58c7f037" kindref="member">clk</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a46bdfecb6fc7b932a9e6422c6372ae04" kindref="member">vram</ref>)<sp/>:<sp/><ref refid="class_part" kindref="compound">Part</ref>(brand,<sp/>type,<sp/>price),<sp/>clk(clk),<sp/>vram(vram)<sp/>{}</highlight></codeline>
+<codeline lineno="78" refid="class_g_p_u_1a9b1632e965c26051ae583c9b5e1c2e3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a9b1632e965c26051ae583c9b5e1c2e3c" kindref="member">GPU</ref>(<ref refid="struct_temp_input" kindref="compound">TempInput</ref><sp/>&amp;<sp/>tmp)<sp/>:<ref refid="class_part" kindref="compound">Part</ref>(tmp.<ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>,<sp/>tmp.<ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>,<sp/>tmp.<ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>),<sp/><ref refid="class_g_p_u_1a6d02136c484446a6f5c3742c58c7f037" kindref="member">clk</ref>(tmp.<ref refid="class_g_p_u_1a6d02136c484446a6f5c3742c58c7f037" kindref="member">clk</ref>),<sp/><ref refid="class_g_p_u_1a46bdfecb6fc7b932a9e6422c6372ae04" kindref="member">vram</ref>(tmp.size)<sp/>{}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u_1a7a938f10f542b123b51419397556e896" kindref="member">print</ref>(std::ostream&amp;<sp/>os)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_parts_8h_1a41bf212a0001ee2061948fe863a2295b" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u" kindref="compound">GPU</ref>&amp;);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="class_m_o_b_o" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_m_o_b_o" kindref="compound">MOBO</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_part" kindref="compound">Part</ref><sp/>{</highlight></codeline>
+<codeline lineno="86" refid="class_m_o_b_o_1a4a0bfd14857838f46a6e1ccbffa5f119" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_m_o_b_o_1a4a0bfd14857838f46a6e1ccbffa5f119" kindref="member">socket</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87" refid="class_m_o_b_o_1a4820c2db91eb67239b108294c80cf5b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_m_o_b_o_1a4820c2db91eb67239b108294c80cf5b3" kindref="member">chipset</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88" refid="class_m_o_b_o_1aca8364452881117a7d7c5b08cc47928b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_m_o_b_o_1aca8364452881117a7d7c5b08cc47928b" kindref="member">formfactor</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="90" refid="class_m_o_b_o_1a3185de871765391ae3a0ffe4b0af7e5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_m_o_b_o_1a3185de871765391ae3a0ffe4b0af7e5b" kindref="member">MOBO</ref>(<ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>,<sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>,<sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_m_o_b_o_1a4a0bfd14857838f46a6e1ccbffa5f119" kindref="member">socket</ref>,<sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_m_o_b_o_1a4820c2db91eb67239b108294c80cf5b3" kindref="member">chipset</ref>,<sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_m_o_b_o_1aca8364452881117a7d7c5b08cc47928b" kindref="member">formfactor</ref>)<sp/>:<sp/><ref refid="class_part" kindref="compound">Part</ref>(brand,<sp/>type,<sp/>price),</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>socket(socket),<sp/>chipset(chipset),<sp/>formfactor(formfactor)<sp/>{}</highlight></codeline>
+<codeline lineno="92" refid="class_m_o_b_o_1ad6b4b2daac75d63d5d7f490d3cfeee6f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_m_o_b_o_1ad6b4b2daac75d63d5d7f490d3cfeee6f" kindref="member">MOBO</ref>(<ref refid="struct_temp_input" kindref="compound">TempInput</ref><sp/>tmp)<sp/>:<ref refid="class_part" kindref="compound">Part</ref>(tmp.<ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>,<sp/>tmp.<ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>,<sp/>tmp.<ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>),<sp/><ref refid="class_m_o_b_o_1a4a0bfd14857838f46a6e1ccbffa5f119" kindref="member">socket</ref>(tmp.<ref refid="class_m_o_b_o_1a4a0bfd14857838f46a6e1ccbffa5f119" kindref="member">socket</ref>),<sp/><ref refid="class_m_o_b_o_1a4820c2db91eb67239b108294c80cf5b3" kindref="member">chipset</ref>(tmp.<ref refid="class_m_o_b_o_1a4820c2db91eb67239b108294c80cf5b3" kindref="member">chipset</ref>),<sp/><ref refid="class_m_o_b_o_1aca8364452881117a7d7c5b08cc47928b" kindref="member">formfactor</ref>(tmp.<ref refid="class_m_o_b_o_1aca8364452881117a7d7c5b08cc47928b" kindref="member">formfactor</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_o_b_o_1ac1a3729cfdd02bebcf7f26394a6cb245" kindref="member">print</ref>(std::ostream&amp;<sp/>os)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_parts_8h_1a41bf212a0001ee2061948fe863a2295b" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_m_o_b_o" kindref="compound">MOBO</ref>&amp;);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="class_r_a_m" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_a_m" kindref="compound">RAM</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_part" kindref="compound">Part</ref><sp/>{</highlight></codeline>
+<codeline lineno="100" refid="class_r_a_m_1ab1c0c9bd9d09e1d08d4e47f823145cba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m_1ab1c0c9bd9d09e1d08d4e47f823145cba" kindref="member">clk</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101" refid="class_r_a_m_1a879e4cd586dcdfafa402868c444e7c6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m_1a879e4cd586dcdfafa402868c444e7c6e" kindref="member">size</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="103" refid="class_r_a_m_1a1869d6bd505e7fb58b809270626c82f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m_1a1869d6bd505e7fb58b809270626c82f2" kindref="member">RAM</ref>(<ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>,<sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m_1ab1c0c9bd9d09e1d08d4e47f823145cba" kindref="member">clk</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m_1a879e4cd586dcdfafa402868c444e7c6e" kindref="member">size</ref>)<sp/>:<sp/><ref refid="class_part" kindref="compound">Part</ref>(brand,<sp/>type,<sp/>price),<sp/>clk(clk),<sp/>size(size)<sp/>{}</highlight></codeline>
+<codeline lineno="104" refid="class_r_a_m_1a9c54d554dfa8c3fc9c7c2d87e8dbe28f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m_1a9c54d554dfa8c3fc9c7c2d87e8dbe28f" kindref="member">RAM</ref>(<ref refid="struct_temp_input" kindref="compound">TempInput</ref><sp/>tmp)<sp/>:<ref refid="class_part" kindref="compound">Part</ref>(tmp.<ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>,<sp/>tmp.<ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>,<sp/>tmp.<ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>),<sp/><ref refid="class_r_a_m_1ab1c0c9bd9d09e1d08d4e47f823145cba" kindref="member">clk</ref>(tmp.<ref refid="class_r_a_m_1ab1c0c9bd9d09e1d08d4e47f823145cba" kindref="member">clk</ref>),<sp/><ref refid="class_r_a_m_1a879e4cd586dcdfafa402868c444e7c6e" kindref="member">size</ref>(tmp.<ref refid="class_r_a_m_1a879e4cd586dcdfafa402868c444e7c6e" kindref="member">size</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m_1a826cedfb4978b7ea352bdd0eccacf674" kindref="member">print</ref>(std::ostream&amp;<sp/>os)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_parts_8h_1a41bf212a0001ee2061948fe863a2295b" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m" kindref="compound">RAM</ref>&amp;);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="class_case" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_case" kindref="compound">Case</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_part" kindref="compound">Part</ref><sp/>{</highlight></codeline>
+<codeline lineno="112" refid="class_case_1a4749cb5d50a2889cad99fb893cc43b37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_case_1a4749cb5d50a2889cad99fb893cc43b37" kindref="member">formfactor</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="114" refid="class_case_1a0d953adffc664636549235d729f13260" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_case_1a0d953adffc664636549235d729f13260" kindref="member">Case</ref>(<ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>,<sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>,<sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_case_1a4749cb5d50a2889cad99fb893cc43b37" kindref="member">formfactor</ref>)<sp/>:<sp/><ref refid="class_part" kindref="compound">Part</ref>(brand,<sp/>type,<sp/>price),<sp/>formfactor(formfactor)<sp/>{}</highlight></codeline>
+<codeline lineno="115" refid="class_case_1a300362691710d1f9312f9d31d56ea53e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_case_1a300362691710d1f9312f9d31d56ea53e" kindref="member">Case</ref>(<ref refid="struct_temp_input" kindref="compound">TempInput</ref><sp/>tmp)<sp/>:<ref refid="class_part" kindref="compound">Part</ref>(tmp.<ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>,<sp/>tmp.<ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>,<sp/>tmp.<ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>),<sp/><ref refid="class_case_1a4749cb5d50a2889cad99fb893cc43b37" kindref="member">formfactor</ref>(tmp.<ref refid="class_case_1a4749cb5d50a2889cad99fb893cc43b37" kindref="member">formfactor</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_case_1a2786162425c1f7c92b37011b091e2d46" kindref="member">print</ref>(std::ostream&amp;<sp/>os)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_parts_8h_1a41bf212a0001ee2061948fe863a2295b" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_case" kindref="compound">Case</ref>&amp;);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="class_p_s_u" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_p_s_u" kindref="compound">PSU</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_part" kindref="compound">Part</ref><sp/>{</highlight></codeline>
+<codeline lineno="123" refid="class_p_s_u_1a0318cbbbd0802ba97ca32db5360cb7d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_p_s_u_1a0318cbbbd0802ba97ca32db5360cb7d4" kindref="member">wattage</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="125" refid="class_p_s_u_1a11ff8451c8cb51e61875fafb628e9f94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_p_s_u_1a11ff8451c8cb51e61875fafb628e9f94" kindref="member">PSU</ref>(<ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>,<sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>,<sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_p_s_u_1a0318cbbbd0802ba97ca32db5360cb7d4" kindref="member">wattage</ref>)<sp/>:<sp/><ref refid="class_part" kindref="compound">Part</ref>(brand,<sp/>type,<sp/>price),<sp/>wattage(wattage)<sp/>{}</highlight></codeline>
+<codeline lineno="126" refid="class_p_s_u_1ac6b366346dc0d2263a94b832843ab6b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_p_s_u_1ac6b366346dc0d2263a94b832843ab6b2" kindref="member">PSU</ref>(<ref refid="struct_temp_input" kindref="compound">TempInput</ref><sp/>tmp)<sp/>:<ref refid="class_part" kindref="compound">Part</ref>(tmp.<ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>,<sp/>tmp.<ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>,<sp/>tmp.<ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>),<sp/><ref refid="class_p_s_u_1a0318cbbbd0802ba97ca32db5360cb7d4" kindref="member">wattage</ref>(tmp.<ref refid="class_p_s_u_1a0318cbbbd0802ba97ca32db5360cb7d4" kindref="member">wattage</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_p_s_u_1aa6bbdb1a875c8ebdbefd07a8663c6961" kindref="member">print</ref>(std::ostream&amp;<sp/>os)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_parts_8h_1a41bf212a0001ee2061948fe863a2295b" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_p_s_u" kindref="compound">PSU</ref>&amp;);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="class_storage" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_storage" kindref="compound">Storage</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_part" kindref="compound">Part</ref><sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="135" refid="class_storage_1abcc80ce58a21fa884035617ee0b6cb67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_storage_1abcc80ce58a21fa884035617ee0b6cb67" kindref="member">size</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136" refid="class_storage_1a41073842ff16961dad3903e6dd49bb0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_storage_1a41073842ff16961dad3903e6dd49bb0c" kindref="member">readspeed</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137" refid="class_storage_1a0198a1483ccf849d48c76da88599ba8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_storage_1a0198a1483ccf849d48c76da88599ba8b" kindref="member">writespeed</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="139" refid="class_storage_1a502a2ec76e09d48a87da6ed1b91cdaa8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_storage_1a502a2ec76e09d48a87da6ed1b91cdaa8" kindref="member">Storage</ref>(<ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>,<sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_storage_1abcc80ce58a21fa884035617ee0b6cb67" kindref="member">size</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_storage_1a41073842ff16961dad3903e6dd49bb0c" kindref="member">readspeed</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_storage_1a0198a1483ccf849d48c76da88599ba8b" kindref="member">writespeed</ref>)<sp/>:<sp/><ref refid="class_part" kindref="compound">Part</ref>(brand,<sp/>type,<sp/>price),</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size(size),<sp/>readspeed(readspeed),<sp/>writespeed(writespeed)<sp/>{}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_storage_1a07ace7dc4916ea4f6b00be1ffee63430" kindref="member">print</ref>(std::ostream&amp;<sp/>os)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="class_s_s_d" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_s_s_d" kindref="compound">SSD</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_storage" kindref="compound">Storage</ref><sp/>{</highlight></codeline>
+<codeline lineno="146" refid="class_s_s_d_1ae8e8be235266aebff618a4be69f11d52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_s_s_d_1ae8e8be235266aebff618a4be69f11d52" kindref="member">formfactor</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="147" refid="class_s_s_d_1a315019d2a400bf1588a09f551d090201" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_s_s_d_1a315019d2a400bf1588a09f551d090201" kindref="member">flashtype</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="149" refid="class_s_s_d_1a1e80104276b02f8ca6f016f41a2a5f41" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_s_s_d_1a1e80104276b02f8ca6f016f41a2a5f41" kindref="member">SSD</ref>(<ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>,<sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_storage_1abcc80ce58a21fa884035617ee0b6cb67" kindref="member">size</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_storage_1a41073842ff16961dad3903e6dd49bb0c" kindref="member">readspeed</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_storage_1a0198a1483ccf849d48c76da88599ba8b" kindref="member">writespeed</ref>,<sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_s_s_d_1ae8e8be235266aebff618a4be69f11d52" kindref="member">formfactor</ref>,<sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_s_s_d_1a315019d2a400bf1588a09f551d090201" kindref="member">flashtype</ref>)<sp/>:</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_storage" kindref="compound">Storage</ref>(brand,<sp/>type,<sp/>price,<sp/>size,<sp/>readspeed,<sp/>writespeed),<sp/>formfactor(formfactor),<sp/>flashtype(flashtype)<sp/>{}</highlight></codeline>
+<codeline lineno="151" refid="class_s_s_d_1a39a5322942a5320a9a2be8ac7cb4c596" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_s_s_d_1a39a5322942a5320a9a2be8ac7cb4c596" kindref="member">SSD</ref>(<ref refid="struct_temp_input" kindref="compound">TempInput</ref><sp/>tmp)<sp/>:<ref refid="class_storage" kindref="compound">Storage</ref>(tmp.<ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>,<sp/>tmp.<ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>,<sp/>tmp.<ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>,<sp/>tmp.<ref refid="class_storage_1abcc80ce58a21fa884035617ee0b6cb67" kindref="member">size</ref>,<sp/>tmp.<ref refid="class_storage_1a41073842ff16961dad3903e6dd49bb0c" kindref="member">readspeed</ref>,<sp/>tmp.<ref refid="class_storage_1a0198a1483ccf849d48c76da88599ba8b" kindref="member">writespeed</ref>),<sp/><ref refid="class_s_s_d_1ae8e8be235266aebff618a4be69f11d52" kindref="member">formfactor</ref>(tmp.<ref refid="class_s_s_d_1ae8e8be235266aebff618a4be69f11d52" kindref="member">formfactor</ref>),<sp/><ref refid="class_s_s_d_1a315019d2a400bf1588a09f551d090201" kindref="member">flashtype</ref>(tmp.<ref refid="class_s_s_d_1a315019d2a400bf1588a09f551d090201" kindref="member">flashtype</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_s_d_1a551b59fa58e2e5b0de0d21fdc1ebf892" kindref="member">print</ref>(std::ostream&amp;<sp/>os)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_parts_8h_1a41bf212a0001ee2061948fe863a2295b" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_s_s_d" kindref="compound">SSD</ref>&amp;);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="class_h_d_d" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_h_d_d" kindref="compound">HDD</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_storage" kindref="compound">Storage</ref><sp/>{</highlight></codeline>
+<codeline lineno="159" refid="class_h_d_d_1a1b8eb236654027b883ddbce08c693a0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_h_d_d_1a1b8eb236654027b883ddbce08c693a0a" kindref="member">rpm</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="161" refid="class_h_d_d_1a375ad923cb64a11afc261fe1fac5276c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_h_d_d_1a375ad923cb64a11afc261fe1fac5276c" kindref="member">HDD</ref>(<ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>,<sp/><ref refid="class_string" kindref="compound">String</ref><sp/><ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_storage_1abcc80ce58a21fa884035617ee0b6cb67" kindref="member">size</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_storage_1a41073842ff16961dad3903e6dd49bb0c" kindref="member">readspeed</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_storage_1a0198a1483ccf849d48c76da88599ba8b" kindref="member">writespeed</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_h_d_d_1a1b8eb236654027b883ddbce08c693a0a" kindref="member">rpm</ref>)<sp/>:</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_storage" kindref="compound">Storage</ref>(brand,<sp/>type,<sp/>price,<sp/>size,<sp/>readspeed,<sp/>writespeed),<sp/>rpm(rpm)<sp/>{}</highlight></codeline>
+<codeline lineno="163" refid="class_h_d_d_1a98374b087d6a74476b914dedb2de1ec4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_h_d_d_1a98374b087d6a74476b914dedb2de1ec4" kindref="member">HDD</ref>(<ref refid="struct_temp_input" kindref="compound">TempInput</ref><sp/>tmp)<sp/>:<ref refid="class_storage" kindref="compound">Storage</ref>(tmp.<ref refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" kindref="member">brand</ref>,<sp/>tmp.<ref refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" kindref="member">type</ref>,<sp/>tmp.<ref refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" kindref="member">price</ref>,<sp/>tmp.<ref refid="class_storage_1abcc80ce58a21fa884035617ee0b6cb67" kindref="member">size</ref>,<sp/>tmp.<ref refid="class_storage_1a41073842ff16961dad3903e6dd49bb0c" kindref="member">readspeed</ref>,<sp/>tmp.<ref refid="class_storage_1a0198a1483ccf849d48c76da88599ba8b" kindref="member">writespeed</ref>),<sp/><ref refid="class_h_d_d_1a1b8eb236654027b883ddbce08c693a0a" kindref="member">rpm</ref>(tmp.<ref refid="class_h_d_d_1a1b8eb236654027b883ddbce08c693a0a" kindref="member">rpm</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_h_d_d_1acb1d2f519b016319f98375e6dd1c7d88" kindref="member">print</ref>(std::ostream&amp;<sp/>os)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_parts_8h_1a41bf212a0001ee2061948fe863a2295b" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_h_d_d" kindref="compound">HDD</ref>&amp;);</highlight></codeline>
     </programlisting>
     <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h"/>
   </compounddef>

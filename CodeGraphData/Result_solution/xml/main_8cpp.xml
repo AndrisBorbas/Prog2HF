@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="main_8cpp" kind="file">
+    <compoundname>main.cpp</compoundname>
+    <includes refid="main_8h" local="yes">main.h</includes>
+    <incdepgraph>
+      <node id="116">
+        <label>atest.h</label>
+        <link refid="atest_8h"/>
+        <childnode refid="105" relation="include">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>Compatibility.h</label>
+        <link refid="_compatibility_8h"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>schtring.h</label>
+        <link refid="schtring_8h"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>fstream</label>
+      </node>
+      <node id="115">
+        <label>Inventory.h</label>
+        <link refid="_inventory_8h"/>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>sstream</label>
+      </node>
+      <node id="114">
+        <label>cctype</label>
+      </node>
+      <node id="107">
+        <label>iostream</label>
+      </node>
+      <node id="109">
+        <label>ctype.h</label>
+      </node>
+      <node id="112">
+        <label>Parts.h</label>
+        <link refid="_parts_8h"/>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>Builds.h</label>
+        <link refid="_builds_8h"/>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>cstring</label>
+      </node>
+      <node id="104">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp</label>
+        <link refid="main.cpp"/>
+        <childnode refid="105" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Default parts file name</para><para>Set parts file name from command line </para>        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp" line="7" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp" bodystart="7" bodyend="114"/>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a18af4c5278fb8ad13d84f598c68e766e" compoundref="main_8h" startline="34">eBuildsAdd</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a34f49f61c9b4bdb2fe1be11758138084" compoundref="main_8h" startline="33">eBuildsList</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02af2f1713ca51324f5000bf36d36bfd684" compoundref="main_8h" startline="35">eExit</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a51060f19a5d0006e2cb20df8786a330b" compoundref="main_8h" startline="29">eMain</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a1fedbd15c99125bee9cb78cffbf7228b" compoundref="main_8h" startline="31">ePartsAdd</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a8d35c4ba2bd3370a44513dbdbdbd0ff6" compoundref="main_8h" startline="30">ePartsList</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02af19f793fac63215e67f31045c7371d1c" compoundref="main_8h" startline="32">ePartsRemove</references>
+        <references refid="main_8cpp_1af4bf55c7933ba857c5d67526038aed45" compoundref="main_8cpp" startline="129" endline="164">evaluateCommand</references>
+        <references refid="main_8cpp_1a388f572c62279f839ee138a9afbdeeb5" compoundref="main_8cpp" startline="116" endline="119">print</references>
+        <references refid="main_8cpp_1a70c4e63bce818eb0a35f6403066b4263" compoundref="main_8cpp" startline="121" endline="127">printPartsList</references>
+        <references refid="class_inventory_1a90cb96a50ebc28f0de4a009004e9b192" compoundref="_inventory_8h" startline="37" endline="49">Inventory::push_back</references>
+        <references refid="atest_8cpp_1a4d0a2ed3083cba8b7ff2167d580bd759" compoundref="atest_8cpp" startline="3" endline="16">test1</references>
+        <references refid="atest_8cpp_1a4e5e4ea94633fee304b7f4490e655591" compoundref="atest_8cpp" startline="18" endline="39">test2</references>
+        <references refid="atest_8cpp_1a6e6df2af48d16780853d6eddcb8c8bc4" compoundref="atest_8cpp" startline="41" endline="50">test3</references>
+        <references refid="atest_8cpp_1ab545ece7a108a6470a3dc2161ba0008b" compoundref="atest_8cpp" startline="52" endline="61">test4</references>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a388f572c62279f839ee138a9afbdeeb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp" line="116" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp" bodystart="116" bodyend="119"/>
+        <referencedby refid="main_8h_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="7" endline="114">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a70c4e63bce818eb0a35f6403066b4263" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printPartsList</definition>
+        <argsstring>(Inventory &amp;inventory)</argsstring>
+        <name>printPartsList</name>
+        <param>
+          <type><ref refid="class_inventory" kindref="compound">Inventory</ref> &amp;</type>
+          <declname>inventory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp" line="121" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp" bodystart="121" bodyend="127"/>
+        <references refid="class_inventory_1a3ccacc9422b01b2c17836ca804bcaafc" compoundref="_inventory_8h" startline="32" endline="34">Inventory::get_size</references>
+        <referencedby refid="main_8h_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="7" endline="114">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1af4bf55c7933ba857c5d67526038aed45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void evaluateCommand</definition>
+        <argsstring>(enum enumMenu &amp;eM)</argsstring>
+        <name>evaluateCommand</name>
+        <param>
+          <type>enum <ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02" kindref="member">enumMenu</ref> &amp;</type>
+          <declname>eM</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp" line="129" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp" bodystart="129" bodyend="164"/>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a18af4c5278fb8ad13d84f598c68e766e" compoundref="main_8h" startline="34">eBuildsAdd</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a34f49f61c9b4bdb2fe1be11758138084" compoundref="main_8h" startline="33">eBuildsList</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02af2f1713ca51324f5000bf36d36bfd684" compoundref="main_8h" startline="35">eExit</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a51060f19a5d0006e2cb20df8786a330b" compoundref="main_8h" startline="29">eMain</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a1fedbd15c99125bee9cb78cffbf7228b" compoundref="main_8h" startline="31">ePartsAdd</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a8d35c4ba2bd3370a44513dbdbdbd0ff6" compoundref="main_8h" startline="30">ePartsList</references>
+        <references refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02af19f793fac63215e67f31045c7371d1c" compoundref="main_8h" startline="32">ePartsRemove</references>
+        <referencedby refid="main_8h_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="7" endline="114">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2019<sp/>©<sp/>Andris<sp/>Borbás™,<sp/>All<sp/>Rights<sp/>¯\_(ツ)_/¯®.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="main_8h" kindref="compound">main.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//CompatibilityList<sp/>IntelCompatList;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="main_8h_1a3c04138a5bfe5d72780bb7e82a18e627" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>argv)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>partsfilename[52]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;parts.txt&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(argc<sp/>&gt;<sp/>1)<sp/>strcpy(partsfilename,<sp/>argv[1]);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>std::fstream<sp/>partsFile;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>partsFile.open(partsfilename,<sp/>std::ios::in<sp/>|<sp/>std::ios::out);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="atest_8cpp_1a4d0a2ed3083cba8b7ff2167d580bd759" kindref="member">test1</ref>(partsFile,<sp/>partsfilename);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//enumPart<sp/>eP<sp/>=<sp/>eInvalid;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02" kindref="member">enumMenu</ref><sp/>eM<sp/>=<sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a51060f19a5d0006e2cb20df8786a330b" kindref="member">eMain</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_temp_input" kindref="compound">TempInput</ref><sp/>tmp;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/>Part**<sp/>inv<sp/>=<sp/>new<sp/>Part<sp/>*<sp/>[1];</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/>while<sp/>(partsFile<sp/>&gt;&gt;<sp/>tmp.instruction)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>tmp.instruction<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(tmp.instruction[tmp.instruction.length()<sp/>-<sp/>1]<sp/>==<sp/>&apos;:&apos;)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setEnum(tmp.instruction,<sp/>eP);</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(eP<sp/>!=<sp/>eInvalid)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inv[0]<sp/>=<sp/>loadPart(partsFile,<sp/>tmp,<sp/>eP);</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>*(inv[0]);</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/>dynamic_cast&lt;CPU*&gt;(inv[0])-&gt;burn();</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_inventory" kindref="compound">Inventory</ref><sp/>inventory2;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inventory2.<ref refid="class_inventory_1a90cb96a50ebc28f0de4a009004e9b192" kindref="member">push_back</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_p_u" kindref="compound">CPU</ref>(</highlight><highlight class="stringliteral">&quot;intel&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;i3-4330&quot;</highlight><highlight class="normal">,<sp/>800,<sp/>200,<sp/>2,<sp/></highlight><highlight class="stringliteral">&quot;LGA1152&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inventory2.<ref refid="class_inventory_1a90cb96a50ebc28f0de4a009004e9b192" kindref="member">push_back</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u" kindref="compound">GPU</ref>(</highlight><highlight class="stringliteral">&quot;nvidia&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;asd&quot;</highlight><highlight class="normal">,<sp/>800,<sp/>2000,<sp/>4));</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_inventory" kindref="compound">Inventory</ref><sp/>inventory;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>inventory.<ref refid="class_inventory_1a90cb96a50ebc28f0de4a009004e9b192" kindref="member">push_back</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_p_u" kindref="compound">CPU</ref>(</highlight><highlight class="stringliteral">&quot;intel&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;i3-4330&quot;</highlight><highlight class="normal">,<sp/>800,<sp/>200,<sp/>2,<sp/></highlight><highlight class="stringliteral">&quot;LGA1152&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>inventory.<ref refid="class_inventory_1a90cb96a50ebc28f0de4a009004e9b192" kindref="member">push_back</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u" kindref="compound">GPU</ref>(</highlight><highlight class="stringliteral">&quot;nvidia&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;asd&quot;</highlight><highlight class="normal">,<sp/>800,<sp/>2000,<sp/>4));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="atest_8cpp_1a4e5e4ea94633fee304b7f4490e655591" kindref="member">test2</ref>(inventory);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>&quot;hi&quot;<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/>String<sp/>a<sp/>=<sp/>&quot;1&quot;;</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/>String<sp/>b<sp/>=<sp/>&quot;2&quot;;</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/>String<sp/>c<sp/>=<sp/>a;</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/><sp/>String<sp/>slist<sp/>=<sp/>&quot;1,2,3,4,5,6,7,8,9;&quot;;</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/>CompatibilityList<sp/>intellist(slist);</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/>IntelCompatList.addItems(slist);</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>std::boolalpha<sp/>&lt;&lt;<sp/>(intellist<sp/>==<sp/>&quot;10&quot;)<sp/>&lt;&lt;<sp/>(intellist<sp/>==<sp/>&quot;2&quot;);</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_p_u" kindref="compound">CPU</ref><sp/>i74790(</highlight><highlight class="stringliteral">&quot;intel&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;i3-4330&quot;</highlight><highlight class="normal">,<sp/>800,<sp/>200,<sp/>2,<sp/></highlight><highlight class="stringliteral">&quot;LGA1152&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="atest_8cpp_1a6e6df2af48d16780853d6eddcb8c8bc4" kindref="member">test3</ref>(</highlight><highlight class="stringliteral">&quot;wasd&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;WAsd&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/>asd(</highlight><highlight class="stringliteral">&quot;wasdw&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>asd--;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="atest_8cpp_1ab545ece7a108a6470a3dc2161ba0008b" kindref="member">test4</ref>(asd,<sp/></highlight><highlight class="stringliteral">&quot;wasd&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_orders" kindref="compound">Orders</ref><sp/>orders;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/><sp/><sp/><sp/>partsFile.clear();</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/><sp/><sp/><sp/>std::streampos<sp/>pos<sp/>=<sp/>partsFile.tellg();</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/><sp/><sp/><sp/>partsFile<sp/>&lt;&lt;<sp/>std::endl<sp/>&lt;&lt;<sp/>&quot;CPU:<sp/>\n&quot;;</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/><sp/><sp/><sp/>partsFile<sp/>&lt;&lt;<sp/>i74790<sp/>&lt;&lt;<sp/>&quot;\n&quot;;</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"></highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/><sp/>partsFile.flush();</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"></highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/><sp/><sp/><sp/>partsFile.seekg(pos);</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//inv[0]<sp/>=<sp/>loadPart(partsFile,<sp/>tmp,<sp/>eP);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//partsFile<sp/>&lt;&lt;<sp/>std::endl<sp/>&lt;&lt;<sp/>&quot;CPU:<sp/>\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//partsFile<sp/>&lt;&lt;<sp/>*(inventory[0]);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>std::endl<sp/>&lt;&lt;<sp/>*(inv[0]);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!(eM<sp/>==<sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02af2f1713ca51324f5000bf36d36bfd684" kindref="member">eExit</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(eM)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a51060f19a5d0006e2cb20df8786a330b" kindref="member">eMain</ref>:</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a388f572c62279f839ee138a9afbdeeb5" kindref="member">print</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//ez<sp/>azért<sp/>van<sp/>hogy<sp/>végigfusson<sp/>input<sp/>nélkül<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a8d35c4ba2bd3370a44513dbdbdbd0ff6" kindref="member">ePartsList</ref>:</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a70c4e63bce818eb0a35f6403066b4263" kindref="member">printPartsList</ref>(inventory);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a1fedbd15c99125bee9cb78cffbf7228b" kindref="member">ePartsAdd</ref>:</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>system(</highlight><highlight class="stringliteral">&quot;cls&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02af19f793fac63215e67f31045c7371d1c" kindref="member">ePartsRemove</ref>:</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>system(</highlight><highlight class="stringliteral">&quot;cls&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a34f49f61c9b4bdb2fe1be11758138084" kindref="member">eBuildsList</ref>:</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>system(</highlight><highlight class="stringliteral">&quot;cls&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a18af4c5278fb8ad13d84f598c68e766e" kindref="member">eBuildsAdd</ref>:</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>system(</highlight><highlight class="stringliteral">&quot;cls&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02af2f1713ca51324f5000bf36d36bfd684" kindref="member">eExit</ref>:</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1af4bf55c7933ba857c5d67526038aed45" kindref="member">evaluateCommand</ref>(eM);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="main_8h_1a388f572c62279f839ee138a9afbdeeb5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a388f572c62279f839ee138a9afbdeeb5" kindref="member">print</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>system(</highlight><highlight class="stringliteral">&quot;cls&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;11:<sp/>Print<sp/>all<sp/>loaded<sp/>parts<sp/>\n12:<sp/>Add<sp/>new<sp/>part<sp/>\n13:<sp/>Remove<sp/>part<sp/>\n\n21:<sp/>Print<sp/>a<sp/>build<sp/>\n22:<sp/>Create<sp/>new<sp/>build<sp/>\n\n9:<sp/>Save&amp;Exit\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="main_8h_1a54c74422af05849f9d508c0a5ccd468b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a70c4e63bce818eb0a35f6403066b4263" kindref="member">printPartsList</ref>(<ref refid="class_inventory" kindref="compound">Inventory</ref>&amp;<sp/>inventory)<sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>system(</highlight><highlight class="stringliteral">&quot;cls&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>inventory.<ref refid="class_inventory_1a3ccacc9422b01b2c17836ca804bcaafc" kindref="member">get_size</ref>();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>i<sp/>+<sp/>1<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>*(inventory[i])<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n1:<sp/>Return&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="main_8h_1aed630b39565f9b935d3148b396fd862d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1af4bf55c7933ba857c5d67526038aed45" kindref="member">evaluateCommand</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02" kindref="member">enumMenu</ref>&amp;<sp/>eM)<sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c[52];</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>std::stringstream<sp/>v;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cv;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(std::cin<sp/>&gt;&gt;<sp/>c)<sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream().swap(v);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v<sp/>&lt;&lt;<sp/>c;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v<sp/>&gt;&gt;<sp/>cv;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(cv)<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eM<sp/>=<sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a51060f19a5d0006e2cb20df8786a330b" kindref="member">eMain</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>11:</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eM<sp/>=<sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a8d35c4ba2bd3370a44513dbdbdbd0ff6" kindref="member">ePartsList</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>12:</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eM<sp/>=<sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a1fedbd15c99125bee9cb78cffbf7228b" kindref="member">ePartsAdd</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>13:</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eM<sp/>=<sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02af19f793fac63215e67f31045c7371d1c" kindref="member">ePartsRemove</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>21:</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eM<sp/>=<sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a34f49f61c9b4bdb2fe1be11758138084" kindref="member">eBuildsList</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>22:</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eM<sp/>=<sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02a18af4c5278fb8ad13d84f598c68e766e" kindref="member">eBuildsAdd</ref>;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>9:</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eM<sp/>=<sp/><ref refid="main_8h_1adbc27074b7dcd54cd4578936c6329d02af2f1713ca51324f5000bf36d36bfd684" kindref="member">eExit</ref>;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Invalid<sp/>command:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>cv;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp"/>
+  </compounddef>
+</doxygen>

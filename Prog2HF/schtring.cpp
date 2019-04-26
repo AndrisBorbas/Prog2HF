@@ -18,17 +18,13 @@ using std::ios_base;
 
 char* stolower(char* s) {
 	char* p = s;
-	while (*p = tolower(*p)) p++;
+	while ((*p = tolower(*p))) p++;
 	return s;
 }
 
-///Konstruktor: egy char karakterre
 String::String(char ch) {
-
 	len = 1;
-
 	pData = new char[len + 1];
-
 	pData[0] = ch;
 	pData[1] = '\0';
 }
@@ -36,20 +32,14 @@ String::String(char ch) {
 
 
 String::String(const char* p) {
-
 	len = strlen(p);
-
 	pData = new char[len + 1];
-
 	strcpy(pData, p);
 }
 
 String::String(const String& s1) {
-
 	len = s1.len;
-
 	pData = new char[len + 1];
-
 	strcpy(pData, s1.pData);
 }
 
@@ -77,19 +67,12 @@ const char& String::operator[](unsigned int idx) const {
 
 String String::operator+(const String& rhs_s) const {
 	String temp;
-
 	temp.len = len + rhs_s.len;
-
 	delete[]temp.pData;
-
 	temp.pData = new char[temp.len + 1];
-
 	strcpy(temp.pData, pData);
-
 	strcat(temp.pData, rhs_s.pData);
-
 	return temp;
-
 }
 
 bool String::operator==(String& rhs_s) {
@@ -105,8 +88,7 @@ bool String::operator==(String& rhs_s) {
 	return (!temp);
 }
 
-bool String::operator==(const char* rhs_s)
-{
+bool String::operator==(const char* rhs_s) {
 	char* tempr = new char[strlen(rhs_s) + 1];
 	strcpy(tempr, rhs_s);
 	stolower(tempr);
@@ -119,8 +101,7 @@ bool String::operator==(const char* rhs_s)
 	return (!temp);
 }
 
-bool String::operator==(const char* rhs_s) const
-{
+bool String::operator==(const char* rhs_s) const {
 	char* tempr = new char[strlen(rhs_s) + 1];
 	strcpy(tempr, rhs_s);
 	stolower(tempr);

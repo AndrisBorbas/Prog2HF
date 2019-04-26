@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_s_d" kind="class" prot="public">
+    <compoundname>SSD</compoundname>
+    <basecompoundref refid="class_storage" prot="public" virt="non-virtual">Storage</basecompoundref>
+    <includes refid="_parts_8h" local="no">Parts.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_s_d_1ae8e8be235266aebff618a4be69f11d52" prot="private" static="no" mutable="no">
+        <type><ref refid="class_string" kindref="compound">String</ref></type>
+        <definition>String SSD::formfactor</definition>
+        <argsstring></argsstring>
+        <name>formfactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="146" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="146" bodyend="-1"/>
+        <referencedby refid="class_s_s_d_1a551b59fa58e2e5b0de0d21fdc1ebf892" compoundref="_parts_8cpp" startline="54" endline="57">print</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_s_d_1a315019d2a400bf1588a09f551d090201" prot="private" static="no" mutable="no">
+        <type><ref refid="class_string" kindref="compound">String</ref></type>
+        <definition>String SSD::flashtype</definition>
+        <argsstring></argsstring>
+        <name>flashtype</name>
+        <briefdescription>
+<para>Szabvány. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="147" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="147" bodyend="-1"/>
+        <referencedby refid="class_s_s_d_1a551b59fa58e2e5b0de0d21fdc1ebf892" compoundref="_parts_8cpp" startline="54" endline="57">print</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_s_d_1a1e80104276b02f8ca6f016f41a2a5f41" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SSD::SSD</definition>
+        <argsstring>(String brand, String type, int price, int size, int readspeed, int writespeed, String formfactor, String flashtype)</argsstring>
+        <name>SSD</name>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>brand</declname>
+        </param>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>readspeed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>writespeed</declname>
+        </param>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>formfactor</declname>
+        </param>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>flashtype</declname>
+        </param>
+        <briefdescription>
+<para>Flash csip típusa. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="149" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="149" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_s_d_1a39a5322942a5320a9a2be8ac7cb4c596" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SSD::SSD</definition>
+        <argsstring>(TempInput tmp)</argsstring>
+        <name>SSD</name>
+        <param>
+          <type><ref refid="struct_temp_input" kindref="compound">TempInput</ref></type>
+          <declname>tmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="151" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="151" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_s_d_1a551b59fa58e2e5b0de0d21fdc1ebf892" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SSD::print</definition>
+        <argsstring>(std::ostream &amp;os) const </argsstring>
+        <name>print</name>
+        <reimplements refid="class_storage_1a07ace7dc4916ea4f6b00be1ffee63430">print</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="153" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp" bodystart="54" bodyend="57"/>
+        <references refid="class_s_s_d_1a315019d2a400bf1588a09f551d090201" compoundref="_parts_8h" startline="147">flashtype</references>
+        <references refid="class_s_s_d_1ae8e8be235266aebff618a4be69f11d52" compoundref="_parts_8h" startline="146">formfactor</references>
+        <references refid="class_storage_1a07ace7dc4916ea4f6b00be1ffee63430" compoundref="_parts_8cpp" startline="49" endline="52">Storage::print</references>
+        <referencedby refid="_parts_8h_1a58786e0f5831ee1afe7272e37221a12a" compoundref="_parts_8cpp" startline="96" endline="99">operator&lt;&lt;</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="66">
+        <label>Storage</label>
+        <link refid="class_storage"/>
+        <childnode refid="67" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>Part</label>
+        <link refid="class_part"/>
+      </node>
+      <node id="65">
+        <label>SSD</label>
+        <link refid="class_s_s_d"/>
+        <childnode refid="66" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="71">
+        <label>String</label>
+        <link refid="class_string"/>
+      </node>
+      <node id="69">
+        <label>Storage</label>
+        <link refid="class_storage"/>
+        <childnode refid="70" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>Part</label>
+        <link refid="class_part"/>
+        <childnode refid="71" relation="usage">
+          <edgelabel>brand</edgelabel>
+          <edgelabel>type</edgelabel>
+        </childnode>
+      </node>
+      <node id="68">
+        <label>SSD</label>
+        <link refid="class_s_s_d"/>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+        <childnode refid="71" relation="usage">
+          <edgelabel>formfactor</edgelabel>
+          <edgelabel>flashtype</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" line="145" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h" bodystart="145" bodyend="154"/>
+    <listofallmembers>
+      <member refid="class_part_1ae06f2fdeb7fbbdb229a7aca151f3e341" prot="protected" virt="non-virtual"><scope>SSD</scope><name>brand</name></member>
+      <member refid="class_s_s_d_1a315019d2a400bf1588a09f551d090201" prot="private" virt="non-virtual"><scope>SSD</scope><name>flashtype</name></member>
+      <member refid="class_s_s_d_1ae8e8be235266aebff618a4be69f11d52" prot="private" virt="non-virtual"><scope>SSD</scope><name>formfactor</name></member>
+      <member refid="class_part_1abdaeb1db5ba55c184f39802c163e9ebc" prot="public" virt="non-virtual"><scope>SSD</scope><name>get_brand</name></member>
+      <member refid="class_part_1abb7c8371883825ad46773f219db3523e" prot="public" virt="non-virtual"><scope>SSD</scope><name>get_price</name></member>
+      <member refid="class_part_1a97117fd470cd694ae0897fb2f4391786" prot="public" virt="non-virtual"><scope>SSD</scope><name>get_type</name></member>
+      <member refid="class_part_1aae5224ee782134c4ecb60f23ec38698f" prot="public" virt="non-virtual"><scope>SSD</scope><name>Part</name></member>
+      <member refid="class_part_1a8e71223aed1da95a974f33d8d6c91bb1" prot="protected" virt="non-virtual"><scope>SSD</scope><name>price</name></member>
+      <member refid="class_s_s_d_1a551b59fa58e2e5b0de0d21fdc1ebf892" prot="public" virt="virtual"><scope>SSD</scope><name>print</name></member>
+      <member refid="class_storage_1a41073842ff16961dad3903e6dd49bb0c" prot="protected" virt="non-virtual"><scope>SSD</scope><name>readspeed</name></member>
+      <member refid="class_storage_1abcc80ce58a21fa884035617ee0b6cb67" prot="protected" virt="non-virtual"><scope>SSD</scope><name>size</name></member>
+      <member refid="class_s_s_d_1a1e80104276b02f8ca6f016f41a2a5f41" prot="public" virt="non-virtual"><scope>SSD</scope><name>SSD</name></member>
+      <member refid="class_s_s_d_1a39a5322942a5320a9a2be8ac7cb4c596" prot="public" virt="non-virtual"><scope>SSD</scope><name>SSD</name></member>
+      <member refid="class_storage_1a502a2ec76e09d48a87da6ed1b91cdaa8" prot="public" virt="non-virtual"><scope>SSD</scope><name>Storage</name></member>
+      <member refid="class_part_1a101dbcc5c4b21564df7414c7eb0eae88" prot="protected" virt="non-virtual"><scope>SSD</scope><name>type</name></member>
+      <member refid="class_storage_1a0198a1483ccf849d48c76da88599ba8b" prot="protected" virt="non-virtual"><scope>SSD</scope><name>writespeed</name></member>
+      <member refid="class_part_1aaecbb747a7227f7ce3b44caeaf1801c2" prot="public" virt="virtual"><scope>SSD</scope><name>~Part</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

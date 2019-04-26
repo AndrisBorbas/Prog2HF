@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_inventory_8cpp" kind="file">
+    <compoundname>Inventory.cpp</compoundname>
+    <includes refid="_inventory_8h" local="yes">Inventory.h</includes>
+    <incdepgraph>
+      <node id="87">
+        <label>Compatibility.h</label>
+        <link refid="_compatibility_8h"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>schtring.h</label>
+        <link refid="schtring_8h"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>Inventory.h</label>
+        <link refid="_inventory_8h"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.cpp</label>
+        <link refid="Inventory.cpp"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>cctype</label>
+      </node>
+      <node id="84">
+        <label>iostream</label>
+      </node>
+      <node id="86">
+        <label>ctype.h</label>
+      </node>
+      <node id="82">
+        <label>Parts.h</label>
+        <link refid="_parts_8h"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_inventory_8cpp_1ae6a088ca285c04d0f3a748c91b3de18a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_part" kindref="compound">Part</ref> *</type>
+        <definition>Part* loadPart</definition>
+        <argsstring>(std::istream &amp;is, TempInput &amp;tmp, enum enumPart e)</argsstring>
+        <name>loadPart</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_temp_input" kindref="compound">TempInput</ref> &amp;</type>
+          <declname>tmp</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943" kindref="member">enumPart</ref></type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.cpp" line="3" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.cpp" bodystart="3" bodyend="35"/>
+        <references refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a7a9e0a3b7edbb259ac104bcdcc146687" compoundref="_inventory_8h" startline="11">eCase</references>
+        <references refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943af628daad5f03c68213c8181eb59bd178" compoundref="_inventory_8h" startline="7">eCPU</references>
+        <references refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a3a32d863321d2f2062b46d9dd968b7f7" compoundref="_inventory_8h" startline="8">eGPU</references>
+        <references refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a28b188092ec14a7f857b6b0a63185683" compoundref="_inventory_8h" startline="14">eHDD</references>
+        <references refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943ab32c771bb60dc8b502f65b81eef3bd86" compoundref="_inventory_8h" startline="6">eInvalid</references>
+        <references refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a648a218f2851134fdbddf38c73009cbe" compoundref="_inventory_8h" startline="9">eMOBO</references>
+        <references refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a1e9e01992a9c1cfae96b1bf60b946beb" compoundref="_inventory_8h" startline="12">ePSU</references>
+        <references refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943ab8ed3ffb829052bad316bc5bd3563c95" compoundref="_inventory_8h" startline="10">eRAM</references>
+        <references refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a47cf1e8f84e82a65f9ecb6d21649b4b4" compoundref="_inventory_8h" startline="13">eSSD</references>
+        <references refid="_inventory_8cpp_1a027b287b99619c750f30b4765ec929e5" compoundref="_inventory_8cpp" startline="75" endline="172">LoadParams</references>
+      </memberdef>
+      <memberdef kind="function" id="_inventory_8cpp_1a60723589ed29abbba810d129e72f21ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setEnum</definition>
+        <argsstring>(String inst, enum enumPart &amp;e)</argsstring>
+        <name>setEnum</name>
+        <param>
+          <type><ref refid="class_string" kindref="compound">String</ref></type>
+          <declname>inst</declname>
+        </param>
+        <param>
+          <type>enum <ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943" kindref="member">enumPart</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.cpp" line="37" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.cpp" bodystart="37" bodyend="73"/>
+        <references refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a7a9e0a3b7edbb259ac104bcdcc146687" compoundref="_inventory_8h" startline="11">eCase</references>
+        <references refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943af628daad5f03c68213c8181eb59bd178" compoundref="_inventory_8h" startline="7">eCPU</references>
+        <references refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a3a32d863321d2f2062b46d9dd968b7f7" compoundref="_inventory_8h" startline="8">eGPU</references>
+        <references refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a28b188092ec14a7f857b6b0a63185683" compoundref="_inventory_8h" startline="14">eHDD</references>
+        <references refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943ab32c771bb60dc8b502f65b81eef3bd86" compoundref="_inventory_8h" startline="6">eInvalid</references>
+        <references refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a648a218f2851134fdbddf38c73009cbe" compoundref="_inventory_8h" startline="9">eMOBO</references>
+        <references refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a1e9e01992a9c1cfae96b1bf60b946beb" compoundref="_inventory_8h" startline="12">ePSU</references>
+        <references refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943ab8ed3ffb829052bad316bc5bd3563c95" compoundref="_inventory_8h" startline="10">eRAM</references>
+        <references refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a47cf1e8f84e82a65f9ecb6d21649b4b4" compoundref="_inventory_8h" startline="13">eSSD</references>
+      </memberdef>
+      <memberdef kind="function" id="_inventory_8cpp_1a027b287b99619c750f30b4765ec929e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LoadParams</definition>
+        <argsstring>(std::istream &amp;is, TempInput &amp;tmp, int const params)</argsstring>
+        <name>LoadParams</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_temp_input" kindref="compound">TempInput</ref> &amp;</type>
+          <declname>tmp</declname>
+        </param>
+        <param>
+          <type>int const</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.cpp" line="75" column="1" bodyfile="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.cpp" bodystart="75" bodyend="172"/>
+        <references refid="struct_temp_input_1ae61ec1c3c483e583e4975e5c728e4886" compoundref="_parts_8h" startline="13">TempInput::brand</references>
+        <references refid="struct_temp_input_1a29da394f96dae5eaa49e145207362a9c" compoundref="_parts_8h" startline="20">TempInput::chipset</references>
+        <references refid="struct_temp_input_1aa76fe14a614fef6e9239ce2283d6b102" compoundref="_parts_8h" startline="17">TempInput::clk</references>
+        <references refid="struct_temp_input_1a9b99532e6c984fb19c34ed943a6d5750" compoundref="_parts_8h" startline="18">TempInput::cores</references>
+        <references refid="struct_temp_input_1aca0d9830369aab845fc274c6b54ffe33" compoundref="_parts_8h" startline="26">TempInput::flashtype</references>
+        <references refid="struct_temp_input_1a402c6984d9e94d4c76e460d0368613f3" compoundref="_parts_8h" startline="21">TempInput::formfactor</references>
+        <references refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" compoundref="_parts_8h" startline="11">TempInput::instruction</references>
+        <references refid="class_string_1ae844285e8985e015988e5944cc4e98a6" compoundref="schtring_8h" startline="16" endline="16">String::length</references>
+        <references refid="struct_temp_input_1ad8957d3af0ed714844abf3f37cbfc719" compoundref="_parts_8h" startline="19">TempInput::multithreading</references>
+        <references refid="struct_temp_input_1a6d049ee814f00b43e1d951317261e357" compoundref="_parts_8h" startline="15">TempInput::price</references>
+        <references refid="struct_temp_input_1a75c5e55813802a9d6af6818de81e6001" compoundref="_parts_8h" startline="24">TempInput::readspeed</references>
+        <references refid="struct_temp_input_1a661104db14326156bbb2ffa5a7c6f468" compoundref="_parts_8h" startline="27">TempInput::rpm</references>
+        <references refid="struct_temp_input_1adfc0eb32fac7de584c3872875b452550" compoundref="_parts_8h" startline="22">TempInput::size</references>
+        <references refid="struct_temp_input_1a5142af446776f87e454134511f681887" compoundref="_parts_8h" startline="16">TempInput::socket</references>
+        <references refid="struct_temp_input_1a1a73f4b9c84caa8c463a4bad03cf433d" compoundref="_parts_8h" startline="14">TempInput::type</references>
+        <references refid="struct_temp_input_1afbaccb88c8eee8a1f4d5d2b6ec692c94" compoundref="_parts_8h" startline="23">TempInput::wattage</references>
+        <references refid="struct_temp_input_1a3d5511c959e7c3531ce3bea3a6248d62" compoundref="_parts_8h" startline="25">TempInput::writespeed</references>
+        <referencedby refid="_inventory_8h_1a160c901d07025ced26495dcba851f700" compoundref="_inventory_8cpp" startline="3" endline="35">loadPart</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_inventory_8h" kindref="compound">Inventory.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="_inventory_8h_1a160c901d07025ced26495dcba851f700" refkind="member"><highlight class="normal"><ref refid="class_part" kindref="compound">Part</ref>*<sp/><ref refid="_inventory_8cpp_1ae6a088ca285c04d0f3a748c91b3de18a" kindref="member">loadPart</ref>(std::istream&amp;<sp/>is,<sp/><ref refid="struct_temp_input" kindref="compound">TempInput</ref>&amp;<sp/>tmp,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943" kindref="member">enumPart</ref><sp/>e)<sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(e)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943af628daad5f03c68213c8181eb59bd178" kindref="member">eCPU</ref>:</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_inventory_8cpp_1a027b287b99619c750f30b4765ec929e5" kindref="member">LoadParams</ref>(is,<sp/>tmp,<sp/>7);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_p_u" kindref="compound">CPU</ref>(tmp));</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a3a32d863321d2f2062b46d9dd968b7f7" kindref="member">eGPU</ref>:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_inventory_8cpp_1a027b287b99619c750f30b4765ec929e5" kindref="member">LoadParams</ref>(is,<sp/>tmp,<sp/>5);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_g_p_u" kindref="compound">GPU</ref>(tmp));</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a648a218f2851134fdbddf38c73009cbe" kindref="member">eMOBO</ref>:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_inventory_8cpp_1a027b287b99619c750f30b4765ec929e5" kindref="member">LoadParams</ref>(is,<sp/>tmp,<sp/>6);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_m_o_b_o" kindref="compound">MOBO</ref>(tmp));</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943ab8ed3ffb829052bad316bc5bd3563c95" kindref="member">eRAM</ref>:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_inventory_8cpp_1a027b287b99619c750f30b4765ec929e5" kindref="member">LoadParams</ref>(is,<sp/>tmp,<sp/>5);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_r_a_m" kindref="compound">RAM</ref>(tmp));</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a7a9e0a3b7edbb259ac104bcdcc146687" kindref="member">eCase</ref>:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_inventory_8cpp_1a027b287b99619c750f30b4765ec929e5" kindref="member">LoadParams</ref>(is,<sp/>tmp,<sp/>4);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_case" kindref="compound">Case</ref>(tmp));</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a1e9e01992a9c1cfae96b1bf60b946beb" kindref="member">ePSU</ref>:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_inventory_8cpp_1a027b287b99619c750f30b4765ec929e5" kindref="member">LoadParams</ref>(is,<sp/>tmp,<sp/>4);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_p_s_u" kindref="compound">PSU</ref>(tmp));</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a47cf1e8f84e82a65f9ecb6d21649b4b4" kindref="member">eSSD</ref>:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_inventory_8cpp_1a027b287b99619c750f30b4765ec929e5" kindref="member">LoadParams</ref>(is,<sp/>tmp,<sp/>8);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_s_s_d" kindref="compound">SSD</ref>(tmp));</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a28b188092ec14a7f857b6b0a63185683" kindref="member">eHDD</ref>:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_inventory_8cpp_1a027b287b99619c750f30b4765ec929e5" kindref="member">LoadParams</ref>(is,<sp/>tmp,<sp/>7);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_h_d_d" kindref="compound">HDD</ref>(tmp));</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943ab32c771bb60dc8b502f65b81eef3bd86" kindref="member">eInvalid</ref>:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::logic_error(</highlight><highlight class="stringliteral">&quot;how<sp/>did<sp/>you<sp/>get<sp/>here?&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::logic_error(</highlight><highlight class="stringliteral">&quot;how<sp/>did<sp/>you<sp/>get<sp/>here?&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_part" kindref="compound">Part</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="_inventory_8h_1aa9bc06c48979e6ec21d5fe16ca9b8164" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_inventory_8cpp_1a60723589ed29abbba810d129e72f21ed" kindref="member">setEnum</ref>(<ref refid="class_string" kindref="compound">String</ref><sp/>inst,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943" kindref="member">enumPart</ref>&amp;<sp/>e)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inst<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;CPU:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>=<sp/><ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943af628daad5f03c68213c8181eb59bd178" kindref="member">eCPU</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inst<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;GPU:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>=<sp/><ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a3a32d863321d2f2062b46d9dd968b7f7" kindref="member">eGPU</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inst<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;MOBO:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>=<sp/><ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a648a218f2851134fdbddf38c73009cbe" kindref="member">eMOBO</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inst<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;RAM:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>=<sp/><ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943ab8ed3ffb829052bad316bc5bd3563c95" kindref="member">eRAM</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inst<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Case:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>=<sp/><ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a7a9e0a3b7edbb259ac104bcdcc146687" kindref="member">eCase</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inst<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;PSU:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>=<sp/><ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a1e9e01992a9c1cfae96b1bf60b946beb" kindref="member">ePSU</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inst<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;SSD:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>=<sp/><ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a47cf1e8f84e82a65f9ecb6d21649b4b4" kindref="member">eSSD</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inst<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;HDD:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>=<sp/><ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943a28b188092ec14a7f857b6b0a63185683" kindref="member">eHDD</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>e<sp/>=<sp/><ref refid="_inventory_8h_1abddff37837f171d72a2e16a1448a3943ab32c771bb60dc8b502f65b81eef3bd86" kindref="member">eInvalid</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="_inventory_8h_1a027b287b99619c750f30b4765ec929e5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_inventory_8cpp_1a027b287b99619c750f30b4765ec929e5" kindref="member">LoadParams</ref>(std::istream&amp;<sp/>is,<sp/><ref refid="struct_temp_input" kindref="compound">TempInput</ref>&amp;<sp/>tmp,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>params)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>params)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is<sp/>&gt;&gt;<sp/>tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Brand:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is<sp/>&gt;&gt;<sp/>tmp.<ref refid="struct_temp_input_1ae61ec1c3c483e583e4975e5c728e4886" kindref="member">brand</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1ae61ec1c3c483e583e4975e5c728e4886" kindref="member">brand</ref>[tmp.<ref refid="struct_temp_input_1ae61ec1c3c483e583e4975e5c728e4886" kindref="member">brand</ref>.<ref refid="class_string_1ae844285e8985e015988e5944cc4e98a6" kindref="member">length</ref>()<sp/>-<sp/>1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">)<sp/>tmp.<ref refid="struct_temp_input_1ae61ec1c3c483e583e4975e5c728e4886" kindref="member">brand</ref>--;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Type:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is<sp/>&gt;&gt;<sp/>tmp.<ref refid="struct_temp_input_1a1a73f4b9c84caa8c463a4bad03cf433d" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1a1a73f4b9c84caa8c463a4bad03cf433d" kindref="member">type</ref>[tmp.<ref refid="struct_temp_input_1a1a73f4b9c84caa8c463a4bad03cf433d" kindref="member">type</ref>.<ref refid="class_string_1ae844285e8985e015988e5944cc4e98a6" kindref="member">length</ref>()<sp/>-<sp/>1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">)<sp/>tmp.<ref refid="struct_temp_input_1a1a73f4b9c84caa8c463a4bad03cf433d" kindref="member">type</ref>--;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Price:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is<sp/>&gt;&gt;<sp/>tmp.<ref refid="struct_temp_input_1a6d049ee814f00b43e1d951317261e357" kindref="member">price</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;ClockSpeed:&quot;</highlight><highlight class="normal"><sp/>||<sp/>tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Clock:&quot;</highlight><highlight class="normal"><sp/>||<sp/>tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;CLK:&quot;</highlight><highlight class="normal"><sp/>||<sp/>tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;BaseClock:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is<sp/>&gt;&gt;<sp/>tmp.<ref refid="struct_temp_input_1aa76fe14a614fef6e9239ce2283d6b102" kindref="member">clk</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Cores:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is<sp/>&gt;&gt;<sp/>tmp.<ref refid="struct_temp_input_1a9b99532e6c984fb19c34ed943a6d5750" kindref="member">cores</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Socket:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is<sp/>&gt;&gt;<sp/>tmp.<ref refid="struct_temp_input_1a5142af446776f87e454134511f681887" kindref="member">socket</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1a5142af446776f87e454134511f681887" kindref="member">socket</ref>[tmp.<ref refid="struct_temp_input_1a5142af446776f87e454134511f681887" kindref="member">socket</ref>.<ref refid="class_string_1ae844285e8985e015988e5944cc4e98a6" kindref="member">length</ref>()<sp/>-<sp/>1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">)<sp/>tmp.<ref refid="struct_temp_input_1a5142af446776f87e454134511f681887" kindref="member">socket</ref>--;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;HyperThreading:&quot;</highlight><highlight class="normal"><sp/>||<sp/>tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Hyper-Threading:&quot;</highlight><highlight class="normal"><sp/>||<sp/>tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;MultiThreading:&quot;</highlight><highlight class="normal"><sp/>||</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Multi-Threading:&quot;</highlight><highlight class="normal"><sp/>||<sp/>tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;SimultaneousMultiThreading&quot;</highlight><highlight class="normal"><sp/>||<sp/>tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;SimultaneousMulti-Threading&quot;</highlight><highlight class="normal"><sp/>||</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;SMT&quot;</highlight><highlight class="normal"><sp/>||<sp/>tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;HT&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_string" kindref="compound">String</ref><sp/>temp;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is<sp/>&gt;&gt;<sp/>temp;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(temp<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;yes&quot;</highlight><highlight class="normal"><sp/>||<sp/>temp<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;true&quot;</highlight><highlight class="normal"><sp/>||<sp/>temp<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;1&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp.<ref refid="struct_temp_input_1ad8957d3af0ed714844abf3f37cbfc719" kindref="member">multithreading</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(temp<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;no&quot;</highlight><highlight class="normal"><sp/>||<sp/>temp<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;false&quot;</highlight><highlight class="normal"><sp/>||<sp/>temp<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp.<ref refid="struct_temp_input_1ad8957d3af0ed714844abf3f37cbfc719" kindref="member">multithreading</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Size:&quot;</highlight><highlight class="normal"><sp/>||<sp/>tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Memory:&quot;</highlight><highlight class="normal"><sp/>||<sp/>tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;MemorySize:&quot;</highlight><highlight class="normal"><sp/>||<sp/>tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;VRAM:&quot;</highlight><highlight class="normal"><sp/>||<sp/>tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;VideoMemory&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is<sp/>&gt;&gt;<sp/>tmp.<ref refid="struct_temp_input_1adfc0eb32fac7de584c3872875b452550" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Chipset:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is<sp/>&gt;&gt;<sp/>tmp.<ref refid="struct_temp_input_1a29da394f96dae5eaa49e145207362a9c" kindref="member">chipset</ref>;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1a29da394f96dae5eaa49e145207362a9c" kindref="member">chipset</ref>[tmp.<ref refid="struct_temp_input_1a29da394f96dae5eaa49e145207362a9c" kindref="member">chipset</ref>.<ref refid="class_string_1ae844285e8985e015988e5944cc4e98a6" kindref="member">length</ref>()<sp/>-<sp/>1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">)<sp/>tmp.<ref refid="struct_temp_input_1a29da394f96dae5eaa49e145207362a9c" kindref="member">chipset</ref>--;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;FormFactor:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is<sp/>&gt;&gt;<sp/>tmp.<ref refid="struct_temp_input_1a402c6984d9e94d4c76e460d0368613f3" kindref="member">formfactor</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1a402c6984d9e94d4c76e460d0368613f3" kindref="member">formfactor</ref>[tmp.<ref refid="struct_temp_input_1a402c6984d9e94d4c76e460d0368613f3" kindref="member">formfactor</ref>.<ref refid="class_string_1ae844285e8985e015988e5944cc4e98a6" kindref="member">length</ref>()<sp/>-<sp/>1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">)<sp/>tmp.<ref refid="struct_temp_input_1a402c6984d9e94d4c76e460d0368613f3" kindref="member">formfactor</ref>--;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Wattage:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is<sp/>&gt;&gt;<sp/>tmp.<ref refid="struct_temp_input_1afbaccb88c8eee8a1f4d5d2b6ec692c94" kindref="member">wattage</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;ReadSpeed:&quot;</highlight><highlight class="normal"><sp/>||<sp/>tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Speed:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is<sp/>&gt;&gt;<sp/>tmp.<ref refid="struct_temp_input_1a75c5e55813802a9d6af6818de81e6001" kindref="member">readspeed</ref>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;WriteSpeed:&quot;</highlight><highlight class="normal"><sp/>||<sp/>tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Speed:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is<sp/>&gt;&gt;<sp/>tmp.<ref refid="struct_temp_input_1a3d5511c959e7c3531ce3bea3a6248d62" kindref="member">writespeed</ref>;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;RPM:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is<sp/>&gt;&gt;<sp/>tmp.<ref refid="struct_temp_input_1a661104db14326156bbb2ffa5a7c6f468" kindref="member">rpm</ref>;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;FlashType:&quot;</highlight><highlight class="normal"><sp/>||<sp/>tmp.<ref refid="struct_temp_input_1a693f4a5b4215b51144174287aecab527" kindref="member">instruction</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Flash:&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is<sp/>&gt;&gt;<sp/>tmp.<ref refid="struct_temp_input_1aca0d9830369aab845fc274c6b54ffe33" kindref="member">flashtype</ref>;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp.<ref refid="struct_temp_input_1aca0d9830369aab845fc274c6b54ffe33" kindref="member">flashtype</ref>[tmp.<ref refid="struct_temp_input_1aca0d9830369aab845fc274c6b54ffe33" kindref="member">flashtype</ref>.<ref refid="class_string_1ae844285e8985e015988e5944cc4e98a6" kindref="member">length</ref>()<sp/>-<sp/>1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">)<sp/>tmp.<ref refid="struct_temp_input_1aca0d9830369aab845fc274c6b54ffe33" kindref="member">flashtype</ref>--;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.cpp"/>
+  </compounddef>
+</doxygen>
