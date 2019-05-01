@@ -14,4 +14,10 @@ GPU:
 	Brand: Nvidia, Type: RTX2080, Price: 600, ClockSpeed: 2200, VRAM: 12
 
 CPU:
-	Brand: AMD, Type: Ryzen7-2700, Price: 500, Speed: 4200, SMT: yes, Socket: AM4, Cores: 8 
+	Brand: AMD, Type: Ryzen7_2700, Price: 500, Speed: 4200, SMT: true, Socket: AM4, Cores: 8 
+
+CPU:
+	Brand: Intel, Type: i9-9900k, Price: 600, Speed: 5000, HT: yes, Socket: LGA1151, Cores: 8 
+
+CPU:
+	Brand: Intel, Type: i9-9900k, Price: 600, Speed: 5000, HT: yes, Socket: LGA1151, Cores: 8 

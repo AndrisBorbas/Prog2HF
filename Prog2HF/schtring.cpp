@@ -125,7 +125,13 @@ String String::operator--(int a) {
 }
 
 std::ostream& operator<<(std::ostream& os, const String& s0) {
-	os << s0.c_str();
+	char* temp = new char[s0.length() + 1];
+	strcpy(temp, s0.c_str());
+	for (int i = 0; i < s0.length(); i++) {
+		if (temp[i] == '_')temp[i] = ' ';
+	}
+	os << temp;
+	delete[] temp;
 	return os;
 }
 
