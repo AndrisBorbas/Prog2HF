@@ -65,6 +65,9 @@ public:
 
 	/// törli a stringben lévő karaktereket
 	void erase() { *this = ""; }
+
+	///törli az első x karaktert a stringből
+	void removeFirstX(int x);
 };
 
 ///inserter operator
