@@ -33,7 +33,7 @@ public:
 		return size;
 	}
 
-	void loadPart(std::istream& is, TempInput& tmp, enum enumPart);
+	void loadPart(std::istream& is, TempInput& tmp, enumPart);
 
 	template<typename T>
 	void push_back(T* part) {

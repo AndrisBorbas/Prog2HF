@@ -65,6 +65,17 @@ const char& String::operator[](unsigned int idx) const {
 	return pData[idx];
 }
 
+void String::removeFirstX(int x) {
+	len = len - x;
+	char* temp = new char[len + 1];
+	for (int i = 0; i < len; i++) {
+		temp[i] = pData[i + x];
+	}
+	temp[len] = '\0';
+	delete[] pData;
+	pData = temp;
+}
+
 String String::operator+(const String& rhs_s) const {
 	String temp;
 	temp.len = len + rhs_s.len;

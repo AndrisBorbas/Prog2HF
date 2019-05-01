@@ -6,9 +6,9 @@
 
 int main(int argc, char** argv)
 {
-	///Default parts file name
+	///Alapértelmezett parts fájl név
 	char partsfilename[52] = "parts.txt";
-	///Set parts file name from command line
+	///Parts fájl nevének beállítása indítási parancsból
 	if (argc > 1) strcpy(partsfilename, argv[1]);
 
 	std::fstream partsFile;
@@ -20,7 +20,8 @@ int main(int argc, char** argv)
 	enumMenu eM = eMain;
 	TempInput tmp;
 	Inventory inventory;
-	
+	Orders orders;
+
 	while (partsFile >> tmp.instruction) {
 #ifdef _DEBUG
 		std::cout << tmp.instruction << std::endl;
@@ -32,8 +33,8 @@ int main(int argc, char** argv)
 			}
 		}
 	}
-	
-	
+
+
 	/*
 	std::cout << "hi" << std::endl;
 	String a = "1";
@@ -52,9 +53,6 @@ int main(int argc, char** argv)
 	asd--;
 	test4(asd, "wasd");
 
-
-	Orders orders;
-
 	/*
 	partsFile.clear();
 	std::streampos pos = partsFile.tellg();
@@ -70,6 +68,8 @@ int main(int argc, char** argv)
 	//partsFile << *(inventory[0]);
 	//std::cout << std::endl << *(inv[0]);
 
+	animate('~');
+
 	while (!(eM == eExit)) {
 		switch (eM)
 		{
@@ -80,45 +80,62 @@ int main(int argc, char** argv)
 			printPartsList(inventory);
 			break;
 		case ePartsAdd:
-			system("cls");
+			addPartHelper(inventory, tmp);
 			break;
 		case ePartsRemove:
-			system("cls");
+			clearcmd();
 			break;
 		case eBuildsList:
-			system("cls");
+			clearcmd();
 			break;
 		case eBuildsAdd:
-			system("cls");
+			clearcmd();
 			break;
 		case eExit:
-			return 0;
+			break;
 		}
 		evaluateCommand(eM);
 	}
+
+	//save
+
+	return 0;
+}
+
+void animate(char c) {
+	std::cout << std::endl;
+	for (int i = 0; i < 100; i++) {
+		std::cout << c;
+		std::this_thread::sleep_for(std::chrono::milliseconds(20));
+	}
+	std::cout << std::endl;
 }
 
 void printMain() {
-	system("cls");
+	clearcmd();
 	std::cout << "11: Print all loaded parts \n12: Add new part \n13: Remove part \n\n21: Print a build \n22: Create new build \n\n9: Save&Exit\n";
 }
 
 void printPartsList(Inventory& inventory) {
-	system("cls");
+	clearcmd();
 	for (int i = 0; i < inventory.get_size(); i++) {
-		std::cout << i + 1 << ": " << *(inventory[i]) << std::endl;
+		String name = typeid(*(inventory[i])).name();
+		name.removeFirstX(6);
+		std::cout << i + 1 << ": \t" << name << ": \t" << *(inventory[i]) << std::endl;
 	}
 	std::cout << "\n1: Return\n";
 }
 
+void addPartHelper(Inventory& inventory, TempInput& tmp) {
+	clearcmd();
+	std::cout << "1: CPU\n2: GPU\n3: MOBO\n4: RAM\n5: Case\n6: PSU\n7: SSD\n8: HDD\n\nPart type to add: ";
+	std::cin >> tmp.instruction;
+	//int a = tmp.instruction;
+}
+
 void evaluateCommand(enum enumMenu& eM) {
-	char c[52];
-	std::stringstream v;
 	int cv;
-	while (std::cin >> c) {
-		std::stringstream().swap(v);
-		v << c;
-		v >> cv;
+	while (std::cin >> cv) {
 		switch (cv) {
 		case 1:
 			eM = eMain;

@@ -1,6 +1,6 @@
 #include "Inventory.h"
 
-void Inventory::loadPart(std::istream& is, TempInput& tmp, enum enumPart e) {
+void Inventory::loadPart(std::istream& is, TempInput& tmp, enumPart e) {
 	switch (e)
 	{
 	case eCPU:
@@ -20,26 +20,44 @@ void Inventory::loadPart(std::istream& is, TempInput& tmp, enum enumPart e) {
 	case eMOBO:
 		LoadParams(is, tmp, 6);
 		this->push_back(new MOBO(tmp));
+#ifdef _DEBUG
+		std::cout << *((*this)[size - 1]) << std::endl;
+#endif 
 		return;
 	case eRAM:
 		LoadParams(is, tmp, 5);
 		this->push_back(new RAM(tmp));
+#ifdef _DEBUG
+		std::cout << *((*this)[size - 1]) << std::endl;
+#endif 
 		return;
 	case eCase:
 		LoadParams(is, tmp, 4);
 		this->push_back(new Case(tmp));
+#ifdef _DEBUG
+		std::cout << *((*this)[size - 1]) << std::endl;
+#endif 
 		return;
 	case ePSU:
 		LoadParams(is, tmp, 4);
 		this->push_back(new PSU(tmp));
+#ifdef _DEBUG
+		std::cout << *((*this)[size - 1]) << std::endl;
+#endif 
 		return;
 	case eSSD:
 		LoadParams(is, tmp, 8);
 		this->push_back(new SSD(tmp));
+#ifdef _DEBUG
+		std::cout << *((*this)[size - 1]) << std::endl;
+#endif 
 		return;
 	case eHDD:
 		LoadParams(is, tmp, 7);
 		this->push_back(new HDD(tmp));
+#ifdef _DEBUG
+		std::cout << *((*this)[size - 1]) << std::endl;
+#endif 
 		return;
 	case eInvalid:
 		throw std::logic_error("how did you get here?");
