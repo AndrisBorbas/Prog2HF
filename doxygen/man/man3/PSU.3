@@ -1,8 +1,9 @@
-.TH "PSU" 3 "Wed Apr 3 2019" "Prog2HF" \" -*- nroff -*-
+.TH "PSU" 3 "Thu May 2 2019" "Prog2HF" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-PSU
+PSU \- Táp\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -14,17 +15,41 @@ Inherits \fBPart\fP\&.
 
 .in +1c
 .ti -1c
-.RI "\fBPSU\fP (\fBString\fP \fBbrand\fP, \fBString\fP \fBtype\fP, int \fBprice\fP, \fBString\fP wattage)"
+.RI "\fBPSU\fP (\fBString\fP \fBbrand\fP, \fBString\fP \fBtype\fP, int \fBprice\fP, int wattage)"
 .br
 .RI "Teljesítmény\&. "
+.ti -1c
+.RI "\fBPSU\fP (\fBTempInput\fP tmp)"
+.br
+.ti -1c
+.RI "void \fBprint\fP (std::ostream &os) const"
+.br
+.ti -1c
+.RI "void \fBprint\fP (\fButos_ostream\fP &tos) const"
+.br
 .in -1c
 .SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Táp\&. 
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "PSU::PSU (\fBString\fP brand, \fBString\fP type, int price, \fBString\fP wattage)\fC [inline]\fP, \fC [explicit]\fP"
+.SS "PSU::PSU (\fBString\fP brand, \fBString\fP type, int price, int wattage)\fC [inline]\fP, \fC [explicit]\fP"
 
 .PP
 Teljesítmény\&. 
+.SS "PSU::PSU (\fBTempInput\fP tmp)\fC [inline]\fP, \fC [explicit]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void PSU::print (std::ostream & os) const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBPart\fP\&.
+.SS "void PSU::print (\fButos_ostream\fP & tos) const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBPart\fP\&.
 
 .SH "Author"
 .PP 

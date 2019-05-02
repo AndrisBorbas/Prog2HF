@@ -1,8 +1,9 @@
-.TH "SSD" 3 "Wed Apr 3 2019" "Prog2HF" \" -*- nroff -*-
+.TH "SSD" 3 "Thu May 2 2019" "Prog2HF" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-SSD
+SSD \- \fBSSD\fP\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -17,14 +18,38 @@ Inherits \fBStorage\fP\&.
 .RI "\fBSSD\fP (\fBString\fP \fBbrand\fP, \fBString\fP \fBtype\fP, int \fBprice\fP, int \fBsize\fP, int \fBreadspeed\fP, int \fBwritespeed\fP, \fBString\fP formfactor, \fBString\fP flashtype)"
 .br
 .RI "Flash csip típusa\&. "
+.ti -1c
+.RI "\fBSSD\fP (\fBTempInput\fP tmp)"
+.br
+.ti -1c
+.RI "void \fBprint\fP (std::ostream &os) const"
+.br
+.ti -1c
+.RI "void \fBprint\fP (\fButos_ostream\fP &tos) const"
+.br
 .in -1c
 .SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+\fBSSD\fP\&. 
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "SSD::SSD (\fBString\fP brand, \fBString\fP type, int price, int size, int readspeed, int writespeed, \fBString\fP formfactor, \fBString\fP flashtype)\fC [inline]\fP, \fC [explicit]\fP"
 
 .PP
 Flash csip típusa\&. 
+.SS "SSD::SSD (\fBTempInput\fP tmp)\fC [inline]\fP, \fC [explicit]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void SSD::print (std::ostream & os) const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBStorage\fP\&.
+.SS "void SSD::print (\fButos_ostream\fP & tos) const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBStorage\fP\&.
 
 .SH "Author"
 .PP 

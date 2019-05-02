@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['writespeed',['writespeed',['../class_storage.html#a0198a1483ccf849d48c76da88599ba8b',1,'Storage']]]
+  ['os',['os',['../structutos__ostream.html#aec8d0c25d29aa2cea8ade1cfb60fb3ef',1,'utos_ostream']]]
 ];

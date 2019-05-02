@@ -2,7 +2,7 @@
 \label{class_string}\index{String@{String}}
 
 
-{\ttfamily \#include $<$schtring.\+h$>$}
+{\ttfamily \#include $<$schtring.\+hpp$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -29,18 +29,24 @@ const char $\ast$ \mbox{\hyperlink{class_string_a0274f3e61533d15086816fb7f47ccb5
 \begin{DoxyCompactList}\small\item\em Pluszegyenlő operator. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{class_string_a28a020f061e5f25317af47488bfb7de8}{operator+}} (const \mbox{\hyperlink{class_string}{String}} \&rhs\+\_\+s) const
 \begin{DoxyCompactList}\small\item\em string + string \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{class_string_abb187e5ab66fe29c42aed4845b55dd76}{operator+}} (char rhs\+\_\+c) const
+\mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{class_string_afa169686af6b513e1f059cf2bf39695f}{operator+}} (char rhs\+\_\+c)
 \begin{DoxyCompactList}\small\item\em string + karakter \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_string_a1006dbb8a123aed87b8edb33d5cbcee4}{operator==}} (\mbox{\hyperlink{class_string}{String}} \&rhs\+\_\+s)
 \begin{DoxyCompactList}\small\item\em hasonlító operator stringgel \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_string_ade9af860a809548214837e33367e8835}{operator==}} (const char $\ast$rhs\+\_\+s)
 \begin{DoxyCompactList}\small\item\em hasonlító operator char tömbbel \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_string_aa50c56cbbbc9956cb359a7617f13809b}{operator==}} (const char $\ast$rhs\+\_\+s) const
+\item 
+\mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{class_string_a79869b69dd0106b1b6d179f760d6527a}{operator-\/-\/}} (int a)
+\begin{DoxyCompactList}\small\item\em kitörli az utolsó karaktert a stringből \end{DoxyCompactList}\item 
 char \& \mbox{\hyperlink{class_string_a1a7c5c39d4dafbbf8516f5058a253f1a}{operator\mbox{[}$\,$\mbox{]}}} (unsigned int idx)
 \begin{DoxyCompactList}\small\item\em index operator \end{DoxyCompactList}\item 
 const char \& \mbox{\hyperlink{class_string_aaa249e62641872197679cfc7c66118c0}{operator\mbox{[}$\,$\mbox{]}}} (unsigned int idx) const
 \begin{DoxyCompactList}\small\item\em index operator \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_string_a3ce2ea55be9ec912bb2dbc88d461b479}{erase}} ()
-\begin{DoxyCompactList}\small\item\em törli a stringben lévő karaktereket \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em törli a stringben lévő karaktereket \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_string_a15c07ede44c5bcfb0920e9bf63e75670}{remove\+FirstX}} (int x)
+\begin{DoxyCompactList}\small\item\em törli az első x karaktert a stringből \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
@@ -137,11 +143,11 @@ Visszaadja a string hosszát.
 
 string + string 
 
-\mbox{\Hypertarget{class_string_abb187e5ab66fe29c42aed4845b55dd76}\label{class_string_abb187e5ab66fe29c42aed4845b55dd76}} 
+\mbox{\Hypertarget{class_string_afa169686af6b513e1f059cf2bf39695f}\label{class_string_afa169686af6b513e1f059cf2bf39695f}} 
 \index{String@{String}!operator+@{operator+}}
 \index{operator+@{operator+}!String@{String}}
 \subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_string}{String}} String\+::operator+ (\begin{DoxyParamCaption}\item[{char}]{rhs\+\_\+c }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_string}{String}} String\+::operator+ (\begin{DoxyParamCaption}\item[{char}]{rhs\+\_\+c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -157,6 +163,16 @@ string + karakter
 
 Pluszegyenlő operator. 
 
+\mbox{\Hypertarget{class_string_a79869b69dd0106b1b6d179f760d6527a}\label{class_string_a79869b69dd0106b1b6d179f760d6527a}} 
+\index{String@{String}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!String@{String}}
+\subsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_string}{String}} String\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})}
+
+
+
+kitörli az utolsó karaktert a stringből 
+
 \mbox{\Hypertarget{class_string_a803e6112834d4c0cdb0da6c6a4000e6e}\label{class_string_a803e6112834d4c0cdb0da6c6a4000e6e}} 
 \index{String@{String}!operator=@{operator=}}
 \index{operator=@{operator=}!String@{String}}
@@ -170,7 +186,7 @@ Egyenlőség operator.
 \mbox{\Hypertarget{class_string_a1006dbb8a123aed87b8edb33d5cbcee4}\label{class_string_a1006dbb8a123aed87b8edb33d5cbcee4}} 
 \index{String@{String}!operator==@{operator==}}
 \index{operator==@{operator==}!String@{String}}
-\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily bool String\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_string}{String}} \&}]{rhs\+\_\+s }\end{DoxyParamCaption})}
 
 
@@ -180,12 +196,18 @@ hasonlító operator stringgel
 \mbox{\Hypertarget{class_string_ade9af860a809548214837e33367e8835}\label{class_string_ade9af860a809548214837e33367e8835}} 
 \index{String@{String}!operator==@{operator==}}
 \index{operator==@{operator==}!String@{String}}
-\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily bool String\+::operator== (\begin{DoxyParamCaption}\item[{const char $\ast$}]{rhs\+\_\+s }\end{DoxyParamCaption})}
 
 
 
 hasonlító operator char tömbbel 
+
+\mbox{\Hypertarget{class_string_aa50c56cbbbc9956cb359a7617f13809b}\label{class_string_aa50c56cbbbc9956cb359a7617f13809b}} 
+\index{String@{String}!operator==@{operator==}}
+\index{operator==@{operator==}!String@{String}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool String\+::operator== (\begin{DoxyParamCaption}\item[{const char $\ast$}]{rhs\+\_\+s }\end{DoxyParamCaption}) const}
 
 \mbox{\Hypertarget{class_string_a1a7c5c39d4dafbbf8516f5058a253f1a}\label{class_string_a1a7c5c39d4dafbbf8516f5058a253f1a}} 
 \index{String@{String}!operator\mbox{[}\mbox{]}@{operator[]}}
@@ -207,6 +229,16 @@ index operator
 
 index operator 
 
+\mbox{\Hypertarget{class_string_a15c07ede44c5bcfb0920e9bf63e75670}\label{class_string_a15c07ede44c5bcfb0920e9bf63e75670}} 
+\index{String@{String}!removeFirstX@{removeFirstX}}
+\index{removeFirstX@{removeFirstX}!String@{String}}
+\subsubsection{\texorpdfstring{removeFirstX()}{removeFirstX()}}
+{\footnotesize\ttfamily void String\+::remove\+FirstX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+törli az első x karaktert a stringből 
+
 \mbox{\Hypertarget{class_string_a588c5cc9faededbb9d938662d354feed}\label{class_string_a588c5cc9faededbb9d938662d354feed}} 
 \index{String@{String}!size@{size}}
 \index{size@{size}!String@{String}}
@@ -221,5 +253,5 @@ Visszaadja a string hosszát
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/cxl20/\+Documents/\+Visual Studio 2017/\+Prog2\+H\+F/\+Prog2\+H\+F/\mbox{\hyperlink{schtring_8h}{schtring.\+h}}\item 
+C\+:/\+Users/cxl20/\+Documents/\+Visual Studio 2017/\+Prog2\+H\+F/\+Prog2\+H\+F/\mbox{\hyperlink{schtring_8hpp}{schtring.\+hpp}}\item 
 C\+:/\+Users/cxl20/\+Documents/\+Visual Studio 2017/\+Prog2\+H\+F/\+Prog2\+H\+F/\mbox{\hyperlink{schtring_8cpp}{schtring.\+cpp}}\end{DoxyCompactItemize}

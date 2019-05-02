@@ -1,4 +1,4 @@
-.TH "C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp" 3 "Wed Apr 3 2019" "Prog2HF" \" -*- nroff -*-
+.TH "C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp" 3 "Thu May 2 2019" "Prog2HF" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -6,21 +6,46 @@ C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp
 .SH SYNOPSIS
 .br
 .PP
-\fC#include 'schtring\&.h'\fP
-.br
-\fC#include <iostream>\fP
+\fC#include 'main\&.h'\fP
 .br
 
 .SS "Functions"
 
 .in +1c
 .ti -1c
-.RI "int \fBmain\fP ()"
+.RI "int \fBmain\fP (int argc, char **argv)"
+.br
+.ti -1c
+.RI "void \fBanimate\fP (char c)"
+.br
+.ti -1c
+.RI "void \fBprintMain\fP ()"
+.br
+.ti -1c
+.RI "void \fBprintPartsList\fP (\fBInventory\fP &inventory)"
+.br
+.ti -1c
+.RI "void \fBaddPartHelper\fP (\fBInventory\fP &inventory, \fBTempInput\fP &tmp)"
+.br
+.ti -1c
+.RI "void \fBevaluateCommand\fP (enum \fBenumMenu\fP &eM)"
 .br
 .in -1c
 .SH "Function Documentation"
 .PP 
-.SS "int main ()"
+.SS "void addPartHelper (\fBInventory\fP & inventory, \fBTempInput\fP & tmp)"
+
+.SS "void animate (char c)"
+
+.SS "void evaluateCommand (enum \fBenumMenu\fP & eM)"
+
+.SS "int main (int argc, char ** argv)"
+Alapértelmezett parts fájl név
+.PP
+Parts fájl nevének beállítása indítási parancsból 
+.SS "void printMain ()"
+
+.SS "void printPartsList (\fBInventory\fP & inventory)"
 
 .SH "Author"
 .PP 

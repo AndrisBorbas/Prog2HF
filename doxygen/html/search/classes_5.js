@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ram',['RAM',['../class_r_a_m.html',1,'']]]
+  ['mobo',['MOBO',['../class_m_o_b_o.html',1,'']]]
 ];

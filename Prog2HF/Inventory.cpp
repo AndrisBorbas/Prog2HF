@@ -7,14 +7,14 @@ void Inventory::loadPart(std::istream& is, TempInput& tmp, enumPart e) {
 		LoadParams(is, tmp, 7);
 		this->push_back(new CPU(tmp));
 #ifdef _DEBUG
-		std::cout << *((*this)[size-1]) << std::endl;
+		std::cout << *((*this)[size - 1]) << std::endl;
 #endif 
 		return;
 	case eGPU:
 		LoadParams(is, tmp, 5);
 		this->push_back(new GPU(tmp));
 #ifdef _DEBUG
-		std::cout << *((*this)[size-1]) << std::endl;
+		std::cout << *((*this)[size - 1]) << std::endl;
 #endif 
 		return;
 	case eMOBO:
@@ -65,6 +65,48 @@ void Inventory::loadPart(std::istream& is, TempInput& tmp, enumPart e) {
 	throw std::logic_error("how did you get here?");
 	return;
 }
+
+void Inventory::saveInventory(std::ostream& os) {
+	os << std::endl;
+	for (int i = 0; i < size; i++) {
+		String name = typeid(*(*this)[i]).name();
+		name.removeFirstX(6);
+		os << name << ": \n\t" << (*(*this)[i]) << std::endl;
+	}
+}
+
+void Inventory::printInventory(std::ostream& os) {
+	for (int i = 0; i < size; i++) {
+		String name = typeid(*(*this)[i]).name();
+		name.removeFirstX(6);
+		std::cout << i + 101 << ": \t" << name << ": \t" << utos << (*(*this)[i]) << std::endl;
+	}
+}
+
+void Inventory::removePart(int a) {
+	if (a >= size)return;
+	delete stock[a];
+	size -= 1;
+	for (size_t i = a; i < size; i++){
+		stock[i] = stock[i + 1];
+	}
+}
+
+template<typename T>
+void Inventory::push_back(T* part) {
+	if (size == capacity) {
+		capacity *= 2;
+		Part** temp = new Part * [capacity];
+		for (size_t i = 0; i < size; i++) {
+			temp[i] = stock[i];
+		}
+		delete[] stock;
+		stock = temp;
+	}
+	stock[size] = part;
+	size++;
+}
+
 
 void setEnum(String inst, enum enumPart& e)
 {

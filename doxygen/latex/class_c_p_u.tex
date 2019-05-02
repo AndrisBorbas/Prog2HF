@@ -2,6 +2,11 @@
 \label{class_c_p_u}\index{CPU@{CPU}}
 
 
+Processzor.  
+
+
+
+
 {\ttfamily \#include $<$Parts.\+h$>$}
 
 Inheritance diagram for C\+PU\+:\begin{figure}[H]
@@ -13,24 +18,67 @@ Inheritance diagram for C\+PU\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_c_p_u_a44bd5ffce185e350b4865020028de97c}{C\+PU}} (\mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{class_part_ae06f2fdeb7fbbdb229a7aca151f3e341}{brand}}, \mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{class_part_a101dbcc5c4b21564df7414c7eb0eae88}{type}}, int \mbox{\hyperlink{class_part_a8e71223aed1da95a974f33d8d6c91bb1}{price}}, int clk, int cores, \mbox{\hyperlink{class_string}{String}} socket)
-\begin{DoxyCompactList}\small\item\em Magok száma. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_c_p_u_a1aa85a6c976fe5b665dcb9fd6d8fdd1e}{C\+PU}} (\mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{class_part_ae06f2fdeb7fbbdb229a7aca151f3e341}{brand}}, \mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{class_part_a101dbcc5c4b21564df7414c7eb0eae88}{type}}, int \mbox{\hyperlink{class_part_a8e71223aed1da95a974f33d8d6c91bb1}{price}}, int clk, int cores, \mbox{\hyperlink{class_string}{String}} socket, bool multithreading)
+\item 
+\mbox{\hyperlink{class_c_p_u_a9147d84f815b9a242ba618877e6b2673}{C\+PU}} (\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
+\item 
+void \mbox{\hyperlink{class_c_p_u_ad4d3ebb288deeaad640e034bdb71a40a}{print}} (std\+::ostream \&os) const
+\item 
+void \mbox{\hyperlink{class_c_p_u_a0aea700bac0896b9e4434770737078d0}{print}} (\mbox{\hyperlink{structutos__ostream}{utos\+\_\+ostream}} \&tos) const
+\item 
+void \mbox{\hyperlink{class_c_p_u_a9e6b8807b179e06080d52f08e988bd57}{testh}} () const
+\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+Processzor. 
+
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_c_p_u_a44bd5ffce185e350b4865020028de97c}\label{class_c_p_u_a44bd5ffce185e350b4865020028de97c}} 
+\mbox{\Hypertarget{class_c_p_u_a1aa85a6c976fe5b665dcb9fd6d8fdd1e}\label{class_c_p_u_a1aa85a6c976fe5b665dcb9fd6d8fdd1e}} 
 \index{CPU@{CPU}!CPU@{CPU}}
 \index{CPU@{CPU}!CPU@{CPU}}
-\subsubsection{\texorpdfstring{CPU()}{CPU()}}
-{\footnotesize\ttfamily C\+P\+U\+::\+C\+PU (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_string}{String}}}]{brand,  }\item[{\mbox{\hyperlink{class_string}{String}}}]{type,  }\item[{int}]{price,  }\item[{int}]{clk,  }\item[{int}]{cores,  }\item[{\mbox{\hyperlink{class_string}{String}}}]{socket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+\subsubsection{\texorpdfstring{CPU()}{CPU()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily C\+P\+U\+::\+C\+PU (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_string}{String}}}]{brand,  }\item[{\mbox{\hyperlink{class_string}{String}}}]{type,  }\item[{int}]{price,  }\item[{int}]{clk,  }\item[{int}]{cores,  }\item[{\mbox{\hyperlink{class_string}{String}}}]{socket,  }\item[{bool}]{multithreading }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{class_c_p_u_a9147d84f815b9a242ba618877e6b2673}\label{class_c_p_u_a9147d84f815b9a242ba618877e6b2673}} 
+\index{CPU@{CPU}!CPU@{CPU}}
+\index{CPU@{CPU}!CPU@{CPU}}
+\subsubsection{\texorpdfstring{CPU()}{CPU()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily C\+P\+U\+::\+C\+PU (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
 
 
 
-Magok száma. 
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_p_u_ad4d3ebb288deeaad640e034bdb71a40a}\label{class_c_p_u_ad4d3ebb288deeaad640e034bdb71a40a}} 
+\index{CPU@{CPU}!print@{print}}
+\index{print@{print}!CPU@{CPU}}
+\subsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+P\+U\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Reimplemented from \mbox{\hyperlink{class_part_a4fa402b8e8fd4236ff773a7697ab2bc3}{Part}}.
+
+\mbox{\Hypertarget{class_c_p_u_a0aea700bac0896b9e4434770737078d0}\label{class_c_p_u_a0aea700bac0896b9e4434770737078d0}} 
+\index{CPU@{CPU}!print@{print}}
+\index{print@{print}!CPU@{CPU}}
+\subsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+P\+U\+::print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structutos__ostream}{utos\+\_\+ostream}} \&}]{tos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_part_a9ecabe44ba3415badf82c6a23617a41e}{Part}}.
+
+\mbox{\Hypertarget{class_c_p_u_a9e6b8807b179e06080d52f08e988bd57}\label{class_c_p_u_a9e6b8807b179e06080d52f08e988bd57}} 
+\index{CPU@{CPU}!testh@{testh}}
+\index{testh@{testh}!CPU@{CPU}}
+\subsubsection{\texorpdfstring{testh()}{testh()}}
+{\footnotesize\ttfamily void C\+P\+U\+::testh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/cxl20/\+Documents/\+Visual Studio 2017/\+Prog2\+H\+F/\+Prog2\+H\+F/\mbox{\hyperlink{_parts_8h}{Parts.\+h}}\end{DoxyCompactItemize}
+C\+:/\+Users/cxl20/\+Documents/\+Visual Studio 2017/\+Prog2\+H\+F/\+Prog2\+H\+F/\mbox{\hyperlink{_parts_8h}{Parts.\+h}}\item 
+C\+:/\+Users/cxl20/\+Documents/\+Visual Studio 2017/\+Prog2\+H\+F/\+Prog2\+H\+F/\mbox{\hyperlink{_parts_8cpp}{Parts.\+cpp}}\end{DoxyCompactItemize}

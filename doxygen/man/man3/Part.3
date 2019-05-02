@@ -1,8 +1,9 @@
-.TH "Part" 3 "Wed Apr 3 2019" "Prog2HF" \" -*- nroff -*-
+.TH "Part" 3 "Thu May 2 2019" "Prog2HF" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-Part
+Part \- Alap alkatrész típus\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -14,17 +15,25 @@ Inherited by \fBCase\fP, \fBCPU\fP, \fBGPU\fP, \fBMOBO\fP, \fBPSU\fP, \fBRAM\fP,
 
 .in +1c
 .ti -1c
-.RI "\fBPart\fP (\fBString\fP \fBbrand\fP, \fBString\fP \fBtype\fP, int \fBprice\fP)"
+.RI "\fBPart\fP (\fBString\fP \fBbrand\fP='', \fBString\fP \fBtype\fP='', int \fBprice\fP=0)"
 .br
-.RI "Ár\&. "
 .ti -1c
 .RI "virtual \fB~Part\fP ()"
 .br
 .ti -1c
-.RI "\fBString\fP \fBget_gyarto\fP (\fBPart\fP a)"
+.RI "\fBString\fP \fBget_brand\fP ()"
 .br
 .ti -1c
-.RI "\fBString\fP \fBget_nev\fP (\fBPart\fP a)"
+.RI "\fBString\fP \fBget_type\fP ()"
+.br
+.ti -1c
+.RI "int \fBget_price\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBprint\fP (std::ostream &os) const"
+.br
+.ti -1c
+.RI "virtual void \fBprint\fP (\fButos_ostream\fP &tos) const"
 .br
 .in -1c
 .SS "Protected Attributes"
@@ -33,41 +42,55 @@ Inherited by \fBCase\fP, \fBCPU\fP, \fBGPU\fP, \fBMOBO\fP, \fBPSU\fP, \fBRAM\fP,
 .ti -1c
 .RI "\fBString\fP \fBbrand\fP"
 .br
+.RI "Gyártó "
 .ti -1c
 .RI "\fBString\fP \fBtype\fP"
 .br
-.RI "Gyártó "
+.RI "Típus\&. "
 .ti -1c
 .RI "int \fBprice\fP"
 .br
-.RI "Típus\&. "
+.RI "Ár\&. "
 .in -1c
+.SH "Detailed Description"
+.PP 
+Alap alkatrész típus\&. 
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "Part::Part (\fBString\fP brand, \fBString\fP type, int price)\fC [inline]\fP, \fC [explicit]\fP"
+.SS "Part::Part (\fBString\fP brand = \fC''\fP, \fBString\fP type = \fC''\fP, int price = \fC0\fP)\fC [inline]\fP"
 
-.PP
-Ár\&. 
 .SS "virtual Part::~Part ()\fC [inline]\fP, \fC [virtual]\fP"
 
 .SH "Member Function Documentation"
 .PP 
-.SS "\fBString\fP Part::get_gyarto (\fBPart\fP a)\fC [inline]\fP"
+.SS "\fBString\fP Part::get_brand ()\fC [inline]\fP"
 
-.SS "\fBString\fP Part::get_nev (\fBPart\fP a)\fC [inline]\fP"
+.SS "int Part::get_price ()\fC [inline]\fP"
 
+.SS "\fBString\fP Part::get_type ()\fC [inline]\fP"
+
+.SS "void Part::print (std::ostream & os) const\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBHDD\fP, \fBSSD\fP, \fBStorage\fP, \fBPSU\fP, \fBCase\fP, \fBRAM\fP, \fBMOBO\fP, \fBGPU\fP, and \fBCPU\fP\&.
+.SS "void Part::print (\fButos_ostream\fP & tos) const\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBHDD\fP, \fBSSD\fP, \fBStorage\fP, \fBPSU\fP, \fBCase\fP, \fBRAM\fP, \fBMOBO\fP, \fBGPU\fP, and \fBCPU\fP\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "\fBString\fP Part::brand\fC [protected]\fP"
 
+.PP
+Gyártó 
 .SS "int Part::price\fC [protected]\fP"
 
 .PP
-Típus\&. 
+Ár\&. 
 .SS "\fBString\fP Part::type\fC [protected]\fP"
 
 .PP
-Gyártó 
+Típus\&. 
 
 .SH "Author"
 .PP 

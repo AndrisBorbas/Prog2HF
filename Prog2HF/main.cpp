@@ -8,13 +8,35 @@ int main(int argc, char** argv)
 {
 	///Alapértelmezett parts fájl név
 	char partsfilename[52] = "parts.txt";
+	char ordersfilename[52] = "orders.txt";
 	///Parts fájl nevének beállítása indítási parancsból
 	if (argc > 1) strcpy(partsfilename, argv[1]);
+	if (argc > 2) strcpy(ordersfilename, argv[2]);
 
 	std::fstream partsFile;
-	partsFile.open(partsfilename, std::ios::in | std::ios::out);
+	partsFile.open(partsfilename, std::ios_base::in | std::ios_base::out);
+	std::fstream partsTempFile;
+	partsTempFile.open("partstemp.txt", std::ios_base::in | std::ios_base::out | std::ios_base::trunc);
+
+	std::fstream ordersFile;
+	ordersFile.open(ordersfilename, std::ios_base::in | std::ios_base::out);
+	std::fstream ordersTempFile;
+	ordersTempFile.open("orderstemp.txt", std::ios_base::in | std::ios_base::out | std::ios_base::trunc);
 
 	test1(partsFile, partsfilename);
+	test1(partsTempFile, "partstemp.txt");
+	test1(ordersFile, ordersfilename);
+	test1(ordersTempFile, "orderstemp.txt");
+
+	///első 5 sor átmásolása
+	for (int i = 0; i < 5; i++){
+		char temp[256];
+		partsFile.getline(temp, 255);
+		partsTempFile << temp << std::endl;
+	}
+
+	///pozíció mentése kiíráshoz
+	std::streampos pos = partsTempFile.tellg();
 
 	enumPart eP = eInvalid;
 	enumMenu eM = eMain;
@@ -68,6 +90,8 @@ int main(int argc, char** argv)
 	//partsFile << *(inventory[0]);
 	//std::cout << std::endl << *(inv[0]);
 
+	//system("pause");
+
 	animate('~');
 
 	while (!(eM == eExit)) {
@@ -83,7 +107,7 @@ int main(int argc, char** argv)
 			addPartHelper(inventory, tmp);
 			break;
 		case ePartsRemove:
-			clearcmd();
+			removePartHelper(inventory, eM);
 			break;
 		case eBuildsList:
 			clearcmd();
@@ -97,9 +121,49 @@ int main(int argc, char** argv)
 		evaluateCommand(eM);
 	}
 
-	//save
-
+	saveInventory(partsTempFile, partsFile, inventory, pos, partsfilename);
 	return 0;
+}
+
+void printMain() {
+	clearcmd();
+	std::cout << "11: Print all loaded parts \n12: Add new part \n13: Remove part \n\n21: Print a build \n22: Create new build \n\n9: Save&Exit\n";
+}
+
+void printPartsList(Inventory& inventory) {
+	clearcmd();
+	inventory.printInventory(std::cout);
+	std::cout << "\n1: Return\n";
+}
+
+void addPartHelper(Inventory& inventory, TempInput& tmp) {
+	clearcmd();
+	std::cout << "1: CPU\n2: GPU\n3: MOBO\n4: RAM\n5: Case\n6: PSU\n7: SSD\n8: HDD\n\nPart type to add: ";
+	std::cin >> tmp.instruction;
+	//int a = tmp.instruction;
+}
+
+void removePartHelper(Inventory& inventory, enum enumMenu& eM) {
+	clearcmd();
+	inventory.printInventory(std::cout);
+	std::cout << "\nType in the number of the part you want to remove (or 1 to return to menu): ";
+	int a = evaluateInput(inventory);
+	if (a == -1) {
+		eM = eMain;
+		return;
+	}
+	inventory.removePart(a);
+	std::cout << "\nPart removed\n1: Return\n";
+}
+
+void saveInventory(std::fstream& tempFile, std::fstream& origFile, Inventory& inventory, std::streampos& pos, const char * partsfilename) {
+	tempFile.clear();
+	tempFile.seekp(pos, std::ios_base::beg);
+	inventory.saveInventory(tempFile);
+	origFile.close();
+	tempFile.close();
+	remove(partsfilename);
+	rename("partstemp.txt", partsfilename);
 }
 
 void animate(char c) {
@@ -111,26 +175,20 @@ void animate(char c) {
 	std::cout << std::endl;
 }
 
-void printMain() {
-	clearcmd();
-	std::cout << "11: Print all loaded parts \n12: Add new part \n13: Remove part \n\n21: Print a build \n22: Create new build \n\n9: Save&Exit\n";
-}
-
-void printPartsList(Inventory& inventory) {
-	clearcmd();
-	for (int i = 0; i < inventory.get_size(); i++) {
-		String name = typeid(*(inventory[i])).name();
-		name.removeFirstX(6);
-		std::cout << i + 1 << ": \t" << name << ": \t" << *(inventory[i]) << std::endl;
+int evaluateInput(Inventory& inventory) {
+	int a;
+	while (std::cin >> a) {
+		if (a == 1) return -1;
+		if (a < 101) {
+			std::cout << "\nNumber too small.\nTry again: ";
+			continue;
+		}
+		if ((a - 101) > inventory.get_size()) {
+			std::cout << "\nNumber too big.\nTry again: ";
+			continue;
+		}
+		return a-101;
 	}
-	std::cout << "\n1: Return\n";
-}
-
-void addPartHelper(Inventory& inventory, TempInput& tmp) {
-	clearcmd();
-	std::cout << "1: CPU\n2: GPU\n3: MOBO\n4: RAM\n5: Case\n6: PSU\n7: SSD\n8: HDD\n\nPart type to add: ";
-	std::cin >> tmp.instruction;
-	//int a = tmp.instruction;
 }
 
 void evaluateCommand(enum enumMenu& eM) {

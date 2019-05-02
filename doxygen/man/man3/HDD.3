@@ -1,8 +1,9 @@
-.TH "HDD" 3 "Wed Apr 3 2019" "Prog2HF" \" -*- nroff -*-
+.TH "HDD" 3 "Thu May 2 2019" "Prog2HF" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-HDD
+HDD \- Merevlemez\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -17,14 +18,38 @@ Inherits \fBStorage\fP\&.
 .RI "\fBHDD\fP (\fBString\fP \fBbrand\fP, \fBString\fP \fBtype\fP, int \fBprice\fP, int \fBsize\fP, int \fBreadspeed\fP, int \fBwritespeed\fP, int rpm)"
 .br
 .RI "Fordulatszám\&. "
+.ti -1c
+.RI "\fBHDD\fP (\fBTempInput\fP tmp)"
+.br
+.ti -1c
+.RI "void \fBprint\fP (std::ostream &os) const"
+.br
+.ti -1c
+.RI "void \fBprint\fP (\fButos_ostream\fP &tos) const"
+.br
 .in -1c
 .SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Merevlemez\&. 
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "HDD::HDD (\fBString\fP brand, \fBString\fP type, int price, int size, int readspeed, int writespeed, int rpm)\fC [inline]\fP, \fC [explicit]\fP"
 
 .PP
 Fordulatszám\&. 
+.SS "HDD::HDD (\fBTempInput\fP tmp)\fC [inline]\fP, \fC [explicit]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void HDD::print (std::ostream & os) const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBStorage\fP\&.
+.SS "void HDD::print (\fButos_ostream\fP & tos) const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBStorage\fP\&.
 
 .SH "Author"
 .PP 

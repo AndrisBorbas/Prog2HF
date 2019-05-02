@@ -1,0 +1,57 @@
+.TH "Inventory" 3 "Thu May 2 2019" "Prog2HF" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Inventory
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Inventory\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBInventory\fP (size_t capacity=1)"
+.br
+.ti -1c
+.RI "\fB~Inventory\fP ()"
+.br
+.ti -1c
+.RI "int \fBget_size\fP ()"
+.br
+.ti -1c
+.RI "void \fBloadPart\fP (std::istream &is, \fBTempInput\fP &tmp, \fBenumPart\fP)"
+.br
+.ti -1c
+.RI "template<typename T > void \fBpush_back\fP (T *part)"
+.br
+.ti -1c
+.RI "const \fBPart\fP * \fBoperator[]\fP (int idx) const"
+.br
+.ti -1c
+.RI "\fBPart\fP * \fBoperator[]\fP (int idx)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Inventory::Inventory (size_t capacity = \fC1\fP)\fC [inline]\fP"
+
+.SS "Inventory::~Inventory ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "int Inventory::get_size ()\fC [inline]\fP"
+
+.SS "void Inventory::loadPart (std::istream & is, \fBTempInput\fP & tmp, \fBenumPart\fP e)"
+
+.SS "const \fBPart\fP* Inventory::operator[] (int idx) const\fC [inline]\fP"
+
+.SS "\fBPart\fP* Inventory::operator[] (int idx)\fC [inline]\fP"
+
+.SS "template<typename T > void Inventory::push_back (T * part)\fC [inline]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Prog2HF from the source code\&.

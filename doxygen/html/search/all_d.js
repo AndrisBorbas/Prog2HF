@@ -1,5 +1,15 @@
 var searchData=
 [
-  ['_7epart',['~Part',['../class_part.html#aaecbb747a7227f7ce3b44caeaf1801c2',1,'Part']]],
-  ['_7estring',['~String',['../class_string.html#ac40b2a3fb58c2d8556f5e6ff73510036',1,'String']]]
+  ['saveorders',['saveOrders',['../main_8h.html#a91fe9752814ecad7d04d2cf550123d17',1,'main.h']]],
+  ['saveparts',['saveParts',['../main_8h.html#ae1fd94f91e6af6d41057704277c9d9e6',1,'main.h']]],
+  ['schtring_2ecpp',['schtring.cpp',['../schtring_8cpp.html',1,'']]],
+  ['schtring_2ehpp',['schtring.hpp',['../schtring_8hpp.html',1,'']]],
+  ['setenum',['setEnum',['../_inventory_8cpp.html#a60723589ed29abbba810d129e72f21ed',1,'setEnum(String inst, enum enumPart &amp;e):&#160;Inventory.cpp'],['../_inventory_8h.html#aa9bc06c48979e6ec21d5fe16ca9b8164',1,'setEnum(String inst, enum enumPart &amp;):&#160;Inventory.cpp']]],
+  ['sfml_5ftest_2ecpp',['SFML_test.cpp',['../_s_f_m_l__test_8cpp.html',1,'']]],
+  ['size',['size',['../struct_temp_input.html#adfc0eb32fac7de584c3872875b452550',1,'TempInput::size()'],['../class_storage.html#abcc80ce58a21fa884035617ee0b6cb67',1,'Storage::size()'],['../class_string.html#a588c5cc9faededbb9d938662d354feed',1,'String::size()']]],
+  ['socket',['socket',['../struct_temp_input.html#a5142af446776f87e454134511f681887',1,'TempInput']]],
+  ['ssd',['SSD',['../class_s_s_d.html',1,'SSD'],['../class_s_s_d.html#a1e80104276b02f8ca6f016f41a2a5f41',1,'SSD::SSD(String brand, String type, int price, int size, int readspeed, int writespeed, String formfactor, String flashtype)'],['../class_s_s_d.html#a39a5322942a5320a9a2be8ac7cb4c596',1,'SSD::SSD(TempInput tmp)']]],
+  ['stolower',['stolower',['../schtring_8cpp.html#a9d7d0d0ea2b8f0f7c6d53fe66fc0b301',1,'stolower(char *s):&#160;schtring.cpp'],['../schtring_8hpp.html#a9d7d0d0ea2b8f0f7c6d53fe66fc0b301',1,'stolower(char *s):&#160;schtring.cpp']]],
+  ['storage',['Storage',['../class_storage.html',1,'Storage'],['../class_storage.html#a502a2ec76e09d48a87da6ed1b91cdaa8',1,'Storage::Storage()']]],
+  ['string',['String',['../class_string.html',1,'String'],['../class_string.html#a8a7ef356e05eb9b1ea1ab518baee3095',1,'String::String()'],['../class_string.html#a62a77180f8df2547e8be1313654abcee',1,'String::String(char ch)'],['../class_string.html#a09ca4f1436a83ecb1c273a836b7cd4c6',1,'String::String(const char *p)'],['../class_string.html#a3c682dc983b45bdbb7f3858fe4cbf221',1,'String::String(const String &amp;s1)']]]
 ];

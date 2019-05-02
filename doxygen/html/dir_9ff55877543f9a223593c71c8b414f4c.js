@@ -1,21 +1,18 @@
 var dir_9ff55877543f9a223593c71c8b414f4c =
 [
+    [ "atest.cpp", "atest_8cpp.html", "atest_8cpp" ],
+    [ "atest.h", "atest_8h.html", "atest_8h" ],
+    [ "Builds.cpp", "_builds_8cpp.html", null ],
+    [ "Builds.h", "_builds_8h.html", "_builds_8h" ],
+    [ "Compatibility.cpp", "_compatibility_8cpp.html", "_compatibility_8cpp" ],
+    [ "Compatibility.h", "_compatibility_8h.html", "_compatibility_8h" ],
+    [ "Inventory.cpp", "_inventory_8cpp.html", "_inventory_8cpp" ],
+    [ "Inventory.h", "_inventory_8h.html", "_inventory_8h" ],
     [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
-    [ "main.h", "main_8h.html", null ],
-    [ "Parts.cpp", "_parts_8cpp.html", null ],
-    [ "Parts.h", "_parts_8h.html", [
-      [ "Part", "class_part.html", "class_part" ],
-      [ "CPU", "class_c_p_u.html", "class_c_p_u" ],
-      [ "GPU", "class_g_p_u.html", "class_g_p_u" ],
-      [ "MOBO", "class_m_o_b_o.html", "class_m_o_b_o" ],
-      [ "RAM", "class_r_a_m.html", "class_r_a_m" ],
-      [ "Case", "class_case.html", "class_case" ],
-      [ "PSU", "class_p_s_u.html", "class_p_s_u" ],
-      [ "Storage", "class_storage.html", "class_storage" ],
-      [ "SSD", "class_s_s_d.html", "class_s_s_d" ],
-      [ "HDD", "class_h_d_d.html", "class_h_d_d" ]
-    ] ],
+    [ "main.h", "main_8h.html", "main_8h" ],
+    [ "Parts.cpp", "_parts_8cpp.html", "_parts_8cpp" ],
+    [ "Parts.h", "_parts_8h.html", "_parts_8h" ],
     [ "schtring.cpp", "schtring_8cpp.html", "schtring_8cpp" ],
-    [ "schtring.h", "schtring_8h.html", "schtring_8h" ],
+    [ "schtring.hpp", "schtring_8hpp.html", "schtring_8hpp" ],
     [ "SFML_test.cpp", "_s_f_m_l__test_8cpp.html", null ]
 ];

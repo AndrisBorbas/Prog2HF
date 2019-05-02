@@ -3,35 +3,43 @@
 #ifdef MEMTRACE
 #include "memtrace.h"
 #endif
-#include "schtring.h"
+#include "schtring.hpp"
+#include <typeinfo>
 //#include "Compatibility.h"
 #include <cctype>
 
+//Doxygen miatt a doc kommentek a kövi sorra vonatkoznak
+
+///Lehetséges inputokat tárolja adatokkal való konstruáláshoz
 struct TempInput {
-	String instruction;		///Mihez tartozik a változó
-	String clname;			///Kompatibilitás lista neve
-	String brand;			///Gyártó
-	String type;			///Típus
-	int price;				///Ár
-	String socket;			///Foglalat
-	int clk;				///Órajel
-	int cores;				///Magok száma
-	bool multithreading;	///Multithreading support
-	String chipset;			///Chipset
-	String formfactor;		///Méret szabvány
-	int size;				///Memória méret
-	String wattage;			///Teljesítmény
-	int readspeed;			///Olvasási sebesség
-	int writespeed;			///Írási sebesség
-	String flashtype;		///Flash csip típusa
-	int rpm;				///Fordulatszám
+	///Mihez tartozik a változó
+	String instruction;		///Kompatibilitás lista neve
+	String clname;			///Gyártó
+	String brand;			///Típus
+	String type;			///Ár
+	int price;				///Foglalat
+	String socket;			///Órajel
+	int clk;				///Magok száma
+	int cores;				///Multithreading support
+	bool multithreading;	///Chipset
+	String chipset;			///Méret szabvány
+	String formfactor;		///Memória méret
+	int size;				///Teljesítmény
+	int wattage;			///Olvasási sebesség
+	int readspeed;			///Írási sebesség
+	int writespeed;			///Flash csip típusa
+	String flashtype;		///Fordulatszám
+	int rpm;				
 };
 
+
+///Alap alkatrész típus
 class Part {
 protected:
-	String brand;	///Gyártó
-	String type;	///Típus
-	int price;		///Ár
+	///Gyártó
+	String brand;	///Típus
+	String type;	///Ár
+	int price;		
 public:
 	Part(String brand = "", String type = "", int price = 0) : brand(brand), type(type), price(price) {
 		this->brand[0] = static_cast<char>(toupper(this->brand[0]));
@@ -49,120 +57,169 @@ public:
 	}
 
 	virtual void print(std::ostream& os) const;
+	virtual void print(utos_ostream& tos) const;
 };
 
 std::ostream& operator<<(std::ostream&, const Part&);
+std::ostream& operator<<(utos_ostream, const Part&);
 
+
+///Processzor
 class CPU : public Part {
-	int clk;				///Órajel
-	int cores;				///Magok száma
-	String socket;			///Foglalat
-	bool multithreading;	///Multithreading support
+	///Órajel
+	int clk;				///Magok száma
+	int cores;				///Foglalat
+	String socket;			///Multithreading support
+	bool multithreading;	
 public:
 	explicit CPU(String brand, String type, int price, int clk, int cores, String socket, bool multithreading) : Part(brand, type, price),
 		clk(clk), cores(cores), socket(socket), multithreading(multithreading) {}
 	explicit CPU(TempInput & tmp) :Part(tmp.brand, tmp.type, tmp.price), clk(tmp.clk), cores(tmp.cores), socket(tmp.socket), multithreading(tmp.multithreading) {}
 
 	void print(std::ostream& os) const;
+	void print(utos_ostream& tos) const;
 
-	void burn() const;
+	void testh() const;
 };
 
 std::ostream& operator<<(std::ostream&, const CPU&);
+std::ostream& operator<<(utos_ostream, const CPU&);
 
+
+///Videókártya
 class GPU : public Part {
-	int clk;	///Órajel
-	int vram;	///Videómemória
+	///Órajel
+	int clk;	///Videómemória
+	int vram;	
 public:
 	explicit GPU(String brand, String type, int price, int clk, int vram) : Part(brand, type, price), clk(clk), vram(vram) {}
 	explicit GPU(TempInput & tmp) :Part(tmp.brand, tmp.type, tmp.price), clk(tmp.clk), vram(tmp.size) {}
 
 	void print(std::ostream& os) const;
+	void print(utos_ostream& tos) const;
 };
 
 std::ostream& operator<<(std::ostream&, const GPU&);
+std::ostream& operator<<(utos_ostream, const GPU&);
 
+
+///Alaplap
 class MOBO : public Part {
-	String socket;		///Foglalat
-	String chipset;		///Chipset
-	String formfactor;	///Méret szabvány
+	///Foglalat
+	String socket;		///Chipset
+	String chipset;		///Méret szabvány
+	String formfactor;	
 public:
 	explicit MOBO(String brand, String type, int price, String socket, String chipset, String formfactor) : Part(brand, type, price),
 		socket(socket), chipset(chipset), formfactor(formfactor) {}
 	explicit MOBO(TempInput tmp) :Part(tmp.brand, tmp.type, tmp.price), socket(tmp.socket), chipset(tmp.chipset), formfactor(tmp.formfactor) {}
 
 	void print(std::ostream& os) const;
+	void print(utos_ostream& tos) const;
 };
 
 std::ostream& operator<<(std::ostream&, const MOBO&);
+std::ostream& operator<<(utos_ostream, const MOBO&);
 
+
+///Memória
 class RAM : public Part {
-	int clk;	///Órajel
-	int size;	///Memória
+	///Órajel
+	int clk;	///Memória
+	int size;	
 public:
 	explicit RAM(String brand, String type, int price, int clk, int size) : Part(brand, type, price), clk(clk), size(size) {}
 	explicit RAM(TempInput tmp) :Part(tmp.brand, tmp.type, tmp.price), clk(tmp.clk), size(tmp.size) {}
 
 	void print(std::ostream& os) const;
+	void print(utos_ostream& tos) const;
 };
 
 std::ostream& operator<<(std::ostream&, const RAM&);
+std::ostream& operator<<(utos_ostream, const RAM&);
 
+
+///Ház
 class Case : public Part {
-	String formfactor;	///Méret szabvány
+	///Méret szabvány
+	String formfactor;	
 public:
 	explicit Case(String brand, String type, int price, String formfactor) : Part(brand, type, price), formfactor(formfactor) {}
 	explicit Case(TempInput tmp) :Part(tmp.brand, tmp.type, tmp.price), formfactor(tmp.formfactor) {}
 
 	void print(std::ostream& os) const;
+	void print(utos_ostream& tos) const;
 };
 
 std::ostream& operator<<(std::ostream&, const Case&);
+std::ostream& operator<<(utos_ostream, const Case&);
 
+
+///Táp
 class PSU : public Part {
-	String wattage;		///Teljesítmény
+	///Teljesítmény
+	int wattage;		
 public:
-	explicit PSU(String brand, String type, int price, String wattage) : Part(brand, type, price), wattage(wattage) {}
+	explicit PSU(String brand, String type, int price, int wattage) : Part(brand, type, price), wattage(wattage) {}
 	explicit PSU(TempInput tmp) :Part(tmp.brand, tmp.type, tmp.price), wattage(tmp.wattage) {}
 
 	void print(std::ostream& os) const;
+	void print(utos_ostream& tos) const;
 };
 
 std::ostream& operator<<(std::ostream&, const PSU&);
+std::ostream& operator<<(utos_ostream, const PSU&);
 
+
+///Tárhely alap
 class Storage : public Part {
 protected:
-	int size;			///Méret
-	int readspeed;		///Olvasási sebesség
-	int writespeed;		///Írási sebesség
+	///Méret
+	int size;			///Olvasási sebesség
+	int readspeed;		///Írási sebesség
+	int writespeed;		
 public:
 	explicit Storage(String brand, String type, int price, int size, int readspeed, int writespeed) : Part(brand, type, price),
 		size(size), readspeed(readspeed), writespeed(writespeed) {}
 
 	virtual void print(std::ostream& os) const;
+	virtual void print(utos_ostream& tos) const;
 };
 
+std::ostream& operator<<(std::ostream&, const Storage&);
+std::ostream& operator<<(utos_ostream, const Storage&);
+
+
+///SSD
 class SSD : public Storage {
-	String formfactor;	///Szabvány
-	String flashtype;	///Flash csip típusa
+	///Szabvány
+	String formfactor;	///Flash csip típusa
+	String flashtype;	
 public:
 	explicit SSD(String brand, String type, int price, int size, int readspeed, int writespeed, String formfactor, String flashtype) :
 		Storage(brand, type, price, size, readspeed, writespeed), formfactor(formfactor), flashtype(flashtype) {}
 	explicit SSD(TempInput tmp) :Storage(tmp.brand, tmp.type, tmp.price, tmp.size, tmp.readspeed, tmp.writespeed), formfactor(tmp.formfactor), flashtype(tmp.flashtype) {}
 
 	void print(std::ostream& os) const;
+	void print(utos_ostream& tos) const;
 };
 
 std::ostream& operator<<(std::ostream&, const SSD&);
+std::ostream& operator<<(utos_ostream, const SSD&);
 
+
+///Merevlemez
 class HDD : public Storage {
-	int rpm;	///Fordulatszám
+	///Fordulatszám
+	int rpm;	
 public:
 	explicit HDD(String brand, String type, int price, int size, int readspeed, int writespeed, int rpm) :
 		Storage(brand, type, price, size, readspeed, writespeed), rpm(rpm) {}
 	explicit HDD(TempInput tmp) :Storage(tmp.brand, tmp.type, tmp.price, tmp.size, tmp.readspeed, tmp.writespeed), rpm(tmp.rpm) {}
 
 	void print(std::ostream& os) const;
+	void print(utos_ostream& tos) const;
 };
 
 std::ostream& operator<<(std::ostream&, const HDD&);
+std::ostream& operator<<(utos_ostream, const HDD&);

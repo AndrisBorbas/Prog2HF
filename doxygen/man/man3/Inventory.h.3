@@ -1,0 +1,69 @@
+.TH "C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h" 3 "Thu May 2 2019" "Prog2HF" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'Parts\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBInventory\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBenumPart\fP { \fBeInvalid\fP = 0, \fBeCPU\fP = 1, \fBeGPU\fP = 2, \fBeMOBO\fP = 3, \fBeRAM\fP = 4, \fBeCase\fP = 5, \fBePSU\fP = 6, \fBeSSD\fP = 7, \fBeHDD\fP = 8 }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsetEnum\fP (\fBString\fP inst, enum \fBenumPart\fP &)"
+.br
+.ti -1c
+.RI "void \fBLoadParams\fP (std::istream &is, \fBTempInput\fP &tmp, int const params)"
+.br
+.in -1c
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBenumPart\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIeInvalid \fP\fP
+.TP
+\fB\fIeCPU \fP\fP
+.TP
+\fB\fIeGPU \fP\fP
+.TP
+\fB\fIeMOBO \fP\fP
+.TP
+\fB\fIeRAM \fP\fP
+.TP
+\fB\fIeCase \fP\fP
+.TP
+\fB\fIePSU \fP\fP
+.TP
+\fB\fIeSSD \fP\fP
+.TP
+\fB\fIeHDD \fP\fP
+.SH "Function Documentation"
+.PP 
+.SS "void LoadParams (std::istream & is, \fBTempInput\fP & tmp, int const params)"
+
+.SS "void setEnum (\fBString\fP inst, enum \fBenumPart\fP &)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Prog2HF from the source code\&.

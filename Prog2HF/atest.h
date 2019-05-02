@@ -3,7 +3,7 @@
 #include "main.h"
 
 ///Test the if the parts file could be opened
-void test1(std::fstream& partsFile, char partsfilename[52]);
+void test1(std::fstream& partsFile, const char partsfilename[52]);
 ///Test whether the heterogenous collection contains the derived classes
 bool test2(Inventory & inventory);
 ///Test the non case sensitive String compare

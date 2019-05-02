@@ -1,8 +1,9 @@
-.TH "Storage" 3 "Wed Apr 3 2019" "Prog2HF" \" -*- nroff -*-
+.TH "Storage" 3 "Thu May 2 2019" "Prog2HF" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-Storage
+Storage \- Tárhely alap\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -19,6 +20,12 @@ Inherited by \fBHDD\fP, and \fBSSD\fP\&.
 .RI "\fBStorage\fP (\fBString\fP \fBbrand\fP, \fBString\fP \fBtype\fP, int \fBprice\fP, int \fBsize\fP, int \fBreadspeed\fP, int \fBwritespeed\fP)"
 .br
 .RI "Írási sebesség\&. "
+.ti -1c
+.RI "virtual void \fBprint\fP (std::ostream &os) const"
+.br
+.ti -1c
+.RI "virtual void \fBprint\fP (\fButos_ostream\fP &tos) const"
+.br
 .in -1c
 .SS "Protected Attributes"
 
@@ -35,12 +42,29 @@ Inherited by \fBHDD\fP, and \fBSSD\fP\&.
 .br
 .RI "Olvasási sebesség\&. "
 .in -1c
+.SH "Detailed Description"
+.PP 
+Tárhely alap\&. 
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "Storage::Storage (\fBString\fP brand, \fBString\fP type, int price, int size, int readspeed, int writespeed)\fC [inline]\fP, \fC [explicit]\fP"
 
 .PP
 Írási sebesség\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Storage::print (std::ostream & os) const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBPart\fP\&.
+.PP
+Reimplemented in \fBHDD\fP, and \fBSSD\fP\&.
+.SS "void Storage::print (\fButos_ostream\fP & tos) const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBPart\fP\&.
+.PP
+Reimplemented in \fBHDD\fP, and \fBSSD\fP\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "int Storage::readspeed\fC [protected]\fP"

@@ -35,20 +35,14 @@ public:
 
 	void loadPart(std::istream& is, TempInput& tmp, enumPart);
 
+	void saveInventory(std::ostream& os);
+
+	void printInventory(std::ostream& os);
+
+	void removePart(int a);
+
 	template<typename T>
-	void push_back(T* part) {
-		if (size == capacity) {
-			capacity *= 2;
-			Part** temp = new Part * [capacity];
-			for (size_t i = 0; i < size; i++) {
-				temp[i] = stock[i];
-			}
-			delete[] stock;
-			stock = temp;
-		}
-		stock[size] = part;
-		size++;
-	}
+	void push_back(T* part);
 
 	const Part* operator[](int idx) const {
 		return stock[idx];

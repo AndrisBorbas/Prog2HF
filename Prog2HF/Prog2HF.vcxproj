@@ -63,10 +63,12 @@
     <ClInclude Include="Parts.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="memtrace.h" />
-    <ClInclude Include="schtring.h" />
+    <ClInclude Include="schtring.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="orders.txt" />
     <Text Include="parts.txt" />
+    <Text Include="partsorig.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

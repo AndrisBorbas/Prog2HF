@@ -1,17 +1,5 @@
-#if defined(WIN32) || defined(_WIN32) || defined(WIN64) || defined(_WIN64)
-#define _CRT_SECURE_NO_WARNINGS		//disable printf unsecure error
-#pragma warning(disable : 4996)		//disable strlwr deprecated error
-#endif
-#ifdef _MSC_VER
-#define _CRT_SECURE_NO_WARNINGS
-#pragma warning(disable : 4996)
-#endif
-
-#include <iostream>             
-#include <cstring>             
-
 #include "memtrace.h"
-#include "schtring.h"
+#include "schtring.hpp"
 
 using std::cin;
 using std::ios_base;
@@ -136,14 +124,7 @@ String String::operator--(int a) {
 }
 
 std::ostream& operator<<(std::ostream& os, const String& s0) {
-	char* temp = new char[s0.length() + 1];
-	strcpy(temp, s0.c_str());
-	for (int i = 0; i < s0.length(); i++) {
-		if (temp[i] == '_')temp[i] = ' ';
-	}
-	os << temp;
-	delete[] temp;
-	return os;
+	return os << s0.c_str();
 }
 
 std::istream& operator>>(std::istream& is, String& s0) {
@@ -163,4 +144,15 @@ std::istream& operator>>(std::istream& is, String& s0) {
 	}
 	is.setf(fl);
 	return is;
+}
+
+std::ostream& operator<<(utos_ostream tos, const String& s0) {
+	char* temp = new char[s0.length() + 1];
+	strcpy(temp, s0.c_str());
+	for (int i = 0; i < s0.length(); i++) {
+		if (temp[i] == '_')temp[i] = ' ';
+	}
+	tos.os << temp;
+	delete[] temp;
+	return tos.os;
 }

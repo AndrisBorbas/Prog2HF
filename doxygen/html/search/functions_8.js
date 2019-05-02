@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ram',['RAM',['../class_r_a_m.html#a1869d6bd505e7fb58b809270626c82f2',1,'RAM']]]
+  ['main',['main',['../main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;main.cpp'],['../main_8h.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;main.cpp']]],
+  ['mobo',['MOBO',['../class_m_o_b_o.html#a3185de871765391ae3a0ffe4b0af7e5b',1,'MOBO::MOBO(String brand, String type, int price, String socket, String chipset, String formfactor)'],['../class_m_o_b_o.html#ad6b4b2daac75d63d5d7f490d3cfeee6f',1,'MOBO::MOBO(TempInput tmp)']]]
 ];

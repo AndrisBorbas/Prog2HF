@@ -1,8 +1,9 @@
-.TH "CPU" 3 "Wed Apr 3 2019" "Prog2HF" \" -*- nroff -*-
+.TH "CPU" 3 "Thu May 2 2019" "Prog2HF" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-CPU
+CPU \- Processzor\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -14,17 +15,43 @@ Inherits \fBPart\fP\&.
 
 .in +1c
 .ti -1c
-.RI "\fBCPU\fP (\fBString\fP \fBbrand\fP, \fBString\fP \fBtype\fP, int \fBprice\fP, int clk, int cores, \fBString\fP socket)"
+.RI "\fBCPU\fP (\fBString\fP \fBbrand\fP, \fBString\fP \fBtype\fP, int \fBprice\fP, int clk, int cores, \fBString\fP socket, bool multithreading)"
 .br
-.RI "Magok száma\&. "
+.ti -1c
+.RI "\fBCPU\fP (\fBTempInput\fP &tmp)"
+.br
+.ti -1c
+.RI "void \fBprint\fP (std::ostream &os) const"
+.br
+.ti -1c
+.RI "void \fBprint\fP (\fButos_ostream\fP &tos) const"
+.br
+.ti -1c
+.RI "void \fBtesth\fP () const"
+.br
 .in -1c
 .SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Processzor\&. 
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "CPU::CPU (\fBString\fP brand, \fBString\fP type, int price, int clk, int cores, \fBString\fP socket)\fC [inline]\fP, \fC [explicit]\fP"
+.SS "CPU::CPU (\fBString\fP brand, \fBString\fP type, int price, int clk, int cores, \fBString\fP socket, bool multithreading)\fC [inline]\fP, \fC [explicit]\fP"
+
+.SS "CPU::CPU (\fBTempInput\fP & tmp)\fC [inline]\fP, \fC [explicit]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CPU::print (std::ostream & os) const\fC [virtual]\fP"
 
 .PP
-Magok száma\&. 
+Reimplemented from \fBPart\fP\&.
+.SS "void CPU::print (\fButos_ostream\fP & tos) const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBPart\fP\&.
+.SS "void CPU::testh () const"
+
 
 .SH "Author"
 .PP 

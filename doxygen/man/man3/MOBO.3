@@ -1,8 +1,9 @@
-.TH "MOBO" 3 "Wed Apr 3 2019" "Prog2HF" \" -*- nroff -*-
+.TH "MOBO" 3 "Thu May 2 2019" "Prog2HF" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-MOBO
+MOBO \- Alaplap\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -17,14 +18,38 @@ Inherits \fBPart\fP\&.
 .RI "\fBMOBO\fP (\fBString\fP \fBbrand\fP, \fBString\fP \fBtype\fP, int \fBprice\fP, \fBString\fP socket, \fBString\fP chipset, \fBString\fP formfactor)"
 .br
 .RI "Méret szabvány\&. "
+.ti -1c
+.RI "\fBMOBO\fP (\fBTempInput\fP tmp)"
+.br
+.ti -1c
+.RI "void \fBprint\fP (std::ostream &os) const"
+.br
+.ti -1c
+.RI "void \fBprint\fP (\fButos_ostream\fP &tos) const"
+.br
 .in -1c
 .SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Alaplap\&. 
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "MOBO::MOBO (\fBString\fP brand, \fBString\fP type, int price, \fBString\fP socket, \fBString\fP chipset, \fBString\fP formfactor)\fC [inline]\fP, \fC [explicit]\fP"
 
 .PP
 Méret szabvány\&. 
+.SS "MOBO::MOBO (\fBTempInput\fP tmp)\fC [inline]\fP, \fC [explicit]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void MOBO::print (std::ostream & os) const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBPart\fP\&.
+.SS "void MOBO::print (\fButos_ostream\fP & tos) const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBPart\fP\&.
 
 .SH "Author"
 .PP 

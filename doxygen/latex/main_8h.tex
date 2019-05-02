@@ -1,2 +1,149 @@
 \hypertarget{main_8h}{}\section{C\+:/\+Users/cxl20/\+Documents/\+Visual Studio 2017/\+Prog2\+H\+F/\+Prog2\+H\+F/main.h File Reference}
 \label{main_8h}\index{C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h@{C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h}}
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include \char`\"{}schtring.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$typeinfo$>$}\newline
+{\ttfamily \#include \char`\"{}Parts.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Inventory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}atest.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builds.\+h\char`\"{}}\newline
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{main_8h_adbc27074b7dcd54cd4578936c6329d02}{enum\+Menu}} \{ \newline
+\mbox{\hyperlink{main_8h_adbc27074b7dcd54cd4578936c6329d02a51060f19a5d0006e2cb20df8786a330b}{e\+Main}} = 1, 
+\mbox{\hyperlink{main_8h_adbc27074b7dcd54cd4578936c6329d02a8d35c4ba2bd3370a44513dbdbdbd0ff6}{e\+Parts\+List}} = 11, 
+\mbox{\hyperlink{main_8h_adbc27074b7dcd54cd4578936c6329d02a1fedbd15c99125bee9cb78cffbf7228b}{e\+Parts\+Add}} = 12, 
+\mbox{\hyperlink{main_8h_adbc27074b7dcd54cd4578936c6329d02af19f793fac63215e67f31045c7371d1c}{e\+Parts\+Remove}} = 13, 
+\newline
+\mbox{\hyperlink{main_8h_adbc27074b7dcd54cd4578936c6329d02a34f49f61c9b4bdb2fe1be11758138084}{e\+Builds\+List}} = 21, 
+\mbox{\hyperlink{main_8h_adbc27074b7dcd54cd4578936c6329d02a18af4c5278fb8ad13d84f598c68e766e}{e\+Builds\+Add}} = 22, 
+\mbox{\hyperlink{main_8h_adbc27074b7dcd54cd4578936c6329d02af2f1713ca51324f5000bf36d36bfd684}{e\+Exit}} = 9
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8h_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\item 
+void \mbox{\hyperlink{main_8h_ac83102103dbe7ba03fa00ab462055a6f}{animate}} (char)
+\item 
+void \mbox{\hyperlink{main_8h_aa8348016f7273e63d47917126e8f9c69}{print\+Main}} ()
+\item 
+void \mbox{\hyperlink{main_8h_aed630b39565f9b935d3148b396fd862d}{evaluate\+Command}} (enum \mbox{\hyperlink{main_8h_adbc27074b7dcd54cd4578936c6329d02}{enum\+Menu}} \&)
+\item 
+void \mbox{\hyperlink{main_8h_a54c74422af05849f9d508c0a5ccd468b}{print\+Parts\+List}} (\mbox{\hyperlink{class_inventory}{Inventory}} \&)
+\item 
+void \mbox{\hyperlink{main_8h_af60ea04d4030a9371dd4d0dd61a0531f}{add\+Part\+Helper}} (\mbox{\hyperlink{class_inventory}{Inventory}} \&, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&)
+\item 
+void \mbox{\hyperlink{main_8h_ae1fd94f91e6af6d41057704277c9d9e6}{save\+Parts}} (const \mbox{\hyperlink{class_inventory}{Inventory}} \&)
+\item 
+void \mbox{\hyperlink{main_8h_a91fe9752814ecad7d04d2cf550123d17}{save\+Orders}} (const \mbox{\hyperlink{class_orders}{Orders}} \&)
+\item 
+void \mbox{\hyperlink{main_8h_aaa6e5fc0d7c515998e48fe6ae944ca40}{clearcmd}} ()
+\begin{DoxyCompactList}\small\item\em kitörli a terminált \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{main_8h_adbc27074b7dcd54cd4578936c6329d02}\label{main_8h_adbc27074b7dcd54cd4578936c6329d02}} 
+\index{main.h@{main.h}!enumMenu@{enumMenu}}
+\index{enumMenu@{enumMenu}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{enumMenu}{enumMenu}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{main_8h_adbc27074b7dcd54cd4578936c6329d02}{enum\+Menu}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eMain@{eMain}!main.h@{main.h}}\index{main.h@{main.h}!eMain@{eMain}}}\mbox{\Hypertarget{main_8h_adbc27074b7dcd54cd4578936c6329d02a51060f19a5d0006e2cb20df8786a330b}\label{main_8h_adbc27074b7dcd54cd4578936c6329d02a51060f19a5d0006e2cb20df8786a330b}} 
+e\+Main&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ePartsList@{ePartsList}!main.h@{main.h}}\index{main.h@{main.h}!ePartsList@{ePartsList}}}\mbox{\Hypertarget{main_8h_adbc27074b7dcd54cd4578936c6329d02a8d35c4ba2bd3370a44513dbdbdbd0ff6}\label{main_8h_adbc27074b7dcd54cd4578936c6329d02a8d35c4ba2bd3370a44513dbdbdbd0ff6}} 
+e\+Parts\+List&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ePartsAdd@{ePartsAdd}!main.h@{main.h}}\index{main.h@{main.h}!ePartsAdd@{ePartsAdd}}}\mbox{\Hypertarget{main_8h_adbc27074b7dcd54cd4578936c6329d02a1fedbd15c99125bee9cb78cffbf7228b}\label{main_8h_adbc27074b7dcd54cd4578936c6329d02a1fedbd15c99125bee9cb78cffbf7228b}} 
+e\+Parts\+Add&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ePartsRemove@{ePartsRemove}!main.h@{main.h}}\index{main.h@{main.h}!ePartsRemove@{ePartsRemove}}}\mbox{\Hypertarget{main_8h_adbc27074b7dcd54cd4578936c6329d02af19f793fac63215e67f31045c7371d1c}\label{main_8h_adbc27074b7dcd54cd4578936c6329d02af19f793fac63215e67f31045c7371d1c}} 
+e\+Parts\+Remove&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eBuildsList@{eBuildsList}!main.h@{main.h}}\index{main.h@{main.h}!eBuildsList@{eBuildsList}}}\mbox{\Hypertarget{main_8h_adbc27074b7dcd54cd4578936c6329d02a34f49f61c9b4bdb2fe1be11758138084}\label{main_8h_adbc27074b7dcd54cd4578936c6329d02a34f49f61c9b4bdb2fe1be11758138084}} 
+e\+Builds\+List&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eBuildsAdd@{eBuildsAdd}!main.h@{main.h}}\index{main.h@{main.h}!eBuildsAdd@{eBuildsAdd}}}\mbox{\Hypertarget{main_8h_adbc27074b7dcd54cd4578936c6329d02a18af4c5278fb8ad13d84f598c68e766e}\label{main_8h_adbc27074b7dcd54cd4578936c6329d02a18af4c5278fb8ad13d84f598c68e766e}} 
+e\+Builds\+Add&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eExit@{eExit}!main.h@{main.h}}\index{main.h@{main.h}!eExit@{eExit}}}\mbox{\Hypertarget{main_8h_adbc27074b7dcd54cd4578936c6329d02af2f1713ca51324f5000bf36d36bfd684}\label{main_8h_adbc27074b7dcd54cd4578936c6329d02af2f1713ca51324f5000bf36d36bfd684}} 
+e\+Exit&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8h_af60ea04d4030a9371dd4d0dd61a0531f}\label{main_8h_af60ea04d4030a9371dd4d0dd61a0531f}} 
+\index{main.h@{main.h}!addPartHelper@{addPartHelper}}
+\index{addPartHelper@{addPartHelper}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{addPartHelper()}{addPartHelper()}}
+{\footnotesize\ttfamily void add\+Part\+Helper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory}{Inventory}} \&}]{,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8h_ac83102103dbe7ba03fa00ab462055a6f}\label{main_8h_ac83102103dbe7ba03fa00ab462055a6f}} 
+\index{main.h@{main.h}!animate@{animate}}
+\index{animate@{animate}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{animate()}{animate()}}
+{\footnotesize\ttfamily void animate (\begin{DoxyParamCaption}\item[{char}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8h_aaa6e5fc0d7c515998e48fe6ae944ca40}\label{main_8h_aaa6e5fc0d7c515998e48fe6ae944ca40}} 
+\index{main.h@{main.h}!clearcmd@{clearcmd}}
+\index{clearcmd@{clearcmd}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{clearcmd()}{clearcmd()}}
+{\footnotesize\ttfamily void clearcmd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+kitörli a terminált 
+
+\mbox{\Hypertarget{main_8h_aed630b39565f9b935d3148b396fd862d}\label{main_8h_aed630b39565f9b935d3148b396fd862d}} 
+\index{main.h@{main.h}!evaluateCommand@{evaluateCommand}}
+\index{evaluateCommand@{evaluateCommand}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{evaluateCommand()}{evaluateCommand()}}
+{\footnotesize\ttfamily void evaluate\+Command (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{main_8h_adbc27074b7dcd54cd4578936c6329d02}{enum\+Menu}} \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8h_a3c04138a5bfe5d72780bb7e82a18e627}\label{main_8h_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{main.h@{main.h}!main@{main}}
+\index{main@{main}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+Alapértelmezett parts fájl név
+
+Parts fájl nevének beállítása indítási parancsból \mbox{\Hypertarget{main_8h_aa8348016f7273e63d47917126e8f9c69}\label{main_8h_aa8348016f7273e63d47917126e8f9c69}} 
+\index{main.h@{main.h}!printMain@{printMain}}
+\index{printMain@{printMain}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{printMain()}{printMain()}}
+{\footnotesize\ttfamily void print\+Main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8h_a54c74422af05849f9d508c0a5ccd468b}\label{main_8h_a54c74422af05849f9d508c0a5ccd468b}} 
+\index{main.h@{main.h}!printPartsList@{printPartsList}}
+\index{printPartsList@{printPartsList}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{printPartsList()}{printPartsList()}}
+{\footnotesize\ttfamily void print\+Parts\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory}{Inventory}} \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8h_a91fe9752814ecad7d04d2cf550123d17}\label{main_8h_a91fe9752814ecad7d04d2cf550123d17}} 
+\index{main.h@{main.h}!saveOrders@{saveOrders}}
+\index{saveOrders@{saveOrders}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{saveOrders()}{saveOrders()}}
+{\footnotesize\ttfamily void save\+Orders (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_orders}{Orders}} \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8h_ae1fd94f91e6af6d41057704277c9d9e6}\label{main_8h_ae1fd94f91e6af6d41057704277c9d9e6}} 
+\index{main.h@{main.h}!saveParts@{saveParts}}
+\index{saveParts@{saveParts}!main.h@{main.h}}
+\subsubsection{\texorpdfstring{saveParts()}{saveParts()}}
+{\footnotesize\ttfamily void save\+Parts (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inventory}{Inventory}} \&}]{ }\end{DoxyParamCaption})}
+

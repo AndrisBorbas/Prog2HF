@@ -1,5 +1,9 @@
 var hierarchy =
 [
+    [ "Build", "class_build.html", null ],
+    [ "CompatibilityList", "class_compatibility_list.html", null ],
+    [ "Inventory", "class_inventory.html", null ],
+    [ "Orders", "class_orders.html", null ],
     [ "Part", "class_part.html", [
       [ "Case", "class_case.html", null ],
       [ "CPU", "class_c_p_u.html", null ],
@@ -12,5 +16,8 @@ var hierarchy =
         [ "SSD", "class_s_s_d.html", null ]
       ] ]
     ] ],
-    [ "String", "class_string.html", null ]
+    [ "String", "class_string.html", null ],
+    [ "TempInput", "struct_temp_input.html", null ],
+    [ "utos_ostream", "structutos__ostream.html", null ],
+    [ "utos_t", "structutos__t.html", null ]
 ];

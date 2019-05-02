@@ -1,7 +1,7 @@
 #pragma once
 
 #include <iostream>
-#include "schtring.h"
+#include "schtring.hpp"
 
 class CompatibilityList {
 	size_t capacity;
