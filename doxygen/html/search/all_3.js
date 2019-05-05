@@ -19,5 +19,6 @@ var searchData=
   ['eram',['eRAM',['../_inventory_8h.html#abddff37837f171d72a2e16a1448a3943ab8ed3ffb829052bad316bc5bd3563c95',1,'Inventory.h']]],
   ['erase',['erase',['../class_string.html#a3ce2ea55be9ec912bb2dbc88d461b479',1,'String']]],
   ['essd',['eSSD',['../_inventory_8h.html#abddff37837f171d72a2e16a1448a3943a47cf1e8f84e82a65f9ecb6d21649b4b4',1,'Inventory.h']]],
-  ['evaluatecommand',['evaluateCommand',['../main_8cpp.html#af4bf55c7933ba857c5d67526038aed45',1,'evaluateCommand(enum enumMenu &amp;eM):&#160;main.cpp'],['../main_8h.html#aed630b39565f9b935d3148b396fd862d',1,'evaluateCommand(enum enumMenu &amp;):&#160;main.cpp']]]
+  ['evaluatecommand',['evaluateCommand',['../main_8cpp.html#af4bf55c7933ba857c5d67526038aed45',1,'evaluateCommand(enum enumMenu &amp;eM):&#160;main.cpp'],['../main_8h.html#aed630b39565f9b935d3148b396fd862d',1,'evaluateCommand(enum enumMenu &amp;):&#160;main.cpp']]],
+  ['evaluateinput',['evaluateInput',['../main_8cpp.html#a39e6e00a3f83db932d706d1f00f040b7',1,'evaluateInput(Inventory &amp;inventory):&#160;main.cpp'],['../main_8h.html#a0e552edf6cae51d6a38ad105b2c29edb',1,'evaluateInput(Inventory &amp;):&#160;main.cpp']]]
 ];

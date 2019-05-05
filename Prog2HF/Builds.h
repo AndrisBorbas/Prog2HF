@@ -2,6 +2,7 @@
 
 #include "Parts.h"
 
+///Egy gépkonfigot tárol
 class Build {
 	Part** components;
 	int* count;
@@ -34,6 +35,7 @@ public:
 std::ostream& operator<<(std::ostream& os, const Build& b);
 
 
+///A megrendelt konfigokat tárolja
 class Orders {
 	Build* builds;
 	bool* completed;

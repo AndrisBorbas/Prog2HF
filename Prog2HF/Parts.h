@@ -5,8 +5,8 @@
 #endif
 #include "schtring.hpp"
 #include <typeinfo>
-//#include "Compatibility.h"
 #include <cctype>
+//#include "Compatibility.h"
 
 //Doxygen miatt a doc kommentek a kövi sorra vonatkoznak
 
@@ -46,16 +46,6 @@ public:
 	}
 	virtual ~Part() {}
 
-	String get_brand() {
-		return brand;
-	}
-	String get_type() {
-		return type;
-	}
-	int get_price() {
-		return price;
-	}
-
 	virtual void print(std::ostream& os) const;
 	virtual void print(utos_ostream& tos) const;
 };
@@ -78,8 +68,6 @@ public:
 
 	void print(std::ostream& os) const;
 	void print(utos_ostream& tos) const;
-
-	void testh() const;
 };
 
 std::ostream& operator<<(std::ostream&, const CPU&);

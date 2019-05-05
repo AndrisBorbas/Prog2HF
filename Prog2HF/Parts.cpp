@@ -112,10 +112,6 @@ void HDD::print(utos_ostream& tos)const {
 	tos.os << "RPM: " << rpm << " rpm";
 }
 
-void CPU::testh()const {
-	std::cout << "\n\n\nBurn\n\n\n";
-}
-
 std::ostream& operator<<(std::ostream& os, const Part& p) {
 	p.print(os);
 	return os;

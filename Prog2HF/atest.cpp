@@ -11,31 +11,8 @@ void test1(std::fstream& partsFile, const char filename[52]) {
 		}
 	}
 #ifdef _DEBUG
-	std::cout << "Test 1 Succesful\n";
+	std::cout << "Filestream test Succesful\n";
 #endif
-}
-
-bool test2(Inventory & inventory) {
-	if (nullptr == (dynamic_cast<CPU*>(inventory[0]))) {
-		std::cerr << "The first item wasnt a CPU";
-		return false;
-	}
-	if (nullptr == (dynamic_cast<GPU*>(inventory[1]))) {
-		std::cerr << "The first item wasnt a CPU";
-		return false;
-	}
-	if (!(nullptr == (dynamic_cast<GPU*>(inventory[0])))) {
-		std::cerr << "The first item was a GPU instead of a CPU";
-		return false;
-	}
-	if (!(nullptr == (dynamic_cast<CPU*>(inventory[1])))) {
-		std::cerr << "The first item was a CPU instead of a GPU";
-		return false;
-	}
-#ifdef _DEBUG
-	std::cout << "Test 2 Succesful\n";
-#endif
-	return true;
 }
 
 bool test3(String test1, String test2) {
@@ -44,7 +21,7 @@ bool test3(String test1, String test2) {
 		std::cerr << "Result does not equal the expected result";
 	}
 #ifdef _DEBUG
-	std::cout << "Test 3 Succesful\n";
+	std::cout << "String case unsensitive comparison test Succesful\n";
 #endif
 	return temp;
 }
@@ -55,7 +32,18 @@ bool test4(String asd, const char* test) {
 		std::cerr << "Result does not equal the expected result";
 	}
 #ifdef _DEBUG
-	std::cout << "Test 4 Succesful\n";
+	std::cout << "String last character removal Succesful\n";
+#endif
+	return temp;
+}
+
+bool test5(String asd, const char* test) {
+	bool temp = (asd == test);
+	if (!temp) {
+		std::cerr << "Result does not equal the expected result";
+	}
+#ifdef _DEBUG
+	std::cout << "String first x character removal Succesful\n";
 #endif
 	return temp;
 }

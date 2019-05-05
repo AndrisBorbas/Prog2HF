@@ -1,4 +1,4 @@
-.TH "Storage" 3 "Thu May 2 2019" "Prog2HF" \" -*- nroff -*-
+.TH "Storage" 3 "Fri May 3 2019" "Prog2HF" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -19,7 +19,6 @@ Inherited by \fBHDD\fP, and \fBSSD\fP\&.
 .ti -1c
 .RI "\fBStorage\fP (\fBString\fP \fBbrand\fP, \fBString\fP \fBtype\fP, int \fBprice\fP, int \fBsize\fP, int \fBreadspeed\fP, int \fBwritespeed\fP)"
 .br
-.RI "Írási sebesség\&. "
 .ti -1c
 .RI "virtual void \fBprint\fP (std::ostream &os) const"
 .br
@@ -33,14 +32,15 @@ Inherited by \fBHDD\fP, and \fBSSD\fP\&.
 .ti -1c
 .RI "int \fBsize\fP"
 .br
+.RI "Méret\&. "
 .ti -1c
 .RI "int \fBreadspeed\fP"
 .br
-.RI "Méret\&. "
+.RI "Olvasási sebesség\&. "
 .ti -1c
 .RI "int \fBwritespeed\fP"
 .br
-.RI "Olvasási sebesség\&. "
+.RI "Írási sebesség\&. "
 .in -1c
 .SH "Detailed Description"
 .PP 
@@ -49,8 +49,6 @@ Tárhely alap\&.
 .PP 
 .SS "Storage::Storage (\fBString\fP brand, \fBString\fP type, int price, int size, int readspeed, int writespeed)\fC [inline]\fP, \fC [explicit]\fP"
 
-.PP
-Írási sebesség\&. 
 .SH "Member Function Documentation"
 .PP 
 .SS "void Storage::print (std::ostream & os) const\fC [virtual]\fP"
@@ -70,13 +68,15 @@ Reimplemented in \fBHDD\fP, and \fBSSD\fP\&.
 .SS "int Storage::readspeed\fC [protected]\fP"
 
 .PP
-Méret\&. 
+Olvasási sebesség\&. 
 .SS "int Storage::size\fC [protected]\fP"
 
+.PP
+Méret\&. 
 .SS "int Storage::writespeed\fC [protected]\fP"
 
 .PP
-Olvasási sebesség\&. 
+Írási sebesség\&. 
 
 .SH "Author"
 .PP 

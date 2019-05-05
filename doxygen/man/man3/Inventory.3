@@ -1,4 +1,4 @@
-.TH "Inventory" 3 "Thu May 2 2019" "Prog2HF" \" -*- nroff -*-
+.TH "Inventory" 3 "Fri May 3 2019" "Prog2HF" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -22,6 +22,15 @@ Inventory
 .br
 .ti -1c
 .RI "void \fBloadPart\fP (std::istream &is, \fBTempInput\fP &tmp, \fBenumPart\fP)"
+.br
+.ti -1c
+.RI "void \fBsaveInventory\fP (std::ostream &os)"
+.br
+.ti -1c
+.RI "void \fBprintInventory\fP (std::ostream &os)"
+.br
+.ti -1c
+.RI "void \fBremovePart\fP (int a)"
 .br
 .ti -1c
 .RI "template<typename T > void \fBpush_back\fP (T *part)"
@@ -49,7 +58,13 @@ Inventory
 
 .SS "\fBPart\fP* Inventory::operator[] (int idx)\fC [inline]\fP"
 
-.SS "template<typename T > void Inventory::push_back (T * part)\fC [inline]\fP"
+.SS "void Inventory::printInventory (std::ostream & os)"
+
+.SS "template<typename T > void Inventory::push_back (T * part)"
+
+.SS "void Inventory::removePart (int a)"
+
+.SS "void Inventory::saveInventory (std::ostream & os)"
 
 
 .SH "Author"

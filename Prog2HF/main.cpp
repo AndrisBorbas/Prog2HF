@@ -16,20 +16,20 @@ int main(int argc, char** argv)
 	std::fstream partsFile;
 	partsFile.open(partsfilename, std::ios_base::in | std::ios_base::out);
 	std::fstream partsTempFile;
-	partsTempFile.open("partstemp.txt", std::ios_base::in | std::ios_base::out | std::ios_base::trunc);
+	partsTempFile.open("partstemp.tmp", std::ios_base::in | std::ios_base::out | std::ios_base::trunc);
 
 	std::fstream ordersFile;
 	ordersFile.open(ordersfilename, std::ios_base::in | std::ios_base::out);
 	std::fstream ordersTempFile;
-	ordersTempFile.open("orderstemp.txt", std::ios_base::in | std::ios_base::out | std::ios_base::trunc);
+	ordersTempFile.open("orderstemp.tmp", std::ios_base::in | std::ios_base::out | std::ios_base::trunc);
 
 	test1(partsFile, partsfilename);
-	test1(partsTempFile, "partstemp.txt");
+	test1(partsTempFile, "partstemp.tmp");
 	test1(ordersFile, ordersfilename);
-	test1(ordersTempFile, "orderstemp.txt");
+	test1(ordersTempFile, "orderstemp.tmp");
 
 	///első 5 sor átmásolása
-	for (int i = 0; i < 5; i++){
+	for (int i = 0; i < 5; i++) {
 		char temp[256];
 		partsFile.getline(temp, 255);
 		partsTempFile << temp << std::endl;
@@ -44,12 +44,13 @@ int main(int argc, char** argv)
 	Inventory inventory;
 	Orders orders;
 
+	///alkatrészek betöltése fájlból
 	while (partsFile >> tmp.instruction) {
 #ifdef _DEBUG
 		std::cout << tmp.instruction << std::endl;
 #endif
 		if (tmp.instruction[tmp.instruction.length() - 1] == ':') {
-			setEnum(tmp.instruction, eP);
+			setEnumfromString(tmp.instruction, eP);
 			if (eP != eInvalid) {
 				inventory.loadPart(partsFile, tmp, eP);
 			}
@@ -58,41 +59,28 @@ int main(int argc, char** argv)
 
 
 	/*
-	std::cout << "hi" << std::endl;
-	String a = "1";
-	String b = "2";
-	String c = a;
 	String slist = "1,2,3,4,5,6,7,8,9;";
 	CompatibilityList intellist(slist);
 	IntelCompatList.addItems(slist);
 	std::cout << std::boolalpha << (intellist == "10") << (intellist == "2");
 	*/
-	CPU i74790("intel", "i3-4330", 800, 200, 2, "LGA1152", true);
+	//CPU i74790("intel", "i3-4330", 800, 200, 2, "LGA1152", true);
 
 	test3("wasd", "WAsd");
-
-	String asd("wasdw");
-	asd--;
-	test4(asd, "wasd");
-
-	/*
-	partsFile.clear();
-	std::streampos pos = partsFile.tellg();
-	partsFile << std::endl << "CPU: \n";
-	partsFile << i74790 << "\n";
-
-	partsFile.flush();
-
-	partsFile.seekg(pos);
-	*/
-	//inv[0] = loadPart(partsFile, tmp, eP);
-	//partsFile << std::endl << "CPU: \n";
-	//partsFile << *(inventory[0]);
-	//std::cout << std::endl << *(inv[0]);
+	{
+		String asd("wasdw");
+		asd--;
+		test4(asd, "wasd");
+	}
+	{
+		String asd("class CPU");
+		asd.removeFirstX(6);
+		test5(asd, "CPU");
+	}
 
 	//system("pause");
 
-	animate('~');
+	animate();
 
 	while (!(eM == eExit)) {
 		switch (eM)
@@ -104,10 +92,13 @@ int main(int argc, char** argv)
 			printPartsList(inventory);
 			break;
 		case ePartsAdd:
-			addPartHelper(inventory, tmp);
+			addPartHelper(inventory, tmp, eP);
 			break;
 		case ePartsRemove:
-			removePartHelper(inventory, eM);
+			if (-1 == removePartHelper(inventory)) {
+				eM = eMain;
+				continue;
+			}
 			break;
 		case eBuildsList:
 			clearcmd();
@@ -118,10 +109,11 @@ int main(int argc, char** argv)
 		case eExit:
 			break;
 		}
+		if (eM == ePartsAdd)eM = eMain;
 		evaluateCommand(eM);
 	}
 
-	saveInventory(partsTempFile, partsFile, inventory, pos, partsfilename);
+	save(partsTempFile, partsFile, inventory, pos, partsfilename, "partstemp.tmp");
 	return 0;
 }
 
@@ -132,38 +124,50 @@ void printMain() {
 
 void printPartsList(Inventory& inventory) {
 	clearcmd();
-	inventory.printInventory(std::cout);
+	inventory.print(std::cout);
 	std::cout << "\n1: Return\n";
 }
 
-void addPartHelper(Inventory& inventory, TempInput& tmp) {
+void addPartHelper(Inventory& inventory, TempInput& tmp, enum enumPart& eP) {
 	clearcmd();
-	std::cout << "1: CPU\n2: GPU\n3: MOBO\n4: RAM\n5: Case\n6: PSU\n7: SSD\n8: HDD\n\nPart type to add: ";
-	std::cin >> tmp.instruction;
-	//int a = tmp.instruction;
-}
-
-void removePartHelper(Inventory& inventory, enum enumMenu& eM) {
+	std::cout << "Type in the number of the type of part you want to add (or 1 to return to menu): \n";
+	std::cout << "101: CPU\n102: GPU\n103: Motherboard\n104: RAM\n105: Case\n106: PSU\n107: SSD\n108: HDD\n\n";
+	int a;
+	std::cin >> a;
+	if (a == 1)return;
 	clearcmd();
-	inventory.printInventory(std::cout);
-	std::cout << "\nType in the number of the part you want to remove (or 1 to return to menu): ";
-	int a = evaluateInput(inventory);
-	if (a == -1) {
-		eM = eMain;
-		return;
+	a -= 100;
+	setEnumfromInt(a, eP);
+	if (eP != eInvalid) {
+		inventory.loadPart(std::cin, tmp, eP);
+		std::cout << "1: Return\n";
 	}
-	inventory.removePart(a);
-	std::cout << "\nPart removed\n1: Return\n";
 }
 
-void saveInventory(std::fstream& tempFile, std::fstream& origFile, Inventory& inventory, std::streampos& pos, const char * partsfilename) {
+int removePartHelper(Inventory& inventory) {
+	clearcmd();
+	while (true) {
+		inventory.print(std::cout);
+		std::cout << "\nType in the number of the part you want to remove (or 1 to return to menu): ";
+		int a = evaluateInput(inventory);
+		if (a == -1) {
+			return -1;
+		}
+		inventory.removePart(a);
+		clearcmd();
+		std::cout << "Part removed\n\n";
+	}
+	return 0;
+}
+
+void save(std::fstream& tempFile, std::fstream& origFile, Inventory& inventory, std::streampos& pos, const char* filename, const char* tempfilename) {
 	tempFile.clear();
 	tempFile.seekp(pos, std::ios_base::beg);
-	inventory.saveInventory(tempFile);
+	inventory.save(tempFile);
 	origFile.close();
 	tempFile.close();
-	remove(partsfilename);
-	rename("partstemp.txt", partsfilename);
+	remove(filename);
+	rename(tempfilename, filename);
 }
 
 void animate(char c) {
@@ -187,7 +191,7 @@ int evaluateInput(Inventory& inventory) {
 			std::cout << "\nNumber too big.\nTry again: ";
 			continue;
 		}
-		return a-101;
+		return a - 101;
 	}
 }
 
@@ -219,6 +223,38 @@ void evaluateCommand(enum enumMenu& eM) {
 		case 0:
 			break;
 		}
-		std::cout << "Invalid command: " << cv;
+		std::cout << "Invalid command: " << cv << "\nTry again: ";
+	}
+}
+
+void setEnumfromInt(int a, enumPart& eP) {
+	switch (a)
+	{
+	case 1:
+		eP = eCPU;
+		break;
+	case 2:
+		eP = eGPU;
+		break;
+	case 3:
+		eP = eMOBO;
+		break;
+	case 4:
+		eP = eRAM;
+		break;
+	case 5:
+		eP = eCase;
+		break;
+	case 6:
+		eP = ePSU;
+		break;
+	case 7:
+		eP = eSSD;
+		break;
+	case 8:
+		eP = eHDD;
+		break;
+	default:
+		break;
 	}
 }

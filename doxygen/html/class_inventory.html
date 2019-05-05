@@ -106,6 +106,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3ccacc9422b01b2c17836ca804bcaafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dd64f268a7a5cca611b5f749ec33f96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#a9dd64f268a7a5cca611b5f749ec33f96">loadPart</a> (std::istream &amp;is, <a class="el" href="struct_temp_input.html">TempInput</a> &amp;tmp, <a class="el" href="_inventory_8h.html#abddff37837f171d72a2e16a1448a3943">enumPart</a>)</td></tr>
 <tr class="separator:a9dd64f268a7a5cca611b5f749ec33f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a084bafb32ed7dc4288fac96828c5302a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#a084bafb32ed7dc4288fac96828c5302a">saveInventory</a> (std::ostream &amp;os)</td></tr>
+<tr class="separator:a084bafb32ed7dc4288fac96828c5302a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad108e17923ce79c6ab0f9e04c2a6b6c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#ad108e17923ce79c6ab0f9e04c2a6b6c2">printInventory</a> (std::ostream &amp;os)</td></tr>
+<tr class="separator:ad108e17923ce79c6ab0f9e04c2a6b6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f0fd3321c6cc606508684ce9d666ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#a30f0fd3321c6cc606508684ce9d666ff">removePart</a> (int a)</td></tr>
+<tr class="separator:a30f0fd3321c6cc606508684ce9d666ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90cb96a50ebc28f0de4a009004e9b192"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a90cb96a50ebc28f0de4a009004e9b192"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_inventory.html#a90cb96a50ebc28f0de4a009004e9b192">push_back</a> (T *part)</td></tr>
 <tr class="separator:a90cb96a50ebc28f0de4a009004e9b192"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -278,6 +284,24 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad108e17923ce79c6ab0f9e04c2a6b6c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad108e17923ce79c6ab0f9e04c2a6b6c2">&#9670;&nbsp;</a></span>printInventory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inventory::printInventory </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a90cb96a50ebc28f0de4a009004e9b192"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a90cb96a50ebc28f0de4a009004e9b192">&#9670;&nbsp;</a></span>push_back()</h2>
 
@@ -285,9 +309,6 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Inventory::push_back </td>
@@ -297,11 +318,42 @@ template&lt;typename T &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30f0fd3321c6cc606508684ce9d666ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30f0fd3321c6cc606508684ce9d666ff">&#9670;&nbsp;</a></span>removePart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inventory::removePart </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a084bafb32ed7dc4288fac96828c5302a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a084bafb32ed7dc4288fac96828c5302a">&#9670;&nbsp;</a></span>saveInventory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inventory::saveInventory </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

@@ -31,6 +31,7 @@
 #include "atest.h"
 #include "Builds.h"
 
+///menü almenüi
 enum enumMenu {
 	eMain = 1,
 	ePartsList = 11,
@@ -43,22 +44,43 @@ enum enumMenu {
 
 int main(int argc, char** argv);
 
-void saveInventory(std::fstream&, std::fstream&, Inventory&, std::streampos&, const char*);
+///elmenti a program módosításait
+void save(std::fstream&, std::fstream&, Inventory&, std::streampos&, const char*, const char*);
 
-void animate(char);
+///csinál egy sor animációt
+void animate(char c = '~');
+
+///kiírja a főmenüt
 void printMain();
+
+///bemenet alapján vált a menük között
 void evaluateCommand(enum enumMenu&);
+
+///kiírja az összes betölttött alkatrészt
 void printPartsList(Inventory&);
-void addPartHelper(Inventory&, TempInput&);
-void removePartHelper(Inventory&, enumMenu&);
+
+///beállítja a part loadert
+void setEnumfromInt(int a, enumPart& eP);
+
+///új alkatrészt tölt be console inputról
+void addPartHelper(Inventory&, TempInput&, enumPart&);
+
+///törli a kiválasztott alkatrészt
+int removePartHelper(Inventory&);
+
+///átalakítja a beírt számot indexelővé
 int evaluateInput(Inventory&);
+
+///fájlba menti az alkatrészeket
 void saveParts(const Inventory&);
+
+///fájlba menti a megrendeléseket
 void saveOrders(const Orders&);
 
 ///n edik sorra ugrik egy file streamben
 inline std::fstream& GotoLine(std::fstream& file, unsigned int n) {
 	file.seekg(std::ios::beg);
-	for (int i = 0; i < n - 1; ++i) {
+	for (unsigned int i = 0; i < n - 1; ++i) {
 		file.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	}
 	return file;

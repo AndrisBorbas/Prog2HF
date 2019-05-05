@@ -1,4 +1,4 @@
-.TH "C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h" 3 "Thu May 2 2019" "Prog2HF" \" -*- nroff -*-
+.TH "C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h" 3 "Fri May 3 2019" "Prog2HF" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -12,11 +12,13 @@ C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h
 .br
 \fC#include 'schtring\&.hpp'\fP
 .br
+\fC#include <cstdio>\fP
+.br
 \fC#include <iostream>\fP
 .br
 \fC#include <fstream>\fP
 .br
-\fC#include <typeinfo>\fP
+\fC#include <limits>\fP
 .br
 \fC#include 'Parts\&.h'\fP
 .br
@@ -41,6 +43,9 @@ C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h
 .RI "int \fBmain\fP (int argc, char **argv)"
 .br
 .ti -1c
+.RI "void \fBsaveInventory\fP (std::fstream &, std::fstream &, \fBInventory\fP &, std::streampos &, const char *)"
+.br
+.ti -1c
 .RI "void \fBanimate\fP (char)"
 .br
 .ti -1c
@@ -56,11 +61,21 @@ C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h
 .RI "void \fBaddPartHelper\fP (\fBInventory\fP &, \fBTempInput\fP &)"
 .br
 .ti -1c
+.RI "int \fBremovePartHelper\fP (\fBInventory\fP &, \fBenumMenu\fP &)"
+.br
+.ti -1c
+.RI "int \fBevaluateInput\fP (\fBInventory\fP &)"
+.br
+.ti -1c
 .RI "void \fBsaveParts\fP (const \fBInventory\fP &)"
 .br
 .ti -1c
 .RI "void \fBsaveOrders\fP (const \fBOrders\fP &)"
 .br
+.ti -1c
+.RI "std::fstream & \fBGotoLine\fP (std::fstream &file, unsigned int n)"
+.br
+.RI "n edik sorra ugrik egy file streamben "
 .ti -1c
 .RI "void \fBclearcmd\fP ()"
 .br
@@ -99,13 +114,27 @@ C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h
 kitörli a terminált 
 .SS "void evaluateCommand (enum \fBenumMenu\fP &)"
 
+.SS "int evaluateInput (\fBInventory\fP &)"
+
+.SS "std::fstream& GotoLine (std::fstream & file, unsigned int n)\fC [inline]\fP"
+
+.PP
+n edik sorra ugrik egy file streamben 
 .SS "int main (int argc, char ** argv)"
 Alapértelmezett parts fájl név
 .PP
-Parts fájl nevének beállítása indítási parancsból 
+Parts fájl nevének beállítása indítási parancsból
+.PP
+első 5 sor átmásolása
+.PP
+pozíció mentése kiíráshoz 
 .SS "void printMain ()"
 
 .SS "void printPartsList (\fBInventory\fP &)"
+
+.SS "int removePartHelper (\fBInventory\fP &, \fBenumMenu\fP &)"
+
+.SS "void saveInventory (std::fstream &, std::fstream &, \fBInventory\fP &, std::streampos &, const char *)"
 
 .SS "void saveOrders (const \fBOrders\fP &)"
 

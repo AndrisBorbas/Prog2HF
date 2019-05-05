@@ -1,7 +1,9 @@
-#pragma once
+﻿#pragma once
 
 #include "Parts.h"
+#include <fstream>
 
+///Betöltéshez segítő
 enum enumPart {
 	eInvalid = 0,
 	eCPU = 1,
@@ -14,35 +16,47 @@ enum enumPart {
 	eHDD = 8
 };
 
+///Alkatrész tároló
 class Inventory {
-	Part** stock;
-	size_t capacity;
-	unsigned int size;
+	///Raktár
+	Part** stock;		///kapacitás
+	size_t capacity;	///méret
+	int size;			///milyen típusú alkatrész
+	String * type;
 public:
 	Inventory(size_t capacity = 1) :capacity(capacity), size(0) {
 		stock = new Part * [capacity];
+		type = new String [capacity];
 	}
 	~Inventory() {
-		for (size_t i = 0; i < size; i++) {
+		for (int i = 0; i < size; i++) {
 			delete stock[i];
 		}
 		delete[] stock;
+		delete[] type;
 	}
 
 	int get_size() {
 		return size;
 	}
 
+	///Betölt egy alkatrészt fájlból
+	void loadPart(std::fstream& is, TempInput& tmp, enumPart);
+	///Betölt egy alkatrészt terminalból
 	void loadPart(std::istream& is, TempInput& tmp, enumPart);
 
-	void saveInventory(std::ostream& os);
+	///Raktár mentése egy streamre
+	void save(std::ostream& os);
 
-	void printInventory(std::ostream& os);
+	///Raktár kiírása egy streamre
+	void print(std::ostream& os);
 
+	///Egy alkatrész kitörlése a raktárból
 	void removePart(int a);
 
+	///Egy alkatrész hozzáadása a raktárhoz
 	template<typename T>
-	void push_back(T* part);
+	void push_back(T* part, String type);
 
 	const Part* operator[](int idx) const {
 		return stock[idx];
@@ -52,6 +66,12 @@ public:
 	}
 };
 
-void setEnum(String inst, enum enumPart&);
+///Enumot állít be gy stringből
+void setEnumfromString(String inst, enumPart&);
 
-void LoadParams(std::istream& is, TempInput& tmp, int const params);
+///Jelölőkk alapján betölti az alkatrész paramétereit
+void loadParams(std::fstream& is, TempInput& tmp, int const params);
+
+void loadBase(std::istream& is, TempInput& tmp);
+
+void loadCPU(std::istream& is, TempInput& tmp);

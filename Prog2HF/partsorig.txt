@@ -1,10 +1,8 @@
 Any manual edits could cause the file to get corrupted and not load correctly.
 The program skips the reading of the first 5 lines so leave these intact.
 Variables names end with a colon and can't contain any whitespaces.
-Variables are following them after a whitespace and they can end with an optional comma.
+Variables are following them after a whitespace, can't contain any whitespaces and they can end with an optional comma.
 Variables can come in any order but none can miss for a particular part.
-
-NumberOfParts: 5
 
 CPU:
 	Brand: Intel
@@ -22,7 +20,7 @@ CPU:
 	Brand: Intel, Type: Core_i9-9900k, Price: 600, Speed: 5000, HT: yes, Socket: LGA1151, Cores: 8 
 
 CPU:
-	Brand: Intel, Type: Core_i9-9900k, Price: 600, Speed: 5000, HT: yes, Socket: LGA1151, Cores: 8 
+	Brand: Intel, Type: Core_i7-6700k, Price: 400, Speed: 4600, HT: yes, Socket: LGA1151, Cores: 4 
 
 GPU:
 	Brand: Nvidia, Type: RTX_2080, Price: 600, ClockSpeed: 2200, VRAM: 12

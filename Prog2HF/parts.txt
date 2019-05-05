@@ -12,3 +12,5 @@ CPU:
 	Brand: Intel, Type: Core_i9-9900k, Price: 600 USD, Base clock: 4200 MHz, Number of Cores: 8, Socket: LGA1151, Supports Hyper-Threading: Yes
 GPU: 
 	Brand: Nvidia, Type: RTX_2080, Price: 600 USD, Base Clock: 2200 MHz, Video Memory: 12 GB
+CPU: 
+	Brand: Intel, Type: Core_i7-6700k, Price: 400 USD, Base clock: 2200 MHz, Number of Cores: 4, Socket: LGA1151, Supports Hyper-Threading: Yes

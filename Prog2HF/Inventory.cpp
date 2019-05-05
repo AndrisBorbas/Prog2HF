@@ -1,62 +1,62 @@
-#include "Inventory.h"
+﻿#include "Inventory.h"
 
-void Inventory::loadPart(std::istream& is, TempInput& tmp, enumPart e) {
+void Inventory::loadPart(std::fstream& is, TempInput& tmp, enumPart e) {
 	switch (e)
 	{
 	case eCPU:
-		LoadParams(is, tmp, 7);
-		this->push_back(new CPU(tmp));
+		loadParams(is, tmp, 7);
+		this->push_back(new CPU(tmp), "CPU");
 #ifdef _DEBUG
-		std::cout << *((*this)[size - 1]) << std::endl;
+		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
 #endif 
 		return;
 	case eGPU:
-		LoadParams(is, tmp, 5);
-		this->push_back(new GPU(tmp));
+		loadParams(is, tmp, 5);
+		this->push_back(new GPU(tmp), "GPU");
 #ifdef _DEBUG
-		std::cout << *((*this)[size - 1]) << std::endl;
+		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
 #endif 
 		return;
 	case eMOBO:
-		LoadParams(is, tmp, 6);
-		this->push_back(new MOBO(tmp));
+		loadParams(is, tmp, 6);
+		this->push_back(new MOBO(tmp), "Motherboard");
 #ifdef _DEBUG
-		std::cout << *((*this)[size - 1]) << std::endl;
+		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
 #endif 
 		return;
 	case eRAM:
-		LoadParams(is, tmp, 5);
-		this->push_back(new RAM(tmp));
+		loadParams(is, tmp, 5);
+		this->push_back(new RAM(tmp), "RAM");
 #ifdef _DEBUG
-		std::cout << *((*this)[size - 1]) << std::endl;
+		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
 #endif 
 		return;
 	case eCase:
-		LoadParams(is, tmp, 4);
-		this->push_back(new Case(tmp));
+		loadParams(is, tmp, 4);
+		this->push_back(new Case(tmp), "Case");
 #ifdef _DEBUG
-		std::cout << *((*this)[size - 1]) << std::endl;
+		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
 #endif 
 		return;
 	case ePSU:
-		LoadParams(is, tmp, 4);
-		this->push_back(new PSU(tmp));
+		loadParams(is, tmp, 4);
+		this->push_back(new PSU(tmp), "Powersupply");
 #ifdef _DEBUG
-		std::cout << *((*this)[size - 1]) << std::endl;
+		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
 #endif 
 		return;
 	case eSSD:
-		LoadParams(is, tmp, 8);
-		this->push_back(new SSD(tmp));
+		loadParams(is, tmp, 8);
+		this->push_back(new SSD(tmp), "SSD");
 #ifdef _DEBUG
-		std::cout << *((*this)[size - 1]) << std::endl;
+		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
 #endif 
 		return;
 	case eHDD:
-		LoadParams(is, tmp, 7);
-		this->push_back(new HDD(tmp));
+		loadParams(is, tmp, 7);
+		this->push_back(new HDD(tmp), "HDD");
 #ifdef _DEBUG
-		std::cout << *((*this)[size - 1]) << std::endl;
+		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
 #endif 
 		return;
 	case eInvalid:
@@ -66,20 +66,87 @@ void Inventory::loadPart(std::istream& is, TempInput& tmp, enumPart e) {
 	return;
 }
 
-void Inventory::saveInventory(std::ostream& os) {
+void Inventory::loadPart(std::istream& is, TempInput& tmp, enumPart e) {
+	switch (e)
+	{
+	case eCPU:
+		std::cout << "CPU selected\n\n";
+		loadCPU(is, tmp);
+		this->push_back(new CPU(tmp), "CPU");
+#ifdef _DEBUG
+		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
+#endif 
+		return;
+	case eGPU:
+		//loadParams(is, tmp, 5);
+		this->push_back(new GPU(tmp), "GPU");
+#ifdef _DEBUG
+		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
+#endif 
+		return;
+	case eMOBO:
+		//loadParams(is, tmp, 6);
+		this->push_back(new MOBO(tmp), "Motherboard");
+#ifdef _DEBUG
+		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
+#endif 
+		return;
+	case eRAM:
+		//loadParams(is, tmp, 5);
+		this->push_back(new RAM(tmp), "RAM");
+#ifdef _DEBUG
+		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
+#endif 
+		return;
+	case eCase:
+		//loadParams(is, tmp, 4);
+		this->push_back(new Case(tmp), "Case");
+#ifdef _DEBUG
+		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
+#endif 
+		return;
+	case ePSU:
+		//loadParams(is, tmp, 4);
+		this->push_back(new PSU(tmp), "Powersupply");
+#ifdef _DEBUG
+		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
+#endif 
+		return;
+	case eSSD:
+		//loadParams(is, tmp, 8);
+		this->push_back(new SSD(tmp), "SSD");
+#ifdef _DEBUG
+		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
+#endif 
+		return;
+	case eHDD:
+		//loadParams(is, tmp, 7);
+		this->push_back(new HDD(tmp), "HDD");
+#ifdef _DEBUG
+		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
+#endif 
+		return;
+	case eInvalid:
+		throw std::logic_error("how did you get here?");
+	}
+	throw std::logic_error("how did you get here?");
+	return;
+}
+
+void Inventory::save(std::ostream& os) {
 	os << std::endl;
 	for (int i = 0; i < size; i++) {
+		///class neve
 		String name = typeid(*(*this)[i]).name();
+		///class szó levétele a class neve elől
 		name.removeFirstX(6);
 		os << name << ": \n\t" << (*(*this)[i]) << std::endl;
 	}
 }
 
-void Inventory::printInventory(std::ostream& os) {
+void Inventory::print(std::ostream& os) {
 	for (int i = 0; i < size; i++) {
-		String name = typeid(*(*this)[i]).name();
-		name.removeFirstX(6);
-		std::cout << i + 101 << ": \t" << name << ": \t" << utos << (*(*this)[i]) << std::endl;
+		os << i + 101 << ": \t" << *(type + i) << ": \t" << utos << (*(*this)[i]) << std::endl;
 	}
 }
 
@@ -87,28 +154,36 @@ void Inventory::removePart(int a) {
 	if (a >= size)return;
 	delete stock[a];
 	size -= 1;
-	for (size_t i = a; i < size; i++){
+	for (int i = a; i < size; i++) {
 		stock[i] = stock[i + 1];
+		*(type + i) = *(type + i + 1);
 	}
 }
 
 template<typename T>
-void Inventory::push_back(T* part) {
-	if (size == capacity) {
+void Inventory::push_back(T* part, String name) {
+	if (size == (int)capacity) {
 		capacity *= 2;
 		Part** temp = new Part * [capacity];
-		for (size_t i = 0; i < size; i++) {
+		for (int i = 0; i < size; i++) {
 			temp[i] = stock[i];
 		}
 		delete[] stock;
 		stock = temp;
+		String* stemp = new String[capacity];
+		for (int i = 0; i < size; i++) {
+			*(stemp + i) = *(type + i);
+		}
+		delete[] type;
+		type = stemp;
 	}
 	stock[size] = part;
+	*(type + size) = name;
 	size++;
 }
 
 
-void setEnum(String inst, enum enumPart& e)
+void setEnumfromString(String inst, enumPart& e)
 {
 	if (inst == "CPU:") {
 		e = eCPU;
@@ -146,7 +221,7 @@ void setEnum(String inst, enum enumPart& e)
 	return;
 }
 
-void LoadParams(std::istream& is, TempInput& tmp, int const params) {
+void loadParams(std::fstream& is, TempInput& tmp, int const params) {
 	int i = 0;
 	while (i < params) {
 		is >> tmp.instruction;
@@ -199,7 +274,8 @@ void LoadParams(std::istream& is, TempInput& tmp, int const params) {
 			i++;
 			continue;
 		}
-		if (tmp.instruction == "Size:" || tmp.instruction == "Memory:" || tmp.instruction == "MemorySize:" || tmp.instruction == "VRAM:" || tmp.instruction == "VideoMemory") {
+		if (tmp.instruction == "Size:" || tmp.instruction == "Memory:" || tmp.instruction == "MemorySize:" ||
+			tmp.instruction == "VRAM:" || tmp.instruction == "VideoMemory") {
 			is >> tmp.size;
 			i++;
 			continue;
@@ -244,4 +320,36 @@ void LoadParams(std::istream& is, TempInput& tmp, int const params) {
 		}
 	}
 	return;
+}
+
+void loadBase(std::istream& is, TempInput& tmp) {
+	std::cout << "Brand: ";
+	is >> tmp.brand;
+	std::cout << "Type: ";
+	is >> tmp.type;
+	std::cout << "Price: ";
+	is >> tmp.price;
+}
+
+void loadCPU(std::istream& is, TempInput& tmp) {
+	loadBase(is, tmp);
+	std::cout << "Clock Speed: ";
+	is >> tmp.clk;
+	std::cout << "Cores: ";
+	is >> tmp.cores;
+	std::cout << "Socket: ";
+	is >> tmp.socket;
+	if (tmp.brand == "Intel")
+		std::cout << "Does it support Hyper-Threading(yes or no): ";
+	else
+		std::cout << "Does it support Simultaneous Multi Threading(yes or no): ";
+	String temp;
+	is >> temp;
+	if (temp[temp.length() - 1] == ',') temp--;
+	if (temp == "yes" || temp == "true" || temp == "1") {
+		tmp.multithreading = true;
+	}
+	if (temp == "no" || temp == "false" || temp == "0") {
+		tmp.multithreading = false;
+	}
 }

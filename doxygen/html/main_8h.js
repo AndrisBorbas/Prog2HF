@@ -13,9 +13,13 @@ var main_8h =
     [ "animate", "main_8h.html#ac83102103dbe7ba03fa00ab462055a6f", null ],
     [ "clearcmd", "main_8h.html#aaa6e5fc0d7c515998e48fe6ae944ca40", null ],
     [ "evaluateCommand", "main_8h.html#aed630b39565f9b935d3148b396fd862d", null ],
+    [ "evaluateInput", "main_8h.html#a0e552edf6cae51d6a38ad105b2c29edb", null ],
+    [ "GotoLine", "main_8h.html#aac067d016b66218b6d8e0578bc214ef0", null ],
     [ "main", "main_8h.html#a3c04138a5bfe5d72780bb7e82a18e627", null ],
     [ "printMain", "main_8h.html#aa8348016f7273e63d47917126e8f9c69", null ],
     [ "printPartsList", "main_8h.html#a54c74422af05849f9d508c0a5ccd468b", null ],
+    [ "removePartHelper", "main_8h.html#a05031fafa43df25734364a97085b66be", null ],
+    [ "saveInventory", "main_8h.html#a5e4e191ea94a60b35aab49d49b978f77", null ],
     [ "saveOrders", "main_8h.html#a91fe9752814ecad7d04d2cf550123d17", null ],
     [ "saveParts", "main_8h.html#ae1fd94f91e6af6d41057704277c9d9e6", null ]
 ];
