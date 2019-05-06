@@ -71,56 +71,63 @@ void Inventory::loadPart(std::istream& is, TempInput& tmp, enumPart e) {
 	{
 	case eCPU:
 		std::cout << "CPU selected\n\n";
-		loadCPU(is, tmp);
+		loadCPUParams(is, tmp);
 		this->push_back(new CPU(tmp), "CPU");
 #ifdef _DEBUG
 		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
 #endif 
 		return;
 	case eGPU:
-		//loadParams(is, tmp, 5);
+		std::cout << "GPU selected\n\n";
+		loadGPUParams(is, tmp);
 		this->push_back(new GPU(tmp), "GPU");
 #ifdef _DEBUG
 		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
 #endif 
 		return;
 	case eMOBO:
-		//loadParams(is, tmp, 6);
+		std::cout << "MOBO selected\n\n";
+		loadMOBOParams(is, tmp);
 		this->push_back(new MOBO(tmp), "Motherboard");
 #ifdef _DEBUG
 		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
 #endif 
 		return;
 	case eRAM:
-		//loadParams(is, tmp, 5);
+		std::cout << "RAM selected\n\n";
+		loadRAMParams(is, tmp);
 		this->push_back(new RAM(tmp), "RAM");
 #ifdef _DEBUG
 		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
 #endif 
 		return;
 	case eCase:
-		//loadParams(is, tmp, 4);
+		std::cout << "Case selected\n\n";
+		loadCaseParams(is, tmp);
 		this->push_back(new Case(tmp), "Case");
 #ifdef _DEBUG
 		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
 #endif 
 		return;
 	case ePSU:
-		//loadParams(is, tmp, 4);
+		std::cout << "PSU selected\n\n";
+		loadPSUParams(is, tmp);
 		this->push_back(new PSU(tmp), "Powersupply");
 #ifdef _DEBUG
 		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
 #endif 
 		return;
 	case eSSD:
-		//loadParams(is, tmp, 8);
+		std::cout << "SSD selected\n\n";
+		loadSSDParams(is, tmp);
 		this->push_back(new SSD(tmp), "SSD");
 #ifdef _DEBUG
 		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
 #endif 
 		return;
 	case eHDD:
-		//loadParams(is, tmp, 7);
+		std::cout << "HDD selected\n\n";
+		loadHDDParams(is, tmp);
 		this->push_back(new HDD(tmp), "HDD");
 #ifdef _DEBUG
 		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
@@ -275,7 +282,7 @@ void loadParams(std::fstream& is, TempInput& tmp, int const params) {
 			continue;
 		}
 		if (tmp.instruction == "Size:" || tmp.instruction == "Memory:" || tmp.instruction == "MemorySize:" ||
-			tmp.instruction == "VRAM:" || tmp.instruction == "VideoMemory") {
+			tmp.instruction == "VRAM:" || tmp.instruction == "VideoMemory" || tmp.instruction == "Capacity:") {
 			is >> tmp.size;
 			i++;
 			continue;
@@ -286,7 +293,7 @@ void loadParams(std::fstream& is, TempInput& tmp, int const params) {
 			i++;
 			continue;
 		}
-		if (tmp.instruction == "FormFactor:") {
+		if (tmp.instruction == "FormFactor:" || tmp.instruction == "Factor:") {
 			is >> tmp.formfactor;
 			if (tmp.formfactor[tmp.formfactor.length() - 1] == ',') tmp.formfactor--;
 			i++;
@@ -297,12 +304,12 @@ void loadParams(std::fstream& is, TempInput& tmp, int const params) {
 			i++;
 			continue;
 		}
-		if (tmp.instruction == "ReadSpeed:" || tmp.instruction == "Speed:") {
+		if (tmp.instruction == "ReadSpeed:") {
 			is >> tmp.readspeed;
 			i++;
 			continue;
 		}
-		if (tmp.instruction == "WriteSpeed:" || tmp.instruction == "Speed:") {
+		if (tmp.instruction == "WriteSpeed:") {
 			is >> tmp.writespeed;
 			i++;
 			continue;
@@ -322,7 +329,7 @@ void loadParams(std::fstream& is, TempInput& tmp, int const params) {
 	return;
 }
 
-void loadBase(std::istream& is, TempInput& tmp) {
+void loadBaseParams(std::istream& is, TempInput& tmp) {
 	std::cout << "Brand: ";
 	is >> tmp.brand;
 	std::cout << "Type: ";
@@ -331,8 +338,8 @@ void loadBase(std::istream& is, TempInput& tmp) {
 	is >> tmp.price;
 }
 
-void loadCPU(std::istream& is, TempInput& tmp) {
-	loadBase(is, tmp);
+void loadCPUParams(std::istream& is, TempInput& tmp) {
+	loadBaseParams(is, tmp);
 	std::cout << "Clock Speed: ";
 	is >> tmp.clk;
 	std::cout << "Cores: ";
@@ -342,7 +349,7 @@ void loadCPU(std::istream& is, TempInput& tmp) {
 	if (tmp.brand == "Intel")
 		std::cout << "Does it support Hyper-Threading(yes or no): ";
 	else
-		std::cout << "Does it support Simultaneous Multi Threading(yes or no): ";
+		std::cout << "Does it support Simultaneous Multithreading(yes or no): ";
 	String temp;
 	is >> temp;
 	if (temp[temp.length() - 1] == ',') temp--;
@@ -352,4 +359,68 @@ void loadCPU(std::istream& is, TempInput& tmp) {
 	if (temp == "no" || temp == "false" || temp == "0") {
 		tmp.multithreading = false;
 	}
+}
+
+void loadGPUParams(std::istream& is, TempInput& tmp) {
+	loadBaseParams(is, tmp);
+	std::cout << "Clock speed: ";
+	is >> tmp.clk;
+	std::cout << "VRAM size: ";
+	is >> tmp.size;
+}
+
+void loadMOBOParams(std::istream& is, TempInput& tmp) {
+	loadBaseParams(is, tmp);
+	std::cout << "Socket: ";
+	is >> tmp.socket;
+	std::cout << "Chipset: ";
+	is >> tmp.chipset;
+	std::cout << "Form factor: ";
+	is >> tmp.formfactor;
+}
+
+void loadRAMParams(std::istream& is, TempInput& tmp) {
+	loadBaseParams(is, tmp);
+	std::cout << "Speed: ";
+	is >> tmp.clk;
+	std::cout << "Size: ";
+	is >> tmp.size;
+}
+
+void loadCaseParams(std::istream& is, TempInput& tmp) {
+	loadBaseParams(is, tmp);
+	std::cout << "Form factor: ";
+	is >> tmp.formfactor;
+}
+
+void loadPSUParams(std::istream& is, TempInput& tmp) {
+	loadBaseParams(is, tmp);
+	std::cout << "Wattage: ";
+	is >> tmp.wattage;
+}
+
+void loadSSDParams(std::istream& is, TempInput& tmp) {
+	loadBaseParams(is, tmp);
+	std::cout << "Capacity: ";
+	is >> tmp.size;
+	std::cout << "Read speed: ";
+	is >> tmp.readspeed;
+	std::cout << "Write speed: ";
+	is >> tmp.writespeed;
+	std::cout << "Form factor: ";
+	is >> tmp.formfactor;
+	std::cout << "Flash layers: ";
+	is >> tmp.flashtype;
+}
+
+void loadHDDParams(std::istream& is, TempInput& tmp) {
+	loadBaseParams(is, tmp);
+	std::cout << "Capacity: ";
+	is >> tmp.size;
+	std::cout << "Read speed: ";
+	is >> tmp.readspeed;
+	std::cout << "Write speed: ";
+	is >> tmp.writespeed;
+	std::cout << "RPM: ";
+	is >> tmp.rpm;
 }

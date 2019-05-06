@@ -87,11 +87,11 @@ void PSU::print(utos_ostream& tos)const {
 
 void Storage::print(std::ostream& os)const {
 	Part::print(os);
-	os << "Capacity: " << size << " GB, Random Read Speed: " << readspeed << " MB/s, Random Write Speed: " << writespeed << " MB/s";
+	os << "Capacity: " << size << " GB, ReadSpeed: " << readspeed << " MB/s, WriteSpeed: " << writespeed << " MB/s, ";
 }
 void Storage::print(utos_ostream& tos)const {
 	Part::print(tos);
-	tos.os << "Capacity: " << size << " GB, Random Read Speed: " << readspeed << " MB/s, Random Write Speed: " << writespeed << " MB/s";
+	tos.os << "Capacity: " << size << " GB, ReadSpeed: " << readspeed << " MB/s, WriteSpeed: " << writespeed << " MB/s, ";
 }
 
 void SSD::print(std::ostream& os)const {

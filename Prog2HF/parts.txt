@@ -5,12 +5,68 @@ Variables are following them after a whitespace and they can end with an optiona
 Variables can come in any order but none can miss for a particular part.
 
 CPU: 
-	Brand: Intel, Type: Core_i7-4790, Price: 300 USD, Base clock: 3600 MHz, Number of Cores: 4, Socket: LGA1151, Supports Hyper-Threading: Yes
+	Brand: AMD, Type: Ryzen_7_2700X, Price: 300 USD, Base clock: 4300 MHz, Number of Cores: 8, Socket: AM4, Supports Simultaneous Multithreading: Yes
 CPU: 
-	Brand: AMD, Type: Ryzen7_2700, Price: 500 USD, Base clock: 4000 MHz, Number of Cores: 8, Socket: AM4, Supports Simultaneous Multithreading: Yes
+	Brand: AMD, Type: Ryzen_5_2600, Price: 170 USD, Base clock: 3400 MHz, Number of Cores: 6, Socket: AM4, Supports Simultaneous Multithreading: Yes
 CPU: 
-	Brand: Intel, Type: Core_i9-9900k, Price: 600 USD, Base clock: 4200 MHz, Number of Cores: 8, Socket: LGA1151, Supports Hyper-Threading: Yes
+	Brand: AMD, Type: Ryzen_5_2400G, Price: 150 USD, Base clock: 3900 MHz, Number of Cores: 4, Socket: AM4, Supports Simultaneous Multithreading: Yes
+CPU: 
+	Brand: Intel, Type: Core_i9-9900K, Price: 500 USD, Base clock: 5000 MHz, Number of Cores: 8, Socket: LGA1151, Supports Hyper-Threading: Yes
+CPU: 
+	Brand: Intel, Type: Core_i7-9700K, Price: 420 USD, Base clock: 4900 MHz, Number of Cores: 8, Socket: LGA1151, Supports Hyper-Threading: Yes
+CPU: 
+	Brand: Intel, Type: Core_i5-9600K, Price: 275 USD, Base clock: 4600 MHz, Number of Cores: 6, Socket: LGA1151, Supports Hyper-Threading: No
+CPU: 
+	Brand: Intel, Type: Core_i5-9400F, Price: 160 USD, Base clock: 4100 MHz, Number of Cores: 6, Socket: LGA1151, Supports Hyper-Threading: No
 GPU: 
-	Brand: Nvidia, Type: RTX_2080, Price: 600 USD, Base Clock: 2200 MHz, Video Memory: 12 GB
-CPU: 
-	Brand: Intel, Type: Core_i7-6700k, Price: 400 USD, Base clock: 2200 MHz, Number of Cores: 4, Socket: LGA1151, Supports Hyper-Threading: Yes
+	Brand: Nvidia, Type: GeForce_RTX_2080_Ti, Price: 1300 USD, Base Clock: 1515 MHz, Video Memory: 11 GB
+GPU: 
+	Brand: Nvidia, Type: GeForce_RTX_2080, Price: 750 USD, Base Clock: 1350 MHz, Video Memory: 8 GB
+GPU: 
+	Brand: Nvidia, Type: GeForce_RTX_2070, Price: 500 USD, Base Clock: 1410 MHz, Video Memory: 8 GB
+GPU: 
+	Brand: Nvidia, Type: GeForce_RTX_2060, Price: 360 USD, Base Clock: 1250 MHz, Video Memory: 6 GB
+GPU: 
+	Brand: Nvidia, Type: GeForce_GTX_1660_Ti, Price: 280 USD, Base Clock: 1500 MHz, Video Memory: 6 GB
+GPU: 
+	Brand: AMD, Type: Radeon_RX_570, Price: 140 USD, Base Clock: 1160 MHz, Video Memory: 4 GB
+GPU: 
+	Brand: AMD, Type: Radeon_RX_580, Price: 170 USD, Base Clock: 1250 MHz, Video Memory: 8 GB
+GPU: 
+	Brand: AMD, Type: Radeon_RX_590, Price: 240 USD, Base Clock: 1560 MHz, Video Memory: 8 GB
+GPU: 
+	Brand: AMD, Type: Radeon_RX_VEGA_56, Price: 300 USD, Base Clock: 1200 MHz, Video Memory: 8 GB
+GPU: 
+	Brand: AMD, Type: Radeon_RX_VEGA_64, Price: 550 USD, Base Clock: 1330 MHz, Video Memory: 8 GB
+MOBO: 
+	Brand: Asus, Type: Prime_Z390-A, Price: 190 USD, Socket: LGA1151, Chipset: Z390, Form factor: ATX
+MOBO: 
+	Brand: Asus, Type: ROG_STRIX_Z390-E, Price: 230 USD, Socket: LGA1151, Chipset: Z390, Form factor: ATX
+MOBO: 
+	Brand: Asus, Type: Prime_A320M-K, Price: 65 USD, Socket: AM4, Chipset: A320, Form factor: Mini_ITX
+MOBO: 
+	Brand: Asus, Type: ROG_STRIX_B450-F, Price: 120 USD, Socket: AM4, Chipset: B450, Form factor: ATX
+RAM: 
+	Brand: G.Skill, Type: Trident_Z_RGB, Price: 120 USD, Base Clock: 3200, Memory: 16 GB
+RAM: 
+	Brand: Corsair, Type: Vengeance_LPX, Price: 90 USD, Base Clock: 3000, Memory: 16 GB
+Case: 
+	Brand: NZXT, Type: H500, Price: 70 USD, Form factor: ATX
+Case: 
+	Brand: Corsair, Type: 200R, Price: 50 USD, Form factor: ATX
+Case: 
+	Brand: Corsair, Type: Crystal_570X_RGB, Price: 160 USD, Form factor: ATX
+Case: 
+	Brand: Corsair, Type: 750D, Price: 140 USD, Form factor: EATX
+PSU: 
+	Brand: Corsair, Type: CX550M, Price: 60 USD, Wattage: 550 W
+PSU: 
+	Brand: EVGA, Type: SuperNOVA_750, Price: 115 USD, Wattage: 750 W
+PSU: 
+	Brand: SeaSonic, Type: FOCUS_Plus_650_Gold, Price: 85 USD, Wattage: 650 W
+SSD: 
+	Brand: Samsung, Type: 860_Evo, Price: 80 USD, Capacity: 500 GB, ReadSpeed: 476 MB/s, WriteSpeed: 447 MB/s, Form factor: 2.5", Flash: TLC
+SSD: 
+	Brand: Samsung, Type: 970_Evo, Price: 150 USD, Capacity: 500 GB, ReadSpeed: 2200 MB/s, WriteSpeed: 2000 MB/s, Form factor: M.2, Flash: TLC
+HDD: 
+	Brand: Western_Digital, Type: WD10EZEX, Price: 45 USD, Capacity: 1000 GB, ReadSpeed: 154 MB/s, WriteSpeed: 140 MB/s, RPM: 7200 rpm

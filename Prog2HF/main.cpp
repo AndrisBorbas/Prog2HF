@@ -58,6 +58,8 @@ int main(int argc, char** argv)
 	}
 
 
+
+
 	/*
 	String slist = "1,2,3,4,5,6,7,8,9;";
 	CompatibilityList intellist(slist);
@@ -78,6 +80,8 @@ int main(int argc, char** argv)
 		test5(asd, "CPU");
 	}
 
+	Build first;
+
 	//system("pause");
 
 	animate();
@@ -92,7 +96,10 @@ int main(int argc, char** argv)
 			printPartsList(inventory);
 			break;
 		case ePartsAdd:
-			addPartHelper(inventory, tmp, eP);
+			if (-1 == addPartHelper(inventory, tmp, eP)) {
+				eM = eMain;
+				continue;
+			}
 			break;
 		case ePartsRemove:
 			if (-1 == removePartHelper(inventory)) {
@@ -128,13 +135,13 @@ void printPartsList(Inventory& inventory) {
 	std::cout << "\n1: Return\n";
 }
 
-void addPartHelper(Inventory& inventory, TempInput& tmp, enum enumPart& eP) {
+int addPartHelper(Inventory& inventory, TempInput& tmp, enum enumPart& eP) {
 	clearcmd();
 	std::cout << "Type in the number of the type of part you want to add (or 1 to return to menu): \n";
 	std::cout << "101: CPU\n102: GPU\n103: Motherboard\n104: RAM\n105: Case\n106: PSU\n107: SSD\n108: HDD\n\n";
 	int a;
 	std::cin >> a;
-	if (a == 1)return;
+	if (a == 1)return -1;
 	clearcmd();
 	a -= 100;
 	setEnumfromInt(a, eP);
@@ -142,6 +149,7 @@ void addPartHelper(Inventory& inventory, TempInput& tmp, enum enumPart& eP) {
 		inventory.loadPart(std::cin, tmp, eP);
 		std::cout << "1: Return\n";
 	}
+	return 0;
 }
 
 int removePartHelper(Inventory& inventory) {

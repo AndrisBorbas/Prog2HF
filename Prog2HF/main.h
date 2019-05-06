@@ -63,7 +63,7 @@ void printPartsList(Inventory&);
 void setEnumfromInt(int a, enumPart& eP);
 
 ///új alkatrészt tölt be console inputról
-void addPartHelper(Inventory&, TempInput&, enumPart&);
+int addPartHelper(Inventory&, TempInput&, enumPart&);
 
 ///törli a kiválasztott alkatrészt
 int removePartHelper(Inventory&);

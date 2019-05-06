@@ -100,7 +100,7 @@ class MOBO : public Part {
 public:
 	explicit MOBO(String brand, String type, int price, String socket, String chipset, String formfactor) : Part(brand, type, price),
 		socket(socket), chipset(chipset), formfactor(formfactor) {}
-	explicit MOBO(TempInput tmp) :Part(tmp.brand, tmp.type, tmp.price), socket(tmp.socket), chipset(tmp.chipset), formfactor(tmp.formfactor) {}
+	explicit MOBO(TempInput & tmp) :Part(tmp.brand, tmp.type, tmp.price), socket(tmp.socket), chipset(tmp.chipset), formfactor(tmp.formfactor) {}
 
 	void print(std::ostream& os) const;
 	void print(utos_ostream& tos) const;
@@ -117,7 +117,7 @@ class RAM : public Part {
 	int size;	
 public:
 	explicit RAM(String brand, String type, int price, int clk, int size) : Part(brand, type, price), clk(clk), size(size) {}
-	explicit RAM(TempInput tmp) :Part(tmp.brand, tmp.type, tmp.price), clk(tmp.clk), size(tmp.size) {}
+	explicit RAM(TempInput & tmp) :Part(tmp.brand, tmp.type, tmp.price), clk(tmp.clk), size(tmp.size) {}
 
 	void print(std::ostream& os) const;
 	void print(utos_ostream& tos) const;
@@ -133,7 +133,7 @@ class Case : public Part {
 	String formfactor;	
 public:
 	explicit Case(String brand, String type, int price, String formfactor) : Part(brand, type, price), formfactor(formfactor) {}
-	explicit Case(TempInput tmp) :Part(tmp.brand, tmp.type, tmp.price), formfactor(tmp.formfactor) {}
+	explicit Case(TempInput & tmp) :Part(tmp.brand, tmp.type, tmp.price), formfactor(tmp.formfactor) {}
 
 	void print(std::ostream& os) const;
 	void print(utos_ostream& tos) const;
@@ -149,7 +149,7 @@ class PSU : public Part {
 	int wattage;		
 public:
 	explicit PSU(String brand, String type, int price, int wattage) : Part(brand, type, price), wattage(wattage) {}
-	explicit PSU(TempInput tmp) :Part(tmp.brand, tmp.type, tmp.price), wattage(tmp.wattage) {}
+	explicit PSU(TempInput & tmp) :Part(tmp.brand, tmp.type, tmp.price), wattage(tmp.wattage) {}
 
 	void print(std::ostream& os) const;
 	void print(utos_ostream& tos) const;
@@ -186,7 +186,7 @@ class SSD : public Storage {
 public:
 	explicit SSD(String brand, String type, int price, int size, int readspeed, int writespeed, String formfactor, String flashtype) :
 		Storage(brand, type, price, size, readspeed, writespeed), formfactor(formfactor), flashtype(flashtype) {}
-	explicit SSD(TempInput tmp) :Storage(tmp.brand, tmp.type, tmp.price, tmp.size, tmp.readspeed, tmp.writespeed), formfactor(tmp.formfactor), flashtype(tmp.flashtype) {}
+	explicit SSD(TempInput & tmp) :Storage(tmp.brand, tmp.type, tmp.price, tmp.size, tmp.readspeed, tmp.writespeed), formfactor(tmp.formfactor), flashtype(tmp.flashtype) {}
 
 	void print(std::ostream& os) const;
 	void print(utos_ostream& tos) const;
@@ -203,7 +203,7 @@ class HDD : public Storage {
 public:
 	explicit HDD(String brand, String type, int price, int size, int readspeed, int writespeed, int rpm) :
 		Storage(brand, type, price, size, readspeed, writespeed), rpm(rpm) {}
-	explicit HDD(TempInput tmp) :Storage(tmp.brand, tmp.type, tmp.price, tmp.size, tmp.readspeed, tmp.writespeed), rpm(tmp.rpm) {}
+	explicit HDD(TempInput & tmp) :Storage(tmp.brand, tmp.type, tmp.price, tmp.size, tmp.readspeed, tmp.writespeed), rpm(tmp.rpm) {}
 
 	void print(std::ostream& os) const;
 	void print(utos_ostream& tos) const;

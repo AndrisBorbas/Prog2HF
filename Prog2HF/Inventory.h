@@ -72,6 +72,20 @@ void setEnumfromString(String inst, enumPart&);
 ///Jelölőkk alapján betölti az alkatrész paramétereit
 void loadParams(std::fstream& is, TempInput& tmp, int const params);
 
-void loadBase(std::istream& is, TempInput& tmp);
+void loadBaseParams(std::istream& is, TempInput& tmp);
 
-void loadCPU(std::istream& is, TempInput& tmp);
+void loadCPUParams(std::istream& is, TempInput& tmp);
+
+void loadGPUParams(std::istream& is, TempInput& tmp);
+
+void loadMOBOParams(std::istream& is, TempInput& tmp);
+
+void loadRAMParams(std::istream& is, TempInput& tmp);
+
+void loadCaseParams(std::istream& is, TempInput& tmp);
+
+void loadPSUParams(std::istream& is, TempInput& tmp);
+
+void loadSSDParams(std::istream& is, TempInput& tmp);
+
+void loadHDDParams(std::istream& is, TempInput& tmp);
