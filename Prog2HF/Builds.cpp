@@ -7,7 +7,12 @@ void Build::save(std::ostream& os) const {
 		///class neve
 		String name = typeid(*(*this)[i]).name();
 		///class szó levétele a class neve elől
+#ifdef _MSC_VER
 		name.removeFirstX(6);
+#endif
+#ifndef _MSC_VER
+		name.removeFirstX(1);
+#endif
 		os << name << ": \n\t" << typ << (*(*this)[i]) << std::endl;
 	}
 }
@@ -17,7 +22,12 @@ void Build::print(std::ostream& os) const {
 		///class neve
 		String name = typeid(*(*this)[i]).name();
 		///class szó levétele a class neve elől
+#ifdef _MSC_VER
 		name.removeFirstX(6);
+#endif
+#ifndef _MSC_VER
+		name.removeFirstX(1);
+#endif
 		os << "\t" << name << ": \t" << simple << (*(*this)[i]) << std::endl;
 	}
 	os << "\nTotal price: " << price << "USD";

@@ -146,7 +146,12 @@ void Inventory::save(std::ostream& os) {
 		///class neve
 		String name = typeid(*(*this)[i]).name();
 		///class szó levétele a class neve elől
+#ifdef _MSC_VER
 		name.removeFirstX(6);
+#endif
+#ifndef _MSC_VER
+		name.removeFirstX(1);
+#endif
 		os << name << ": \n\t" << (*(*this)[i]) << std::endl;
 	}
 }
