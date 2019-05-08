@@ -56,7 +56,7 @@ const char& String::operator[](unsigned int idx) const {
 void String::removeFirstX(int x) {
 	len = len - x;
 	char* temp = new char[len + 1];
-	for (int i = 0; i < len; i++) {
+	for (unsigned int i = 0; i < len; i++) {
 		temp[i] = pData[i + x];
 	}
 	temp[len] = '\0';
@@ -74,7 +74,19 @@ String String::operator+(const String& rhs_s) const {
 	return temp;
 }
 
-bool String::operator==(String& rhs_s) {
+bool String::operator==(String& rhs_s) const {
+	char* tempr = new char[rhs_s.length() + 1];
+	strcpy(tempr, rhs_s.c_str());
+	stolower(tempr);
+	char* templ = new char[len + 1];
+	strcpy(templ, pData);
+	stolower(templ);
+	bool temp = strcmp(templ, tempr);
+	delete[] tempr;
+	delete[] templ;
+	return (!temp);
+}
+bool String::operator==(const String& rhs_s) const {
 	char* tempr = new char[rhs_s.length() + 1];
 	strcpy(tempr, rhs_s.c_str());
 	stolower(tempr);
@@ -149,7 +161,7 @@ std::istream& operator>>(std::istream& is, String& s0) {
 std::ostream& operator<<(utos_ostream tos, const String& s0) {
 	char* temp = new char[s0.length() + 1];
 	strcpy(temp, s0.c_str());
-	for (int i = 0; i < s0.length(); i++) {
+	for (unsigned int i = 0; i < s0.length(); i++) {
 		if (temp[i] == '_')temp[i] = ' ';
 	}
 	tos.os << temp;

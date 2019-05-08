@@ -3,30 +3,17 @@
 #include "Parts.h"
 #include <fstream>
 
-///Betöltéshez segítő
-enum enumPart {
-	eInvalid = 0,
-	eCPU = 1,
-	eGPU = 2,
-	eMOBO = 3,
-	eRAM = 4,
-	eCase = 5,
-	ePSU = 6,
-	eSSD = 7,
-	eHDD = 8
-};
-
 ///Alkatrész tároló
 class Inventory {
 	///Raktár
 	Part** stock;		///kapacitás
 	size_t capacity;	///méret
 	int size;			///milyen típusú alkatrész
-	String * type;
+	String* type;
 public:
 	Inventory(size_t capacity = 1) :capacity(capacity), size(0) {
 		stock = new Part * [capacity];
-		type = new String [capacity];
+		type = new String[capacity];
 	}
 	~Inventory() {
 		for (int i = 0; i < size; i++) {
@@ -40,6 +27,10 @@ public:
 		return size;
 	}
 
+	String get_type(int i) {
+		return *(type + i);
+	}
+
 	///Betölt egy alkatrészt fájlból
 	void loadPart(std::fstream& is, TempInput& tmp, enumPart);
 	///Betölt egy alkatrészt terminalból
@@ -49,10 +40,13 @@ public:
 	void save(std::ostream& os);
 
 	///Raktár kiírása egy streamre
-	void print(std::ostream& os);
+	void print(std::ostream& os, const String& test = "-1");
 
 	///Egy alkatrész kitörlése a raktárból
-	void removePart(int a);
+	void remove(int idx);
+
+	///Megkeres egy alkatrészt a típusa alapján és visszaadja az indexét
+	int findbyType(const String& s0) const;
 
 	///Egy alkatrész hozzáadása a raktárhoz
 	template<typename T>
@@ -65,9 +59,6 @@ public:
 		return stock[idx];
 	}
 };
-
-///Enumot állít be gy stringből
-void setEnumfromString(String inst, enumPart&);
 
 ///Jelölőkk alapján betölti az alkatrész paramétereit
 void loadParams(std::fstream& is, TempInput& tmp, int const params);

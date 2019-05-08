@@ -28,8 +28,9 @@
 //#include "Compatibility.h"
 #include "Parts.h"
 #include "Inventory.h"
-#include "atest.h"
 #include "Builds.h"
+
+#include "atest.h"
 
 ///menü almenüi
 enum enumMenu {
@@ -39,13 +40,19 @@ enum enumMenu {
 	ePartsRemove = 13,
 	eBuildsList = 21,
 	eBuildsAdd = 22,
+	eBuildsComplete = 23,
+	eBuildsRemove = 24,
 	eExit = 9
 };
 
 int main(int argc, char** argv);
 
+///kiírja a megrendeléseket
+void printOrdersList(Orders& orders);
+
 ///elmenti a program módosításait
-void save(std::fstream&, std::fstream&, Inventory&, std::streampos&, const char*, const char*);
+template <typename T>
+void save(std::fstream&, std::fstream&, T&, std::streampos&, const char*, const char*);
 
 ///csinál egy sor animációt
 void animate(char c = '~');
@@ -66,16 +73,27 @@ void setEnumfromInt(int a, enumPart& eP);
 int addPartHelper(Inventory&, TempInput&, enumPart&);
 
 ///törli a kiválasztott alkatrészt
-int removePartHelper(Inventory&);
+void removePartHelper(Inventory&);
+
+///egy configot lehet csinálni vele
+void addBuildHelper(Orders& orders, Inventory& inventory);
+
+///konfighoz választ alkatrészt
+int partSelector(Inventory& inventory, const char* type);
+
+void completeOrderHelper(Orders& orders);
+
+void removeOrderHelper(Orders& orders);
 
 ///átalakítja a beírt számot indexelővé
-int evaluateInput(Inventory&);
+template <typename T>
+int evaluateInput(T&);
 
 ///fájlba menti az alkatrészeket
 void saveParts(const Inventory&);
 
 ///fájlba menti a megrendeléseket
-void saveOrders(const Orders&);
+//void saveOrders(const Orders&);
 
 ///n edik sorra ugrik egy file streamben
 inline std::fstream& GotoLine(std::fstream& file, unsigned int n) {

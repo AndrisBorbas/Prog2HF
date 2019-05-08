@@ -29,14 +29,21 @@ int main(int argc, char** argv)
 	test1(ordersTempFile, "orderstemp.tmp");
 
 	///első 5 sor átmásolása
-	for (int i = 0; i < 5; i++) {
+	for (int i = 0; i < 6; i++) {
 		char temp[256];
 		partsFile.getline(temp, 255);
 		partsTempFile << temp << std::endl;
 	}
+	for (int i = 0; i < 6; i++) {
+		char temp[256];
+		ordersFile.getline(temp, 255);
+		ordersTempFile << temp << std::endl;
+	}
 
 	///pozíció mentése kiíráshoz
-	std::streampos pos = partsTempFile.tellg();
+	std::streampos partsPos = partsTempFile.tellg();
+	///pozíció mentése kiíráshoz
+	std::streampos ordersPos = ordersTempFile.tellg();
 
 	enumPart eP = eInvalid;
 	enumMenu eM = eMain;
@@ -57,7 +64,14 @@ int main(int argc, char** argv)
 		}
 	}
 
-
+	while (ordersFile >> tmp.instruction) {
+#ifdef _DEBUG
+		std::cout << tmp.instruction << std::endl;
+#endif
+		if (tmp.instruction[tmp.instruction.length() - 1] == ':') {
+			orders.load(ordersFile, inventory, tmp);
+		}
+	}
 
 
 	/*
@@ -80,11 +94,9 @@ int main(int argc, char** argv)
 		test5(asd, "CPU");
 	}
 
-	Build first;
-
-	//system("pause");
-
+#if defined(_DEBUG) || defined(NDEBUG)
 	animate();
+#endif
 
 	while (!(eM == eExit)) {
 		switch (eM)
@@ -102,16 +114,24 @@ int main(int argc, char** argv)
 			}
 			break;
 		case ePartsRemove:
-			if (-1 == removePartHelper(inventory)) {
-				eM = eMain;
-				continue;
-			}
-			break;
+			removePartHelper(inventory);
+			eM = eMain;
+			continue;
 		case eBuildsList:
-			clearcmd();
+			printOrdersList(orders);
 			break;
 		case eBuildsAdd:
-			clearcmd();
+			addBuildHelper(orders, inventory);
+			eM = eMain;
+			continue;
+		case eBuildsComplete:
+			completeOrderHelper(orders);
+			eM = eMain;
+			continue;
+		case eBuildsRemove:
+			removeOrderHelper(orders);
+			eM = eMain;
+			continue;
 			break;
 		case eExit:
 			break;
@@ -120,18 +140,25 @@ int main(int argc, char** argv)
 		evaluateCommand(eM);
 	}
 
-	save(partsTempFile, partsFile, inventory, pos, partsfilename, "partstemp.tmp");
+	save(partsTempFile, partsFile, inventory, partsPos, partsfilename, "partstemp.tmp");
+	save(ordersTempFile, ordersFile, orders, ordersPos, ordersfilename, "orderstemp.tmp");
 	return 0;
 }
 
 void printMain() {
 	clearcmd();
-	std::cout << "11: Print all loaded parts \n12: Add new part \n13: Remove part \n\n21: Print a build \n22: Create new build \n\n9: Save&Exit\n";
+	std::cout << "11: Print all loaded parts \n12: Add new part \n13: Remove part \n\n21: Print all orders \n22: Create new order \n23: Mark order as completed \n24: Remove order \n\n9: Save&Exit\n";
 }
 
 void printPartsList(Inventory& inventory) {
 	clearcmd();
 	inventory.print(std::cout);
+	std::cout << "\n1: Return\n";
+}
+
+void printOrdersList(Orders& orders) {
+	clearcmd();
+	std::cout << orders;
 	std::cout << "\n1: Return\n";
 }
 
@@ -152,26 +179,101 @@ int addPartHelper(Inventory& inventory, TempInput& tmp, enum enumPart& eP) {
 	return 0;
 }
 
-int removePartHelper(Inventory& inventory) {
+void removePartHelper(Inventory& inventory) {
 	clearcmd();
 	while (true) {
 		inventory.print(std::cout);
 		std::cout << "\nType in the number of the part you want to remove (or 1 to return to menu): ";
 		int a = evaluateInput(inventory);
 		if (a == -1) {
-			return -1;
+			return;
 		}
-		inventory.removePart(a);
+		inventory.remove(a);
 		clearcmd();
 		std::cout << "Part removed\n\n";
 	}
-	return 0;
+	return;
 }
 
-void save(std::fstream& tempFile, std::fstream& origFile, Inventory& inventory, std::streampos& pos, const char* filename, const char* tempfilename) {
+void addBuildHelper(Orders& orders, Inventory& inventory) {
+	clearcmd();
+	Build* temp = new Build;
+	temp->push_back(inventory[partSelector(inventory, "CPU")]);
+	temp->push_back(inventory[partSelector(inventory, "Graphics Card")]);
+	temp->push_back(inventory[partSelector(inventory, "Motherboard")]);
+	temp->push_back(inventory[partSelector(inventory, "RAM")]);
+	temp->push_back(inventory[partSelector(inventory, "Case")]);
+	temp->push_back(inventory[partSelector(inventory, "Powersupply")]);
+	bool once = true;
+	while (true) {
+		std::cout << "Select storage: \n\n";
+		inventory.print(std::cout, "SSD");
+		inventory.print(std::cout, "HDD");
+		int a;
+		std::cin >> a;
+		a -= 101;
+		clearcmd();
+		std::cout << "Selected: " << simple << *(inventory[a]) << "\n\n";
+		temp->push_back(inventory[a]);
+		if (once) {
+			orders.push_back(temp);
+			once = false;
+		}
+		std::cout << "Order Registered:\n";
+		std::cout << *(orders[orders.get_size() - 1]);
+
+		std::cout << "\n2: Add more storage\n1 : Return\n";
+		std::cin >> a;
+		clearcmd();
+		if (a == 1 || a == 9)return;
+	}
+	return;
+}
+
+int partSelector(Inventory& inventory, const char* type) {
+	std::cout << "Select a " << type << ": \n\n";
+	inventory.print(std::cout, type);
+	std::cout << std::endl;
+	int a;
+	std::cin >> a;
+	a -= 101;
+	clearcmd();
+	std::cout << "Selected: " << simple << *(inventory[a]) << "\n\n";
+	return a;
+}
+
+void completeOrderHelper(Orders& orders) {
+	clearcmd();
+	while (true) {
+		std::cout << simple << orders;
+		std::cout << "\nType in the number of the order you want to mark as completed (or 1 to return to menu): ";
+		int a = evaluateInput(orders);
+		if (a == -1)return;
+		clearcmd();
+		orders.complete(a);
+	}
+}
+
+void removeOrderHelper(Orders& orders) {
+	clearcmd();
+	while (true) {
+		std::cout << simple << orders;
+		std::cout << "\nType in the number of the order you want to remove (or 1 to return to menu): ";
+		int a = evaluateInput(orders);
+		if (a == -1) {
+			return;
+		}
+		orders.remove(a);
+		clearcmd();
+		std::cout << "Order removed\n\n";
+	}
+}
+
+template <typename T>
+void save(std::fstream& tempFile, std::fstream& origFile, T& classwithsavefunc, std::streampos& pos, const char* filename, const char* tempfilename) {
 	tempFile.clear();
 	tempFile.seekp(pos, std::ios_base::beg);
-	inventory.save(tempFile);
+	classwithsavefunc.save(tempFile);
 	origFile.close();
 	tempFile.close();
 	remove(filename);
@@ -182,30 +284,34 @@ void animate(char c) {
 	std::cout << std::endl;
 	for (int i = 0; i < 100; i++) {
 		std::cout << c;
-		std::this_thread::sleep_for(std::chrono::milliseconds(20));
+		std::this_thread::sleep_for(std::chrono::milliseconds(15));
 	}
-	std::cout << std::endl;
+	std::cout << std::endl << "\n\t\t\t\tFully loaded\n\n";
+	std::this_thread::sleep_for(std::chrono::milliseconds(999));
 }
 
-int evaluateInput(Inventory& inventory) {
-	int a;
-	while (std::cin >> a) {
-		if (a == 1) return -1;
-		if (a < 101) {
+template <typename T>
+int evaluateInput(T& classwithsize) {
+	int idx;
+	while (std::cin >> idx) {
+		if (idx == 1) return -1;
+		if (idx < 101) {
 			std::cout << "\nNumber too small.\nTry again: ";
 			continue;
 		}
-		if ((a - 101) > inventory.get_size()) {
+		if ((idx - 101) > classwithsize.get_size()) {
 			std::cout << "\nNumber too big.\nTry again: ";
 			continue;
 		}
-		return a - 101;
+		return idx - 101;
 	}
+	return -1;
 }
 
 void evaluateCommand(enum enumMenu& eM) {
 	int cv;
-	while (std::cin >> cv) {
+	while (!std::cin.eof()) {
+		std::cin >> cv;
 		switch (cv) {
 		case 1:
 			eM = eMain;
@@ -225,6 +331,12 @@ void evaluateCommand(enum enumMenu& eM) {
 		case 22:
 			eM = eBuildsAdd;
 			return;
+		case 23:
+			eM = eBuildsComplete;
+			return;
+		case 24:
+			eM = eBuildsRemove;
+			return;
 		case 9:
 			eM = eExit;
 			return;
@@ -233,6 +345,8 @@ void evaluateCommand(enum enumMenu& eM) {
 		}
 		std::cout << "Invalid command: " << cv << "\nTry again: ";
 	}
+	eM = eExit;
+	return;
 }
 
 void setEnumfromInt(int a, enumPart& eP) {

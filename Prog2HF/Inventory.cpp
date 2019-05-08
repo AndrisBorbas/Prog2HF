@@ -12,7 +12,7 @@ void Inventory::loadPart(std::fstream& is, TempInput& tmp, enumPart e) {
 		return;
 	case eGPU:
 		loadParams(is, tmp, 5);
-		this->push_back(new GPU(tmp), "GPU");
+		this->push_back(new GPU(tmp), "Graphics Card");
 #ifdef _DEBUG
 		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
 #endif 
@@ -80,7 +80,7 @@ void Inventory::loadPart(std::istream& is, TempInput& tmp, enumPart e) {
 	case eGPU:
 		std::cout << "GPU selected\n\n";
 		loadGPUParams(is, tmp);
-		this->push_back(new GPU(tmp), "GPU");
+		this->push_back(new GPU(tmp), "Graphics Card");
 #ifdef _DEBUG
 		std::cout << "Part loaded: " << *((*this)[size - 1]) << std::endl;
 #endif 
@@ -151,20 +151,34 @@ void Inventory::save(std::ostream& os) {
 	}
 }
 
-void Inventory::print(std::ostream& os) {
+void Inventory::print(std::ostream& os, const String& test) {
 	for (int i = 0; i < size; i++) {
-		os << i + 101 << ": \t" << *(type + i) << ": \t" << utos << (*(*this)[i]) << std::endl;
+		if (test == "-1") {
+			os << i + 101 << ": \t" << *(type + i) << ": \t" << utos << (*(*this)[i]) << std::endl;
+		}
+		else {
+			if ((this->get_type(i)) == test) {
+				os << i + 101 << ": \t" << simple << (*(*this)[i]) << std::endl;
+			}
+		}
 	}
 }
 
-void Inventory::removePart(int a) {
-	if (a >= size)return;
-	delete stock[a];
+void Inventory::remove(int idx) {
+	if (idx >= size)return;
+	delete stock[idx];
 	size -= 1;
-	for (int i = a; i < size; i++) {
+	for (int i = idx; i < size; i++) {
 		stock[i] = stock[i + 1];
 		*(type + i) = *(type + i + 1);
 	}
+}
+
+int Inventory::findbyType(const String& s0) const{
+	for (int i = 0; i < size; i++){
+		if ((stock[i]->get_type()) == s0)return i;
+	}
+	return -1;
 }
 
 template<typename T>
@@ -189,44 +203,6 @@ void Inventory::push_back(T* part, String name) {
 	size++;
 }
 
-
-void setEnumfromString(String inst, enumPart& e)
-{
-	if (inst == "CPU:") {
-		e = eCPU;
-		return;
-	}
-	if (inst == "GPU:") {
-		e = eGPU;
-		return;
-	}
-	if (inst == "MOBO:") {
-		e = eMOBO;
-		return;
-	}
-	if (inst == "RAM:") {
-		e = eRAM;
-		return;
-	}
-	if (inst == "Case:") {
-		e = eCase;
-		return;
-	}
-	if (inst == "PSU:") {
-		e = ePSU;
-		return;
-	}
-	if (inst == "SSD:") {
-		e = eSSD;
-		return;
-	}
-	if (inst == "HDD:") {
-		e = eHDD;
-		return;
-	}
-	e = eInvalid;
-	return;
-}
 
 void loadParams(std::fstream& is, TempInput& tmp, int const params) {
 	int i = 0;

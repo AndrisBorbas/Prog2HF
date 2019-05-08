@@ -1,8 +1,9 @@
 Any manual edits could cause the file to get corrupted and not load correctly.
-The program skips the loading of the first 5 lines so leave these intact.
+The program skips the reading of the first 5 lines so leave these intact.
 Variables names end with a colon and can't contain any whitespaces.
-Variables are following them after a whitespace and they can end with an optional comma.
+Variables are following them after a whitespace, can't contain any whitespaces and they can end with an optional comma.
 Variables can come in any order but none can miss for a particular part.
+The parts type should be unique, having duplicates can result in the corruption of a build.
 
 CPU: 
 	Brand: AMD, Type: Ryzen_7_2700X, Price: 300 USD, Base clock: 4300 MHz, Number of Cores: 8, Socket: AM4, Supports Simultaneous Multithreading: Yes

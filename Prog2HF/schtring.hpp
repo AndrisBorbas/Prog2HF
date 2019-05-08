@@ -15,22 +15,47 @@
 
 ///szóközösítő toggle
 struct utos_t {};
+///csak paraméter toggle
+struct simple_t {};
+///csak típus toggle
+struct typ_t {};
 
 ///szóközösítő toggle
 constexpr utos_t utos;
+///csak paraméter toggle
+constexpr simple_t simple;
+///csak típus toggle
+constexpr typ_t typ;
 
 ///szóközösítő stream manipulator
 struct utos_ostream {
 	std::ostream& os;
 };
+///csak paraméter stream manipulator
+struct simple_ostream {
+	std::ostream& os;
+};
+///csak típus stream manipulator
+struct typ_ostream {
+	std::ostream& os;
+};
 
 ///szóközösítő stream manipulator
 inline utos_ostream operator<<(std::ostream& os, utos_t) { return { os }; }
+///csak paraméter stream manipulator
+inline simple_ostream operator<<(std::ostream& os, simple_t) { return { os }; }
+///csak típus stream manipulator
+inline typ_ostream operator<<(std::ostream& os, typ_t) { return { os }; }
 
 ///szóközösítő ostream
 template <typename T>
 std::ostream& operator<<(utos_ostream tos, const T& v) { return tos.os << v; }
-
+///csak paraméter ostream
+template <typename T>
+std::ostream& operator<<(simple_ostream tos, const T& v) { return tos.os << v; }
+///csak paraméter ostream
+template <typename T>
+std::ostream& operator<<(typ_ostream tos, const T& v) { return tos.os << v; }
 
 ///char tömb kisbetűsítése
 char* stolower(char* s);
@@ -78,7 +103,8 @@ public:
 	String operator+(char rhs_c) { return *this + String(rhs_c); }
 
 	/// hasonlító operator stringgel
-	bool operator==(String& rhs_s);
+	bool operator==(String& rhs_s) const;
+	bool operator==(const String& rhs_s) const;
 	/// hasonlító operator char tömbbel
 	bool operator==(const char* rhs_s);
 	bool operator==(const char* rhs_s) const;

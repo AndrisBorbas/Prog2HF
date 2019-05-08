@@ -1,28 +1,43 @@
-#pragma once
+Ôªø#pragma once
 
-#include "Parts.h"
+#include "Inventory.h"
 
-///Egy gÈpkonfigot t·rol
+///Egy g√©pkonfigot t√°rol
 class Build {
 	Part** components;
-	int* count;
 	size_t capacity;
-	unsigned int size;
+	int size;
+	int price;
 public:
-	Build(size_t capacity = 7) :capacity(capacity), size(0) {
+	Build(size_t capacity = 7) :capacity(capacity), size(0), price(0) {
 		components = new Part * [capacity];
-		count = new int[capacity];
 	}
 	~Build() {
-		for (size_t i = 0; i < size; i++) {
-			delete components[i];
-		}
 		delete[] components;
-		delete[] count;
 	}
 
 	template<typename T>
-	void push_back(T* part);
+	void push_back(T* part) {
+		if (size == (int)capacity) {
+			capacity += 4;
+			Part** temp = new Part * [capacity];
+			for (int i = 0; i < size; i++) {
+				temp[i] = components[i];
+			}
+			delete[] components;
+			components = temp;
+		}
+		components[size] = part;
+		price += (*part).get_price();
+		size++;
+	}
+	int get_price() { return price; }
+
+	void print(std::ostream& os) const;
+
+	void load(std::fstream& is, Inventory& inventory, TempInput& tmp);
+
+	void save(std::ostream& os) const;
 
 	const Part* operator[](int idx) const {
 		return components[idx];
@@ -35,32 +50,70 @@ public:
 std::ostream& operator<<(std::ostream& os, const Build& b);
 
 
-///A megrendelt konfigokat t·rolja
+///A megrendelt konfigokat t√°rolja
 class Orders {
-	Build* builds;
+	Build** builds;
 	bool* completed;
 	size_t capacity;
-	unsigned int size;
+	int size;
 public:
 	Orders(size_t capacity = 1) :capacity(capacity), size(0) {
-		builds = new Build[capacity];
+		builds = new Build * [capacity];
 		completed = new bool[capacity] {false};
 	}
 	~Orders() {
+		for (int i = 0; i < size; i++) {
+			delete builds[i];
+		}
 		delete[] builds;
 		delete[] completed;
 	}
 
-	template<typename T>
-	void push_back(T* part);
+	int get_size() {
+		return size;
+	}
 
-	const Build operator[](int idx) const {
+	void push_back(Build* build) {
+		if (size == (int)capacity) {
+			capacity *= 2;
+			Build** temp = new Build * [capacity];
+			for (int i = 0; i < size; i++) {
+				temp[i] = builds[i];
+			}
+			delete[] builds;
+			builds = temp;
+
+			bool* btemp = new bool[capacity];
+			for (int i = 0; i < size; i++) {
+				btemp[i] = completed[i];
+			}
+			delete[] completed;
+			completed = btemp;
+		}
+		builds[size] = build;
+		completed[size] = false;
+		size++;
+	}
+
+	void load(std::fstream& is, Inventory& inventory, TempInput& tmp);
+
+	void save(std::ostream& os) const;
+
+	void complete(int idx);
+
+	void remove(int idx);
+
+	void print(std::ostream& os) const;
+	void print(simple_ostream& tos) const;
+
+	const Build* operator[](int idx) const {
 		return builds[idx];
 	}
-	Build operator[](int idx) {
+	Build* operator[](int idx) {
 		return builds[idx];
 	}
 
 };
 
 std::ostream& operator<<(std::ostream& os, const Orders& o);
+std::ostream& operator<<(simple_ostream tos, const Orders& o);
