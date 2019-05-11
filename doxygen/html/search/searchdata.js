@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "abcefghilmoprstuw~",
   1: "bcghimoprstu",
   2: "abcimps",
-  3: "abceghilmoprst~",
+  3: "abcefghilmoprst~",
   4: "bcfimoprstuw",
   5: "e",
   6: "e"

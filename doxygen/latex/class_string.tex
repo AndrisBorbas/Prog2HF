@@ -31,8 +31,10 @@ const char $\ast$ \mbox{\hyperlink{class_string_a0274f3e61533d15086816fb7f47ccb5
 \begin{DoxyCompactList}\small\item\em string + string \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{class_string_afa169686af6b513e1f059cf2bf39695f}{operator+}} (char rhs\+\_\+c)
 \begin{DoxyCompactList}\small\item\em string + karakter \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_string_a1006dbb8a123aed87b8edb33d5cbcee4}{operator==}} (\mbox{\hyperlink{class_string}{String}} \&rhs\+\_\+s)
+bool \mbox{\hyperlink{class_string_aa94d2477f4f80aad7703bf4d7a39d332}{operator==}} (\mbox{\hyperlink{class_string}{String}} \&rhs\+\_\+s) const
 \begin{DoxyCompactList}\small\item\em hasonlító operator stringgel \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_string_aa4f7798884d99a0e28712d4e4044d303}{operator==}} (const \mbox{\hyperlink{class_string}{String}} \&rhs\+\_\+s) const
+\item 
 bool \mbox{\hyperlink{class_string_ade9af860a809548214837e33367e8835}{operator==}} (const char $\ast$rhs\+\_\+s)
 \begin{DoxyCompactList}\small\item\em hasonlító operator char tömbbel \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_string_aa50c56cbbbc9956cb359a7617f13809b}{operator==}} (const char $\ast$rhs\+\_\+s) const
@@ -183,20 +185,26 @@ kitörli az utolsó karaktert a stringből
 
 Egyenlőség operator. 
 
-\mbox{\label{class_string_a1006dbb8a123aed87b8edb33d5cbcee4}} 
+\mbox{\label{class_string_aa94d2477f4f80aad7703bf4d7a39d332}} 
 \index{String@{String}!operator==@{operator==}}
 \index{operator==@{operator==}!String@{String}}
-\paragraph{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily bool String\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_string}{String}} \&}]{rhs\+\_\+s }\end{DoxyParamCaption})}
+\paragraph{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily bool String\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_string}{String}} \&}]{rhs\+\_\+s }\end{DoxyParamCaption}) const}
 
 
 
 hasonlító operator stringgel 
 
+\mbox{\label{class_string_aa4f7798884d99a0e28712d4e4044d303}} 
+\index{String@{String}!operator==@{operator==}}
+\index{operator==@{operator==}!String@{String}}
+\paragraph{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily bool String\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_string}{String}} \&}]{rhs\+\_\+s }\end{DoxyParamCaption}) const}
+
 \mbox{\label{class_string_ade9af860a809548214837e33367e8835}} 
 \index{String@{String}!operator==@{operator==}}
 \index{operator==@{operator==}!String@{String}}
-\paragraph{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\paragraph{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily bool String\+::operator== (\begin{DoxyParamCaption}\item[{const char $\ast$}]{rhs\+\_\+s }\end{DoxyParamCaption})}
 
 
@@ -206,7 +214,7 @@ hasonlító operator char tömbbel
 \mbox{\label{class_string_aa50c56cbbbc9956cb359a7617f13809b}} 
 \index{String@{String}!operator==@{operator==}}
 \index{operator==@{operator==}!String@{String}}
-\paragraph{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+\paragraph{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily bool String\+::operator== (\begin{DoxyParamCaption}\item[{const char $\ast$}]{rhs\+\_\+s }\end{DoxyParamCaption}) const}
 
 \mbox{\label{class_string_a1a7c5c39d4dafbbf8516f5058a253f1a}} 

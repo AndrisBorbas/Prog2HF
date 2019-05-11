@@ -12,10 +12,14 @@ var annotated_dup =
     [ "Part", "class_part.html", "class_part" ],
     [ "PSU", "class_p_s_u.html", "class_p_s_u" ],
     [ "RAM", "class_r_a_m.html", "class_r_a_m" ],
+    [ "simple_ostream", "structsimple__ostream.html", "structsimple__ostream" ],
+    [ "simple_t", "structsimple__t.html", null ],
     [ "SSD", "class_s_s_d.html", "class_s_s_d" ],
     [ "Storage", "class_storage.html", "class_storage" ],
     [ "String", "class_string.html", "class_string" ],
     [ "TempInput", "struct_temp_input.html", "struct_temp_input" ],
+    [ "typ_ostream", "structtyp__ostream.html", "structtyp__ostream" ],
+    [ "typ_t", "structtyp__t.html", null ],
     [ "utos_ostream", "structutos__ostream.html", "structutos__ostream" ],
     [ "utos_t", "structutos__t.html", null ]
 ];

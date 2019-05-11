@@ -179,11 +179,15 @@ void Inventory::remove(int idx) {
 	}
 }
 
-int Inventory::findbyType(const String& s0) const{
-	for (int i = 0; i < size; i++){
+int Inventory::findbyType(const String& s0) const {
+	for (int i = 0; i < size; i++) {
 		if ((stock[i]->get_type()) == s0)return i;
 	}
 	return -1;
+}
+
+const String& Inventory::findbyIndex(int idx) const {
+	return *(type + idx);
 }
 
 template<typename T>

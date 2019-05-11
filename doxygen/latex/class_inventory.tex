@@ -2,6 +2,11 @@
 \label{class_inventory}\index{Inventory@{Inventory}}
 
 
+Alkatrész tároló  
+
+
+
+
 {\ttfamily \#include $<$Inventory.\+h$>$}
 
 \subsubsection*{Public Member Functions}
@@ -13,21 +18,30 @@
 \item 
 int \mbox{\hyperlink{class_inventory_a3ccacc9422b01b2c17836ca804bcaafc}{get\+\_\+size}} ()
 \item 
-void \mbox{\hyperlink{class_inventory_a9dd64f268a7a5cca611b5f749ec33f96}{load\+Part}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp, \mbox{\hyperlink{_inventory_8h_abddff37837f171d72a2e16a1448a3943}{enum\+Part}})
+\mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{class_inventory_a217895dbb60e3d7643c41fdeeb775bc9}{get\+\_\+type}} (int i)
 \item 
-void \mbox{\hyperlink{class_inventory_a084bafb32ed7dc4288fac96828c5302a}{save\+Inventory}} (std\+::ostream \&os)
-\item 
-void \mbox{\hyperlink{class_inventory_ad108e17923ce79c6ab0f9e04c2a6b6c2}{print\+Inventory}} (std\+::ostream \&os)
-\item 
-void \mbox{\hyperlink{class_inventory_a30f0fd3321c6cc606508684ce9d666ff}{remove\+Part}} (int a)
-\item 
-{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_inventory_a90cb96a50ebc28f0de4a009004e9b192}{push\+\_\+back}} (T $\ast$part)
-\item 
+void \mbox{\hyperlink{class_inventory_a78912f140decdd10037eb682cf295d72}{load\+Part}} (std\+::fstream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp, \mbox{\hyperlink{_parts_8h_abddff37837f171d72a2e16a1448a3943}{enum\+Part}})
+\begin{DoxyCompactList}\small\item\em Betölt egy alkatrészt fájlból. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inventory_a9dd64f268a7a5cca611b5f749ec33f96}{load\+Part}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp, \mbox{\hyperlink{_parts_8h_abddff37837f171d72a2e16a1448a3943}{enum\+Part}})
+\begin{DoxyCompactList}\small\item\em Betölt egy alkatrészt terminalból. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inventory_a243a3e96705999b3cf556e9626a96525}{save}} (std\+::ostream \&os)
+\begin{DoxyCompactList}\small\item\em Raktár mentése egy streamre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inventory_ae141405ba9deea67f5c1be1850d136fe}{print}} (std\+::ostream \&os, const \mbox{\hyperlink{class_string}{String}} \&test=\char`\"{}-\/1\char`\"{})
+\begin{DoxyCompactList}\small\item\em Raktár kiírása egy streamre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inventory_a1f602317e97625523444591ac5bf8bd7}{remove}} (int idx)
+\begin{DoxyCompactList}\small\item\em Egy alkatrész kitörlése a raktárból. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_inventory_a2a5998334229d148aac3e0dc16642480}{findby\+Type}} (const \mbox{\hyperlink{class_string}{String}} \&s0) const
+\begin{DoxyCompactList}\small\item\em Megkeres egy alkatrészt a típusa alapján és visszaadja az indexét. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_inventory_a86dd14362d6cefb46d4e40667c44481c}{push\+\_\+back}} (T $\ast$part, \mbox{\hyperlink{class_string}{String}} type)
+\begin{DoxyCompactList}\small\item\em Egy alkatrész hozzáadása a raktárhoz. \end{DoxyCompactList}\item 
 const \mbox{\hyperlink{class_part}{Part}} $\ast$ \mbox{\hyperlink{class_inventory_a99b8be25beb3530c47d1faa913633979}{operator\mbox{[}$\,$\mbox{]}}} (int idx) const
 \item 
 \mbox{\hyperlink{class_part}{Part}} $\ast$ \mbox{\hyperlink{class_inventory_a86601b8ee999e78cdeea83431bab8f33}{operator\mbox{[}$\,$\mbox{]}}} (int idx)
 \end{DoxyCompactItemize}
 
+
+\subsubsection{Detailed Description}
+Alkatrész tároló 
 
 \subsubsection{Constructor \& Destructor Documentation}
 \mbox{\label{class_inventory_af2c8bea3c8fbf97fec4d3f5ffb92f347}} 
@@ -45,17 +59,47 @@ const \mbox{\hyperlink{class_part}{Part}} $\ast$ \mbox{\hyperlink{class_inventor
 
 
 \subsubsection{Member Function Documentation}
+\mbox{\label{class_inventory_a2a5998334229d148aac3e0dc16642480}} 
+\index{Inventory@{Inventory}!findbyType@{findbyType}}
+\index{findbyType@{findbyType}!Inventory@{Inventory}}
+\paragraph{\texorpdfstring{findbyType()}{findbyType()}}
+{\footnotesize\ttfamily int Inventory\+::findby\+Type (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_string}{String}} \&}]{s0 }\end{DoxyParamCaption}) const}
+
+
+
+Megkeres egy alkatrészt a típusa alapján és visszaadja az indexét. 
+
 \mbox{\label{class_inventory_a3ccacc9422b01b2c17836ca804bcaafc}} 
 \index{Inventory@{Inventory}!get\_size@{get\_size}}
 \index{get\_size@{get\_size}!Inventory@{Inventory}}
 \paragraph{\texorpdfstring{get\_size()}{get\_size()}}
 {\footnotesize\ttfamily int Inventory\+::get\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+\mbox{\label{class_inventory_a217895dbb60e3d7643c41fdeeb775bc9}} 
+\index{Inventory@{Inventory}!get\_type@{get\_type}}
+\index{get\_type@{get\_type}!Inventory@{Inventory}}
+\paragraph{\texorpdfstring{get\_type()}{get\_type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_string}{String}} Inventory\+::get\+\_\+type (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{class_inventory_a78912f140decdd10037eb682cf295d72}} 
+\index{Inventory@{Inventory}!loadPart@{loadPart}}
+\index{loadPart@{loadPart}!Inventory@{Inventory}}
+\paragraph{\texorpdfstring{loadPart()}{loadPart()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Inventory\+::load\+Part (\begin{DoxyParamCaption}\item[{std\+::fstream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp,  }\item[{\mbox{\hyperlink{_parts_8h_abddff37837f171d72a2e16a1448a3943}{enum\+Part}}}]{e }\end{DoxyParamCaption})}
+
+
+
+Betölt egy alkatrészt fájlból. 
+
 \mbox{\label{class_inventory_a9dd64f268a7a5cca611b5f749ec33f96}} 
 \index{Inventory@{Inventory}!loadPart@{loadPart}}
 \index{loadPart@{loadPart}!Inventory@{Inventory}}
-\paragraph{\texorpdfstring{loadPart()}{loadPart()}}
-{\footnotesize\ttfamily void Inventory\+::load\+Part (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp,  }\item[{\mbox{\hyperlink{_inventory_8h_abddff37837f171d72a2e16a1448a3943}{enum\+Part}}}]{e }\end{DoxyParamCaption})}
+\paragraph{\texorpdfstring{loadPart()}{loadPart()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Inventory\+::load\+Part (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp,  }\item[{\mbox{\hyperlink{_parts_8h_abddff37837f171d72a2e16a1448a3943}{enum\+Part}}}]{e }\end{DoxyParamCaption})}
+
+
+
+Betölt egy alkatrészt terminalból. 
 
 \mbox{\label{class_inventory_a99b8be25beb3530c47d1faa913633979}} 
 \index{Inventory@{Inventory}!operator\mbox{[}\mbox{]}@{operator[]}}
@@ -69,32 +113,50 @@ const \mbox{\hyperlink{class_part}{Part}} $\ast$ \mbox{\hyperlink{class_inventor
 \paragraph{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_part}{Part}}$\ast$ Inventory\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\label{class_inventory_ad108e17923ce79c6ab0f9e04c2a6b6c2}} 
-\index{Inventory@{Inventory}!printInventory@{printInventory}}
-\index{printInventory@{printInventory}!Inventory@{Inventory}}
-\paragraph{\texorpdfstring{printInventory()}{printInventory()}}
-{\footnotesize\ttfamily void Inventory\+::print\+Inventory (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})}
+\mbox{\label{class_inventory_ae141405ba9deea67f5c1be1850d136fe}} 
+\index{Inventory@{Inventory}!print@{print}}
+\index{print@{print}!Inventory@{Inventory}}
+\paragraph{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Inventory\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_string}{String}} \&}]{test = {\ttfamily \char`\"{}-\/1\char`\"{}} }\end{DoxyParamCaption})}
 
-\mbox{\label{class_inventory_a90cb96a50ebc28f0de4a009004e9b192}} 
+
+
+Raktár kiírása egy streamre. 
+
+\mbox{\label{class_inventory_a86dd14362d6cefb46d4e40667c44481c}} 
 \index{Inventory@{Inventory}!push\_back@{push\_back}}
 \index{push\_back@{push\_back}!Inventory@{Inventory}}
 \paragraph{\texorpdfstring{push\_back()}{push\_back()}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-void Inventory\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{T $\ast$}]{part }\end{DoxyParamCaption})}
-
-\mbox{\label{class_inventory_a30f0fd3321c6cc606508684ce9d666ff}} 
-\index{Inventory@{Inventory}!removePart@{removePart}}
-\index{removePart@{removePart}!Inventory@{Inventory}}
-\paragraph{\texorpdfstring{removePart()}{removePart()}}
-{\footnotesize\ttfamily void Inventory\+::remove\+Part (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})}
-
-\mbox{\label{class_inventory_a084bafb32ed7dc4288fac96828c5302a}} 
-\index{Inventory@{Inventory}!saveInventory@{saveInventory}}
-\index{saveInventory@{saveInventory}!Inventory@{Inventory}}
-\paragraph{\texorpdfstring{saveInventory()}{saveInventory()}}
-{\footnotesize\ttfamily void Inventory\+::save\+Inventory (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})}
+void Inventory\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{T $\ast$}]{part,  }\item[{\mbox{\hyperlink{class_string}{String}}}]{type }\end{DoxyParamCaption})}
 
 
+
+Egy alkatrész hozzáadása a raktárhoz. 
+
+\mbox{\label{class_inventory_a1f602317e97625523444591ac5bf8bd7}} 
+\index{Inventory@{Inventory}!remove@{remove}}
+\index{remove@{remove}!Inventory@{Inventory}}
+\paragraph{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void Inventory\+::remove (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})}
+
+
+
+Egy alkatrész kitörlése a raktárból. 
+
+\mbox{\label{class_inventory_a243a3e96705999b3cf556e9626a96525}} 
+\index{Inventory@{Inventory}!save@{save}}
+\index{save@{save}!Inventory@{Inventory}}
+\paragraph{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void Inventory\+::save (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})}
+
+
+
+Raktár mentése egy streamre. 
+
+class neve
+
+class szó levétele a class neve elől 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

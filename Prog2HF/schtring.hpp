@@ -9,6 +9,11 @@
 #pragma warning(disable : 4996)
 #endif
 
+#ifdef MEMTRACE
+#include "memtrace.h"
+#endif
+
+
 #include <iostream>             
 #include <cstring>
 #include <ctype.h>

@@ -47,6 +47,7 @@
     <ClCompile Include="Builds.cpp" />
     <ClCompile Include="Compatibility.cpp" />
     <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Parts.cpp" />
     <ClCompile Include="memtrace.cpp" />
     <ClCompile Include="main.cpp">
@@ -60,6 +61,7 @@
     <ClInclude Include="Builds.h" />
     <ClInclude Include="Compatibility.h" />
     <ClInclude Include="Inventory.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="Parts.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="memtrace.h" />

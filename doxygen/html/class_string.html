@@ -134,9 +134,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afa169686af6b513e1f059cf2bf39695f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_string.html#afa169686af6b513e1f059cf2bf39695f">operator+</a> (char rhs_c)</td></tr>
 <tr class="memdesc:afa169686af6b513e1f059cf2bf39695f"><td class="mdescLeft">&#160;</td><td class="mdescRight">string + karakter  <a href="#afa169686af6b513e1f059cf2bf39695f">More...</a><br /></td></tr>
 <tr class="separator:afa169686af6b513e1f059cf2bf39695f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1006dbb8a123aed87b8edb33d5cbcee4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_string.html#a1006dbb8a123aed87b8edb33d5cbcee4">operator==</a> (<a class="el" href="class_string.html">String</a> &amp;rhs_s)</td></tr>
-<tr class="memdesc:a1006dbb8a123aed87b8edb33d5cbcee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">hasonlító operator stringgel  <a href="#a1006dbb8a123aed87b8edb33d5cbcee4">More...</a><br /></td></tr>
-<tr class="separator:a1006dbb8a123aed87b8edb33d5cbcee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa94d2477f4f80aad7703bf4d7a39d332"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_string.html#aa94d2477f4f80aad7703bf4d7a39d332">operator==</a> (<a class="el" href="class_string.html">String</a> &amp;rhs_s) const</td></tr>
+<tr class="memdesc:aa94d2477f4f80aad7703bf4d7a39d332"><td class="mdescLeft">&#160;</td><td class="mdescRight">hasonlító operator stringgel  <a href="#aa94d2477f4f80aad7703bf4d7a39d332">More...</a><br /></td></tr>
+<tr class="separator:aa94d2477f4f80aad7703bf4d7a39d332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f7798884d99a0e28712d4e4044d303"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_string.html#aa4f7798884d99a0e28712d4e4044d303">operator==</a> (const <a class="el" href="class_string.html">String</a> &amp;rhs_s) const</td></tr>
+<tr class="separator:aa4f7798884d99a0e28712d4e4044d303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade9af860a809548214837e33367e8835"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_string.html#ade9af860a809548214837e33367e8835">operator==</a> (const char *rhs_s)</td></tr>
 <tr class="memdesc:ade9af860a809548214837e33367e8835"><td class="mdescLeft">&#160;</td><td class="mdescRight">hasonlító operator char tömbbel  <a href="#ade9af860a809548214837e33367e8835">More...</a><br /></td></tr>
 <tr class="separator:ade9af860a809548214837e33367e8835"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -471,8 +473,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1006dbb8a123aed87b8edb33d5cbcee4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1006dbb8a123aed87b8edb33d5cbcee4">&#9670;&nbsp;</a></span>operator==() <span class="overload">[1/3]</span></h2>
+<a id="aa94d2477f4f80aad7703bf4d7a39d332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa94d2477f4f80aad7703bf4d7a39d332">&#9670;&nbsp;</a></span>operator==() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -482,7 +484,7 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_string.html">String</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs_s</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -491,8 +493,26 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa4f7798884d99a0e28712d4e4044d303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4f7798884d99a0e28712d4e4044d303">&#9670;&nbsp;</a></span>operator==() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool String::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs_s</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ade9af860a809548214837e33367e8835"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade9af860a809548214837e33367e8835">&#9670;&nbsp;</a></span>operator==() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ade9af860a809548214837e33367e8835">&#9670;&nbsp;</a></span>operator==() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -512,7 +532,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa50c56cbbbc9956cb359a7617f13809b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa50c56cbbbc9956cb359a7617f13809b">&#9670;&nbsp;</a></span>operator==() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa50c56cbbbc9956cb359a7617f13809b">&#9670;&nbsp;</a></span>operator==() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

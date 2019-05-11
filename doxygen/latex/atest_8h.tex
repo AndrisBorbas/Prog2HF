@@ -6,12 +6,12 @@
 \item 
 void \mbox{\hyperlink{atest_8h_a377b49f7a65ef678441feafbbb111fd0}{test1}} (std\+::fstream \&parts\+File, const char partsfilename\mbox{[}52\mbox{]})
 \begin{DoxyCompactList}\small\item\em Test the if the parts file could be opened. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{atest_8h_a4e5e4ea94633fee304b7f4490e655591}{test2}} (\mbox{\hyperlink{class_inventory}{Inventory}} \&inventory)
-\begin{DoxyCompactList}\small\item\em Test whether the heterogenous collection contains the derived classes. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{atest_8h_a6e6df2af48d16780853d6eddcb8c8bc4}{test3}} (\mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{atest_8h_a377b49f7a65ef678441feafbbb111fd0}{test1}}, \mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{atest_8h_a4e5e4ea94633fee304b7f4490e655591}{test2}})
+bool \mbox{\hyperlink{atest_8h_a6e6df2af48d16780853d6eddcb8c8bc4}{test3}} (\mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{atest_8h_a377b49f7a65ef678441feafbbb111fd0}{test1}}, \mbox{\hyperlink{class_string}{String}} test2)
 \begin{DoxyCompactList}\small\item\em Test the non case sensitive \mbox{\hyperlink{class_string}{String}} compare. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{atest_8h_ab545ece7a108a6470a3dc2161ba0008b}{test4}} (\mbox{\hyperlink{class_string}{String}} asd, const char $\ast$test)
-\begin{DoxyCompactList}\small\item\em Test the string shortener. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Test the string shortener. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{atest_8h_a07323edca3eb4730f312846bd8714d4a}{test5}} (\mbox{\hyperlink{class_string}{String}} asd, const char $\ast$test)
+\begin{DoxyCompactList}\small\item\em Test the sring first x character removal. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsubsection{Function Documentation}
@@ -24,16 +24,6 @@ bool \mbox{\hyperlink{atest_8h_ab545ece7a108a6470a3dc2161ba0008b}{test4}} (\mbox
 
 
 Test the if the parts file could be opened. 
-
-\mbox{\label{atest_8h_a4e5e4ea94633fee304b7f4490e655591}} 
-\index{atest.h@{atest.h}!test2@{test2}}
-\index{test2@{test2}!atest.h@{atest.h}}
-\paragraph{\texorpdfstring{test2()}{test2()}}
-{\footnotesize\ttfamily bool test2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory}{Inventory}} \&}]{inventory }\end{DoxyParamCaption})}
-
-
-
-Test whether the heterogenous collection contains the derived classes. 
 
 \mbox{\label{atest_8h_a6e6df2af48d16780853d6eddcb8c8bc4}} 
 \index{atest.h@{atest.h}!test3@{test3}}
@@ -54,4 +44,14 @@ Test the non case sensitive \mbox{\hyperlink{class_string}{String}} compare.
 
 
 Test the string shortener. 
+
+\mbox{\label{atest_8h_a07323edca3eb4730f312846bd8714d4a}} 
+\index{atest.h@{atest.h}!test5@{test5}}
+\index{test5@{test5}!atest.h@{atest.h}}
+\paragraph{\texorpdfstring{test5()}{test5()}}
+{\footnotesize\ttfamily bool test5 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_string}{String}}}]{asd,  }\item[{const char $\ast$}]{test }\end{DoxyParamCaption})}
+
+
+
+Test the sring first x character removal. 
 

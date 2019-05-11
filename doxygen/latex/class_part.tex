@@ -22,15 +22,17 @@ Inheritance diagram for Part\+:\begin{figure}[H]
 \item 
 virtual \mbox{\hyperlink{class_part_aaecbb747a7227f7ce3b44caeaf1801c2}{$\sim$\+Part}} ()
 \item 
-\mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{class_part_abdaeb1db5ba55c184f39802c163e9ebc}{get\+\_\+brand}} ()
+virtual int \mbox{\hyperlink{class_part_a38bcd0481433acc24db7d5f978f2c839}{get\+\_\+price}} ()
 \item 
-\mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{class_part_a97117fd470cd694ae0897fb2f4391786}{get\+\_\+type}} ()
-\item 
-int \mbox{\hyperlink{class_part_abb7c8371883825ad46773f219db3523e}{get\+\_\+price}} ()
+virtual \mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{class_part_a02569fd3cf6c52b56baceed5d639f487}{get\+\_\+type}} ()
 \item 
 virtual void \mbox{\hyperlink{class_part_a4fa402b8e8fd4236ff773a7697ab2bc3}{print}} (std\+::ostream \&os) const
 \item 
 virtual void \mbox{\hyperlink{class_part_a9ecabe44ba3415badf82c6a23617a41e}{print}} (\mbox{\hyperlink{structutos__ostream}{utos\+\_\+ostream}} \&tos) const
+\item 
+virtual void \mbox{\hyperlink{class_part_aa602d876151b63db72cf8f666847a8cd}{print}} (\mbox{\hyperlink{structsimple__ostream}{simple\+\_\+ostream}} \&tos) const
+\item 
+virtual void \mbox{\hyperlink{class_part_ab6396030e8b7a724731a8b54bd4942fc}{print}} (\mbox{\hyperlink{structtyp__ostream}{typ\+\_\+ostream}} \&tos) const
 \end{DoxyCompactItemize}
 \subsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -62,28 +64,22 @@ Alap alkatrész típus.
 
 
 \subsubsection{Member Function Documentation}
-\mbox{\label{class_part_abdaeb1db5ba55c184f39802c163e9ebc}} 
-\index{Part@{Part}!get\_brand@{get\_brand}}
-\index{get\_brand@{get\_brand}!Part@{Part}}
-\paragraph{\texorpdfstring{get\_brand()}{get\_brand()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_string}{String}} Part\+::get\+\_\+brand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\label{class_part_abb7c8371883825ad46773f219db3523e}} 
+\mbox{\label{class_part_a38bcd0481433acc24db7d5f978f2c839}} 
 \index{Part@{Part}!get\_price@{get\_price}}
 \index{get\_price@{get\_price}!Part@{Part}}
 \paragraph{\texorpdfstring{get\_price()}{get\_price()}}
-{\footnotesize\ttfamily int Part\+::get\+\_\+price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily virtual int Part\+::get\+\_\+price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
-\mbox{\label{class_part_a97117fd470cd694ae0897fb2f4391786}} 
+\mbox{\label{class_part_a02569fd3cf6c52b56baceed5d639f487}} 
 \index{Part@{Part}!get\_type@{get\_type}}
 \index{get\_type@{get\_type}!Part@{Part}}
 \paragraph{\texorpdfstring{get\_type()}{get\_type()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_string}{String}} Part\+::get\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_string}{String}} Part\+::get\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 \mbox{\label{class_part_a4fa402b8e8fd4236ff773a7697ab2bc3}} 
 \index{Part@{Part}!print@{print}}
 \index{print@{print}!Part@{Part}}
-\paragraph{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\paragraph{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily void Part\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
@@ -93,12 +89,32 @@ Reimplemented in \mbox{\hyperlink{class_h_d_d_a07c34356018542934a4dd91ce38b0821}
 \mbox{\label{class_part_a9ecabe44ba3415badf82c6a23617a41e}} 
 \index{Part@{Part}!print@{print}}
 \index{print@{print}!Part@{Part}}
-\paragraph{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\paragraph{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily void Part\+::print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structutos__ostream}{utos\+\_\+ostream}} \&}]{tos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
 Reimplemented in \mbox{\hyperlink{class_h_d_d_aca2c2583fa3304917905cd9185b64539}{H\+DD}}, \mbox{\hyperlink{class_s_s_d_ab07086e302f8be99cfa757583d2017a0}{S\+SD}}, \mbox{\hyperlink{class_storage_ab7ecf9e0777891b4e1a84bbf391a1cd4}{Storage}}, \mbox{\hyperlink{class_p_s_u_a81c74aa3a327003c58b89ca2b8602c1d}{P\+SU}}, \mbox{\hyperlink{class_case_ae179519844b825815f4accddafae13b6}{Case}}, \mbox{\hyperlink{class_r_a_m_a11a874dd6cf99454efd6b7a1d20a3737}{R\+AM}}, \mbox{\hyperlink{class_m_o_b_o_a4c78cec3a2a3e4d4480855622f50bd06}{M\+O\+BO}}, \mbox{\hyperlink{class_g_p_u_acfa9ab35cdf1c25c324fc39c6ffc2412}{G\+PU}}, and \mbox{\hyperlink{class_c_p_u_a0aea700bac0896b9e4434770737078d0}{C\+PU}}.
+
+\mbox{\label{class_part_aa602d876151b63db72cf8f666847a8cd}} 
+\index{Part@{Part}!print@{print}}
+\index{print@{print}!Part@{Part}}
+\paragraph{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Part\+::print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsimple__ostream}{simple\+\_\+ostream}} \&}]{tos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_h_d_d_a0e48767713740f3ec7dafd907d3570b1}{H\+DD}}, \mbox{\hyperlink{class_s_s_d_a7efed56d8590399c61d8eefca9295c91}{S\+SD}}, \mbox{\hyperlink{class_storage_a53fc5b4814df41517b9f2be8dcef605e}{Storage}}, \mbox{\hyperlink{class_p_s_u_a57f14e0dee163f33d01cdbb159b6d9d6}{P\+SU}}, \mbox{\hyperlink{class_case_a580b6870ea256cab7e7eee36820803e7}{Case}}, \mbox{\hyperlink{class_r_a_m_ac2d5a8bd858289b6679e429bbe15fb20}{R\+AM}}, \mbox{\hyperlink{class_m_o_b_o_a01fed4470cbf8c58f86426aa8f52b225}{M\+O\+BO}}, \mbox{\hyperlink{class_g_p_u_a27cb964d5ce05efa75cb65d836b922e1}{G\+PU}}, and \mbox{\hyperlink{class_c_p_u_a2f130a0263e32387554c128aedb6f9ed}{C\+PU}}.
+
+\mbox{\label{class_part_ab6396030e8b7a724731a8b54bd4942fc}} 
+\index{Part@{Part}!print@{print}}
+\index{print@{print}!Part@{Part}}
+\paragraph{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Part\+::print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtyp__ostream}{typ\+\_\+ostream}} \&}]{tos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_h_d_d_a557271f835f56a25fe5c264019f20bb2}{H\+DD}}, \mbox{\hyperlink{class_s_s_d_a6e252152f8ba75043edec67e19d686e0}{S\+SD}}, \mbox{\hyperlink{class_storage_ad6c13f251a39612a7628980bf2f12918}{Storage}}, \mbox{\hyperlink{class_p_s_u_a3690cd51ec36d4a1417c22612793e01c}{P\+SU}}, \mbox{\hyperlink{class_case_a6cce910485e45c0b30018fce491c154f}{Case}}, \mbox{\hyperlink{class_r_a_m_ad43f71c742f078c98ab7fd9a26420c97}{R\+AM}}, \mbox{\hyperlink{class_m_o_b_o_a3dd7e36103afbb4b6c09b65975317b9c}{M\+O\+BO}}, \mbox{\hyperlink{class_g_p_u_ad54f6d21007e216f27dc738aea2de836}{G\+PU}}, and \mbox{\hyperlink{class_c_p_u_aa2cf81d7f0005da72c7a99b1b9459c27}{C\+PU}}.
 
 
 

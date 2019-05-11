@@ -48,6 +48,9 @@ public:
 	///Megkeres egy alkatrészt a típusa alapján és visszaadja az indexét
 	int findbyType(const String& s0) const;
 
+	///Megkeres egy alkatrészt index alapján és visszaadja a típusát
+	const String& findbyIndex(int idx) const;
+
 	///Egy alkatrész hozzáadása a raktárhoz
 	template<typename T>
 	void push_back(T* part, String type);
@@ -60,9 +63,10 @@ public:
 	}
 };
 
-///Jelölőkk alapján betölti az alkatrész paramétereit
+///Jelölők alapján betölti az alkatrész paramétereit fájlból
 void loadParams(std::fstream& is, TempInput& tmp, int const params);
 
+///Segítség kiírásával betölti az alkatrész paramétereit console ból
 void loadBaseParams(std::istream& is, TempInput& tmp);
 
 void loadCPUParams(std::istream& is, TempInput& tmp);

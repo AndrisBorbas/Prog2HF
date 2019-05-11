@@ -16,8 +16,12 @@ var hierarchy =
         [ "SSD", "class_s_s_d.html", null ]
       ] ]
     ] ],
+    [ "simple_ostream", "structsimple__ostream.html", null ],
+    [ "simple_t", "structsimple__t.html", null ],
     [ "String", "class_string.html", null ],
     [ "TempInput", "struct_temp_input.html", null ],
+    [ "typ_ostream", "structtyp__ostream.html", null ],
+    [ "typ_t", "structtyp__t.html", null ],
     [ "utos_ostream", "structutos__ostream.html", null ],
     [ "utos_t", "structutos__t.html", null ]
 ];

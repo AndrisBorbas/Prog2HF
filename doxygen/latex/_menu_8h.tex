@@ -1,0 +1,259 @@
+\subsection{C\+:/\+Users/cxl20/\+Documents/\+Visual Studio 2017/\+Prog2\+H\+F/\+Prog2\+H\+F/\+Menu.h File Reference}
+\label{_menu_8h}\index{C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Menu.h@{C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Menu.h}}
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include \char`\"{}schtring.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include \char`\"{}Parts.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Inventory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Builds.\+h\char`\"{}}\newline
+\subsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_menu_8h_adbc27074b7dcd54cd4578936c6329d02}{enum\+Menu}} \{ \newline
+\mbox{\hyperlink{_menu_8h_adbc27074b7dcd54cd4578936c6329d02a51060f19a5d0006e2cb20df8786a330b}{e\+Main}} = 1, 
+\mbox{\hyperlink{_menu_8h_adbc27074b7dcd54cd4578936c6329d02a8d35c4ba2bd3370a44513dbdbdbd0ff6}{e\+Parts\+List}} = 11, 
+\mbox{\hyperlink{_menu_8h_adbc27074b7dcd54cd4578936c6329d02a1fedbd15c99125bee9cb78cffbf7228b}{e\+Parts\+Add}} = 12, 
+\mbox{\hyperlink{_menu_8h_adbc27074b7dcd54cd4578936c6329d02af19f793fac63215e67f31045c7371d1c}{e\+Parts\+Remove}} = 13, 
+\newline
+\mbox{\hyperlink{_menu_8h_adbc27074b7dcd54cd4578936c6329d02a34f49f61c9b4bdb2fe1be11758138084}{e\+Builds\+List}} = 21, 
+\mbox{\hyperlink{_menu_8h_adbc27074b7dcd54cd4578936c6329d02a18af4c5278fb8ad13d84f598c68e766e}{e\+Builds\+Add}} = 22, 
+\mbox{\hyperlink{_menu_8h_adbc27074b7dcd54cd4578936c6329d02af613ab36150110e3914604d4e4de2e06}{e\+Builds\+Complete}} = 23, 
+\mbox{\hyperlink{_menu_8h_adbc27074b7dcd54cd4578936c6329d02a0de8366351ca70766ec80390d94387a8}{e\+Builds\+Remove}} = 24, 
+\newline
+\mbox{\hyperlink{_menu_8h_adbc27074b7dcd54cd4578936c6329d02af2f1713ca51324f5000bf36d36bfd684}{e\+Exit}} = 9
+ \}
+\begin{DoxyCompactList}\small\item\em menü almenüi \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_menu_8h_a2279d427508487e2c7194ba68588445d}{print\+Orders\+List}} (\mbox{\hyperlink{class_orders}{Orders}} \&orders)
+\begin{DoxyCompactList}\small\item\em kiírja a megrendeléseket \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_menu_8h_af1da99ec7d9dd6a0836bab3d808ee793}{animate}} (char c=\textquotesingle{}$\sim$\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em csinál egy sor animációt \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_menu_8h_aa8348016f7273e63d47917126e8f9c69}{print\+Main}} ()
+\begin{DoxyCompactList}\small\item\em kiírja a főmenüt \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_menu_8h_aed630b39565f9b935d3148b396fd862d}{evaluate\+Command}} (enum \mbox{\hyperlink{_menu_8h_adbc27074b7dcd54cd4578936c6329d02}{enum\+Menu}} \&)
+\begin{DoxyCompactList}\small\item\em bemenet alapján vált a menük között \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_menu_8h_a54c74422af05849f9d508c0a5ccd468b}{print\+Parts\+List}} (\mbox{\hyperlink{class_inventory}{Inventory}} \&)
+\begin{DoxyCompactList}\small\item\em kiírja az összes betölttött alkatrészt \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_menu_8h_a4b1c8fae94d189d0d74b10cde7b75176}{set\+Enumfrom\+Int}} (int a, \mbox{\hyperlink{_parts_8h_abddff37837f171d72a2e16a1448a3943}{enum\+Part}} \&eP)
+\begin{DoxyCompactList}\small\item\em beállítja a part loadert \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_menu_8h_a369084a71ee372ce9e1096d887a53e77}{add\+Part\+Helper}} (\mbox{\hyperlink{class_inventory}{Inventory}} \&, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&, \mbox{\hyperlink{_parts_8h_abddff37837f171d72a2e16a1448a3943}{enum\+Part}} \&)
+\begin{DoxyCompactList}\small\item\em új alkatrészt tölt be console inputról. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_menu_8h_af332548b8c7c1e4d477c95abf6233b5d}{remove\+Part\+Helper}} (\mbox{\hyperlink{class_inventory}{Inventory}} \&)
+\begin{DoxyCompactList}\small\item\em törli a kiválasztott alkatrészt \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_menu_8h_a185a985b9e28ccd13d5fb2d841e4a5f0}{add\+Build\+Helper}} (\mbox{\hyperlink{class_orders}{Orders}} \&orders, \mbox{\hyperlink{class_inventory}{Inventory}} \&inventory)
+\begin{DoxyCompactList}\small\item\em egy configot lehet csinálni vele \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_menu_8h_aa66bedcbb6a6b03cde60b3441e6ae031}{part\+Selector}} (\mbox{\hyperlink{class_inventory}{Inventory}} \&inventory, const char $\ast$type)
+\begin{DoxyCompactList}\small\item\em konfighoz választ alkatrészt \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_menu_8h_a0f808ec53d26f8bcef1a0f22783c78f8}{complete\+Order\+Helper}} (\mbox{\hyperlink{class_orders}{Orders}} \&orders)
+\item 
+void \mbox{\hyperlink{_menu_8h_aed744d8c7e74c041565714ecfb656f0b}{remove\+Order\+Helper}} (\mbox{\hyperlink{class_orders}{Orders}} \&orders)
+\item 
+{\footnotesize template$<$typename T $>$ }\\int \mbox{\hyperlink{_menu_8h_a849fbf52d43e574e121662054591db87}{evaluate\+Input}} (T \&)
+\begin{DoxyCompactList}\small\item\em átalakítja a beírt számot indexelővé \end{DoxyCompactList}\item 
+std\+::fstream \& \mbox{\hyperlink{_menu_8h_aac067d016b66218b6d8e0578bc214ef0}{Goto\+Line}} (std\+::fstream \&file, unsigned int n)
+\begin{DoxyCompactList}\small\item\em n edik sorra ugrik egy file streamben \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_menu_8h_aaa6e5fc0d7c515998e48fe6ae944ca40}{clearcmd}} ()
+\begin{DoxyCompactList}\small\item\em kitörli a terminált \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Enumeration Type Documentation}
+\mbox{\label{_menu_8h_adbc27074b7dcd54cd4578936c6329d02}} 
+\index{Menu.h@{Menu.h}!enumMenu@{enumMenu}}
+\index{enumMenu@{enumMenu}!Menu.h@{Menu.h}}
+\paragraph{\texorpdfstring{enumMenu}{enumMenu}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_menu_8h_adbc27074b7dcd54cd4578936c6329d02}{enum\+Menu}}}
+
+
+
+menü almenüi 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eMain@{eMain}!Menu.h@{Menu.h}}\index{Menu.h@{Menu.h}!eMain@{eMain}}}\mbox{\label{_menu_8h_adbc27074b7dcd54cd4578936c6329d02a51060f19a5d0006e2cb20df8786a330b}} 
+e\+Main&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ePartsList@{ePartsList}!Menu.h@{Menu.h}}\index{Menu.h@{Menu.h}!ePartsList@{ePartsList}}}\mbox{\label{_menu_8h_adbc27074b7dcd54cd4578936c6329d02a8d35c4ba2bd3370a44513dbdbdbd0ff6}} 
+e\+Parts\+List&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ePartsAdd@{ePartsAdd}!Menu.h@{Menu.h}}\index{Menu.h@{Menu.h}!ePartsAdd@{ePartsAdd}}}\mbox{\label{_menu_8h_adbc27074b7dcd54cd4578936c6329d02a1fedbd15c99125bee9cb78cffbf7228b}} 
+e\+Parts\+Add&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ePartsRemove@{ePartsRemove}!Menu.h@{Menu.h}}\index{Menu.h@{Menu.h}!ePartsRemove@{ePartsRemove}}}\mbox{\label{_menu_8h_adbc27074b7dcd54cd4578936c6329d02af19f793fac63215e67f31045c7371d1c}} 
+e\+Parts\+Remove&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eBuildsList@{eBuildsList}!Menu.h@{Menu.h}}\index{Menu.h@{Menu.h}!eBuildsList@{eBuildsList}}}\mbox{\label{_menu_8h_adbc27074b7dcd54cd4578936c6329d02a34f49f61c9b4bdb2fe1be11758138084}} 
+e\+Builds\+List&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eBuildsAdd@{eBuildsAdd}!Menu.h@{Menu.h}}\index{Menu.h@{Menu.h}!eBuildsAdd@{eBuildsAdd}}}\mbox{\label{_menu_8h_adbc27074b7dcd54cd4578936c6329d02a18af4c5278fb8ad13d84f598c68e766e}} 
+e\+Builds\+Add&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eBuildsComplete@{eBuildsComplete}!Menu.h@{Menu.h}}\index{Menu.h@{Menu.h}!eBuildsComplete@{eBuildsComplete}}}\mbox{\label{_menu_8h_adbc27074b7dcd54cd4578936c6329d02af613ab36150110e3914604d4e4de2e06}} 
+e\+Builds\+Complete&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eBuildsRemove@{eBuildsRemove}!Menu.h@{Menu.h}}\index{Menu.h@{Menu.h}!eBuildsRemove@{eBuildsRemove}}}\mbox{\label{_menu_8h_adbc27074b7dcd54cd4578936c6329d02a0de8366351ca70766ec80390d94387a8}} 
+e\+Builds\+Remove&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eExit@{eExit}!Menu.h@{Menu.h}}\index{Menu.h@{Menu.h}!eExit@{eExit}}}\mbox{\label{_menu_8h_adbc27074b7dcd54cd4578936c6329d02af2f1713ca51324f5000bf36d36bfd684}} 
+e\+Exit&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsubsection{Function Documentation}
+\mbox{\label{_menu_8h_a185a985b9e28ccd13d5fb2d841e4a5f0}} 
+\index{Menu.h@{Menu.h}!addBuildHelper@{addBuildHelper}}
+\index{addBuildHelper@{addBuildHelper}!Menu.h@{Menu.h}}
+\paragraph{\texorpdfstring{addBuildHelper()}{addBuildHelper()}}
+{\footnotesize\ttfamily void add\+Build\+Helper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_orders}{Orders}} \&}]{orders,  }\item[{\mbox{\hyperlink{class_inventory}{Inventory}} \&}]{inventory }\end{DoxyParamCaption})}
+
+
+
+egy configot lehet csinálni vele 
+
+\mbox{\label{_menu_8h_a369084a71ee372ce9e1096d887a53e77}} 
+\index{Menu.h@{Menu.h}!addPartHelper@{addPartHelper}}
+\index{addPartHelper@{addPartHelper}!Menu.h@{Menu.h}}
+\paragraph{\texorpdfstring{addPartHelper()}{addPartHelper()}}
+{\footnotesize\ttfamily int add\+Part\+Helper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory}{Inventory}} \&}]{,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{,  }\item[{\mbox{\hyperlink{_parts_8h_abddff37837f171d72a2e16a1448a3943}{enum\+Part}} \&}]{ }\end{DoxyParamCaption})}
+
+
+
+új alkatrészt tölt be console inputról. 
+
+\mbox{\label{_menu_8h_af1da99ec7d9dd6a0836bab3d808ee793}} 
+\index{Menu.h@{Menu.h}!animate@{animate}}
+\index{animate@{animate}!Menu.h@{Menu.h}}
+\paragraph{\texorpdfstring{animate()}{animate()}}
+{\footnotesize\ttfamily void animate (\begin{DoxyParamCaption}\item[{char}]{c = {\ttfamily \textquotesingle{}$\sim$\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+csinál egy sor animációt 
+
+\mbox{\label{_menu_8h_aaa6e5fc0d7c515998e48fe6ae944ca40}} 
+\index{Menu.h@{Menu.h}!clearcmd@{clearcmd}}
+\index{clearcmd@{clearcmd}!Menu.h@{Menu.h}}
+\paragraph{\texorpdfstring{clearcmd()}{clearcmd()}}
+{\footnotesize\ttfamily void clearcmd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+kitörli a terminált 
+
+\mbox{\label{_menu_8h_a0f808ec53d26f8bcef1a0f22783c78f8}} 
+\index{Menu.h@{Menu.h}!completeOrderHelper@{completeOrderHelper}}
+\index{completeOrderHelper@{completeOrderHelper}!Menu.h@{Menu.h}}
+\paragraph{\texorpdfstring{completeOrderHelper()}{completeOrderHelper()}}
+{\footnotesize\ttfamily void complete\+Order\+Helper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_orders}{Orders}} \&}]{orders }\end{DoxyParamCaption})}
+
+\mbox{\label{_menu_8h_aed630b39565f9b935d3148b396fd862d}} 
+\index{Menu.h@{Menu.h}!evaluateCommand@{evaluateCommand}}
+\index{evaluateCommand@{evaluateCommand}!Menu.h@{Menu.h}}
+\paragraph{\texorpdfstring{evaluateCommand()}{evaluateCommand()}}
+{\footnotesize\ttfamily void evaluate\+Command (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{_menu_8h_adbc27074b7dcd54cd4578936c6329d02}{enum\+Menu}} \&}]{ }\end{DoxyParamCaption})}
+
+
+
+bemenet alapján vált a menük között 
+
+\mbox{\label{_menu_8h_a849fbf52d43e574e121662054591db87}} 
+\index{Menu.h@{Menu.h}!evaluateInput@{evaluateInput}}
+\index{evaluateInput@{evaluateInput}!Menu.h@{Menu.h}}
+\paragraph{\texorpdfstring{evaluateInput()}{evaluateInput()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int evaluate\+Input (\begin{DoxyParamCaption}\item[{T \&}]{ }\end{DoxyParamCaption})}
+
+
+
+átalakítja a beírt számot indexelővé 
+
+\mbox{\label{_menu_8h_aac067d016b66218b6d8e0578bc214ef0}} 
+\index{Menu.h@{Menu.h}!GotoLine@{GotoLine}}
+\index{GotoLine@{GotoLine}!Menu.h@{Menu.h}}
+\paragraph{\texorpdfstring{GotoLine()}{GotoLine()}}
+{\footnotesize\ttfamily std\+::fstream\& Goto\+Line (\begin{DoxyParamCaption}\item[{std\+::fstream \&}]{file,  }\item[{unsigned int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+n edik sorra ugrik egy file streamben 
+
+\mbox{\label{_menu_8h_aa66bedcbb6a6b03cde60b3441e6ae031}} 
+\index{Menu.h@{Menu.h}!partSelector@{partSelector}}
+\index{partSelector@{partSelector}!Menu.h@{Menu.h}}
+\paragraph{\texorpdfstring{partSelector()}{partSelector()}}
+{\footnotesize\ttfamily int part\+Selector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory}{Inventory}} \&}]{inventory,  }\item[{const char $\ast$}]{type }\end{DoxyParamCaption})}
+
+
+
+konfighoz választ alkatrészt 
+
+\mbox{\label{_menu_8h_aa8348016f7273e63d47917126e8f9c69}} 
+\index{Menu.h@{Menu.h}!printMain@{printMain}}
+\index{printMain@{printMain}!Menu.h@{Menu.h}}
+\paragraph{\texorpdfstring{printMain()}{printMain()}}
+{\footnotesize\ttfamily void print\+Main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+kiírja a főmenüt 
+
+\mbox{\label{_menu_8h_a2279d427508487e2c7194ba68588445d}} 
+\index{Menu.h@{Menu.h}!printOrdersList@{printOrdersList}}
+\index{printOrdersList@{printOrdersList}!Menu.h@{Menu.h}}
+\paragraph{\texorpdfstring{printOrdersList()}{printOrdersList()}}
+{\footnotesize\ttfamily void print\+Orders\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_orders}{Orders}} \&}]{orders }\end{DoxyParamCaption})}
+
+
+
+kiírja a megrendeléseket 
+
+\mbox{\label{_menu_8h_a54c74422af05849f9d508c0a5ccd468b}} 
+\index{Menu.h@{Menu.h}!printPartsList@{printPartsList}}
+\index{printPartsList@{printPartsList}!Menu.h@{Menu.h}}
+\paragraph{\texorpdfstring{printPartsList()}{printPartsList()}}
+{\footnotesize\ttfamily void print\+Parts\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory}{Inventory}} \&}]{ }\end{DoxyParamCaption})}
+
+
+
+kiírja az összes betölttött alkatrészt 
+
+\mbox{\label{_menu_8h_aed744d8c7e74c041565714ecfb656f0b}} 
+\index{Menu.h@{Menu.h}!removeOrderHelper@{removeOrderHelper}}
+\index{removeOrderHelper@{removeOrderHelper}!Menu.h@{Menu.h}}
+\paragraph{\texorpdfstring{removeOrderHelper()}{removeOrderHelper()}}
+{\footnotesize\ttfamily void remove\+Order\+Helper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_orders}{Orders}} \&}]{orders }\end{DoxyParamCaption})}
+
+\mbox{\label{_menu_8h_af332548b8c7c1e4d477c95abf6233b5d}} 
+\index{Menu.h@{Menu.h}!removePartHelper@{removePartHelper}}
+\index{removePartHelper@{removePartHelper}!Menu.h@{Menu.h}}
+\paragraph{\texorpdfstring{removePartHelper()}{removePartHelper()}}
+{\footnotesize\ttfamily void remove\+Part\+Helper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory}{Inventory}} \&}]{ }\end{DoxyParamCaption})}
+
+
+
+törli a kiválasztott alkatrészt 
+
+\mbox{\label{_menu_8h_a4b1c8fae94d189d0d74b10cde7b75176}} 
+\index{Menu.h@{Menu.h}!setEnumfromInt@{setEnumfromInt}}
+\index{setEnumfromInt@{setEnumfromInt}!Menu.h@{Menu.h}}
+\paragraph{\texorpdfstring{setEnumfromInt()}{setEnumfromInt()}}
+{\footnotesize\ttfamily void set\+Enumfrom\+Int (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{\mbox{\hyperlink{_parts_8h_abddff37837f171d72a2e16a1448a3943}{enum\+Part}} \&}]{eP }\end{DoxyParamCaption})}
+
+
+
+beállítja a part loadert 
+

@@ -94,6 +94,9 @@ $(document).ready(function(){initNavTree('class_build.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>Egy gépkonfigot tárol.  
+ <a href="class_build.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_builds_8h_source.html">Builds.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -105,12 +108,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aba0548391a8c613ed2a9d81d4d3b2a4b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aba0548391a8c613ed2a9d81d4d3b2a4b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_build.html#aba0548391a8c613ed2a9d81d4d3b2a4b">push_back</a> (T *part)</td></tr>
 <tr class="separator:aba0548391a8c613ed2a9d81d4d3b2a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded745a17c7d6b569244cb377ff62a9c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_build.html#aded745a17c7d6b569244cb377ff62a9c">get_price</a> ()</td></tr>
+<tr class="separator:aded745a17c7d6b569244cb377ff62a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb328444dd8bf97b36356be36db01194"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_build.html#adb328444dd8bf97b36356be36db01194">print</a> (std::ostream &amp;os) const</td></tr>
+<tr class="separator:adb328444dd8bf97b36356be36db01194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a754a988f73da756210b083814986f2f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_build.html#a754a988f73da756210b083814986f2f1">load</a> (std::fstream &amp;is, <a class="el" href="class_inventory.html">Inventory</a> &amp;inventory, <a class="el" href="struct_temp_input.html">TempInput</a> &amp;tmp)</td></tr>
+<tr class="separator:a754a988f73da756210b083814986f2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a954cd881cec1bf789fb57d7cdf617367"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_build.html#a954cd881cec1bf789fb57d7cdf617367">save</a> (std::ostream &amp;os) const</td></tr>
+<tr class="separator:a954cd881cec1bf789fb57d7cdf617367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3e03ed173016d7ff348d1e7057bd97c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_part.html">Part</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_build.html#af3e03ed173016d7ff348d1e7057bd97c">operator[]</a> (int idx) const</td></tr>
 <tr class="separator:af3e03ed173016d7ff348d1e7057bd97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa48e871d88c60272ab5f6cd5b97aaad0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_part.html">Part</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_build.html#aa48e871d88c60272ab5f6cd5b97aaad0">operator[]</a> (int idx)</td></tr>
 <tr class="separator:aa48e871d88c60272ab5f6cd5b97aaad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Egy gépkonfigot tárol. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab9b72c3479d483c0b452af30bb544de8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab9b72c3479d483c0b452af30bb544de8">&#9670;&nbsp;</a></span>Build()</h2>
 
@@ -163,6 +176,65 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aded745a17c7d6b569244cb377ff62a9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aded745a17c7d6b569244cb377ff62a9c">&#9670;&nbsp;</a></span>get_price()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Build::get_price </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a754a988f73da756210b083814986f2f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a754a988f73da756210b083814986f2f1">&#9670;&nbsp;</a></span>load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Build::load </td>
+          <td>(</td>
+          <td class="paramtype">std::fstream &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_inventory.html">Inventory</a> &amp;&#160;</td>
+          <td class="paramname"><em>inventory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_temp_input.html">TempInput</a> &amp;&#160;</td>
+          <td class="paramname"><em>tmp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af3e03ed173016d7ff348d1e7057bd97c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af3e03ed173016d7ff348d1e7057bd97c">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
 
@@ -215,6 +287,26 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="adb328444dd8bf97b36356be36db01194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb328444dd8bf97b36356be36db01194">&#9670;&nbsp;</a></span>print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Build::print </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>class neve</p>
+<p>class szó levétele a class neve elől </p>
+
+</div>
+</div>
 <a id="aba0548391a8c613ed2a9d81d4d3b2a4b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba0548391a8c613ed2a9d81d4d3b2a4b">&#9670;&nbsp;</a></span>push_back()</h2>
 
@@ -222,6 +314,9 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Build::push_back </td>
@@ -231,7 +326,32 @@ template&lt;typename T &gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a954cd881cec1bf789fb57d7cdf617367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a954cd881cec1bf789fb57d7cdf617367">&#9670;&nbsp;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Build::save </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>class neve</p>
+<p>class szó levétele a class neve elől </p>
 
 </div>
 </div>

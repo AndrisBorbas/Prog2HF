@@ -88,83 +88,225 @@ $(document).ready(function(){initNavTree('_inventory_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Inventory.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_parts_8h_source.html">Parts.h</a>&quot;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
 </div>
 <p><a href="_inventory_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html">Inventory</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alkatrész tároló  <a href="class_inventory.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:abddff37837f171d72a2e16a1448a3943"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inventory_8h.html#abddff37837f171d72a2e16a1448a3943">enumPart</a> { <br />
-&#160;&#160;<a class="el" href="_inventory_8h.html#abddff37837f171d72a2e16a1448a3943ab32c771bb60dc8b502f65b81eef3bd86">eInvalid</a> = 0, 
-<a class="el" href="_inventory_8h.html#abddff37837f171d72a2e16a1448a3943af628daad5f03c68213c8181eb59bd178">eCPU</a> = 1, 
-<a class="el" href="_inventory_8h.html#abddff37837f171d72a2e16a1448a3943a3a32d863321d2f2062b46d9dd968b7f7">eGPU</a> = 2, 
-<a class="el" href="_inventory_8h.html#abddff37837f171d72a2e16a1448a3943a648a218f2851134fdbddf38c73009cbe">eMOBO</a> = 3, 
-<br />
-&#160;&#160;<a class="el" href="_inventory_8h.html#abddff37837f171d72a2e16a1448a3943ab8ed3ffb829052bad316bc5bd3563c95">eRAM</a> = 4, 
-<a class="el" href="_inventory_8h.html#abddff37837f171d72a2e16a1448a3943a7a9e0a3b7edbb259ac104bcdcc146687">eCase</a> = 5, 
-<a class="el" href="_inventory_8h.html#abddff37837f171d72a2e16a1448a3943a1e9e01992a9c1cfae96b1bf60b946beb">ePSU</a> = 6, 
-<a class="el" href="_inventory_8h.html#abddff37837f171d72a2e16a1448a3943a47cf1e8f84e82a65f9ecb6d21649b4b4">eSSD</a> = 7, 
-<br />
-&#160;&#160;<a class="el" href="_inventory_8h.html#abddff37837f171d72a2e16a1448a3943a28b188092ec14a7f857b6b0a63185683">eHDD</a> = 8
-<br />
- }</td></tr>
-<tr class="separator:abddff37837f171d72a2e16a1448a3943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa9bc06c48979e6ec21d5fe16ca9b8164"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inventory_8h.html#aa9bc06c48979e6ec21d5fe16ca9b8164">setEnum</a> (<a class="el" href="class_string.html">String</a> inst, enum <a class="el" href="_inventory_8h.html#abddff37837f171d72a2e16a1448a3943">enumPart</a> &amp;)</td></tr>
-<tr class="separator:aa9bc06c48979e6ec21d5fe16ca9b8164"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a027b287b99619c750f30b4765ec929e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inventory_8h.html#a027b287b99619c750f30b4765ec929e5">LoadParams</a> (std::istream &amp;is, <a class="el" href="struct_temp_input.html">TempInput</a> &amp;tmp, int const params)</td></tr>
-<tr class="separator:a027b287b99619c750f30b4765ec929e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acecc59385cd8970fe6e368ea592362be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inventory_8h.html#acecc59385cd8970fe6e368ea592362be">loadParams</a> (std::fstream &amp;is, <a class="el" href="struct_temp_input.html">TempInput</a> &amp;tmp, int const params)</td></tr>
+<tr class="memdesc:acecc59385cd8970fe6e368ea592362be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Jelölők alapján betölti az alkatrész paramétereit.  <a href="#acecc59385cd8970fe6e368ea592362be">More...</a><br /></td></tr>
+<tr class="separator:acecc59385cd8970fe6e368ea592362be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af88785d286c8ea9392930b904f687672"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inventory_8h.html#af88785d286c8ea9392930b904f687672">loadBaseParams</a> (std::istream &amp;is, <a class="el" href="struct_temp_input.html">TempInput</a> &amp;tmp)</td></tr>
+<tr class="separator:af88785d286c8ea9392930b904f687672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0565beb9b5429fe7cf6edcb88becc168"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inventory_8h.html#a0565beb9b5429fe7cf6edcb88becc168">loadCPUParams</a> (std::istream &amp;is, <a class="el" href="struct_temp_input.html">TempInput</a> &amp;tmp)</td></tr>
+<tr class="separator:a0565beb9b5429fe7cf6edcb88becc168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa795cbf45c10e4533a23961614749d05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inventory_8h.html#aa795cbf45c10e4533a23961614749d05">loadGPUParams</a> (std::istream &amp;is, <a class="el" href="struct_temp_input.html">TempInput</a> &amp;tmp)</td></tr>
+<tr class="separator:aa795cbf45c10e4533a23961614749d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92e8bf2c22b5df04897f18e888d7973"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inventory_8h.html#ab92e8bf2c22b5df04897f18e888d7973">loadMOBOParams</a> (std::istream &amp;is, <a class="el" href="struct_temp_input.html">TempInput</a> &amp;tmp)</td></tr>
+<tr class="separator:ab92e8bf2c22b5df04897f18e888d7973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5377baa2a6064a69b04423103d85ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inventory_8h.html#aec5377baa2a6064a69b04423103d85ea">loadRAMParams</a> (std::istream &amp;is, <a class="el" href="struct_temp_input.html">TempInput</a> &amp;tmp)</td></tr>
+<tr class="separator:aec5377baa2a6064a69b04423103d85ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e65a05879001febd45f541ab230b86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inventory_8h.html#a47e65a05879001febd45f541ab230b86">loadCaseParams</a> (std::istream &amp;is, <a class="el" href="struct_temp_input.html">TempInput</a> &amp;tmp)</td></tr>
+<tr class="separator:a47e65a05879001febd45f541ab230b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a198252da076147a0ef1f4d721bdb2219"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inventory_8h.html#a198252da076147a0ef1f4d721bdb2219">loadPSUParams</a> (std::istream &amp;is, <a class="el" href="struct_temp_input.html">TempInput</a> &amp;tmp)</td></tr>
+<tr class="separator:a198252da076147a0ef1f4d721bdb2219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac358a7371dcac8ed9d7aba003099c193"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inventory_8h.html#ac358a7371dcac8ed9d7aba003099c193">loadSSDParams</a> (std::istream &amp;is, <a class="el" href="struct_temp_input.html">TempInput</a> &amp;tmp)</td></tr>
+<tr class="separator:ac358a7371dcac8ed9d7aba003099c193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab09373672ea8d4ea19f1903344fe327a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inventory_8h.html#ab09373672ea8d4ea19f1903344fe327a">loadHDDParams</a> (std::istream &amp;is, <a class="el" href="struct_temp_input.html">TempInput</a> &amp;tmp)</td></tr>
+<tr class="separator:ab09373672ea8d4ea19f1903344fe327a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="abddff37837f171d72a2e16a1448a3943"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abddff37837f171d72a2e16a1448a3943">&#9670;&nbsp;</a></span>enumPart</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="af88785d286c8ea9392930b904f687672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af88785d286c8ea9392930b904f687672">&#9670;&nbsp;</a></span>loadBaseParams()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="_inventory_8h.html#abddff37837f171d72a2e16a1448a3943">enumPart</a></td>
+          <td class="memname">void loadBaseParams </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_temp_input.html">TempInput</a> &amp;&#160;</td>
+          <td class="paramname"><em>tmp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abddff37837f171d72a2e16a1448a3943ab32c771bb60dc8b502f65b81eef3bd86"></a>eInvalid&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abddff37837f171d72a2e16a1448a3943af628daad5f03c68213c8181eb59bd178"></a>eCPU&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abddff37837f171d72a2e16a1448a3943a3a32d863321d2f2062b46d9dd968b7f7"></a>eGPU&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abddff37837f171d72a2e16a1448a3943a648a218f2851134fdbddf38c73009cbe"></a>eMOBO&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abddff37837f171d72a2e16a1448a3943ab8ed3ffb829052bad316bc5bd3563c95"></a>eRAM&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abddff37837f171d72a2e16a1448a3943a7a9e0a3b7edbb259ac104bcdcc146687"></a>eCase&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abddff37837f171d72a2e16a1448a3943a1e9e01992a9c1cfae96b1bf60b946beb"></a>ePSU&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abddff37837f171d72a2e16a1448a3943a47cf1e8f84e82a65f9ecb6d21649b4b4"></a>eSSD&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abddff37837f171d72a2e16a1448a3943a28b188092ec14a7f857b6b0a63185683"></a>eHDD&#160;</td><td class="fielddoc"></td></tr>
-</table>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a027b287b99619c750f30b4765ec929e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a027b287b99619c750f30b4765ec929e5">&#9670;&nbsp;</a></span>LoadParams()</h2>
+<a id="a47e65a05879001febd45f541ab230b86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47e65a05879001febd45f541ab230b86">&#9670;&nbsp;</a></span>loadCaseParams()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void LoadParams </td>
+          <td class="memname">void loadCaseParams </td>
           <td>(</td>
           <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_temp_input.html">TempInput</a> &amp;&#160;</td>
+          <td class="paramname"><em>tmp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0565beb9b5429fe7cf6edcb88becc168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0565beb9b5429fe7cf6edcb88becc168">&#9670;&nbsp;</a></span>loadCPUParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loadCPUParams </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_temp_input.html">TempInput</a> &amp;&#160;</td>
+          <td class="paramname"><em>tmp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa795cbf45c10e4533a23961614749d05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa795cbf45c10e4533a23961614749d05">&#9670;&nbsp;</a></span>loadGPUParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loadGPUParams </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_temp_input.html">TempInput</a> &amp;&#160;</td>
+          <td class="paramname"><em>tmp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab09373672ea8d4ea19f1903344fe327a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab09373672ea8d4ea19f1903344fe327a">&#9670;&nbsp;</a></span>loadHDDParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loadHDDParams </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_temp_input.html">TempInput</a> &amp;&#160;</td>
+          <td class="paramname"><em>tmp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab92e8bf2c22b5df04897f18e888d7973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab92e8bf2c22b5df04897f18e888d7973">&#9670;&nbsp;</a></span>loadMOBOParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loadMOBOParams </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_temp_input.html">TempInput</a> &amp;&#160;</td>
+          <td class="paramname"><em>tmp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acecc59385cd8970fe6e368ea592362be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acecc59385cd8970fe6e368ea592362be">&#9670;&nbsp;</a></span>loadParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loadParams </td>
+          <td>(</td>
+          <td class="paramtype">std::fstream &amp;&#160;</td>
           <td class="paramname"><em>is</em>, </td>
         </tr>
         <tr>
@@ -187,25 +329,83 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Jelölők alapján betölti az alkatrész paramétereit. </p>
+
 </div>
 </div>
-<a id="aa9bc06c48979e6ec21d5fe16ca9b8164"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9bc06c48979e6ec21d5fe16ca9b8164">&#9670;&nbsp;</a></span>setEnum()</h2>
+<a id="a198252da076147a0ef1f4d721bdb2219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a198252da076147a0ef1f4d721bdb2219">&#9670;&nbsp;</a></span>loadPSUParams()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void setEnum </td>
+          <td class="memname">void loadPSUParams </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
-          <td class="paramname"><em>inst</em>, </td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">enum <a class="el" href="_inventory_8h.html#abddff37837f171d72a2e16a1448a3943">enumPart</a> &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_temp_input.html">TempInput</a> &amp;&#160;</td>
+          <td class="paramname"><em>tmp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec5377baa2a6064a69b04423103d85ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec5377baa2a6064a69b04423103d85ea">&#9670;&nbsp;</a></span>loadRAMParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loadRAMParams </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_temp_input.html">TempInput</a> &amp;&#160;</td>
+          <td class="paramname"><em>tmp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac358a7371dcac8ed9d7aba003099c193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac358a7371dcac8ed9d7aba003099c193">&#9670;&nbsp;</a></span>loadSSDParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loadSSDParams </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_temp_input.html">TempInput</a> &amp;&#160;</td>
+          <td class="paramname"><em>tmp</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

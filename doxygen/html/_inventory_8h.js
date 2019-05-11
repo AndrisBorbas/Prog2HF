@@ -1,17 +1,14 @@
 var _inventory_8h =
 [
     [ "Inventory", "class_inventory.html", "class_inventory" ],
-    [ "enumPart", "_inventory_8h.html#abddff37837f171d72a2e16a1448a3943", [
-      [ "eInvalid", "_inventory_8h.html#abddff37837f171d72a2e16a1448a3943ab32c771bb60dc8b502f65b81eef3bd86", null ],
-      [ "eCPU", "_inventory_8h.html#abddff37837f171d72a2e16a1448a3943af628daad5f03c68213c8181eb59bd178", null ],
-      [ "eGPU", "_inventory_8h.html#abddff37837f171d72a2e16a1448a3943a3a32d863321d2f2062b46d9dd968b7f7", null ],
-      [ "eMOBO", "_inventory_8h.html#abddff37837f171d72a2e16a1448a3943a648a218f2851134fdbddf38c73009cbe", null ],
-      [ "eRAM", "_inventory_8h.html#abddff37837f171d72a2e16a1448a3943ab8ed3ffb829052bad316bc5bd3563c95", null ],
-      [ "eCase", "_inventory_8h.html#abddff37837f171d72a2e16a1448a3943a7a9e0a3b7edbb259ac104bcdcc146687", null ],
-      [ "ePSU", "_inventory_8h.html#abddff37837f171d72a2e16a1448a3943a1e9e01992a9c1cfae96b1bf60b946beb", null ],
-      [ "eSSD", "_inventory_8h.html#abddff37837f171d72a2e16a1448a3943a47cf1e8f84e82a65f9ecb6d21649b4b4", null ],
-      [ "eHDD", "_inventory_8h.html#abddff37837f171d72a2e16a1448a3943a28b188092ec14a7f857b6b0a63185683", null ]
-    ] ],
-    [ "LoadParams", "_inventory_8h.html#a027b287b99619c750f30b4765ec929e5", null ],
-    [ "setEnum", "_inventory_8h.html#aa9bc06c48979e6ec21d5fe16ca9b8164", null ]
+    [ "loadBaseParams", "_inventory_8h.html#af88785d286c8ea9392930b904f687672", null ],
+    [ "loadCaseParams", "_inventory_8h.html#a47e65a05879001febd45f541ab230b86", null ],
+    [ "loadCPUParams", "_inventory_8h.html#a0565beb9b5429fe7cf6edcb88becc168", null ],
+    [ "loadGPUParams", "_inventory_8h.html#aa795cbf45c10e4533a23961614749d05", null ],
+    [ "loadHDDParams", "_inventory_8h.html#ab09373672ea8d4ea19f1903344fe327a", null ],
+    [ "loadMOBOParams", "_inventory_8h.html#ab92e8bf2c22b5df04897f18e888d7973", null ],
+    [ "loadParams", "_inventory_8h.html#acecc59385cd8970fe6e368ea592362be", null ],
+    [ "loadPSUParams", "_inventory_8h.html#a198252da076147a0ef1f4d721bdb2219", null ],
+    [ "loadRAMParams", "_inventory_8h.html#aec5377baa2a6064a69b04423103d85ea", null ],
+    [ "loadSSDParams", "_inventory_8h.html#ac358a7371dcac8ed9d7aba003099c193", null ]
 ];

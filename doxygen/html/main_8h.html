@@ -87,7 +87,6 @@ $(document).ready(function(){initNavTree('main_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">main.h File Reference</div>  </div>
@@ -102,229 +101,22 @@ $(document).ready(function(){initNavTree('main_8h.html','');});
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &quot;<a class="el" href="_parts_8h_source.html">Parts.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_inventory_8h_source.html">Inventory.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="atest_8h_source.html">atest.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_builds_8h_source.html">Builds.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_menu_8h_source.html">Menu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="atest_8h_source.html">atest.h</a>&quot;</code><br />
 </div>
 <p><a href="main_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:adbc27074b7dcd54cd4578936c6329d02"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#adbc27074b7dcd54cd4578936c6329d02">enumMenu</a> { <br />
-&#160;&#160;<a class="el" href="main_8h.html#adbc27074b7dcd54cd4578936c6329d02a51060f19a5d0006e2cb20df8786a330b">eMain</a> = 1, 
-<a class="el" href="main_8h.html#adbc27074b7dcd54cd4578936c6329d02a8d35c4ba2bd3370a44513dbdbdbd0ff6">ePartsList</a> = 11, 
-<a class="el" href="main_8h.html#adbc27074b7dcd54cd4578936c6329d02a1fedbd15c99125bee9cb78cffbf7228b">ePartsAdd</a> = 12, 
-<a class="el" href="main_8h.html#adbc27074b7dcd54cd4578936c6329d02af19f793fac63215e67f31045c7371d1c">ePartsRemove</a> = 13, 
-<br />
-&#160;&#160;<a class="el" href="main_8h.html#adbc27074b7dcd54cd4578936c6329d02a34f49f61c9b4bdb2fe1be11758138084">eBuildsList</a> = 21, 
-<a class="el" href="main_8h.html#adbc27074b7dcd54cd4578936c6329d02a18af4c5278fb8ad13d84f598c68e766e">eBuildsAdd</a> = 22, 
-<a class="el" href="main_8h.html#adbc27074b7dcd54cd4578936c6329d02af2f1713ca51324f5000bf36d36bfd684">eExit</a> = 9
-<br />
- }</td></tr>
-<tr class="separator:adbc27074b7dcd54cd4578936c6329d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e4e191ea94a60b35aab49d49b978f77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a5e4e191ea94a60b35aab49d49b978f77">saveInventory</a> (std::fstream &amp;, std::fstream &amp;, <a class="el" href="class_inventory.html">Inventory</a> &amp;, std::streampos &amp;, const char *)</td></tr>
-<tr class="separator:a5e4e191ea94a60b35aab49d49b978f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac83102103dbe7ba03fa00ab462055a6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#ac83102103dbe7ba03fa00ab462055a6f">animate</a> (char)</td></tr>
-<tr class="separator:ac83102103dbe7ba03fa00ab462055a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8348016f7273e63d47917126e8f9c69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#aa8348016f7273e63d47917126e8f9c69">printMain</a> ()</td></tr>
-<tr class="separator:aa8348016f7273e63d47917126e8f9c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed630b39565f9b935d3148b396fd862d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#aed630b39565f9b935d3148b396fd862d">evaluateCommand</a> (enum <a class="el" href="main_8h.html#adbc27074b7dcd54cd4578936c6329d02">enumMenu</a> &amp;)</td></tr>
-<tr class="separator:aed630b39565f9b935d3148b396fd862d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54c74422af05849f9d508c0a5ccd468b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a54c74422af05849f9d508c0a5ccd468b">printPartsList</a> (<a class="el" href="class_inventory.html">Inventory</a> &amp;)</td></tr>
-<tr class="separator:a54c74422af05849f9d508c0a5ccd468b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af60ea04d4030a9371dd4d0dd61a0531f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#af60ea04d4030a9371dd4d0dd61a0531f">addPartHelper</a> (<a class="el" href="class_inventory.html">Inventory</a> &amp;, <a class="el" href="struct_temp_input.html">TempInput</a> &amp;)</td></tr>
-<tr class="separator:af60ea04d4030a9371dd4d0dd61a0531f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05031fafa43df25734364a97085b66be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a05031fafa43df25734364a97085b66be">removePartHelper</a> (<a class="el" href="class_inventory.html">Inventory</a> &amp;, <a class="el" href="main_8h.html#adbc27074b7dcd54cd4578936c6329d02">enumMenu</a> &amp;)</td></tr>
-<tr class="separator:a05031fafa43df25734364a97085b66be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e552edf6cae51d6a38ad105b2c29edb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a0e552edf6cae51d6a38ad105b2c29edb">evaluateInput</a> (<a class="el" href="class_inventory.html">Inventory</a> &amp;)</td></tr>
-<tr class="separator:a0e552edf6cae51d6a38ad105b2c29edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1fd94f91e6af6d41057704277c9d9e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#ae1fd94f91e6af6d41057704277c9d9e6">saveParts</a> (const <a class="el" href="class_inventory.html">Inventory</a> &amp;)</td></tr>
-<tr class="separator:ae1fd94f91e6af6d41057704277c9d9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91fe9752814ecad7d04d2cf550123d17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#a91fe9752814ecad7d04d2cf550123d17">saveOrders</a> (const <a class="el" href="class_orders.html">Orders</a> &amp;)</td></tr>
-<tr class="separator:a91fe9752814ecad7d04d2cf550123d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac067d016b66218b6d8e0578bc214ef0"><td class="memItemLeft" align="right" valign="top">std::fstream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#aac067d016b66218b6d8e0578bc214ef0">GotoLine</a> (std::fstream &amp;file, unsigned int n)</td></tr>
-<tr class="memdesc:aac067d016b66218b6d8e0578bc214ef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">n edik sorra ugrik egy file streamben  <a href="#aac067d016b66218b6d8e0578bc214ef0">More...</a><br /></td></tr>
-<tr class="separator:aac067d016b66218b6d8e0578bc214ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa6e5fc0d7c515998e48fe6ae944ca40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8h.html#aaa6e5fc0d7c515998e48fe6ae944ca40">clearcmd</a> ()</td></tr>
-<tr class="memdesc:aaa6e5fc0d7c515998e48fe6ae944ca40"><td class="mdescLeft">&#160;</td><td class="mdescRight">kitörli a terminált  <a href="#aaa6e5fc0d7c515998e48fe6ae944ca40">More...</a><br /></td></tr>
-<tr class="separator:aaa6e5fc0d7c515998e48fe6ae944ca40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0060785675592b854caa528edb88d690"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0060785675592b854caa528edb88d690"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="main_8h.html#a0060785675592b854caa528edb88d690">save</a> (std::fstream &amp;, std::fstream &amp;, T &amp;, std::streampos &amp;, const char *, const char *)</td></tr>
+<tr class="memdesc:a0060785675592b854caa528edb88d690"><td class="mdescLeft">&#160;</td><td class="mdescRight">elmenti a program módosításait  <a href="#a0060785675592b854caa528edb88d690">More...</a><br /></td></tr>
+<tr class="separator:a0060785675592b854caa528edb88d690"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="adbc27074b7dcd54cd4578936c6329d02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbc27074b7dcd54cd4578936c6329d02">&#9670;&nbsp;</a></span>enumMenu</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="main_8h.html#adbc27074b7dcd54cd4578936c6329d02">enumMenu</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adbc27074b7dcd54cd4578936c6329d02a51060f19a5d0006e2cb20df8786a330b"></a>eMain&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="adbc27074b7dcd54cd4578936c6329d02a8d35c4ba2bd3370a44513dbdbdbd0ff6"></a>ePartsList&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="adbc27074b7dcd54cd4578936c6329d02a1fedbd15c99125bee9cb78cffbf7228b"></a>ePartsAdd&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="adbc27074b7dcd54cd4578936c6329d02af19f793fac63215e67f31045c7371d1c"></a>ePartsRemove&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="adbc27074b7dcd54cd4578936c6329d02a34f49f61c9b4bdb2fe1be11758138084"></a>eBuildsList&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="adbc27074b7dcd54cd4578936c6329d02a18af4c5278fb8ad13d84f598c68e766e"></a>eBuildsAdd&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="adbc27074b7dcd54cd4578936c6329d02af2f1713ca51324f5000bf36d36bfd684"></a>eExit&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="af60ea04d4030a9371dd4d0dd61a0531f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af60ea04d4030a9371dd4d0dd61a0531f">&#9670;&nbsp;</a></span>addPartHelper()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void addPartHelper </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_inventory.html">Inventory</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_temp_input.html">TempInput</a> &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac83102103dbe7ba03fa00ab462055a6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac83102103dbe7ba03fa00ab462055a6f">&#9670;&nbsp;</a></span>animate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void animate </td>
-          <td>(</td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaa6e5fc0d7c515998e48fe6ae944ca40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa6e5fc0d7c515998e48fe6ae944ca40">&#9670;&nbsp;</a></span>clearcmd()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void clearcmd </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>kitörli a terminált </p>
-
-</div>
-</div>
-<a id="aed630b39565f9b935d3148b396fd862d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed630b39565f9b935d3148b396fd862d">&#9670;&nbsp;</a></span>evaluateCommand()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void evaluateCommand </td>
-          <td>(</td>
-          <td class="paramtype">enum <a class="el" href="main_8h.html#adbc27074b7dcd54cd4578936c6329d02">enumMenu</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0e552edf6cae51d6a38ad105b2c29edb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e552edf6cae51d6a38ad105b2c29edb">&#9670;&nbsp;</a></span>evaluateInput()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int evaluateInput </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_inventory.html">Inventory</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aac067d016b66218b6d8e0578bc214ef0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac067d016b66218b6d8e0578bc214ef0">&#9670;&nbsp;</a></span>GotoLine()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::fstream&amp; GotoLine </td>
-          <td>(</td>
-          <td class="paramtype">std::fstream &amp;&#160;</td>
-          <td class="paramname"><em>file</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>n edik sorra ugrik egy file streamben </p>
-
-</div>
-</div>
 <a id="a3c04138a5bfe5d72780bb7e82a18e627"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&nbsp;</a></span>main()</h2>
 
@@ -350,84 +142,31 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Alapértelmezett parts fájl név</p>
-<p>Parts fájl nevének beállítása indítási parancsból</p>
-<p>első 5 sor átmásolása</p>
-<p>pozíció mentése kiíráshoz </p>
+<p>Alapértelmezett fájl nevek</p>
+<p>fájl nevek beállítása indítási parancsból</p>
+<p>Alkatrészek</p>
+<p>Megrendelések</p>
+<p>első 6 sor átmásolása</p>
+<p>pozíció mentése kiíráshoz</p>
+<p>Alkatrész típusa betöltéshez</p>
+<p>Menüpontok közti váltás</p>
+<p>alkatrészek betöltése fájlból</p>
+<p>megrendelések betöltése fájlból</p>
+<p>main menu loop</p>
+<p>mentés </p>
 
 </div>
 </div>
-<a id="aa8348016f7273e63d47917126e8f9c69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8348016f7273e63d47917126e8f9c69">&#9670;&nbsp;</a></span>printMain()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void printMain </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a54c74422af05849f9d508c0a5ccd468b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54c74422af05849f9d508c0a5ccd468b">&#9670;&nbsp;</a></span>printPartsList()</h2>
+<a id="a0060785675592b854caa528edb88d690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0060785675592b854caa528edb88d690">&#9670;&nbsp;</a></span>save()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void printPartsList </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_inventory.html">Inventory</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a05031fafa43df25734364a97085b66be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05031fafa43df25734364a97085b66be">&#9670;&nbsp;</a></span>removePartHelper()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int removePartHelper </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_inventory.html">Inventory</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="main_8h.html#adbc27074b7dcd54cd4578936c6329d02">enumMenu</a> &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5e4e191ea94a60b35aab49d49b978f77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e4e191ea94a60b35aab49d49b978f77">&#9670;&nbsp;</a></span>saveInventory()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void saveInventory </td>
+          <td class="memname">void save </td>
           <td>(</td>
           <td class="paramtype">std::fstream &amp;&#160;</td>
           <td class="paramname">, </td>
@@ -441,13 +180,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_inventory.html">Inventory</a> &amp;&#160;</td>
+          <td class="paramtype">T &amp;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::streampos &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -464,41 +209,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a91fe9752814ecad7d04d2cf550123d17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91fe9752814ecad7d04d2cf550123d17">&#9670;&nbsp;</a></span>saveOrders()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void saveOrders </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_orders.html">Orders</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae1fd94f91e6af6d41057704277c9d9e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1fd94f91e6af6d41057704277c9d9e6">&#9670;&nbsp;</a></span>saveParts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void saveParts </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_inventory.html">Inventory</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>elmenti a program módosításait </p>
 
 </div>
 </div>

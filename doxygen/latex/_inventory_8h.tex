@@ -1,94 +1,99 @@
 \subsection{C\+:/\+Users/cxl20/\+Documents/\+Visual Studio 2017/\+Prog2\+H\+F/\+Prog2\+H\+F/\+Inventory.h File Reference}
 \label{_inventory_8h}\index{C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h@{C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h}}
 {\ttfamily \#include \char`\"{}Parts.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
 \subsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{class_inventory}{Inventory}}
-\end{DoxyCompactItemize}
-\subsubsection*{Enumerations}
-\begin{DoxyCompactItemize}
-\item 
-enum \mbox{\hyperlink{_inventory_8h_abddff37837f171d72a2e16a1448a3943}{enum\+Part}} \{ \newline
-\mbox{\hyperlink{_inventory_8h_abddff37837f171d72a2e16a1448a3943ab32c771bb60dc8b502f65b81eef3bd86}{e\+Invalid}} = 0, 
-\mbox{\hyperlink{_inventory_8h_abddff37837f171d72a2e16a1448a3943af628daad5f03c68213c8181eb59bd178}{e\+C\+PU}} = 1, 
-\mbox{\hyperlink{_inventory_8h_abddff37837f171d72a2e16a1448a3943a3a32d863321d2f2062b46d9dd968b7f7}{e\+G\+PU}} = 2, 
-\mbox{\hyperlink{_inventory_8h_abddff37837f171d72a2e16a1448a3943a648a218f2851134fdbddf38c73009cbe}{e\+M\+O\+BO}} = 3, 
-\newline
-\mbox{\hyperlink{_inventory_8h_abddff37837f171d72a2e16a1448a3943ab8ed3ffb829052bad316bc5bd3563c95}{e\+R\+AM}} = 4, 
-\mbox{\hyperlink{_inventory_8h_abddff37837f171d72a2e16a1448a3943a7a9e0a3b7edbb259ac104bcdcc146687}{e\+Case}} = 5, 
-\mbox{\hyperlink{_inventory_8h_abddff37837f171d72a2e16a1448a3943a1e9e01992a9c1cfae96b1bf60b946beb}{e\+P\+SU}} = 6, 
-\mbox{\hyperlink{_inventory_8h_abddff37837f171d72a2e16a1448a3943a47cf1e8f84e82a65f9ecb6d21649b4b4}{e\+S\+SD}} = 7, 
-\newline
-\mbox{\hyperlink{_inventory_8h_abddff37837f171d72a2e16a1448a3943a28b188092ec14a7f857b6b0a63185683}{e\+H\+DD}} = 8
- \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Alkatrész tároló \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{_inventory_8h_aa9bc06c48979e6ec21d5fe16ca9b8164}{set\+Enum}} (\mbox{\hyperlink{class_string}{String}} inst, enum \mbox{\hyperlink{_inventory_8h_abddff37837f171d72a2e16a1448a3943}{enum\+Part}} \&)
+void \mbox{\hyperlink{_inventory_8h_acecc59385cd8970fe6e368ea592362be}{load\+Params}} (std\+::fstream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp, int const params)
+\begin{DoxyCompactList}\small\item\em Jelölők alapján betölti az alkatrész paramétereit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_inventory_8h_af88785d286c8ea9392930b904f687672}{load\+Base\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
 \item 
-void \mbox{\hyperlink{_inventory_8h_a027b287b99619c750f30b4765ec929e5}{Load\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp, int const params)
+void \mbox{\hyperlink{_inventory_8h_a0565beb9b5429fe7cf6edcb88becc168}{load\+C\+P\+U\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
+\item 
+void \mbox{\hyperlink{_inventory_8h_aa795cbf45c10e4533a23961614749d05}{load\+G\+P\+U\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
+\item 
+void \mbox{\hyperlink{_inventory_8h_ab92e8bf2c22b5df04897f18e888d7973}{load\+M\+O\+B\+O\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
+\item 
+void \mbox{\hyperlink{_inventory_8h_aec5377baa2a6064a69b04423103d85ea}{load\+R\+A\+M\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
+\item 
+void \mbox{\hyperlink{_inventory_8h_a47e65a05879001febd45f541ab230b86}{load\+Case\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
+\item 
+void \mbox{\hyperlink{_inventory_8h_a198252da076147a0ef1f4d721bdb2219}{load\+P\+S\+U\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
+\item 
+void \mbox{\hyperlink{_inventory_8h_ac358a7371dcac8ed9d7aba003099c193}{load\+S\+S\+D\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
+\item 
+void \mbox{\hyperlink{_inventory_8h_ab09373672ea8d4ea19f1903344fe327a}{load\+H\+D\+D\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
 \end{DoxyCompactItemize}
 
 
-\subsubsection{Enumeration Type Documentation}
-\mbox{\label{_inventory_8h_abddff37837f171d72a2e16a1448a3943}} 
-\index{Inventory.h@{Inventory.h}!enumPart@{enumPart}}
-\index{enumPart@{enumPart}!Inventory.h@{Inventory.h}}
-\paragraph{\texorpdfstring{enumPart}{enumPart}}
-{\footnotesize\ttfamily enum \mbox{\hyperlink{_inventory_8h_abddff37837f171d72a2e16a1448a3943}{enum\+Part}}}
-
-\begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{eInvalid@{eInvalid}!Inventory.h@{Inventory.h}}\index{Inventory.h@{Inventory.h}!eInvalid@{eInvalid}}}\mbox{\label{_inventory_8h_abddff37837f171d72a2e16a1448a3943ab32c771bb60dc8b502f65b81eef3bd86}} 
-e\+Invalid&\\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{eCPU@{eCPU}!Inventory.h@{Inventory.h}}\index{Inventory.h@{Inventory.h}!eCPU@{eCPU}}}\mbox{\label{_inventory_8h_abddff37837f171d72a2e16a1448a3943af628daad5f03c68213c8181eb59bd178}} 
-e\+C\+PU&\\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{eGPU@{eGPU}!Inventory.h@{Inventory.h}}\index{Inventory.h@{Inventory.h}!eGPU@{eGPU}}}\mbox{\label{_inventory_8h_abddff37837f171d72a2e16a1448a3943a3a32d863321d2f2062b46d9dd968b7f7}} 
-e\+G\+PU&\\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{eMOBO@{eMOBO}!Inventory.h@{Inventory.h}}\index{Inventory.h@{Inventory.h}!eMOBO@{eMOBO}}}\mbox{\label{_inventory_8h_abddff37837f171d72a2e16a1448a3943a648a218f2851134fdbddf38c73009cbe}} 
-e\+M\+O\+BO&\\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{eRAM@{eRAM}!Inventory.h@{Inventory.h}}\index{Inventory.h@{Inventory.h}!eRAM@{eRAM}}}\mbox{\label{_inventory_8h_abddff37837f171d72a2e16a1448a3943ab8ed3ffb829052bad316bc5bd3563c95}} 
-e\+R\+AM&\\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{eCase@{eCase}!Inventory.h@{Inventory.h}}\index{Inventory.h@{Inventory.h}!eCase@{eCase}}}\mbox{\label{_inventory_8h_abddff37837f171d72a2e16a1448a3943a7a9e0a3b7edbb259ac104bcdcc146687}} 
-e\+Case&\\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{ePSU@{ePSU}!Inventory.h@{Inventory.h}}\index{Inventory.h@{Inventory.h}!ePSU@{ePSU}}}\mbox{\label{_inventory_8h_abddff37837f171d72a2e16a1448a3943a1e9e01992a9c1cfae96b1bf60b946beb}} 
-e\+P\+SU&\\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{eSSD@{eSSD}!Inventory.h@{Inventory.h}}\index{Inventory.h@{Inventory.h}!eSSD@{eSSD}}}\mbox{\label{_inventory_8h_abddff37837f171d72a2e16a1448a3943a47cf1e8f84e82a65f9ecb6d21649b4b4}} 
-e\+S\+SD&\\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{eHDD@{eHDD}!Inventory.h@{Inventory.h}}\index{Inventory.h@{Inventory.h}!eHDD@{eHDD}}}\mbox{\label{_inventory_8h_abddff37837f171d72a2e16a1448a3943a28b188092ec14a7f857b6b0a63185683}} 
-e\+H\+DD&\\
-\hline
-
-\end{DoxyEnumFields}
-
-
 \subsubsection{Function Documentation}
-\mbox{\label{_inventory_8h_a027b287b99619c750f30b4765ec929e5}} 
-\index{Inventory.h@{Inventory.h}!LoadParams@{LoadParams}}
-\index{LoadParams@{LoadParams}!Inventory.h@{Inventory.h}}
-\paragraph{\texorpdfstring{LoadParams()}{LoadParams()}}
-{\footnotesize\ttfamily void Load\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp,  }\item[{int const}]{params }\end{DoxyParamCaption})}
+\mbox{\label{_inventory_8h_af88785d286c8ea9392930b904f687672}} 
+\index{Inventory.h@{Inventory.h}!loadBaseParams@{loadBaseParams}}
+\index{loadBaseParams@{loadBaseParams}!Inventory.h@{Inventory.h}}
+\paragraph{\texorpdfstring{loadBaseParams()}{loadBaseParams()}}
+{\footnotesize\ttfamily void load\+Base\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
 
-\mbox{\label{_inventory_8h_aa9bc06c48979e6ec21d5fe16ca9b8164}} 
-\index{Inventory.h@{Inventory.h}!setEnum@{setEnum}}
-\index{setEnum@{setEnum}!Inventory.h@{Inventory.h}}
-\paragraph{\texorpdfstring{setEnum()}{setEnum()}}
-{\footnotesize\ttfamily void set\+Enum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_string}{String}}}]{inst,  }\item[{enum \mbox{\hyperlink{_inventory_8h_abddff37837f171d72a2e16a1448a3943}{enum\+Part}} \&}]{ }\end{DoxyParamCaption})}
+\mbox{\label{_inventory_8h_a47e65a05879001febd45f541ab230b86}} 
+\index{Inventory.h@{Inventory.h}!loadCaseParams@{loadCaseParams}}
+\index{loadCaseParams@{loadCaseParams}!Inventory.h@{Inventory.h}}
+\paragraph{\texorpdfstring{loadCaseParams()}{loadCaseParams()}}
+{\footnotesize\ttfamily void load\+Case\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
+
+\mbox{\label{_inventory_8h_a0565beb9b5429fe7cf6edcb88becc168}} 
+\index{Inventory.h@{Inventory.h}!loadCPUParams@{loadCPUParams}}
+\index{loadCPUParams@{loadCPUParams}!Inventory.h@{Inventory.h}}
+\paragraph{\texorpdfstring{loadCPUParams()}{loadCPUParams()}}
+{\footnotesize\ttfamily void load\+C\+P\+U\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
+
+\mbox{\label{_inventory_8h_aa795cbf45c10e4533a23961614749d05}} 
+\index{Inventory.h@{Inventory.h}!loadGPUParams@{loadGPUParams}}
+\index{loadGPUParams@{loadGPUParams}!Inventory.h@{Inventory.h}}
+\paragraph{\texorpdfstring{loadGPUParams()}{loadGPUParams()}}
+{\footnotesize\ttfamily void load\+G\+P\+U\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
+
+\mbox{\label{_inventory_8h_ab09373672ea8d4ea19f1903344fe327a}} 
+\index{Inventory.h@{Inventory.h}!loadHDDParams@{loadHDDParams}}
+\index{loadHDDParams@{loadHDDParams}!Inventory.h@{Inventory.h}}
+\paragraph{\texorpdfstring{loadHDDParams()}{loadHDDParams()}}
+{\footnotesize\ttfamily void load\+H\+D\+D\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
+
+\mbox{\label{_inventory_8h_ab92e8bf2c22b5df04897f18e888d7973}} 
+\index{Inventory.h@{Inventory.h}!loadMOBOParams@{loadMOBOParams}}
+\index{loadMOBOParams@{loadMOBOParams}!Inventory.h@{Inventory.h}}
+\paragraph{\texorpdfstring{loadMOBOParams()}{loadMOBOParams()}}
+{\footnotesize\ttfamily void load\+M\+O\+B\+O\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
+
+\mbox{\label{_inventory_8h_acecc59385cd8970fe6e368ea592362be}} 
+\index{Inventory.h@{Inventory.h}!loadParams@{loadParams}}
+\index{loadParams@{loadParams}!Inventory.h@{Inventory.h}}
+\paragraph{\texorpdfstring{loadParams()}{loadParams()}}
+{\footnotesize\ttfamily void load\+Params (\begin{DoxyParamCaption}\item[{std\+::fstream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp,  }\item[{int const}]{params }\end{DoxyParamCaption})}
+
+
+
+Jelölők alapján betölti az alkatrész paramétereit. 
+
+\mbox{\label{_inventory_8h_a198252da076147a0ef1f4d721bdb2219}} 
+\index{Inventory.h@{Inventory.h}!loadPSUParams@{loadPSUParams}}
+\index{loadPSUParams@{loadPSUParams}!Inventory.h@{Inventory.h}}
+\paragraph{\texorpdfstring{loadPSUParams()}{loadPSUParams()}}
+{\footnotesize\ttfamily void load\+P\+S\+U\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
+
+\mbox{\label{_inventory_8h_aec5377baa2a6064a69b04423103d85ea}} 
+\index{Inventory.h@{Inventory.h}!loadRAMParams@{loadRAMParams}}
+\index{loadRAMParams@{loadRAMParams}!Inventory.h@{Inventory.h}}
+\paragraph{\texorpdfstring{loadRAMParams()}{loadRAMParams()}}
+{\footnotesize\ttfamily void load\+R\+A\+M\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
+
+\mbox{\label{_inventory_8h_ac358a7371dcac8ed9d7aba003099c193}} 
+\index{Inventory.h@{Inventory.h}!loadSSDParams@{loadSSDParams}}
+\index{loadSSDParams@{loadSSDParams}!Inventory.h@{Inventory.h}}
+\paragraph{\texorpdfstring{loadSSDParams()}{loadSSDParams()}}
+{\footnotesize\ttfamily void load\+S\+S\+D\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
 

@@ -4,9 +4,10 @@
 
 ///Egy gépkonfigot tárol
 class Build {
-	Part** components;
-	size_t capacity;
-	int size;
+	///alkatrészek
+	Part** components; 	///max méret
+	size_t capacity;	///méret
+	int size;			///ár
 	int price;
 public:
 	Build(size_t capacity = 7) :capacity(capacity), size(0), price(0) {
@@ -16,6 +17,7 @@ public:
 		delete[] components;
 	}
 
+	///végére beszúrás
 	template<typename T>
 	void push_back(T* part) {
 		if (size == (int)capacity) {
@@ -32,11 +34,11 @@ public:
 		size++;
 	}
 	int get_price() { return price; }
-
+	///konfig kiírása
 	void print(std::ostream& os) const;
-
+	///konfig betöltése
 	void load(std::fstream& is, Inventory& inventory, TempInput& tmp);
-
+	///konfig mentése
 	void save(std::ostream& os) const;
 
 	const Part* operator[](int idx) const {
@@ -52,9 +54,10 @@ std::ostream& operator<<(std::ostream& os, const Build& b);
 
 ///A megrendelt konfigokat tárolja
 class Orders {
-	Build** builds;
-	bool* completed;
-	size_t capacity;
+	///konfigok
+	Build** builds;		///teljesített
+	bool* completed;	///max méret
+	size_t capacity;	///méret
 	int size;
 public:
 	Orders(size_t capacity = 1) :capacity(capacity), size(0) {
@@ -73,6 +76,7 @@ public:
 		return size;
 	}
 
+	///végére beszúrás
 	void push_back(Build* build) {
 		if (size == (int)capacity) {
 			capacity *= 2;
@@ -95,12 +99,13 @@ public:
 		size++;
 	}
 
+	///megrendelések betöltése
 	void load(std::fstream& is, Inventory& inventory, TempInput& tmp);
-
+	///megrendelések mentése
 	void save(std::ostream& os) const;
-
+	///megrendelés teljesített állapotba tétele
 	void complete(int idx);
-
+	///megrendelés törlése
 	void remove(int idx);
 
 	void print(std::ostream& os) const;

@@ -1,0 +1,158 @@
+\subsection{C\+:/\+Users/cxl20/\+Documents/\+Visual Studio 2017/\+Prog2\+H\+F/\+Prog2\+H\+F/\+Menu.cpp File Reference}
+\label{_menu_8cpp}\index{C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Menu.cpp@{C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Menu.cpp}}
+{\ttfamily \#include \char`\"{}Menu.\+h\char`\"{}}\newline
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_menu_8cpp_aa8348016f7273e63d47917126e8f9c69}{print\+Main}} ()
+\begin{DoxyCompactList}\small\item\em kiírja a főmenüt \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_menu_8cpp_a70c4e63bce818eb0a35f6403066b4263}{print\+Parts\+List}} (\mbox{\hyperlink{class_inventory}{Inventory}} \&inventory)
+\begin{DoxyCompactList}\small\item\em kiírja az összes betölttött alkatrészt \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_menu_8cpp_a2279d427508487e2c7194ba68588445d}{print\+Orders\+List}} (\mbox{\hyperlink{class_orders}{Orders}} \&orders)
+\begin{DoxyCompactList}\small\item\em kiírja a megrendeléseket \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_menu_8cpp_ab9d115a63a4cd02ce5f3ee167669515d}{add\+Part\+Helper}} (\mbox{\hyperlink{class_inventory}{Inventory}} \&inventory, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp, enum \mbox{\hyperlink{_parts_8h_abddff37837f171d72a2e16a1448a3943}{enum\+Part}} \&eP)
+\begin{DoxyCompactList}\small\item\em új alkatrészt tölt be console inputról. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_menu_8cpp_ad31a3966104aedb59abe49cf8fa7b33e}{remove\+Part\+Helper}} (\mbox{\hyperlink{class_inventory}{Inventory}} \&inventory)
+\begin{DoxyCompactList}\small\item\em törli a kiválasztott alkatrészt \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_menu_8cpp_a185a985b9e28ccd13d5fb2d841e4a5f0}{add\+Build\+Helper}} (\mbox{\hyperlink{class_orders}{Orders}} \&orders, \mbox{\hyperlink{class_inventory}{Inventory}} \&inventory)
+\begin{DoxyCompactList}\small\item\em egy configot lehet csinálni vele \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_menu_8cpp_aa66bedcbb6a6b03cde60b3441e6ae031}{part\+Selector}} (\mbox{\hyperlink{class_inventory}{Inventory}} \&inventory, const char $\ast$type)
+\begin{DoxyCompactList}\small\item\em konfighoz választ alkatrészt \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_menu_8cpp_a0f808ec53d26f8bcef1a0f22783c78f8}{complete\+Order\+Helper}} (\mbox{\hyperlink{class_orders}{Orders}} \&orders)
+\item 
+void \mbox{\hyperlink{_menu_8cpp_aed744d8c7e74c041565714ecfb656f0b}{remove\+Order\+Helper}} (\mbox{\hyperlink{class_orders}{Orders}} \&orders)
+\item 
+void \mbox{\hyperlink{_menu_8cpp_a9752b4d9f8a092734d3a8ea49b63c42b}{animate}} (char c)
+\begin{DoxyCompactList}\small\item\em csinál egy sor animációt \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\int \mbox{\hyperlink{_menu_8cpp_a7618dfe88319843fa7ec62da27b1a007}{evaluate\+Input}} (T \&classwithsize)
+\begin{DoxyCompactList}\small\item\em átalakítja a beírt számot indexelővé \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_menu_8cpp_af4bf55c7933ba857c5d67526038aed45}{evaluate\+Command}} (enum \mbox{\hyperlink{_menu_8h_adbc27074b7dcd54cd4578936c6329d02}{enum\+Menu}} \&eM)
+\begin{DoxyCompactList}\small\item\em bemenet alapján vált a menük között \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_menu_8cpp_a4b1c8fae94d189d0d74b10cde7b75176}{set\+Enumfrom\+Int}} (int a, \mbox{\hyperlink{_parts_8h_abddff37837f171d72a2e16a1448a3943}{enum\+Part}} \&eP)
+\begin{DoxyCompactList}\small\item\em beállítja a part loadert \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Function Documentation}
+\mbox{\label{_menu_8cpp_a185a985b9e28ccd13d5fb2d841e4a5f0}} 
+\index{Menu.cpp@{Menu.cpp}!addBuildHelper@{addBuildHelper}}
+\index{addBuildHelper@{addBuildHelper}!Menu.cpp@{Menu.cpp}}
+\paragraph{\texorpdfstring{addBuildHelper()}{addBuildHelper()}}
+{\footnotesize\ttfamily void add\+Build\+Helper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_orders}{Orders}} \&}]{orders,  }\item[{\mbox{\hyperlink{class_inventory}{Inventory}} \&}]{inventory }\end{DoxyParamCaption})}
+
+
+
+egy configot lehet csinálni vele 
+
+\mbox{\label{_menu_8cpp_ab9d115a63a4cd02ce5f3ee167669515d}} 
+\index{Menu.cpp@{Menu.cpp}!addPartHelper@{addPartHelper}}
+\index{addPartHelper@{addPartHelper}!Menu.cpp@{Menu.cpp}}
+\paragraph{\texorpdfstring{addPartHelper()}{addPartHelper()}}
+{\footnotesize\ttfamily int add\+Part\+Helper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory}{Inventory}} \&}]{inventory,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp,  }\item[{enum \mbox{\hyperlink{_parts_8h_abddff37837f171d72a2e16a1448a3943}{enum\+Part}} \&}]{eP }\end{DoxyParamCaption})}
+
+
+
+új alkatrészt tölt be console inputról. 
+
+\mbox{\label{_menu_8cpp_a9752b4d9f8a092734d3a8ea49b63c42b}} 
+\index{Menu.cpp@{Menu.cpp}!animate@{animate}}
+\index{animate@{animate}!Menu.cpp@{Menu.cpp}}
+\paragraph{\texorpdfstring{animate()}{animate()}}
+{\footnotesize\ttfamily void animate (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+csinál egy sor animációt 
+
+\mbox{\label{_menu_8cpp_a0f808ec53d26f8bcef1a0f22783c78f8}} 
+\index{Menu.cpp@{Menu.cpp}!completeOrderHelper@{completeOrderHelper}}
+\index{completeOrderHelper@{completeOrderHelper}!Menu.cpp@{Menu.cpp}}
+\paragraph{\texorpdfstring{completeOrderHelper()}{completeOrderHelper()}}
+{\footnotesize\ttfamily void complete\+Order\+Helper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_orders}{Orders}} \&}]{orders }\end{DoxyParamCaption})}
+
+\mbox{\label{_menu_8cpp_af4bf55c7933ba857c5d67526038aed45}} 
+\index{Menu.cpp@{Menu.cpp}!evaluateCommand@{evaluateCommand}}
+\index{evaluateCommand@{evaluateCommand}!Menu.cpp@{Menu.cpp}}
+\paragraph{\texorpdfstring{evaluateCommand()}{evaluateCommand()}}
+{\footnotesize\ttfamily void evaluate\+Command (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{_menu_8h_adbc27074b7dcd54cd4578936c6329d02}{enum\+Menu}} \&}]{eM }\end{DoxyParamCaption})}
+
+
+
+bemenet alapján vált a menük között 
+
+\mbox{\label{_menu_8cpp_a7618dfe88319843fa7ec62da27b1a007}} 
+\index{Menu.cpp@{Menu.cpp}!evaluateInput@{evaluateInput}}
+\index{evaluateInput@{evaluateInput}!Menu.cpp@{Menu.cpp}}
+\paragraph{\texorpdfstring{evaluateInput()}{evaluateInput()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int evaluate\+Input (\begin{DoxyParamCaption}\item[{T \&}]{classwithsize }\end{DoxyParamCaption})}
+
+
+
+átalakítja a beírt számot indexelővé 
+
+\mbox{\label{_menu_8cpp_aa66bedcbb6a6b03cde60b3441e6ae031}} 
+\index{Menu.cpp@{Menu.cpp}!partSelector@{partSelector}}
+\index{partSelector@{partSelector}!Menu.cpp@{Menu.cpp}}
+\paragraph{\texorpdfstring{partSelector()}{partSelector()}}
+{\footnotesize\ttfamily int part\+Selector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory}{Inventory}} \&}]{inventory,  }\item[{const char $\ast$}]{type }\end{DoxyParamCaption})}
+
+
+
+konfighoz választ alkatrészt 
+
+\mbox{\label{_menu_8cpp_aa8348016f7273e63d47917126e8f9c69}} 
+\index{Menu.cpp@{Menu.cpp}!printMain@{printMain}}
+\index{printMain@{printMain}!Menu.cpp@{Menu.cpp}}
+\paragraph{\texorpdfstring{printMain()}{printMain()}}
+{\footnotesize\ttfamily void print\+Main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+kiírja a főmenüt 
+
+\mbox{\label{_menu_8cpp_a2279d427508487e2c7194ba68588445d}} 
+\index{Menu.cpp@{Menu.cpp}!printOrdersList@{printOrdersList}}
+\index{printOrdersList@{printOrdersList}!Menu.cpp@{Menu.cpp}}
+\paragraph{\texorpdfstring{printOrdersList()}{printOrdersList()}}
+{\footnotesize\ttfamily void print\+Orders\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_orders}{Orders}} \&}]{orders }\end{DoxyParamCaption})}
+
+
+
+kiírja a megrendeléseket 
+
+\mbox{\label{_menu_8cpp_a70c4e63bce818eb0a35f6403066b4263}} 
+\index{Menu.cpp@{Menu.cpp}!printPartsList@{printPartsList}}
+\index{printPartsList@{printPartsList}!Menu.cpp@{Menu.cpp}}
+\paragraph{\texorpdfstring{printPartsList()}{printPartsList()}}
+{\footnotesize\ttfamily void print\+Parts\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory}{Inventory}} \&}]{inventory }\end{DoxyParamCaption})}
+
+
+
+kiírja az összes betölttött alkatrészt 
+
+\mbox{\label{_menu_8cpp_aed744d8c7e74c041565714ecfb656f0b}} 
+\index{Menu.cpp@{Menu.cpp}!removeOrderHelper@{removeOrderHelper}}
+\index{removeOrderHelper@{removeOrderHelper}!Menu.cpp@{Menu.cpp}}
+\paragraph{\texorpdfstring{removeOrderHelper()}{removeOrderHelper()}}
+{\footnotesize\ttfamily void remove\+Order\+Helper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_orders}{Orders}} \&}]{orders }\end{DoxyParamCaption})}
+
+\mbox{\label{_menu_8cpp_ad31a3966104aedb59abe49cf8fa7b33e}} 
+\index{Menu.cpp@{Menu.cpp}!removePartHelper@{removePartHelper}}
+\index{removePartHelper@{removePartHelper}!Menu.cpp@{Menu.cpp}}
+\paragraph{\texorpdfstring{removePartHelper()}{removePartHelper()}}
+{\footnotesize\ttfamily void remove\+Part\+Helper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory}{Inventory}} \&}]{inventory }\end{DoxyParamCaption})}
+
+
+
+törli a kiválasztott alkatrészt 
+
+\mbox{\label{_menu_8cpp_a4b1c8fae94d189d0d74b10cde7b75176}} 
+\index{Menu.cpp@{Menu.cpp}!setEnumfromInt@{setEnumfromInt}}
+\index{setEnumfromInt@{setEnumfromInt}!Menu.cpp@{Menu.cpp}}
+\paragraph{\texorpdfstring{setEnumfromInt()}{setEnumfromInt()}}
+{\footnotesize\ttfamily void set\+Enumfrom\+Int (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{\mbox{\hyperlink{_parts_8h_abddff37837f171d72a2e16a1448a3943}{enum\+Part}} \&}]{eP }\end{DoxyParamCaption})}
+
+
+
+beállítja a part loadert 
+

@@ -8,8 +8,16 @@
 \item 
 struct \mbox{\hyperlink{structutos__t}{utos\+\_\+t}}
 \begin{DoxyCompactList}\small\item\em szóközösítő toggle \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structsimple__t}{simple\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em csak paraméter toggle \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structtyp__t}{typ\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em csak típus toggle \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structutos__ostream}{utos\+\_\+ostream}}
 \begin{DoxyCompactList}\small\item\em szóközösítő stream manipulator \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structsimple__ostream}{simple\+\_\+ostream}}
+\begin{DoxyCompactList}\small\item\em csak paraméter stream manipulator \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structtyp__ostream}{typ\+\_\+ostream}}
+\begin{DoxyCompactList}\small\item\em csak típus stream manipulator \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_string}{String}}
 \end{DoxyCompactItemize}
 \subsubsection*{Functions}
@@ -17,8 +25,16 @@ class \mbox{\hyperlink{class_string}{String}}
 \item 
 \mbox{\hyperlink{structutos__ostream}{utos\+\_\+ostream}} \mbox{\hyperlink{schtring_8hpp_a43aac73473ffa53d46bd5f53f0570e3e}{operator$<$$<$}} (std\+::ostream \&os, \mbox{\hyperlink{structutos__t}{utos\+\_\+t}})
 \begin{DoxyCompactList}\small\item\em szóközösítő stream manipulator \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structsimple__ostream}{simple\+\_\+ostream}} \mbox{\hyperlink{schtring_8hpp_aea28f4c85e19de48a35b1479e9cc192f}{operator$<$$<$}} (std\+::ostream \&os, \mbox{\hyperlink{structsimple__t}{simple\+\_\+t}})
+\begin{DoxyCompactList}\small\item\em csak paraméter stream manipulator \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structtyp__ostream}{typ\+\_\+ostream}} \mbox{\hyperlink{schtring_8hpp_a4d21dd8939fd627f88d08115283381b8}{operator$<$$<$}} (std\+::ostream \&os, \mbox{\hyperlink{structtyp__t}{typ\+\_\+t}})
+\begin{DoxyCompactList}\small\item\em csak típus stream manipulator \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T $>$ }\\std\+::ostream \& \mbox{\hyperlink{schtring_8hpp_a89c0d4114f2a28d8ba3812f91ac3d0d2}{operator$<$$<$}} (\mbox{\hyperlink{structutos__ostream}{utos\+\_\+ostream}} tos, const T \&v)
 \begin{DoxyCompactList}\small\item\em szóközösítő ostream \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::ostream \& \mbox{\hyperlink{schtring_8hpp_aea9b47ee5ee0daeefc307790dac9dbcf}{operator$<$$<$}} (\mbox{\hyperlink{structsimple__ostream}{simple\+\_\+ostream}} tos, const T \&v)
+\begin{DoxyCompactList}\small\item\em csak paraméter ostream \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::ostream \& \mbox{\hyperlink{schtring_8hpp_aa279b7074acadd17c4bf119c9d5f7a53}{operator$<$$<$}} (\mbox{\hyperlink{structtyp__ostream}{typ\+\_\+ostream}} tos, const T \&v)
+\begin{DoxyCompactList}\small\item\em csak paraméter ostream \end{DoxyCompactList}\item 
 char $\ast$ \mbox{\hyperlink{schtring_8hpp_a9d7d0d0ea2b8f0f7c6d53fe66fc0b301}{stolower}} (char $\ast$s)
 \begin{DoxyCompactList}\small\item\em char tömb kisbetűsítése \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{schtring_8hpp_a8d89d501f582c3a65df894dbd030bbcf}{operator+}} (char ch, const \mbox{\hyperlink{class_string}{String}} \&str)
@@ -33,7 +49,11 @@ std\+::ostream \& \mbox{\hyperlink{schtring_8hpp_a06c0f45780d45c035c1eabecbb3419
 \begin{DoxyCompactItemize}
 \item 
 constexpr \mbox{\hyperlink{structutos__t}{utos\+\_\+t}} \mbox{\hyperlink{schtring_8hpp_a87ab25645bb130a0e89654a4ba9d2bce}{utos}}
-\begin{DoxyCompactList}\small\item\em szóközösítő toggle \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em szóközösítő toggle \end{DoxyCompactList}\item 
+constexpr \mbox{\hyperlink{structsimple__t}{simple\+\_\+t}} \mbox{\hyperlink{schtring_8hpp_a351fc938310737ce89abd87ce1c8012c}{simple}}
+\begin{DoxyCompactList}\small\item\em csak paraméter toggle \end{DoxyCompactList}\item 
+constexpr \mbox{\hyperlink{structtyp__t}{typ\+\_\+t}} \mbox{\hyperlink{schtring_8hpp_ab0a950c0c78f879bd8908b430a0a074c}{typ}}
+\begin{DoxyCompactList}\small\item\em csak típus toggle \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsubsection{Function Documentation}
@@ -50,17 +70,37 @@ karakter + string
 \mbox{\label{schtring_8hpp_a43aac73473ffa53d46bd5f53f0570e3e}} 
 \index{schtring.hpp@{schtring.hpp}!operator$<$$<$@{operator$<$$<$}}
 \index{operator$<$$<$@{operator$<$$<$}!schtring.hpp@{schtring.hpp}}
-\paragraph{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+\paragraph{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{structutos__ostream}{utos\+\_\+ostream}} operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\mbox{\hyperlink{structutos__t}{utos\+\_\+t}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
 szóközösítő stream manipulator 
 
+\mbox{\label{schtring_8hpp_aea28f4c85e19de48a35b1479e9cc192f}} 
+\index{schtring.hpp@{schtring.hpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!schtring.hpp@{schtring.hpp}}
+\paragraph{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structsimple__ostream}{simple\+\_\+ostream}} operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\mbox{\hyperlink{structsimple__t}{simple\+\_\+t}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+csak paraméter stream manipulator 
+
+\mbox{\label{schtring_8hpp_a4d21dd8939fd627f88d08115283381b8}} 
+\index{schtring.hpp@{schtring.hpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!schtring.hpp@{schtring.hpp}}
+\paragraph{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structtyp__ostream}{typ\+\_\+ostream}} operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\mbox{\hyperlink{structtyp__t}{typ\+\_\+t}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+csak típus stream manipulator 
+
 \mbox{\label{schtring_8hpp_a89c0d4114f2a28d8ba3812f91ac3d0d2}} 
 \index{schtring.hpp@{schtring.hpp}!operator$<$$<$@{operator$<$$<$}}
 \index{operator$<$$<$@{operator$<$$<$}!schtring.hpp@{schtring.hpp}}
-\paragraph{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+\paragraph{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structutos__ostream}{utos\+\_\+ostream}}}]{tos,  }\item[{const T \&}]{v }\end{DoxyParamCaption})}
 
@@ -68,10 +108,32 @@ std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink
 
 szóközösítő ostream 
 
+\mbox{\label{schtring_8hpp_aea9b47ee5ee0daeefc307790dac9dbcf}} 
+\index{schtring.hpp@{schtring.hpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!schtring.hpp@{schtring.hpp}}
+\paragraph{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsimple__ostream}{simple\+\_\+ostream}}}]{tos,  }\item[{const T \&}]{v }\end{DoxyParamCaption})}
+
+
+
+csak paraméter ostream 
+
+\mbox{\label{schtring_8hpp_aa279b7074acadd17c4bf119c9d5f7a53}} 
+\index{schtring.hpp@{schtring.hpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!schtring.hpp@{schtring.hpp}}
+\paragraph{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtyp__ostream}{typ\+\_\+ostream}}}]{tos,  }\item[{const T \&}]{v }\end{DoxyParamCaption})}
+
+
+
+csak paraméter ostream 
+
 \mbox{\label{schtring_8hpp_aef14876e55f43fb4ffa7b91664467ecb}} 
 \index{schtring.hpp@{schtring.hpp}!operator$<$$<$@{operator$<$$<$}}
 \index{operator$<$$<$@{operator$<$$<$}!schtring.hpp@{schtring.hpp}}
-\paragraph{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+\paragraph{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
 {\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_string}{String}} \&}]{s0 }\end{DoxyParamCaption})}
 
 
@@ -81,7 +143,7 @@ inserter operator
 \mbox{\label{schtring_8hpp_a06c0f45780d45c035c1eabecbb34198d}} 
 \index{schtring.hpp@{schtring.hpp}!operator$<$$<$@{operator$<$$<$}}
 \index{operator$<$$<$@{operator$<$$<$}!schtring.hpp@{schtring.hpp}}
-\paragraph{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+\paragraph{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
 {\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structutos__ostream}{utos\+\_\+ostream}}}]{tos,  }\item[{const \mbox{\hyperlink{class_string}{String}} \&}]{s0 }\end{DoxyParamCaption})}
 
 
@@ -111,6 +173,26 @@ char tömb kisbetűsítése
 
 
 \subsubsection{Variable Documentation}
+\mbox{\label{schtring_8hpp_a351fc938310737ce89abd87ce1c8012c}} 
+\index{schtring.hpp@{schtring.hpp}!simple@{simple}}
+\index{simple@{simple}!schtring.hpp@{schtring.hpp}}
+\paragraph{\texorpdfstring{simple}{simple}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structsimple__t}{simple\+\_\+t}} simple}
+
+
+
+csak paraméter toggle 
+
+\mbox{\label{schtring_8hpp_ab0a950c0c78f879bd8908b430a0a074c}} 
+\index{schtring.hpp@{schtring.hpp}!typ@{typ}}
+\index{typ@{typ}!schtring.hpp@{schtring.hpp}}
+\paragraph{\texorpdfstring{typ}{typ}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{structtyp__t}{typ\+\_\+t}} typ}
+
+
+
+csak típus toggle 
+
 \mbox{\label{schtring_8hpp_a87ab25645bb130a0e89654a4ba9d2bce}} 
 \index{schtring.hpp@{schtring.hpp}!utos@{utos}}
 \index{utos@{utos}!schtring.hpp@{schtring.hpp}}

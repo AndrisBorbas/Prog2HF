@@ -94,6 +94,9 @@ $(document).ready(function(){initNavTree('class_orders.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>A megrendelt konfigokat tárolja.  
+ <a href="class_orders.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_builds_8h_source.html">Builds.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -102,15 +105,30 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa52a641a269671bbf68637e0771e8b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12bcbd0cd430b51f65f651fddad3f662"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orders.html#a12bcbd0cd430b51f65f651fddad3f662">~Orders</a> ()</td></tr>
 <tr class="separator:a12bcbd0cd430b51f65f651fddad3f662"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a678969b0e57fd41f4ab0cc949d4500f6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a678969b0e57fd41f4ab0cc949d4500f6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_orders.html#a678969b0e57fd41f4ab0cc949d4500f6">push_back</a> (T *part)</td></tr>
-<tr class="separator:a678969b0e57fd41f4ab0cc949d4500f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9574f4521c39b8a8d7cdfd1f28b07ffb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_build.html">Build</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orders.html#a9574f4521c39b8a8d7cdfd1f28b07ffb">operator[]</a> (int idx) const</td></tr>
-<tr class="separator:a9574f4521c39b8a8d7cdfd1f28b07ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abae5fb4a0e7dfa2c222215850531d695"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_build.html">Build</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orders.html#abae5fb4a0e7dfa2c222215850531d695">operator[]</a> (int idx)</td></tr>
-<tr class="separator:abae5fb4a0e7dfa2c222215850531d695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b6a5342d1fe2954f061d91609d3fe89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orders.html#a9b6a5342d1fe2954f061d91609d3fe89">get_size</a> ()</td></tr>
+<tr class="separator:a9b6a5342d1fe2954f061d91609d3fe89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d8d6db032983700fa68cca43dc75a38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orders.html#a6d8d6db032983700fa68cca43dc75a38">push_back</a> (<a class="el" href="class_build.html">Build</a> *build)</td></tr>
+<tr class="separator:a6d8d6db032983700fa68cca43dc75a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0edb320aab3dcae0ee615a5459b5595"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orders.html#af0edb320aab3dcae0ee615a5459b5595">load</a> (std::fstream &amp;is, <a class="el" href="class_inventory.html">Inventory</a> &amp;inventory, <a class="el" href="struct_temp_input.html">TempInput</a> &amp;tmp)</td></tr>
+<tr class="separator:af0edb320aab3dcae0ee615a5459b5595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80770bd5dffc2d83de0e9acfaad14229"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orders.html#a80770bd5dffc2d83de0e9acfaad14229">save</a> (std::ostream &amp;os) const</td></tr>
+<tr class="separator:a80770bd5dffc2d83de0e9acfaad14229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a47de51d6d88328ff6408482f614e8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orders.html#a6a47de51d6d88328ff6408482f614e8e">complete</a> (int idx)</td></tr>
+<tr class="separator:a6a47de51d6d88328ff6408482f614e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a43f158466760d315ca23ac24bd4bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orders.html#a36a43f158466760d315ca23ac24bd4bd">remove</a> (int idx)</td></tr>
+<tr class="separator:a36a43f158466760d315ca23ac24bd4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57fb3a5db65235ac3eb6dee473f7ef34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orders.html#a57fb3a5db65235ac3eb6dee473f7ef34">print</a> (std::ostream &amp;os) const</td></tr>
+<tr class="separator:a57fb3a5db65235ac3eb6dee473f7ef34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081beda059e45de92599fa48a8668c54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orders.html#a081beda059e45de92599fa48a8668c54">print</a> (<a class="el" href="structsimple__ostream.html">simple_ostream</a> &amp;tos) const</td></tr>
+<tr class="separator:a081beda059e45de92599fa48a8668c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab4445872bb7f3d952ebc89f6b2bd146"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_build.html">Build</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orders.html#aab4445872bb7f3d952ebc89f6b2bd146">operator[]</a> (int idx) const</td></tr>
+<tr class="separator:aab4445872bb7f3d952ebc89f6b2bd146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca77a601a993ef2d5dcfb71b9ee41542"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_build.html">Build</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orders.html#aca77a601a993ef2d5dcfb71b9ee41542">operator[]</a> (int idx)</td></tr>
+<tr class="separator:aca77a601a993ef2d5dcfb71b9ee41542"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A megrendelt konfigokat tárolja. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa52a641a269671bbf68637e0771e8b5d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa52a641a269671bbf68637e0771e8b5d">&#9670;&nbsp;</a></span>Orders()</h2>
 
@@ -163,8 +181,26 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9574f4521c39b8a8d7cdfd1f28b07ffb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9574f4521c39b8a8d7cdfd1f28b07ffb">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
+<a id="a6a47de51d6d88328ff6408482f614e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a47de51d6d88328ff6408482f614e8e">&#9670;&nbsp;</a></span>complete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Orders::complete </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b6a5342d1fe2954f061d91609d3fe89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b6a5342d1fe2954f061d91609d3fe89">&#9670;&nbsp;</a></span>get_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,7 +209,66 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="class_build.html">Build</a> Orders::operator[] </td>
+          <td class="memname">int Orders::get_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af0edb320aab3dcae0ee615a5459b5595"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0edb320aab3dcae0ee615a5459b5595">&#9670;&nbsp;</a></span>load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Orders::load </td>
+          <td>(</td>
+          <td class="paramtype">std::fstream &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_inventory.html">Inventory</a> &amp;&#160;</td>
+          <td class="paramname"><em>inventory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_temp_input.html">TempInput</a> &amp;&#160;</td>
+          <td class="paramname"><em>tmp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab4445872bb7f3d952ebc89f6b2bd146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab4445872bb7f3d952ebc89f6b2bd146">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_build.html">Build</a>* Orders::operator[] </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>idx</em></td><td>)</td>
@@ -189,8 +284,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abae5fb4a0e7dfa2c222215850531d695"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abae5fb4a0e7dfa2c222215850531d695">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[2/2]</span></h2>
+<a id="aca77a601a993ef2d5dcfb71b9ee41542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca77a601a993ef2d5dcfb71b9ee41542">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -199,7 +294,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_build.html">Build</a> Orders::operator[] </td>
+          <td class="memname"><a class="el" href="class_build.html">Build</a>* Orders::operator[] </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>idx</em></td><td>)</td>
@@ -215,20 +310,98 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a678969b0e57fd41f4ab0cc949d4500f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a678969b0e57fd41f4ab0cc949d4500f6">&#9670;&nbsp;</a></span>push_back()</h2>
+<a id="a57fb3a5db65235ac3eb6dee473f7ef34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57fb3a5db65235ac3eb6dee473f7ef34">&#9670;&nbsp;</a></span>print() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Orders::print </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a081beda059e45de92599fa48a8668c54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a081beda059e45de92599fa48a8668c54">&#9670;&nbsp;</a></span>print() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Orders::print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsimple__ostream.html">simple_ostream</a> &amp;&#160;</td>
+          <td class="paramname"><em>tos</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d8d6db032983700fa68cca43dc75a38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8d6db032983700fa68cca43dc75a38">&#9670;&nbsp;</a></span>push_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Orders::push_back </td>
           <td>(</td>
-          <td class="paramtype">T *&#160;</td>
-          <td class="paramname"><em>part</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_build.html">Build</a> *&#160;</td>
+          <td class="paramname"><em>build</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36a43f158466760d315ca23ac24bd4bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36a43f158466760d315ca23ac24bd4bd">&#9670;&nbsp;</a></span>remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Orders::remove </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80770bd5dffc2d83de0e9acfaad14229"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80770bd5dffc2d83de0e9acfaad14229">&#9670;&nbsp;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Orders::save </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">

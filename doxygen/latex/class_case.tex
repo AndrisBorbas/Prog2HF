@@ -20,11 +20,15 @@ Inheritance diagram for Case\+:\begin{figure}[H]
 \item 
 \mbox{\hyperlink{class_case_a0d953adffc664636549235d729f13260}{Case}} (\mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{class_part_ae06f2fdeb7fbbdb229a7aca151f3e341}{brand}}, \mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{class_part_a101dbcc5c4b21564df7414c7eb0eae88}{type}}, int \mbox{\hyperlink{class_part_a8e71223aed1da95a974f33d8d6c91bb1}{price}}, \mbox{\hyperlink{class_string}{String}} formfactor)
 \item 
-\mbox{\hyperlink{class_case_a300362691710d1f9312f9d31d56ea53e}{Case}} (\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} tmp)
+\mbox{\hyperlink{class_case_a035b7e07200ba4cf72c86a992d95b517}{Case}} (\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
 \item 
 void \mbox{\hyperlink{class_case_a9e54f42dcb7b62f1792a6475ce60aa79}{print}} (std\+::ostream \&os) const
 \item 
 void \mbox{\hyperlink{class_case_ae179519844b825815f4accddafae13b6}{print}} (\mbox{\hyperlink{structutos__ostream}{utos\+\_\+ostream}} \&tos) const
+\item 
+void \mbox{\hyperlink{class_case_a580b6870ea256cab7e7eee36820803e7}{print}} (\mbox{\hyperlink{structsimple__ostream}{simple\+\_\+ostream}} \&tos) const
+\item 
+void \mbox{\hyperlink{class_case_a6cce910485e45c0b30018fce491c154f}{print}} (\mbox{\hyperlink{structtyp__ostream}{typ\+\_\+ostream}} \&tos) const
 \end{DoxyCompactItemize}
 \subsubsection*{Additional Inherited Members}
 
@@ -39,11 +43,11 @@ Ház.
 \paragraph{\texorpdfstring{Case()}{Case()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Case\+::\+Case (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_string}{String}}}]{brand,  }\item[{\mbox{\hyperlink{class_string}{String}}}]{type,  }\item[{int}]{price,  }\item[{\mbox{\hyperlink{class_string}{String}}}]{formfactor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
 
-\mbox{\label{class_case_a300362691710d1f9312f9d31d56ea53e}} 
+\mbox{\label{class_case_a035b7e07200ba4cf72c86a992d95b517}} 
 \index{Case@{Case}!Case@{Case}}
 \index{Case@{Case}!Case@{Case}}
 \paragraph{\texorpdfstring{Case()}{Case()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Case\+::\+Case (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}}}]{tmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+{\footnotesize\ttfamily Case\+::\+Case (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
 
 
 
@@ -51,7 +55,7 @@ Ház.
 \mbox{\label{class_case_a9e54f42dcb7b62f1792a6475ce60aa79}} 
 \index{Case@{Case}!print@{print}}
 \index{print@{print}!Case@{Case}}
-\paragraph{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\paragraph{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily void Case\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
@@ -61,12 +65,32 @@ Reimplemented from \mbox{\hyperlink{class_part_a4fa402b8e8fd4236ff773a7697ab2bc3
 \mbox{\label{class_case_ae179519844b825815f4accddafae13b6}} 
 \index{Case@{Case}!print@{print}}
 \index{print@{print}!Case@{Case}}
-\paragraph{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\paragraph{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily void Case\+::print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structutos__ostream}{utos\+\_\+ostream}} \&}]{tos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
 Reimplemented from \mbox{\hyperlink{class_part_a9ecabe44ba3415badf82c6a23617a41e}{Part}}.
+
+\mbox{\label{class_case_a580b6870ea256cab7e7eee36820803e7}} 
+\index{Case@{Case}!print@{print}}
+\index{print@{print}!Case@{Case}}
+\paragraph{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Case\+::print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsimple__ostream}{simple\+\_\+ostream}} \&}]{tos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_part_aa602d876151b63db72cf8f666847a8cd}{Part}}.
+
+\mbox{\label{class_case_a6cce910485e45c0b30018fce491c154f}} 
+\index{Case@{Case}!print@{print}}
+\index{print@{print}!Case@{Case}}
+\paragraph{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Case\+::print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtyp__ostream}{typ\+\_\+ostream}} \&}]{tos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_part_ab6396030e8b7a724731a8b54bd4942fc}{Part}}.
 
 
 

@@ -6,82 +6,47 @@
 \item 
 int \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
 \item 
-void \mbox{\hyperlink{main_8cpp_aa8348016f7273e63d47917126e8f9c69}{print\+Main}} ()
-\item 
-void \mbox{\hyperlink{main_8cpp_a70c4e63bce818eb0a35f6403066b4263}{print\+Parts\+List}} (\mbox{\hyperlink{class_inventory}{Inventory}} \&inventory)
-\item 
-void \mbox{\hyperlink{main_8cpp_ae49141c745f24fbddd6b3342b8a6cae0}{add\+Part\+Helper}} (\mbox{\hyperlink{class_inventory}{Inventory}} \&inventory, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
-\item 
-int \mbox{\hyperlink{main_8cpp_ab1c45050c0d088f602e43276598cc469}{remove\+Part\+Helper}} (\mbox{\hyperlink{class_inventory}{Inventory}} \&inventory, enum \mbox{\hyperlink{main_8h_adbc27074b7dcd54cd4578936c6329d02}{enum\+Menu}} \&eM)
-\item 
-void \mbox{\hyperlink{main_8cpp_a0375d467e47b0258969791a9cb214150}{save\+Inventory}} (std\+::fstream \&temp\+File, std\+::fstream \&orig\+File, \mbox{\hyperlink{class_inventory}{Inventory}} \&inventory, std\+::streampos \&pos, const char $\ast$partsfilename)
-\item 
-void \mbox{\hyperlink{main_8cpp_a9752b4d9f8a092734d3a8ea49b63c42b}{animate}} (char c)
-\item 
-int \mbox{\hyperlink{main_8cpp_a39e6e00a3f83db932d706d1f00f040b7}{evaluate\+Input}} (\mbox{\hyperlink{class_inventory}{Inventory}} \&inventory)
-\item 
-void \mbox{\hyperlink{main_8cpp_af4bf55c7933ba857c5d67526038aed45}{evaluate\+Command}} (enum \mbox{\hyperlink{main_8h_adbc27074b7dcd54cd4578936c6329d02}{enum\+Menu}} \&eM)
-\end{DoxyCompactItemize}
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{main_8cpp_a5f7b8c9ea0d63088ae9f9454d89b392b}{save}} (std\+::fstream \&temp\+File, std\+::fstream \&orig\+File, T \&classwithsavefunc, std\+::streampos \&pos, const char $\ast$filename, const char $\ast$tempfilename)
+\begin{DoxyCompactList}\small\item\em elmenti a program módosításait \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsubsection{Function Documentation}
-\mbox{\label{main_8cpp_ae49141c745f24fbddd6b3342b8a6cae0}} 
-\index{main.cpp@{main.cpp}!addPartHelper@{addPartHelper}}
-\index{addPartHelper@{addPartHelper}!main.cpp@{main.cpp}}
-\paragraph{\texorpdfstring{addPartHelper()}{addPartHelper()}}
-{\footnotesize\ttfamily void add\+Part\+Helper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory}{Inventory}} \&}]{inventory,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
-
-\mbox{\label{main_8cpp_a9752b4d9f8a092734d3a8ea49b63c42b}} 
-\index{main.cpp@{main.cpp}!animate@{animate}}
-\index{animate@{animate}!main.cpp@{main.cpp}}
-\paragraph{\texorpdfstring{animate()}{animate()}}
-{\footnotesize\ttfamily void animate (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
-
-\mbox{\label{main_8cpp_af4bf55c7933ba857c5d67526038aed45}} 
-\index{main.cpp@{main.cpp}!evaluateCommand@{evaluateCommand}}
-\index{evaluateCommand@{evaluateCommand}!main.cpp@{main.cpp}}
-\paragraph{\texorpdfstring{evaluateCommand()}{evaluateCommand()}}
-{\footnotesize\ttfamily void evaluate\+Command (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{main_8h_adbc27074b7dcd54cd4578936c6329d02}{enum\+Menu}} \&}]{eM }\end{DoxyParamCaption})}
-
-\mbox{\label{main_8cpp_a39e6e00a3f83db932d706d1f00f040b7}} 
-\index{main.cpp@{main.cpp}!evaluateInput@{evaluateInput}}
-\index{evaluateInput@{evaluateInput}!main.cpp@{main.cpp}}
-\paragraph{\texorpdfstring{evaluateInput()}{evaluateInput()}}
-{\footnotesize\ttfamily int evaluate\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory}{Inventory}} \&}]{inventory }\end{DoxyParamCaption})}
-
 \mbox{\label{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
 \index{main.cpp@{main.cpp}!main@{main}}
 \index{main@{main}!main.cpp@{main.cpp}}
 \paragraph{\texorpdfstring{main()}{main()}}
 {\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
 
-Alapértelmezett parts fájl név
+Alapértelmezett fájl nevek
 
-Parts fájl nevének beállítása indítási parancsból
+fájl nevek beállítása indítási parancsból
 
-első 5 sor átmásolása
+Alkatrészek
 
-pozíció mentése kiíráshoz \mbox{\label{main_8cpp_aa8348016f7273e63d47917126e8f9c69}} 
-\index{main.cpp@{main.cpp}!printMain@{printMain}}
-\index{printMain@{printMain}!main.cpp@{main.cpp}}
-\paragraph{\texorpdfstring{printMain()}{printMain()}}
-{\footnotesize\ttfamily void print\+Main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+Megrendelések
 
-\mbox{\label{main_8cpp_a70c4e63bce818eb0a35f6403066b4263}} 
-\index{main.cpp@{main.cpp}!printPartsList@{printPartsList}}
-\index{printPartsList@{printPartsList}!main.cpp@{main.cpp}}
-\paragraph{\texorpdfstring{printPartsList()}{printPartsList()}}
-{\footnotesize\ttfamily void print\+Parts\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory}{Inventory}} \&}]{inventory }\end{DoxyParamCaption})}
+első 6 sor átmásolása
 
-\mbox{\label{main_8cpp_ab1c45050c0d088f602e43276598cc469}} 
-\index{main.cpp@{main.cpp}!removePartHelper@{removePartHelper}}
-\index{removePartHelper@{removePartHelper}!main.cpp@{main.cpp}}
-\paragraph{\texorpdfstring{removePartHelper()}{removePartHelper()}}
-{\footnotesize\ttfamily int remove\+Part\+Helper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inventory}{Inventory}} \&}]{inventory,  }\item[{enum \mbox{\hyperlink{main_8h_adbc27074b7dcd54cd4578936c6329d02}{enum\+Menu}} \&}]{eM }\end{DoxyParamCaption})}
+pozíció mentése kiíráshoz
 
-\mbox{\label{main_8cpp_a0375d467e47b0258969791a9cb214150}} 
-\index{main.cpp@{main.cpp}!saveInventory@{saveInventory}}
-\index{saveInventory@{saveInventory}!main.cpp@{main.cpp}}
-\paragraph{\texorpdfstring{saveInventory()}{saveInventory()}}
-{\footnotesize\ttfamily void save\+Inventory (\begin{DoxyParamCaption}\item[{std\+::fstream \&}]{temp\+File,  }\item[{std\+::fstream \&}]{orig\+File,  }\item[{\mbox{\hyperlink{class_inventory}{Inventory}} \&}]{inventory,  }\item[{std\+::streampos \&}]{pos,  }\item[{const char $\ast$}]{partsfilename }\end{DoxyParamCaption})}
+Alkatrész típusa betöltéshez
+
+Menüpontok közti váltás
+
+alkatrészek betöltése fájlból
+
+megrendelések betöltése fájlból
+
+main menu loop
+
+mentés \mbox{\label{main_8cpp_a5f7b8c9ea0d63088ae9f9454d89b392b}} 
+\index{main.cpp@{main.cpp}!save@{save}}
+\index{save@{save}!main.cpp@{main.cpp}}
+\paragraph{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void save (\begin{DoxyParamCaption}\item[{std\+::fstream \&}]{temp\+File,  }\item[{std\+::fstream \&}]{orig\+File,  }\item[{T \&}]{classwithsavefunc,  }\item[{std\+::streampos \&}]{pos,  }\item[{const char $\ast$}]{filename,  }\item[{const char $\ast$}]{tempfilename }\end{DoxyParamCaption})}
+
+
+
+elmenti a program módosításait 
 

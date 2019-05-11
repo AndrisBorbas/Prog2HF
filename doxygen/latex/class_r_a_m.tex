@@ -20,11 +20,15 @@ Inheritance diagram for R\+AM\+:\begin{figure}[H]
 \item 
 \mbox{\hyperlink{class_r_a_m_a1869d6bd505e7fb58b809270626c82f2}{R\+AM}} (\mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{class_part_ae06f2fdeb7fbbdb229a7aca151f3e341}{brand}}, \mbox{\hyperlink{class_string}{String}} \mbox{\hyperlink{class_part_a101dbcc5c4b21564df7414c7eb0eae88}{type}}, int \mbox{\hyperlink{class_part_a8e71223aed1da95a974f33d8d6c91bb1}{price}}, int clk, int size)
 \item 
-\mbox{\hyperlink{class_r_a_m_a9c54d554dfa8c3fc9c7c2d87e8dbe28f}{R\+AM}} (\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} tmp)
+\mbox{\hyperlink{class_r_a_m_afbdf895c5aa8cfce8f24197b89a9d82d}{R\+AM}} (\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
 \item 
 void \mbox{\hyperlink{class_r_a_m_a2f226659cbc23f841d73525572ba9574}{print}} (std\+::ostream \&os) const
 \item 
 void \mbox{\hyperlink{class_r_a_m_a11a874dd6cf99454efd6b7a1d20a3737}{print}} (\mbox{\hyperlink{structutos__ostream}{utos\+\_\+ostream}} \&tos) const
+\item 
+void \mbox{\hyperlink{class_r_a_m_ac2d5a8bd858289b6679e429bbe15fb20}{print}} (\mbox{\hyperlink{structsimple__ostream}{simple\+\_\+ostream}} \&tos) const
+\item 
+void \mbox{\hyperlink{class_r_a_m_ad43f71c742f078c98ab7fd9a26420c97}{print}} (\mbox{\hyperlink{structtyp__ostream}{typ\+\_\+ostream}} \&tos) const
 \end{DoxyCompactItemize}
 \subsubsection*{Additional Inherited Members}
 
@@ -39,11 +43,11 @@ Memória.
 \paragraph{\texorpdfstring{RAM()}{RAM()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily R\+A\+M\+::\+R\+AM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_string}{String}}}]{brand,  }\item[{\mbox{\hyperlink{class_string}{String}}}]{type,  }\item[{int}]{price,  }\item[{int}]{clk,  }\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
 
-\mbox{\label{class_r_a_m_a9c54d554dfa8c3fc9c7c2d87e8dbe28f}} 
+\mbox{\label{class_r_a_m_afbdf895c5aa8cfce8f24197b89a9d82d}} 
 \index{RAM@{RAM}!RAM@{RAM}}
 \index{RAM@{RAM}!RAM@{RAM}}
 \paragraph{\texorpdfstring{RAM()}{RAM()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily R\+A\+M\+::\+R\+AM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}}}]{tmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+{\footnotesize\ttfamily R\+A\+M\+::\+R\+AM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
 
 
 
@@ -51,7 +55,7 @@ Memória.
 \mbox{\label{class_r_a_m_a2f226659cbc23f841d73525572ba9574}} 
 \index{RAM@{RAM}!print@{print}}
 \index{print@{print}!RAM@{RAM}}
-\paragraph{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\paragraph{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily void R\+A\+M\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
@@ -61,12 +65,32 @@ Reimplemented from \mbox{\hyperlink{class_part_a4fa402b8e8fd4236ff773a7697ab2bc3
 \mbox{\label{class_r_a_m_a11a874dd6cf99454efd6b7a1d20a3737}} 
 \index{RAM@{RAM}!print@{print}}
 \index{print@{print}!RAM@{RAM}}
-\paragraph{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\paragraph{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily void R\+A\+M\+::print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structutos__ostream}{utos\+\_\+ostream}} \&}]{tos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
 Reimplemented from \mbox{\hyperlink{class_part_a9ecabe44ba3415badf82c6a23617a41e}{Part}}.
+
+\mbox{\label{class_r_a_m_ac2d5a8bd858289b6679e429bbe15fb20}} 
+\index{RAM@{RAM}!print@{print}}
+\index{print@{print}!RAM@{RAM}}
+\paragraph{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void R\+A\+M\+::print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsimple__ostream}{simple\+\_\+ostream}} \&}]{tos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_part_aa602d876151b63db72cf8f666847a8cd}{Part}}.
+
+\mbox{\label{class_r_a_m_ad43f71c742f078c98ab7fd9a26420c97}} 
+\index{RAM@{RAM}!print@{print}}
+\index{print@{print}!RAM@{RAM}}
+\paragraph{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void R\+A\+M\+::print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtyp__ostream}{typ\+\_\+ostream}} \&}]{tos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_part_ab6396030e8b7a724731a8b54bd4942fc}{Part}}.
 
 
 

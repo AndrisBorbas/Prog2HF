@@ -94,6 +94,9 @@ $(document).ready(function(){initNavTree('class_inventory.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>Alkatrész tároló  
+ <a href="class_inventory.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_inventory_8h_source.html">Inventory.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -104,23 +107,38 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6c6dfcb6d977c74a7abf46809e892e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ccacc9422b01b2c17836ca804bcaafc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#a3ccacc9422b01b2c17836ca804bcaafc">get_size</a> ()</td></tr>
 <tr class="separator:a3ccacc9422b01b2c17836ca804bcaafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dd64f268a7a5cca611b5f749ec33f96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#a9dd64f268a7a5cca611b5f749ec33f96">loadPart</a> (std::istream &amp;is, <a class="el" href="struct_temp_input.html">TempInput</a> &amp;tmp, <a class="el" href="_inventory_8h.html#abddff37837f171d72a2e16a1448a3943">enumPart</a>)</td></tr>
+<tr class="memitem:a217895dbb60e3d7643c41fdeeb775bc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#a217895dbb60e3d7643c41fdeeb775bc9">get_type</a> (int i)</td></tr>
+<tr class="separator:a217895dbb60e3d7643c41fdeeb775bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78912f140decdd10037eb682cf295d72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#a78912f140decdd10037eb682cf295d72">loadPart</a> (std::fstream &amp;is, <a class="el" href="struct_temp_input.html">TempInput</a> &amp;tmp, <a class="el" href="_parts_8h.html#abddff37837f171d72a2e16a1448a3943">enumPart</a>)</td></tr>
+<tr class="memdesc:a78912f140decdd10037eb682cf295d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Betölt egy alkatrészt fájlból.  <a href="#a78912f140decdd10037eb682cf295d72">More...</a><br /></td></tr>
+<tr class="separator:a78912f140decdd10037eb682cf295d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dd64f268a7a5cca611b5f749ec33f96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#a9dd64f268a7a5cca611b5f749ec33f96">loadPart</a> (std::istream &amp;is, <a class="el" href="struct_temp_input.html">TempInput</a> &amp;tmp, <a class="el" href="_parts_8h.html#abddff37837f171d72a2e16a1448a3943">enumPart</a>)</td></tr>
+<tr class="memdesc:a9dd64f268a7a5cca611b5f749ec33f96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Betölt egy alkatrészt terminalból.  <a href="#a9dd64f268a7a5cca611b5f749ec33f96">More...</a><br /></td></tr>
 <tr class="separator:a9dd64f268a7a5cca611b5f749ec33f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a084bafb32ed7dc4288fac96828c5302a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#a084bafb32ed7dc4288fac96828c5302a">saveInventory</a> (std::ostream &amp;os)</td></tr>
-<tr class="separator:a084bafb32ed7dc4288fac96828c5302a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad108e17923ce79c6ab0f9e04c2a6b6c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#ad108e17923ce79c6ab0f9e04c2a6b6c2">printInventory</a> (std::ostream &amp;os)</td></tr>
-<tr class="separator:ad108e17923ce79c6ab0f9e04c2a6b6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30f0fd3321c6cc606508684ce9d666ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#a30f0fd3321c6cc606508684ce9d666ff">removePart</a> (int a)</td></tr>
-<tr class="separator:a30f0fd3321c6cc606508684ce9d666ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90cb96a50ebc28f0de4a009004e9b192"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a90cb96a50ebc28f0de4a009004e9b192"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_inventory.html#a90cb96a50ebc28f0de4a009004e9b192">push_back</a> (T *part)</td></tr>
-<tr class="separator:a90cb96a50ebc28f0de4a009004e9b192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a243a3e96705999b3cf556e9626a96525"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#a243a3e96705999b3cf556e9626a96525">save</a> (std::ostream &amp;os)</td></tr>
+<tr class="memdesc:a243a3e96705999b3cf556e9626a96525"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raktár mentése egy streamre.  <a href="#a243a3e96705999b3cf556e9626a96525">More...</a><br /></td></tr>
+<tr class="separator:a243a3e96705999b3cf556e9626a96525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae141405ba9deea67f5c1be1850d136fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#ae141405ba9deea67f5c1be1850d136fe">print</a> (std::ostream &amp;os, const <a class="el" href="class_string.html">String</a> &amp;test=&quot;-1&quot;)</td></tr>
+<tr class="memdesc:ae141405ba9deea67f5c1be1850d136fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raktár kiírása egy streamre.  <a href="#ae141405ba9deea67f5c1be1850d136fe">More...</a><br /></td></tr>
+<tr class="separator:ae141405ba9deea67f5c1be1850d136fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f602317e97625523444591ac5bf8bd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#a1f602317e97625523444591ac5bf8bd7">remove</a> (int idx)</td></tr>
+<tr class="memdesc:a1f602317e97625523444591ac5bf8bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Egy alkatrész kitörlése a raktárból.  <a href="#a1f602317e97625523444591ac5bf8bd7">More...</a><br /></td></tr>
+<tr class="separator:a1f602317e97625523444591ac5bf8bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a5998334229d148aac3e0dc16642480"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#a2a5998334229d148aac3e0dc16642480">findbyType</a> (const <a class="el" href="class_string.html">String</a> &amp;s0) const</td></tr>
+<tr class="memdesc:a2a5998334229d148aac3e0dc16642480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Megkeres egy alkatrészt a típusa alapján és visszaadja az indexét.  <a href="#a2a5998334229d148aac3e0dc16642480">More...</a><br /></td></tr>
+<tr class="separator:a2a5998334229d148aac3e0dc16642480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86dd14362d6cefb46d4e40667c44481c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a86dd14362d6cefb46d4e40667c44481c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_inventory.html#a86dd14362d6cefb46d4e40667c44481c">push_back</a> (T *part, <a class="el" href="class_string.html">String</a> type)</td></tr>
+<tr class="memdesc:a86dd14362d6cefb46d4e40667c44481c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Egy alkatrész hozzáadása a raktárhoz.  <a href="#a86dd14362d6cefb46d4e40667c44481c">More...</a><br /></td></tr>
+<tr class="separator:a86dd14362d6cefb46d4e40667c44481c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99b8be25beb3530c47d1faa913633979"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_part.html">Part</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#a99b8be25beb3530c47d1faa913633979">operator[]</a> (int idx) const</td></tr>
 <tr class="separator:a99b8be25beb3530c47d1faa913633979"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86601b8ee999e78cdeea83431bab8f33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_part.html">Part</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#a86601b8ee999e78cdeea83431bab8f33">operator[]</a> (int idx)</td></tr>
 <tr class="separator:a86601b8ee999e78cdeea83431bab8f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Alkatrész tároló </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af2c8bea3c8fbf97fec4d3f5ffb92f347"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2c8bea3c8fbf97fec4d3f5ffb92f347">&#9670;&nbsp;</a></span>Inventory()</h2>
 
@@ -173,6 +191,26 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2a5998334229d148aac3e0dc16642480"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a5998334229d148aac3e0dc16642480">&#9670;&nbsp;</a></span>findbyType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Inventory::findbyType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>s0</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Megkeres egy alkatrészt a típusa alapján és visszaadja az indexét. </p>
+
+</div>
+</div>
 <a id="a3ccacc9422b01b2c17836ca804bcaafc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ccacc9422b01b2c17836ca804bcaafc">&#9670;&nbsp;</a></span>get_size()</h2>
 
@@ -198,8 +236,70 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a217895dbb60e3d7643c41fdeeb775bc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a217895dbb60e3d7643c41fdeeb775bc9">&#9670;&nbsp;</a></span>get_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_string.html">String</a> Inventory::get_type </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78912f140decdd10037eb682cf295d72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78912f140decdd10037eb682cf295d72">&#9670;&nbsp;</a></span>loadPart() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inventory::loadPart </td>
+          <td>(</td>
+          <td class="paramtype">std::fstream &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_temp_input.html">TempInput</a> &amp;&#160;</td>
+          <td class="paramname"><em>tmp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_parts_8h.html#abddff37837f171d72a2e16a1448a3943">enumPart</a>&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Betölt egy alkatrészt fájlból. </p>
+
+</div>
+</div>
 <a id="a9dd64f268a7a5cca611b5f749ec33f96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dd64f268a7a5cca611b5f749ec33f96">&#9670;&nbsp;</a></span>loadPart()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dd64f268a7a5cca611b5f749ec33f96">&#9670;&nbsp;</a></span>loadPart() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -219,7 +319,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_inventory_8h.html#abddff37837f171d72a2e16a1448a3943">enumPart</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_parts_8h.html#abddff37837f171d72a2e16a1448a3943">enumPart</a>&#160;</td>
           <td class="paramname"><em>e</em>&#160;</td>
         </tr>
         <tr>
@@ -229,6 +329,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Betölt egy alkatrészt terminalból. </p>
 
 </div>
 </div>
@@ -284,26 +386,38 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad108e17923ce79c6ab0f9e04c2a6b6c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad108e17923ce79c6ab0f9e04c2a6b6c2">&#9670;&nbsp;</a></span>printInventory()</h2>
+<a id="ae141405ba9deea67f5c1be1850d136fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae141405ba9deea67f5c1be1850d136fe">&#9670;&nbsp;</a></span>print()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Inventory::printInventory </td>
+          <td class="memname">void Inventory::print </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>os</em></td><td>)</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="class_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>test</em> = <code>&quot;-1&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Raktár kiírása egy streamre. </p>
+
 </div>
 </div>
-<a id="a90cb96a50ebc28f0de4a009004e9b192"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90cb96a50ebc28f0de4a009004e9b192">&#9670;&nbsp;</a></span>push_back()</h2>
+<a id="a86dd14362d6cefb46d4e40667c44481c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86dd14362d6cefb46d4e40667c44481c">&#9670;&nbsp;</a></span>push_back()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -314,40 +428,54 @@ template&lt;typename T &gt; </div>
           <td class="memname">void Inventory::push_back </td>
           <td>(</td>
           <td class="paramtype">T *&#160;</td>
-          <td class="paramname"><em>part</em></td><td>)</td>
+          <td class="paramname"><em>part</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="class_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Egy alkatrész hozzáadása a raktárhoz. </p>
+
 </div>
 </div>
-<a id="a30f0fd3321c6cc606508684ce9d666ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30f0fd3321c6cc606508684ce9d666ff">&#9670;&nbsp;</a></span>removePart()</h2>
+<a id="a1f602317e97625523444591ac5bf8bd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f602317e97625523444591ac5bf8bd7">&#9670;&nbsp;</a></span>remove()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Inventory::removePart </td>
+          <td class="memname">void Inventory::remove </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Egy alkatrész kitörlése a raktárból. </p>
+
 </div>
 </div>
-<a id="a084bafb32ed7dc4288fac96828c5302a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a084bafb32ed7dc4288fac96828c5302a">&#9670;&nbsp;</a></span>saveInventory()</h2>
+<a id="a243a3e96705999b3cf556e9626a96525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a243a3e96705999b3cf556e9626a96525">&#9670;&nbsp;</a></span>save()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Inventory::saveInventory </td>
+          <td class="memname">void Inventory::save </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>os</em></td><td>)</td>
@@ -355,6 +483,10 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Raktár mentése egy streamre. </p>
+<p>class neve</p>
+<p>class szó levétele a class neve elől </p>
 
 </div>
 </div>

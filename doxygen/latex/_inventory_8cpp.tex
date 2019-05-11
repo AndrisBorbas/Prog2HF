@@ -4,22 +4,90 @@
 \subsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{_inventory_8cpp_a60723589ed29abbba810d129e72f21ed}{set\+Enum}} (\mbox{\hyperlink{class_string}{String}} inst, enum \mbox{\hyperlink{_inventory_8h_abddff37837f171d72a2e16a1448a3943}{enum\+Part}} \&e)
+void \mbox{\hyperlink{_inventory_8cpp_acecc59385cd8970fe6e368ea592362be}{load\+Params}} (std\+::fstream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp, int const params)
+\begin{DoxyCompactList}\small\item\em Jelölők alapján betölti az alkatrész paramétereit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_inventory_8cpp_af88785d286c8ea9392930b904f687672}{load\+Base\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
 \item 
-void \mbox{\hyperlink{_inventory_8cpp_a027b287b99619c750f30b4765ec929e5}{Load\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp, int const params)
+void \mbox{\hyperlink{_inventory_8cpp_a0565beb9b5429fe7cf6edcb88becc168}{load\+C\+P\+U\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
+\item 
+void \mbox{\hyperlink{_inventory_8cpp_aa795cbf45c10e4533a23961614749d05}{load\+G\+P\+U\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
+\item 
+void \mbox{\hyperlink{_inventory_8cpp_ab92e8bf2c22b5df04897f18e888d7973}{load\+M\+O\+B\+O\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
+\item 
+void \mbox{\hyperlink{_inventory_8cpp_aec5377baa2a6064a69b04423103d85ea}{load\+R\+A\+M\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
+\item 
+void \mbox{\hyperlink{_inventory_8cpp_a47e65a05879001febd45f541ab230b86}{load\+Case\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
+\item 
+void \mbox{\hyperlink{_inventory_8cpp_a198252da076147a0ef1f4d721bdb2219}{load\+P\+S\+U\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
+\item 
+void \mbox{\hyperlink{_inventory_8cpp_ac358a7371dcac8ed9d7aba003099c193}{load\+S\+S\+D\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
+\item 
+void \mbox{\hyperlink{_inventory_8cpp_ab09373672ea8d4ea19f1903344fe327a}{load\+H\+D\+D\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
 \end{DoxyCompactItemize}
 
 
 \subsubsection{Function Documentation}
-\mbox{\label{_inventory_8cpp_a027b287b99619c750f30b4765ec929e5}} 
-\index{Inventory.cpp@{Inventory.cpp}!LoadParams@{LoadParams}}
-\index{LoadParams@{LoadParams}!Inventory.cpp@{Inventory.cpp}}
-\paragraph{\texorpdfstring{LoadParams()}{LoadParams()}}
-{\footnotesize\ttfamily void Load\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp,  }\item[{int const}]{params }\end{DoxyParamCaption})}
+\mbox{\label{_inventory_8cpp_af88785d286c8ea9392930b904f687672}} 
+\index{Inventory.cpp@{Inventory.cpp}!loadBaseParams@{loadBaseParams}}
+\index{loadBaseParams@{loadBaseParams}!Inventory.cpp@{Inventory.cpp}}
+\paragraph{\texorpdfstring{loadBaseParams()}{loadBaseParams()}}
+{\footnotesize\ttfamily void load\+Base\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
 
-\mbox{\label{_inventory_8cpp_a60723589ed29abbba810d129e72f21ed}} 
-\index{Inventory.cpp@{Inventory.cpp}!setEnum@{setEnum}}
-\index{setEnum@{setEnum}!Inventory.cpp@{Inventory.cpp}}
-\paragraph{\texorpdfstring{setEnum()}{setEnum()}}
-{\footnotesize\ttfamily void set\+Enum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_string}{String}}}]{inst,  }\item[{enum \mbox{\hyperlink{_inventory_8h_abddff37837f171d72a2e16a1448a3943}{enum\+Part}} \&}]{e }\end{DoxyParamCaption})}
+\mbox{\label{_inventory_8cpp_a47e65a05879001febd45f541ab230b86}} 
+\index{Inventory.cpp@{Inventory.cpp}!loadCaseParams@{loadCaseParams}}
+\index{loadCaseParams@{loadCaseParams}!Inventory.cpp@{Inventory.cpp}}
+\paragraph{\texorpdfstring{loadCaseParams()}{loadCaseParams()}}
+{\footnotesize\ttfamily void load\+Case\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
+
+\mbox{\label{_inventory_8cpp_a0565beb9b5429fe7cf6edcb88becc168}} 
+\index{Inventory.cpp@{Inventory.cpp}!loadCPUParams@{loadCPUParams}}
+\index{loadCPUParams@{loadCPUParams}!Inventory.cpp@{Inventory.cpp}}
+\paragraph{\texorpdfstring{loadCPUParams()}{loadCPUParams()}}
+{\footnotesize\ttfamily void load\+C\+P\+U\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
+
+\mbox{\label{_inventory_8cpp_aa795cbf45c10e4533a23961614749d05}} 
+\index{Inventory.cpp@{Inventory.cpp}!loadGPUParams@{loadGPUParams}}
+\index{loadGPUParams@{loadGPUParams}!Inventory.cpp@{Inventory.cpp}}
+\paragraph{\texorpdfstring{loadGPUParams()}{loadGPUParams()}}
+{\footnotesize\ttfamily void load\+G\+P\+U\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
+
+\mbox{\label{_inventory_8cpp_ab09373672ea8d4ea19f1903344fe327a}} 
+\index{Inventory.cpp@{Inventory.cpp}!loadHDDParams@{loadHDDParams}}
+\index{loadHDDParams@{loadHDDParams}!Inventory.cpp@{Inventory.cpp}}
+\paragraph{\texorpdfstring{loadHDDParams()}{loadHDDParams()}}
+{\footnotesize\ttfamily void load\+H\+D\+D\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
+
+\mbox{\label{_inventory_8cpp_ab92e8bf2c22b5df04897f18e888d7973}} 
+\index{Inventory.cpp@{Inventory.cpp}!loadMOBOParams@{loadMOBOParams}}
+\index{loadMOBOParams@{loadMOBOParams}!Inventory.cpp@{Inventory.cpp}}
+\paragraph{\texorpdfstring{loadMOBOParams()}{loadMOBOParams()}}
+{\footnotesize\ttfamily void load\+M\+O\+B\+O\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
+
+\mbox{\label{_inventory_8cpp_acecc59385cd8970fe6e368ea592362be}} 
+\index{Inventory.cpp@{Inventory.cpp}!loadParams@{loadParams}}
+\index{loadParams@{loadParams}!Inventory.cpp@{Inventory.cpp}}
+\paragraph{\texorpdfstring{loadParams()}{loadParams()}}
+{\footnotesize\ttfamily void load\+Params (\begin{DoxyParamCaption}\item[{std\+::fstream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp,  }\item[{int const}]{params }\end{DoxyParamCaption})}
+
+
+
+Jelölők alapján betölti az alkatrész paramétereit. 
+
+\mbox{\label{_inventory_8cpp_a198252da076147a0ef1f4d721bdb2219}} 
+\index{Inventory.cpp@{Inventory.cpp}!loadPSUParams@{loadPSUParams}}
+\index{loadPSUParams@{loadPSUParams}!Inventory.cpp@{Inventory.cpp}}
+\paragraph{\texorpdfstring{loadPSUParams()}{loadPSUParams()}}
+{\footnotesize\ttfamily void load\+P\+S\+U\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
+
+\mbox{\label{_inventory_8cpp_aec5377baa2a6064a69b04423103d85ea}} 
+\index{Inventory.cpp@{Inventory.cpp}!loadRAMParams@{loadRAMParams}}
+\index{loadRAMParams@{loadRAMParams}!Inventory.cpp@{Inventory.cpp}}
+\paragraph{\texorpdfstring{loadRAMParams()}{loadRAMParams()}}
+{\footnotesize\ttfamily void load\+R\+A\+M\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
+
+\mbox{\label{_inventory_8cpp_ac358a7371dcac8ed9d7aba003099c193}} 
+\index{Inventory.cpp@{Inventory.cpp}!loadSSDParams@{loadSSDParams}}
+\index{loadSSDParams@{loadSSDParams}!Inventory.cpp@{Inventory.cpp}}
+\paragraph{\texorpdfstring{loadSSDParams()}{loadSSDParams()}}
+{\footnotesize\ttfamily void load\+S\+S\+D\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
 
