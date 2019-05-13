@@ -1,0 +1,9 @@
+<map id="addPartHelper" name="addPartHelper">
+<area shape="rect" id="node1" title="új alkatrészt tölt be console inputról." alt="" coords="5,56,109,83"/>
+<area shape="rect" id="node2" href="$_menu_8h.html#aaa6e5fc0d7c515998e48fe6ae944ca40" title="kitörli a terminált" alt="" coords="185,5,259,32"/>
+<area shape="rect" id="node3" href="$_menu_8cpp.html#a4b1c8fae94d189d0d74b10cde7b75176" title="beállítja a part loadert" alt="" coords="165,56,279,83"/>
+<area shape="rect" id="node4" href="$class_inventory.html#a78912f140decdd10037eb682cf295d72" title="Betölt egy alkatrészt fájlból." alt="" coords="157,107,287,133"/>
+<area shape="rect" id="node5" href="$_inventory_8cpp.html#acecc59385cd8970fe6e368ea592362be" title="Jelölők alapján betölti az alkatrész paramétereit fájlból." alt="" coords="361,81,452,108"/>
+<area shape="rect" id="node7" href="$class_inventory.html#a86dd14362d6cefb46d4e40667c44481c" title="Egy alkatrész hozzáadása a raktárhoz." alt="" coords="335,132,479,159"/>
+<area shape="rect" id="node6" href="$class_string.html#ad3b888edbfb3bab21d4bae4663d2211a" title="Visszaadja a string hosszát." alt="" coords="527,81,625,108"/>
+</map>

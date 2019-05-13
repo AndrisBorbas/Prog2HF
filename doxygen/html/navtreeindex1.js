@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"class_m_o_b_o.html#a01fed4470cbf8c58f86426aa8f52b225":[0,0,7,4],
 "class_m_o_b_o.html#a3185de871765391ae3a0ffe4b0af7e5b":[0,0,7,0],
 "class_m_o_b_o.html#a3241f425030e01d5b7a192c23af2dbda":[0,0,7,2],
 "class_m_o_b_o.html#a3dd7e36103afbb4b6c09b65975317b9c":[0,0,7,5],

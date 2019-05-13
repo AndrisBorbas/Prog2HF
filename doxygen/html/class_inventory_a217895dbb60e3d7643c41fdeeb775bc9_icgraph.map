@@ -1,0 +1,12 @@
+<map id="Inventory::get_type" name="Inventory::get_type">
+<area shape="rect" id="node1" title=" " alt="" coords="608,132,739,159"/>
+<area shape="rect" id="node2" href="$class_inventory.html#ae141405ba9deea67f5c1be1850d136fe" title="Raktár kiírása egy streamre." alt="" coords="435,107,542,133"/>
+<area shape="rect" id="node7" href="$class_inventory.html#a2a5998334229d148aac3e0dc16642480" title="Megkeres egy alkatrészt a típusa alapján és visszaadja az indexét." alt="" coords="417,183,560,209"/>
+<area shape="rect" id="node3" href="$_menu_8h.html#a54c74422af05849f9d508c0a5ccd468b" title="kiírja az összes betölttött alkatrészt" alt="" coords="258,5,357,32"/>
+<area shape="rect" id="node4" href="$_menu_8h.html#af332548b8c7c1e4d477c95abf6233b5d" title="törli a kiválasztott alkatrészt" alt="" coords="245,56,369,83"/>
+<area shape="rect" id="node5" href="$_menu_8h.html#a185a985b9e28ccd13d5fb2d841e4a5f0" title="egy configot lehet csinálni vele" alt="" coords="253,107,362,133"/>
+<area shape="rect" id="node6" href="$_menu_8h.html#aa66bedcbb6a6b03cde60b3441e6ae031" title="konfighoz választ alkatrészt" alt="" coords="261,157,353,184"/>
+<area shape="rect" id="node8" href="$class_build.html#a754a988f73da756210b083814986f2f1" title="konfig betöltése" alt="" coords="266,208,349,235"/>
+<area shape="rect" id="node9" href="$class_orders.html#af0edb320aab3dcae0ee615a5459b5595" title="megrendelések betöltése" alt="" coords="104,208,197,235"/>
+<area shape="rect" id="node10" href="$main_8h.html#a3c04138a5bfe5d72780bb7e82a18e627" title="entrypoint" alt="" coords="5,208,56,235"/>
+</map>

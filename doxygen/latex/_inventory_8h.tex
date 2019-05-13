@@ -1,7 +1,23 @@
-\subsection{C\+:/\+Users/cxl20/\+Documents/\+Visual Studio 2017/\+Prog2\+H\+F/\+Prog2\+H\+F/\+Inventory.h File Reference}
+\hypertarget{_inventory_8h}{}\subsection{C\+:/\+Users/cxl20/\+Documents/\+Visual Studio 2017/\+Prog2\+H\+F/\+Prog2\+H\+F/\+Inventory.h File Reference}
 \label{_inventory_8h}\index{C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h@{C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h}}
 {\ttfamily \#include \char`\"{}Parts.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$fstream$>$}\newline
+Include dependency graph for Inventory.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_inventory_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_inventory_8h__dep__incl}
+\end{center}
+\end{figure}
 \subsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -11,9 +27,9 @@ class \mbox{\hyperlink{class_inventory}{Inventory}}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{_inventory_8h_acecc59385cd8970fe6e368ea592362be}{load\+Params}} (std\+::fstream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp, int const params)
-\begin{DoxyCompactList}\small\item\em Jelölők alapján betölti az alkatrész paramétereit. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Jelölők alapján betölti az alkatrész paramétereit fájlból. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_inventory_8h_af88785d286c8ea9392930b904f687672}{load\+Base\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
-\item 
+\begin{DoxyCompactList}\small\item\em Segítség kiírásával betölti az alkatrész paramétereit console ból. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_inventory_8h_a0565beb9b5429fe7cf6edcb88becc168}{load\+C\+P\+U\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
 \item 
 void \mbox{\hyperlink{_inventory_8h_aa795cbf45c10e4533a23961614749d05}{load\+G\+P\+U\+Params}} (std\+::istream \&is, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
@@ -33,43 +49,87 @@ void \mbox{\hyperlink{_inventory_8h_ab09373672ea8d4ea19f1903344fe327a}{load\+H\+
 
 
 \subsubsection{Function Documentation}
-\mbox{\label{_inventory_8h_af88785d286c8ea9392930b904f687672}} 
+\mbox{\Hypertarget{_inventory_8h_af88785d286c8ea9392930b904f687672}\label{_inventory_8h_af88785d286c8ea9392930b904f687672}} 
 \index{Inventory.h@{Inventory.h}!loadBaseParams@{loadBaseParams}}
 \index{loadBaseParams@{loadBaseParams}!Inventory.h@{Inventory.h}}
 \paragraph{\texorpdfstring{loadBaseParams()}{loadBaseParams()}}
 {\footnotesize\ttfamily void load\+Base\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
 
-\mbox{\label{_inventory_8h_a47e65a05879001febd45f541ab230b86}} 
+
+
+Segítség kiírásával betölti az alkatrész paramétereit console ból. 
+
+\mbox{\Hypertarget{_inventory_8h_a47e65a05879001febd45f541ab230b86}\label{_inventory_8h_a47e65a05879001febd45f541ab230b86}} 
 \index{Inventory.h@{Inventory.h}!loadCaseParams@{loadCaseParams}}
 \index{loadCaseParams@{loadCaseParams}!Inventory.h@{Inventory.h}}
 \paragraph{\texorpdfstring{loadCaseParams()}{loadCaseParams()}}
 {\footnotesize\ttfamily void load\+Case\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
 
-\mbox{\label{_inventory_8h_a0565beb9b5429fe7cf6edcb88becc168}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{_inventory_8h_a47e65a05879001febd45f541ab230b86_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_inventory_8h_a0565beb9b5429fe7cf6edcb88becc168}\label{_inventory_8h_a0565beb9b5429fe7cf6edcb88becc168}} 
 \index{Inventory.h@{Inventory.h}!loadCPUParams@{loadCPUParams}}
 \index{loadCPUParams@{loadCPUParams}!Inventory.h@{Inventory.h}}
 \paragraph{\texorpdfstring{loadCPUParams()}{loadCPUParams()}}
 {\footnotesize\ttfamily void load\+C\+P\+U\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
 
-\mbox{\label{_inventory_8h_aa795cbf45c10e4533a23961614749d05}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{_inventory_8h_a0565beb9b5429fe7cf6edcb88becc168_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_inventory_8h_aa795cbf45c10e4533a23961614749d05}\label{_inventory_8h_aa795cbf45c10e4533a23961614749d05}} 
 \index{Inventory.h@{Inventory.h}!loadGPUParams@{loadGPUParams}}
 \index{loadGPUParams@{loadGPUParams}!Inventory.h@{Inventory.h}}
 \paragraph{\texorpdfstring{loadGPUParams()}{loadGPUParams()}}
 {\footnotesize\ttfamily void load\+G\+P\+U\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
 
-\mbox{\label{_inventory_8h_ab09373672ea8d4ea19f1903344fe327a}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{_inventory_8h_aa795cbf45c10e4533a23961614749d05_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_inventory_8h_ab09373672ea8d4ea19f1903344fe327a}\label{_inventory_8h_ab09373672ea8d4ea19f1903344fe327a}} 
 \index{Inventory.h@{Inventory.h}!loadHDDParams@{loadHDDParams}}
 \index{loadHDDParams@{loadHDDParams}!Inventory.h@{Inventory.h}}
 \paragraph{\texorpdfstring{loadHDDParams()}{loadHDDParams()}}
 {\footnotesize\ttfamily void load\+H\+D\+D\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
 
-\mbox{\label{_inventory_8h_ab92e8bf2c22b5df04897f18e888d7973}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{_inventory_8h_ab09373672ea8d4ea19f1903344fe327a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_inventory_8h_ab92e8bf2c22b5df04897f18e888d7973}\label{_inventory_8h_ab92e8bf2c22b5df04897f18e888d7973}} 
 \index{Inventory.h@{Inventory.h}!loadMOBOParams@{loadMOBOParams}}
 \index{loadMOBOParams@{loadMOBOParams}!Inventory.h@{Inventory.h}}
 \paragraph{\texorpdfstring{loadMOBOParams()}{loadMOBOParams()}}
 {\footnotesize\ttfamily void load\+M\+O\+B\+O\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
 
-\mbox{\label{_inventory_8h_acecc59385cd8970fe6e368ea592362be}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{_inventory_8h_ab92e8bf2c22b5df04897f18e888d7973_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_inventory_8h_acecc59385cd8970fe6e368ea592362be}\label{_inventory_8h_acecc59385cd8970fe6e368ea592362be}} 
 \index{Inventory.h@{Inventory.h}!loadParams@{loadParams}}
 \index{loadParams@{loadParams}!Inventory.h@{Inventory.h}}
 \paragraph{\texorpdfstring{loadParams()}{loadParams()}}
@@ -77,23 +137,55 @@ void \mbox{\hyperlink{_inventory_8h_ab09373672ea8d4ea19f1903344fe327a}{load\+H\+
 
 
 
-Jelölők alapján betölti az alkatrész paramétereit. 
+Jelölők alapján betölti az alkatrész paramétereit fájlból. 
 
-\mbox{\label{_inventory_8h_a198252da076147a0ef1f4d721bdb2219}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{_inventory_8h_acecc59385cd8970fe6e368ea592362be_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_inventory_8h_a198252da076147a0ef1f4d721bdb2219}\label{_inventory_8h_a198252da076147a0ef1f4d721bdb2219}} 
 \index{Inventory.h@{Inventory.h}!loadPSUParams@{loadPSUParams}}
 \index{loadPSUParams@{loadPSUParams}!Inventory.h@{Inventory.h}}
 \paragraph{\texorpdfstring{loadPSUParams()}{loadPSUParams()}}
 {\footnotesize\ttfamily void load\+P\+S\+U\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
 
-\mbox{\label{_inventory_8h_aec5377baa2a6064a69b04423103d85ea}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{_inventory_8h_a198252da076147a0ef1f4d721bdb2219_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_inventory_8h_aec5377baa2a6064a69b04423103d85ea}\label{_inventory_8h_aec5377baa2a6064a69b04423103d85ea}} 
 \index{Inventory.h@{Inventory.h}!loadRAMParams@{loadRAMParams}}
 \index{loadRAMParams@{loadRAMParams}!Inventory.h@{Inventory.h}}
 \paragraph{\texorpdfstring{loadRAMParams()}{loadRAMParams()}}
 {\footnotesize\ttfamily void load\+R\+A\+M\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
 
-\mbox{\label{_inventory_8h_ac358a7371dcac8ed9d7aba003099c193}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{_inventory_8h_aec5377baa2a6064a69b04423103d85ea_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_inventory_8h_ac358a7371dcac8ed9d7aba003099c193}\label{_inventory_8h_ac358a7371dcac8ed9d7aba003099c193}} 
 \index{Inventory.h@{Inventory.h}!loadSSDParams@{loadSSDParams}}
 \index{loadSSDParams@{loadSSDParams}!Inventory.h@{Inventory.h}}
 \paragraph{\texorpdfstring{loadSSDParams()}{loadSSDParams()}}
 {\footnotesize\ttfamily void load\+S\+S\+D\+Params (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{_inventory_8h_ac358a7371dcac8ed9d7aba003099c193_cgraph}
+\end{center}
+\end{figure}

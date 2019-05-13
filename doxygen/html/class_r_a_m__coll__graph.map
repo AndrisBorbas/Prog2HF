@@ -1,0 +1,5 @@
+<map id="RAM" name="RAM">
+<area shape="rect" id="node1" title="Memória." alt="" coords="8,185,59,212"/>
+<area shape="rect" id="node2" href="$class_part.html" title="Alap alkatrész típus." alt="" coords="10,109,57,136"/>
+<area shape="rect" id="node3" href="$class_string.html" title=" " alt="" coords="5,5,61,32"/>
+</map>

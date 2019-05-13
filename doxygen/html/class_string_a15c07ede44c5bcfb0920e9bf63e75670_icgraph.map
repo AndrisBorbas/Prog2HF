@@ -1,0 +1,8 @@
+<map id="String::removeFirstX" name="String::removeFirstX">
+<area shape="rect" id="node1" title="törli az első x karaktert a stringből" alt="" coords="293,81,432,108"/>
+<area shape="rect" id="node2" href="$class_build.html#a954cd881cec1bf789fb57d7cdf617367" title="konfig mentése" alt="" coords="149,5,235,32"/>
+<area shape="rect" id="node3" href="$class_build.html#adb328444dd8bf97b36356be36db01194" title="konfig kiírása" alt="" coords="150,56,234,83"/>
+<area shape="rect" id="node5" href="$class_inventory.html#a243a3e96705999b3cf556e9626a96525" title="Raktár mentése egy streamre." alt="" coords="139,107,245,133"/>
+<area shape="rect" id="node6" href="$main_8h.html#a3c04138a5bfe5d72780bb7e82a18e627" title="entrypoint" alt="" coords="167,157,217,184"/>
+<area shape="rect" id="node4" href="$_builds_8h.html#a8dc72915bcebaea777be339661524cb9" title=" " alt="" coords="5,56,91,83"/>
+</map>

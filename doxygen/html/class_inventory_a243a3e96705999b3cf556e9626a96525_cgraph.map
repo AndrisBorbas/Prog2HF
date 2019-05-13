@@ -1,0 +1,4 @@
+<map id="Inventory::save" name="Inventory::save">
+<area shape="rect" id="node1" title="Raktár mentése egy streamre." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node2" href="$class_string.html#a15c07ede44c5bcfb0920e9bf63e75670" title="törli az első x karaktert a stringből" alt="" coords="160,5,299,32"/>
+</map>

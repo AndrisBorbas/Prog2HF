@@ -1,0 +1,6 @@
+<map id="HDD" name="HDD">
+<area shape="rect" id="node1" title="Merevlemez." alt="" coords="14,261,63,288"/>
+<area shape="rect" id="node2" href="$class_storage.html" title="Tárhely alap." alt="" coords="5,185,72,212"/>
+<area shape="rect" id="node3" href="$class_part.html" title="Alap alkatrész típus." alt="" coords="15,109,62,136"/>
+<area shape="rect" id="node4" href="$class_string.html" title=" " alt="" coords="11,5,67,32"/>
+</map>

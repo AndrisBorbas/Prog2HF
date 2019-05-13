@@ -1,5 +1,9 @@
 ﻿#include "Builds.h"
 
+#if defined(MEMTRACE) || defined(DMEMTRACE)
+#include "memtrace.h"
+#endif
+
 void Build::save(std::ostream& os) const {
 	os << std::endl;
 	os << "Items: " << size << std::endl << std::endl;

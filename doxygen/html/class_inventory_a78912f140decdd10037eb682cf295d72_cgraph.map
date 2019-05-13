@@ -1,0 +1,6 @@
+<map id="Inventory::loadPart" name="Inventory::loadPart">
+<area shape="rect" id="node1" title="Betölt egy alkatrészt fájlból." alt="" coords="5,31,135,57"/>
+<area shape="rect" id="node2" href="$_inventory_8cpp.html#acecc59385cd8970fe6e368ea592362be" title="Jelölők alapján betölti az alkatrész paramétereit fájlból." alt="" coords="209,5,300,32"/>
+<area shape="rect" id="node4" href="$class_inventory.html#a86dd14362d6cefb46d4e40667c44481c" title="Egy alkatrész hozzáadása a raktárhoz." alt="" coords="183,56,327,83"/>
+<area shape="rect" id="node3" href="$class_string.html#ad3b888edbfb3bab21d4bae4663d2211a" title="Visszaadja a string hosszát." alt="" coords="375,5,473,32"/>
+</map>

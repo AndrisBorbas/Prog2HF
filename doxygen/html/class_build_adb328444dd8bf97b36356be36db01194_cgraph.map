@@ -1,0 +1,4 @@
+<map id="Build::print" name="Build::print">
+<area shape="rect" id="node1" title="konfig kiírása" alt="" coords="5,5,89,32"/>
+<area shape="rect" id="node2" href="$class_string.html#a15c07ede44c5bcfb0920e9bf63e75670" title="törli az első x karaktert a stringből" alt="" coords="137,5,276,32"/>
+</map>

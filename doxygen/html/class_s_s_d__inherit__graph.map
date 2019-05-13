@@ -1,0 +1,5 @@
+<map id="SSD" name="SSD">
+<area shape="rect" id="node1" title="SSD." alt="" coords="14,155,63,181"/>
+<area shape="rect" id="node2" href="$class_storage.html" title="Tárhely alap." alt="" coords="5,80,72,107"/>
+<area shape="rect" id="node3" href="$class_part.html" title="Alap alkatrész típus." alt="" coords="15,5,62,32"/>
+</map>

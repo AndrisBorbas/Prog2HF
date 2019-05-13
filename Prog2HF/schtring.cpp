@@ -1,6 +1,10 @@
 #include "memtrace.h"
 #include "schtring.hpp"
 
+#if defined(MEMTRACE) || defined(DMEMTRACE)
+#include "memtrace.h"
+#endif
+
 using std::cin;
 using std::ios_base;
 

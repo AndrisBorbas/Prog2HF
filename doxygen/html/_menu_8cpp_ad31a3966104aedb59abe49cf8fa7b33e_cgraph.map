@@ -1,0 +1,8 @@
+<map id="removePartHelper" name="removePartHelper">
+<area shape="rect" id="node1" title="törli a kiválasztott alkatrészt" alt="" coords="5,81,129,108"/>
+<area shape="rect" id="node2" href="$_menu_8h.html#aaa6e5fc0d7c515998e48fe6ae944ca40" title="kitörli a terminált" alt="" coords="201,5,276,32"/>
+<area shape="rect" id="node3" href="$class_inventory.html#ae141405ba9deea67f5c1be1850d136fe" title="Raktár kiírása egy streamre." alt="" coords="185,56,292,83"/>
+<area shape="rect" id="node5" href="$_menu_8cpp.html#a7618dfe88319843fa7ec62da27b1a007" title="átalakítja a beírt számot indexelővé" alt="" coords="190,107,287,133"/>
+<area shape="rect" id="node6" href="$class_inventory.html#a1f602317e97625523444591ac5bf8bd7" title="Egy alkatrész kitörlése a raktárból." alt="" coords="177,157,300,184"/>
+<area shape="rect" id="node4" href="$class_inventory.html#a217895dbb60e3d7643c41fdeeb775bc9" title=" " alt="" coords="348,56,479,83"/>
+</map>

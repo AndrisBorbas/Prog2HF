@@ -22,7 +22,7 @@ CPU:
 GPU: 
 	Brand: Nvidia, Type: GeForce_RTX_2080_Ti, Price: 1300 USD, Base Clock: 1515 MHz, Video Memory: 11 GB
 GPU: 
-	Brand: Nvidia, Type: GeForce_RTX_2080, Price: 750 USD, Base Clock: 1350 MHz, Video Memory: 8 GB
+	Brand: Nvidia, Type: GeForce_RTX_2080, Price: 900 USD, Base Clock: 1455 MHz, Video Memory: 11 GB
 GPU: 
 	Brand: Nvidia, Type: GeForce_RTX_2070, Price: 500 USD, Base Clock: 1410 MHz, Video Memory: 8 GB
 GPU: 

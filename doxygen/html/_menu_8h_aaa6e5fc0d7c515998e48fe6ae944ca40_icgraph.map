@@ -1,0 +1,12 @@
+<map id="clearcmd" name="clearcmd">
+<area shape="rect" id="node1" title="kitörli a terminált" alt="" coords="197,208,272,235"/>
+<area shape="rect" id="node2" href="$_menu_8h.html#aa8348016f7273e63d47917126e8f9c69" title="kiírja a főmenüt" alt="" coords="40,5,115,32"/>
+<area shape="rect" id="node3" href="$_menu_8h.html#a54c74422af05849f9d508c0a5ccd468b" title="kiírja az összes betölttött alkatrészt" alt="" coords="28,56,127,83"/>
+<area shape="rect" id="node4" href="$_menu_8h.html#a2279d427508487e2c7194ba68588445d" title="kiírja a megrendeléseket" alt="" coords="24,107,131,133"/>
+<area shape="rect" id="node5" href="$_menu_8h.html#a369084a71ee372ce9e1096d887a53e77" title="új alkatrészt tölt be console inputról." alt="" coords="25,157,129,184"/>
+<area shape="rect" id="node6" href="$_menu_8h.html#af332548b8c7c1e4d477c95abf6233b5d" title="törli a kiválasztott alkatrészt" alt="" coords="15,208,139,235"/>
+<area shape="rect" id="node7" href="$_menu_8h.html#a185a985b9e28ccd13d5fb2d841e4a5f0" title="egy configot lehet csinálni vele" alt="" coords="23,259,132,285"/>
+<area shape="rect" id="node8" href="$_menu_8h.html#aa66bedcbb6a6b03cde60b3441e6ae031" title="konfighoz választ alkatrészt" alt="" coords="31,309,123,336"/>
+<area shape="rect" id="node9" href="$_menu_8h.html#a0f808ec53d26f8bcef1a0f22783c78f8" title="megrendelést lehet teljesítetté tenni" alt="" coords="5,360,149,387"/>
+<area shape="rect" id="node10" href="$_menu_8h.html#aed744d8c7e74c041565714ecfb656f0b" title="megrendelést lehet vele törölni" alt="" coords="11,411,143,437"/>
+</map>

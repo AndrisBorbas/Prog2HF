@@ -1,0 +1,8 @@
+<map id="partSelector" name="partSelector">
+<area shape="rect" id="node1" title="konfighoz választ alkatrészt" alt="" coords="5,81,97,108"/>
+<area shape="rect" id="node2" href="$class_inventory.html#ae141405ba9deea67f5c1be1850d136fe" title="Raktár kiírása egy streamre." alt="" coords="165,5,272,32"/>
+<area shape="rect" id="node4" href="$_menu_8cpp.html#a7618dfe88319843fa7ec62da27b1a007" title="átalakítja a beírt számot indexelővé" alt="" coords="170,56,267,83"/>
+<area shape="rect" id="node5" href="$class_inventory.html#acb0afe61bcfc92a963f803f1b70676dc" title="Megkeres egy alkatrészt index alapján és visszaadja a típusát." alt="" coords="145,107,292,133"/>
+<area shape="rect" id="node6" href="$_menu_8h.html#aaa6e5fc0d7c515998e48fe6ae944ca40" title="kitörli a terminált" alt="" coords="181,157,256,184"/>
+<area shape="rect" id="node3" href="$class_inventory.html#a217895dbb60e3d7643c41fdeeb775bc9" title=" " alt="" coords="340,5,471,32"/>
+</map>

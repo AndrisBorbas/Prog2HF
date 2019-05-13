@@ -1,0 +1,6 @@
+<map id="Inventory::findbyType" name="Inventory::findbyType">
+<area shape="rect" id="node1" title="Megkeres egy alkatrészt a típusa alapján és visszaadja az indexét." alt="" coords="376,5,519,32"/>
+<area shape="rect" id="node2" href="$class_build.html#a754a988f73da756210b083814986f2f1" title="konfig betöltése" alt="" coords="245,5,328,32"/>
+<area shape="rect" id="node3" href="$class_orders.html#af0edb320aab3dcae0ee615a5459b5595" title="megrendelések betöltése" alt="" coords="104,5,197,32"/>
+<area shape="rect" id="node4" href="$main_8h.html#a3c04138a5bfe5d72780bb7e82a18e627" title="entrypoint" alt="" coords="5,5,56,32"/>
+</map>

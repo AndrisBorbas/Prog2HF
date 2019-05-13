@@ -12,7 +12,7 @@
 #include <chrono>
 #include <thread>
 
-#ifdef MEMTRACE
+#if defined(MEMTRACE) || defined(DMEMTRACE)
 #include "memtrace.h"
 #endif
 

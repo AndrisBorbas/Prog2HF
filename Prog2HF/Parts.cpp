@@ -1,5 +1,9 @@
 ﻿#include "Parts.h"
 
+#if defined(MEMTRACE) || defined(DMEMTRACE)
+#include "memtrace.h"
+#endif
+
 void Part::print(std::ostream& os) const {
 	os << "Brand: " << brand << ", Type: " << type << ", Price: " << price << " USD, ";
 }

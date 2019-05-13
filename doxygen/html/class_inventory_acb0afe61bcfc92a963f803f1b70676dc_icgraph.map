@@ -1,0 +1,5 @@
+<map id="Inventory::findbyIndex" name="Inventory::findbyIndex">
+<area shape="rect" id="node1" title="Megkeres egy alkatrészt index alapján és visszaadja a típusát." alt="" coords="163,31,309,57"/>
+<area shape="rect" id="node2" href="$_menu_8h.html#a185a985b9e28ccd13d5fb2d841e4a5f0" title="egy configot lehet csinálni vele" alt="" coords="5,5,115,32"/>
+<area shape="rect" id="node3" href="$_menu_8h.html#aa66bedcbb6a6b03cde60b3441e6ae031" title="konfighoz választ alkatrészt" alt="" coords="14,56,106,83"/>
+</map>

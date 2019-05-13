@@ -1,0 +1,7 @@
+<map id="Inventory::print" name="Inventory::print">
+<area shape="rect" id="node1" title="Raktár kiírása egy streamre." alt="" coords="177,81,284,108"/>
+<area shape="rect" id="node2" href="$_menu_8h.html#a54c74422af05849f9d508c0a5ccd468b" title="kiírja az összes betölttött alkatrészt" alt="" coords="18,5,117,32"/>
+<area shape="rect" id="node3" href="$_menu_8h.html#af332548b8c7c1e4d477c95abf6233b5d" title="törli a kiválasztott alkatrészt" alt="" coords="5,56,129,83"/>
+<area shape="rect" id="node4" href="$_menu_8h.html#a185a985b9e28ccd13d5fb2d841e4a5f0" title="egy configot lehet csinálni vele" alt="" coords="13,107,122,133"/>
+<area shape="rect" id="node5" href="$_menu_8h.html#aa66bedcbb6a6b03cde60b3441e6ae031" title="konfighoz választ alkatrészt" alt="" coords="21,157,113,184"/>
+</map>

@@ -1,0 +1,39 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title="entrypoint" alt="" coords="5,685,56,711"/>
+<area shape="rect" id="node2" href="$atest_8cpp.html#acdf8ec90b79eca8d516b03baa19a1b44" title="Test the if the parts file could be opened." alt="" coords="337,26,388,53"/>
+<area shape="rect" id="node3" href="$class_string.html#ad3b888edbfb3bab21d4bae4663d2211a" title="Visszaadja a string hosszát." alt="" coords="693,203,792,230"/>
+<area shape="rect" id="node4" href="$_parts_8cpp.html#a63d667335dd064350b67cadf16011241" title="Enumot állít be gy stringből." alt="" coords="107,862,240,889"/>
+<area shape="rect" id="node5" href="$class_inventory.html#a78912f140decdd10037eb682cf295d72" title="Betölt egy alkatrészt fájlból." alt="" coords="298,153,427,179"/>
+<area shape="rect" id="node8" href="$class_orders.html#af0edb320aab3dcae0ee615a5459b5595" title="megrendelések betöltése" alt="" coords="127,387,220,414"/>
+<area shape="rect" id="node15" href="$atest_8cpp.html#a6e6df2af48d16780853d6eddcb8c8bc4" title="Test the non case sensitive String compare." alt="" coords="148,51,199,78"/>
+<area shape="rect" id="node16" href="$atest_8cpp.html#ab545ece7a108a6470a3dc2161ba0008b" title="Test the string shortener." alt="" coords="148,913,199,939"/>
+<area shape="rect" id="node17" href="$class_string.html#a15c07ede44c5bcfb0920e9bf63e75670" title="törli az első x karaktert a stringből" alt="" coords="104,963,243,990"/>
+<area shape="rect" id="node18" href="$atest_8cpp.html#a07323edca3eb4730f312846bd8714d4a" title="Test the sring first x character removal." alt="" coords="148,1014,199,1041"/>
+<area shape="rect" id="node19" href="$_menu_8cpp.html#a9752b4d9f8a092734d3a8ea49b63c42b" title="csinál egy sor animációt" alt="" coords="139,1065,207,1091"/>
+<area shape="rect" id="node20" href="$_menu_8cpp.html#aa8348016f7273e63d47917126e8f9c69" title="kiírja a főmenüt" alt="" coords="325,659,400,686"/>
+<area shape="rect" id="node22" href="$_menu_8cpp.html#a70c4e63bce818eb0a35f6403066b4263" title="kiírja az összes betölttött alkatrészt" alt="" coords="313,507,412,534"/>
+<area shape="rect" id="node24" href="$_menu_8cpp.html#ab9d115a63a4cd02ce5f3ee167669515d" title="új alkatrészt tölt be console inputról." alt="" coords="121,299,225,326"/>
+<area shape="rect" id="node26" href="$_menu_8cpp.html#ad31a3966104aedb59abe49cf8fa7b33e" title="törli a kiválasztott alkatrészt" alt="" coords="301,913,425,939"/>
+<area shape="rect" id="node29" href="$_menu_8cpp.html#a2279d427508487e2c7194ba68588445d" title="kiírja a megrendeléseket" alt="" coords="120,558,227,585"/>
+<area shape="rect" id="node30" href="$_menu_8cpp.html#a185a985b9e28ccd13d5fb2d841e4a5f0" title="egy configot lehet csinálni vele" alt="" coords="119,659,228,686"/>
+<area shape="rect" id="node34" href="$_menu_8cpp.html#a0f808ec53d26f8bcef1a0f22783c78f8" title="megrendelést lehet teljesítetté tenni" alt="" coords="291,963,435,990"/>
+<area shape="rect" id="node35" href="$_menu_8cpp.html#aed744d8c7e74c041565714ecfb656f0b" title="megrendelést lehet vele törölni" alt="" coords="297,1014,429,1041"/>
+<area shape="rect" id="node36" href="$_menu_8cpp.html#af4bf55c7933ba857c5d67526038aed45" title="bemenet alapján vált a menük között" alt="" coords="109,1115,237,1142"/>
+<area shape="rect" id="node37" href="$main_8cpp.html#a5f7b8c9ea0d63088ae9f9454d89b392b" title="elmenti a program módosításait" alt="" coords="149,1166,197,1193"/>
+<area shape="rect" id="node6" href="$_inventory_8cpp.html#acecc59385cd8970fe6e368ea592362be" title="Jelölők alapján betölti az alkatrész paramétereit fájlból." alt="" coords="511,153,601,179"/>
+<area shape="rect" id="node7" href="$class_inventory.html#a86dd14362d6cefb46d4e40667c44481c" title="Egy alkatrész hozzáadása a raktárhoz." alt="" coords="484,203,628,230"/>
+<area shape="rect" id="node9" href="$class_build.html#a754a988f73da756210b083814986f2f1" title="konfig betöltése" alt="" coords="321,305,404,331"/>
+<area shape="rect" id="node14" href="$class_orders.html#a6d8d6db032983700fa68cca43dc75a38" title="végére beszúrás" alt="" coords="297,406,429,433"/>
+<area shape="rect" id="node10" href="$class_inventory.html#a2a5998334229d148aac3e0dc16642480" title="Megkeres egy alkatrészt a típusa alapján és visszaadja az indexét." alt="" coords="485,367,627,394"/>
+<area shape="rect" id="node12" href="$class_build.html#aba0548391a8c613ed2a9d81d4d3b2a4b" title="végére beszúrás" alt="" coords="495,443,617,470"/>
+<area shape="rect" id="node11" href="$class_inventory.html#a217895dbb60e3d7643c41fdeeb775bc9" title=" " alt="" coords="677,551,808,578"/>
+<area shape="rect" id="node13" href="$class_part.html#a38bcd0481433acc24db7d5f978f2c839" title=" " alt="" coords="689,443,796,470"/>
+<area shape="rect" id="node21" href="$_menu_8h.html#aaa6e5fc0d7c515998e48fe6ae944ca40" title="kitörli a terminált" alt="" coords="519,761,593,787"/>
+<area shape="rect" id="node23" href="$class_inventory.html#ae141405ba9deea67f5c1be1850d136fe" title="Raktár kiírása egy streamre." alt="" coords="503,609,609,635"/>
+<area shape="rect" id="node25" href="$_menu_8cpp.html#a4b1c8fae94d189d0d74b10cde7b75176" title="beállítja a part loadert" alt="" coords="306,203,419,230"/>
+<area shape="rect" id="node27" href="$_menu_8cpp.html#a7618dfe88319843fa7ec62da27b1a007" title="átalakítja a beírt számot indexelővé" alt="" coords="507,963,605,990"/>
+<area shape="rect" id="node28" href="$class_inventory.html#a1f602317e97625523444591ac5bf8bd7" title="Egy alkatrész kitörlése a raktárból." alt="" coords="495,913,617,939"/>
+<area shape="rect" id="node31" href="$_menu_8cpp.html#aa66bedcbb6a6b03cde60b3441e6ae031" title="konfighoz választ alkatrészt" alt="" coords="317,811,409,838"/>
+<area shape="rect" id="node32" href="$class_inventory.html#acb0afe61bcfc92a963f803f1b70676dc" title="Megkeres egy alkatrészt index alapján és visszaadja a típusát." alt="" coords="483,837,629,863"/>
+<area shape="rect" id="node33" href="$class_orders.html#a9b6a5342d1fe2954f061d91609d3fe89" title=" " alt="" coords="303,710,422,737"/>
+</map>

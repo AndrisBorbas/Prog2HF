@@ -135,6 +135,10 @@
 \begin{document}
 
 % Titlepage & ToC
+\hypersetup{pageanchor=false,
+             bookmarksnumbered=true,
+             pdfencoding=unicode
+            }
 \pagenumbering{alph}
 \begin{titlepage}
 \vspace*{7cm}
@@ -147,6 +151,7 @@
 \pagenumbering{roman}
 \tableofcontents
 \pagenumbering{arabic}
+\hypersetup{pageanchor=true}
 
 %--- Begin generated contents ---
 \section{Hierarchical Index}

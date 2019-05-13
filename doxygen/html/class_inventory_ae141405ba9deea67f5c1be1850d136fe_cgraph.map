@@ -1,0 +1,4 @@
+<map id="Inventory::print" name="Inventory::print">
+<area shape="rect" id="node1" title="Raktár kiírása egy streamre." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node2" href="$class_inventory.html#a217895dbb60e3d7643c41fdeeb775bc9" title=" " alt="" coords="160,5,291,32"/>
+</map>

@@ -1,4 +1,4 @@
-\subsection{Orders Class Reference}
+\hypertarget{class_orders}{}\subsection{Orders Class Reference}
 \label{class_orders}\index{Orders@{Orders}}
 
 
@@ -19,15 +19,15 @@ A megrendelt konfigokat tárolja.
 int \mbox{\hyperlink{class_orders_a9b6a5342d1fe2954f061d91609d3fe89}{get\+\_\+size}} ()
 \item 
 void \mbox{\hyperlink{class_orders_a6d8d6db032983700fa68cca43dc75a38}{push\+\_\+back}} (\mbox{\hyperlink{class_build}{Build}} $\ast$build)
-\item 
+\begin{DoxyCompactList}\small\item\em végére beszúrás \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_orders_af0edb320aab3dcae0ee615a5459b5595}{load}} (std\+::fstream \&is, \mbox{\hyperlink{class_inventory}{Inventory}} \&inventory, \mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&tmp)
-\item 
+\begin{DoxyCompactList}\small\item\em megrendelések betöltése \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_orders_a80770bd5dffc2d83de0e9acfaad14229}{save}} (std\+::ostream \&os) const
-\item 
+\begin{DoxyCompactList}\small\item\em megrendelések mentése \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_orders_a6a47de51d6d88328ff6408482f614e8e}{complete}} (int idx)
-\item 
+\begin{DoxyCompactList}\small\item\em megrendelés teljesített állapotba tétele \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_orders_a36a43f158466760d315ca23ac24bd4bd}{remove}} (int idx)
-\item 
+\begin{DoxyCompactList}\small\item\em megrendelés törlése \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_orders_a57fb3a5db65235ac3eb6dee473f7ef34}{print}} (std\+::ostream \&os) const
 \item 
 void \mbox{\hyperlink{class_orders_a081beda059e45de92599fa48a8668c54}{print}} (\mbox{\hyperlink{structsimple__ostream}{simple\+\_\+ostream}} \&tos) const
@@ -42,13 +42,13 @@ const \mbox{\hyperlink{class_build}{Build}} $\ast$ \mbox{\hyperlink{class_orders
 A megrendelt konfigokat tárolja. 
 
 \subsubsection{Constructor \& Destructor Documentation}
-\mbox{\label{class_orders_aa52a641a269671bbf68637e0771e8b5d}} 
+\mbox{\Hypertarget{class_orders_aa52a641a269671bbf68637e0771e8b5d}\label{class_orders_aa52a641a269671bbf68637e0771e8b5d}} 
 \index{Orders@{Orders}!Orders@{Orders}}
 \index{Orders@{Orders}!Orders@{Orders}}
 \paragraph{\texorpdfstring{Orders()}{Orders()}}
 {\footnotesize\ttfamily Orders\+::\+Orders (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{capacity = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\label{class_orders_a12bcbd0cd430b51f65f651fddad3f662}} 
+\mbox{\Hypertarget{class_orders_a12bcbd0cd430b51f65f651fddad3f662}\label{class_orders_a12bcbd0cd430b51f65f651fddad3f662}} 
 \index{Orders@{Orders}!````~Orders@{$\sim$Orders}}
 \index{````~Orders@{$\sim$Orders}!Orders@{Orders}}
 \paragraph{\texorpdfstring{$\sim$Orders()}{~Orders()}}
@@ -57,65 +57,133 @@ A megrendelt konfigokat tárolja.
 
 
 \subsubsection{Member Function Documentation}
-\mbox{\label{class_orders_a6a47de51d6d88328ff6408482f614e8e}} 
+\mbox{\Hypertarget{class_orders_a6a47de51d6d88328ff6408482f614e8e}\label{class_orders_a6a47de51d6d88328ff6408482f614e8e}} 
 \index{Orders@{Orders}!complete@{complete}}
 \index{complete@{complete}!Orders@{Orders}}
 \paragraph{\texorpdfstring{complete()}{complete()}}
 {\footnotesize\ttfamily void Orders\+::complete (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})}
 
-\mbox{\label{class_orders_a9b6a5342d1fe2954f061d91609d3fe89}} 
+
+
+megrendelés teljesített állapotba tétele 
+
+\mbox{\Hypertarget{class_orders_a9b6a5342d1fe2954f061d91609d3fe89}\label{class_orders_a9b6a5342d1fe2954f061d91609d3fe89}} 
 \index{Orders@{Orders}!get\_size@{get\_size}}
 \index{get\_size@{get\_size}!Orders@{Orders}}
 \paragraph{\texorpdfstring{get\_size()}{get\_size()}}
 {\footnotesize\ttfamily int Orders\+::get\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\label{class_orders_af0edb320aab3dcae0ee615a5459b5595}} 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{class_orders_a9b6a5342d1fe2954f061d91609d3fe89_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_orders_af0edb320aab3dcae0ee615a5459b5595}\label{class_orders_af0edb320aab3dcae0ee615a5459b5595}} 
 \index{Orders@{Orders}!load@{load}}
 \index{load@{load}!Orders@{Orders}}
 \paragraph{\texorpdfstring{load()}{load()}}
 {\footnotesize\ttfamily void Orders\+::load (\begin{DoxyParamCaption}\item[{std\+::fstream \&}]{is,  }\item[{\mbox{\hyperlink{class_inventory}{Inventory}} \&}]{inventory,  }\item[{\mbox{\hyperlink{struct_temp_input}{Temp\+Input}} \&}]{tmp }\end{DoxyParamCaption})}
 
-\mbox{\label{class_orders_aab4445872bb7f3d952ebc89f6b2bd146}} 
+
+
+megrendelések betöltése 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_orders_af0edb320aab3dcae0ee615a5459b5595_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{class_orders_af0edb320aab3dcae0ee615a5459b5595_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_orders_aab4445872bb7f3d952ebc89f6b2bd146}\label{class_orders_aab4445872bb7f3d952ebc89f6b2bd146}} 
 \index{Orders@{Orders}!operator\mbox{[}\mbox{]}@{operator[]}}
 \index{operator\mbox{[}\mbox{]}@{operator[]}!Orders@{Orders}}
 \paragraph{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{class_build}{Build}}$\ast$ Orders\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\label{class_orders_aca77a601a993ef2d5dcfb71b9ee41542}} 
+\mbox{\Hypertarget{class_orders_aca77a601a993ef2d5dcfb71b9ee41542}\label{class_orders_aca77a601a993ef2d5dcfb71b9ee41542}} 
 \index{Orders@{Orders}!operator\mbox{[}\mbox{]}@{operator[]}}
 \index{operator\mbox{[}\mbox{]}@{operator[]}!Orders@{Orders}}
 \paragraph{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_build}{Build}}$\ast$ Orders\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\label{class_orders_a57fb3a5db65235ac3eb6dee473f7ef34}} 
+\mbox{\Hypertarget{class_orders_a57fb3a5db65235ac3eb6dee473f7ef34}\label{class_orders_a57fb3a5db65235ac3eb6dee473f7ef34}} 
 \index{Orders@{Orders}!print@{print}}
 \index{print@{print}!Orders@{Orders}}
 \paragraph{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void Orders\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const}
 
-\mbox{\label{class_orders_a081beda059e45de92599fa48a8668c54}} 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{class_orders_a57fb3a5db65235ac3eb6dee473f7ef34_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_orders_a081beda059e45de92599fa48a8668c54}\label{class_orders_a081beda059e45de92599fa48a8668c54}} 
 \index{Orders@{Orders}!print@{print}}
 \index{print@{print}!Orders@{Orders}}
 \paragraph{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void Orders\+::print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsimple__ostream}{simple\+\_\+ostream}} \&}]{tos }\end{DoxyParamCaption}) const}
 
-\mbox{\label{class_orders_a6d8d6db032983700fa68cca43dc75a38}} 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{class_orders_a081beda059e45de92599fa48a8668c54_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_orders_a6d8d6db032983700fa68cca43dc75a38}\label{class_orders_a6d8d6db032983700fa68cca43dc75a38}} 
 \index{Orders@{Orders}!push\_back@{push\_back}}
 \index{push\_back@{push\_back}!Orders@{Orders}}
 \paragraph{\texorpdfstring{push\_back()}{push\_back()}}
 {\footnotesize\ttfamily void Orders\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_build}{Build}} $\ast$}]{build }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\label{class_orders_a36a43f158466760d315ca23ac24bd4bd}} 
+
+
+végére beszúrás 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_orders_a6d8d6db032983700fa68cca43dc75a38_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_orders_a36a43f158466760d315ca23ac24bd4bd}\label{class_orders_a36a43f158466760d315ca23ac24bd4bd}} 
 \index{Orders@{Orders}!remove@{remove}}
 \index{remove@{remove}!Orders@{Orders}}
 \paragraph{\texorpdfstring{remove()}{remove()}}
 {\footnotesize\ttfamily void Orders\+::remove (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})}
 
-\mbox{\label{class_orders_a80770bd5dffc2d83de0e9acfaad14229}} 
+
+
+megrendelés törlése 
+
+\mbox{\Hypertarget{class_orders_a80770bd5dffc2d83de0e9acfaad14229}\label{class_orders_a80770bd5dffc2d83de0e9acfaad14229}} 
 \index{Orders@{Orders}!save@{save}}
 \index{save@{save}!Orders@{Orders}}
 \paragraph{\texorpdfstring{save()}{save()}}
 {\footnotesize\ttfamily void Orders\+::save (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const}
+
+
+
+megrendelések mentése 
 
 
 

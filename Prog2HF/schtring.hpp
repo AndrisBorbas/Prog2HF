@@ -9,7 +9,7 @@
 #pragma warning(disable : 4996)
 #endif
 
-#ifdef MEMTRACE
+#if defined(MEMTRACE) || defined(DMEMTRACE)
 #include "memtrace.h"
 #endif
 

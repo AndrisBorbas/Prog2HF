@@ -2,6 +2,10 @@
 
 #include "main.h"
 
+#if defined(MEMTRACE) || defined(DMEMTRACE)
+#include "memtrace.h"
+#endif
+
 //CompatibilityList IntelCompatList;
 
 int main(int argc, char** argv)

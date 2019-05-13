@@ -1,0 +1,13 @@
+<map id="Inventory::loadPart" name="Inventory::loadPart">
+<area shape="rect" id="node1" title="Betölt egy alkatrészt terminalból." alt="" coords="5,208,135,235"/>
+<area shape="rect" id="node2" href="$_inventory_8cpp.html#a0565beb9b5429fe7cf6edcb88becc168" title=" " alt="" coords="195,5,314,32"/>
+<area shape="rect" id="node4" href="$class_inventory.html#a86dd14362d6cefb46d4e40667c44481c" title="Egy alkatrész hozzáadása a raktárhoz." alt="" coords="183,56,327,83"/>
+<area shape="rect" id="node5" href="$_inventory_8cpp.html#aa795cbf45c10e4533a23961614749d05" title=" " alt="" coords="195,107,314,133"/>
+<area shape="rect" id="node6" href="$_inventory_8cpp.html#ab92e8bf2c22b5df04897f18e888d7973" title=" " alt="" coords="189,157,320,184"/>
+<area shape="rect" id="node7" href="$_inventory_8cpp.html#aec5377baa2a6064a69b04423103d85ea" title=" " alt="" coords="195,208,315,235"/>
+<area shape="rect" id="node8" href="$_inventory_8cpp.html#a47e65a05879001febd45f541ab230b86" title=" " alt="" coords="194,259,315,285"/>
+<area shape="rect" id="node9" href="$_inventory_8cpp.html#a198252da076147a0ef1f4d721bdb2219" title=" " alt="" coords="195,309,314,336"/>
+<area shape="rect" id="node10" href="$_inventory_8cpp.html#ac358a7371dcac8ed9d7aba003099c193" title=" " alt="" coords="195,360,314,387"/>
+<area shape="rect" id="node11" href="$_inventory_8cpp.html#ab09373672ea8d4ea19f1903344fe327a" title=" " alt="" coords="195,411,314,437"/>
+<area shape="rect" id="node3" href="$_inventory_8cpp.html#af88785d286c8ea9392930b904f687672" title="Segítség kiírásával betölti az alkatrész paramétereit console ból." alt="" coords="375,233,496,260"/>
+</map>

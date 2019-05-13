@@ -1,0 +1,12 @@
+<map id="Part" name="Part">
+<area shape="rect" id="node1" title="Alap alkatrész típus." alt="" coords="239,5,285,32"/>
+<area shape="rect" id="node2" href="$class_case.html" title="Ház." alt="" coords="5,80,57,107"/>
+<area shape="rect" id="node3" href="$class_c_p_u.html" title="Processzor." alt="" coords="81,80,131,107"/>
+<area shape="rect" id="node4" href="$class_g_p_u.html" title="Videókártya." alt="" coords="155,80,206,107"/>
+<area shape="rect" id="node5" href="$class_m_o_b_o.html" title="Alaplap." alt="" coords="231,80,293,107"/>
+<area shape="rect" id="node6" href="$class_p_s_u.html" title="Táp." alt="" coords="317,80,367,107"/>
+<area shape="rect" id="node7" href="$class_r_a_m.html" title="Memória." alt="" coords="391,80,442,107"/>
+<area shape="rect" id="node8" href="$class_storage.html" title="Tárhely alap." alt="" coords="466,80,533,107"/>
+<area shape="rect" id="node9" href="$class_h_d_d.html" title="Merevlemez." alt="" coords="437,155,487,181"/>
+<area shape="rect" id="node10" href="$class_s_s_d.html" title="SSD." alt="" coords="511,155,560,181"/>
+</map>

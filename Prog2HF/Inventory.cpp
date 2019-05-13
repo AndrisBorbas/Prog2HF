@@ -1,5 +1,9 @@
 ﻿#include "Inventory.h"
 
+#if defined(MEMTRACE) || defined(DMEMTRACE)
+#include "memtrace.h"
+#endif
+
 void Inventory::loadPart(std::fstream& is, TempInput& tmp, enumPart e) {
 	switch (e)
 	{
@@ -177,6 +181,7 @@ void Inventory::remove(int idx) {
 		stock[i] = stock[i + 1];
 		*(type + i) = *(type + i + 1);
 	}
+	//*(type + size) = "";
 }
 
 int Inventory::findbyType(const String& s0) const {

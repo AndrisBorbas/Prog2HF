@@ -2,6 +2,7 @@ var class_inventory =
 [
     [ "Inventory", "class_inventory.html#af2c8bea3c8fbf97fec4d3f5ffb92f347", null ],
     [ "~Inventory", "class_inventory.html#a6c6dfcb6d977c74a7abf46809e892e3d", null ],
+    [ "findbyIndex", "class_inventory.html#acb0afe61bcfc92a963f803f1b70676dc", null ],
     [ "findbyType", "class_inventory.html#a2a5998334229d148aac3e0dc16642480", null ],
     [ "get_size", "class_inventory.html#a3ccacc9422b01b2c17836ca804bcaafc", null ],
     [ "get_type", "class_inventory.html#a217895dbb60e3d7643c41fdeeb775bc9", null ],

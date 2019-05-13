@@ -1,469 +1,613 @@
 \begin{theindex}
 
   \item {$\sim$Build}
-    \subitem {Build}, \hyperpage{4}
+    \subitem {Build}, \hyperpage{5}
   \item {$\sim$CompatibilityList}
-    \subitem {CompatibilityList}, \hyperpage{8}
+    \subitem {CompatibilityList}, \hyperpage{13}
   \item {$\sim$Inventory}
-    \subitem {Inventory}, \hyperpage{16}
+    \subitem {Inventory}, \hyperpage{26}
   \item {$\sim$Orders}
-    \subitem {Orders}, \hyperpage{20}
+    \subitem {Orders}, \hyperpage{36}
   \item {$\sim$Part}
-    \subitem {Part}, \hyperpage{23}
+    \subitem {Part}, \hyperpage{41}
   \item {$\sim$String}
-    \subitem {String}, \hyperpage{36}
+    \subitem {String}, \hyperpage{62}
 
   \indexspace
 
   \item {addBuildHelper}
-    \subitem {Menu.cpp}, \hyperpage{57}
+    \subitem {Menu.cpp}, \hyperpage{102}
+    \subitem {Menu.h}, \hyperpage{110}
   \item {addItems}
-    \subitem {CompatibilityList}, \hyperpage{8}
+    \subitem {CompatibilityList}, \hyperpage{13}
   \item {addPartHelper}
-    \subitem {Menu.cpp}, \hyperpage{57}
+    \subitem {Menu.cpp}, \hyperpage{102}
+    \subitem {Menu.h}, \hyperpage{110}
   \item {animate}
-    \subitem {Menu.cpp}, \hyperpage{57}
+    \subitem {Menu.cpp}, \hyperpage{103}
+    \subitem {Menu.h}, \hyperpage{111}
   \item {atest.cpp}
-    \subitem {test1}, \hyperpage{45}
-    \subitem {test3}, \hyperpage{45}
-    \subitem {test4}, \hyperpage{45}
-    \subitem {test5}, \hyperpage{45}
+    \subitem {test1}, \hyperpage{73}
+    \subitem {test3}, \hyperpage{73}
+    \subitem {test4}, \hyperpage{74}
+    \subitem {test5}, \hyperpage{74}
   \item {atest.h}
-    \subitem {test1}, \hyperpage{46}
-    \subitem {test3}, \hyperpage{46}
-    \subitem {test4}, \hyperpage{46}
-    \subitem {test5}, \hyperpage{47}
+    \subitem {test1}, \hyperpage{76}
+    \subitem {test3}, \hyperpage{76}
+    \subitem {test4}, \hyperpage{76}
+    \subitem {test5}, \hyperpage{76}
 
   \indexspace
 
   \item {brand}
-    \subitem {Part}, \hyperpage{24}
-    \subitem {TempInput}, \hyperpage{40}
-  \item {Build}, \hyperpage{3}
-    \subitem {$\sim$Build}, \hyperpage{4}
-    \subitem {Build}, \hyperpage{4}
-    \subitem {get\_price}, \hyperpage{4}
-    \subitem {load}, \hyperpage{4}
-    \subitem {operator[]}, \hyperpage{4, 5}
-    \subitem {print}, \hyperpage{5}
-    \subitem {push\_back}, \hyperpage{5}
-    \subitem {save}, \hyperpage{5}
+    \subitem {Part}, \hyperpage{43}
+    \subitem {TempInput}, \hyperpage{68}
+  \item {Build}, \hyperpage{4}
+    \subitem {$\sim$Build}, \hyperpage{5}
+    \subitem {Build}, \hyperpage{5}
+    \subitem {get\_price}, \hyperpage{5}
+    \subitem {load}, \hyperpage{5}
+    \subitem {operator[]}, \hyperpage{6}
+    \subitem {print}, \hyperpage{6}
+    \subitem {push\_back}, \hyperpage{7}
+    \subitem {save}, \hyperpage{8}
   \item {Builds.cpp}
-    \subitem {operator$<$$<$}, \hyperpage{47}
+    \subitem {operator$<$$<$}, \hyperpage{78}
   \item {Builds.h}
-    \subitem {operator$<$$<$}, \hyperpage{48}
+    \subitem {operator$<$$<$}, \hyperpage{80, 81}
 
   \indexspace
 
   \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/atest.cpp}, 
-		\hyperpage{45}
+		\hyperpage{73}
   \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/atest.h}, 
-		\hyperpage{46}
+		\hyperpage{75}
   \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.cpp}, 
-		\hyperpage{47}
+		\hyperpage{77}
   \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Builds.h}, 
-		\hyperpage{48}
+		\hyperpage{79}
   \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.cpp}, 
-		\hyperpage{49}
+		\hyperpage{82}
   \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Compatibility.h}, 
-		\hyperpage{49}
+		\hyperpage{83}
   \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.cpp}, 
-		\hyperpage{50}
+		\hyperpage{85}
   \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Inventory.h}, 
-		\hyperpage{52}
+		\hyperpage{90}
   \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.cpp}, 
-		\hyperpage{54}
+		\hyperpage{95}
   \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/main.h}, 
-		\hyperpage{55}
+		\hyperpage{98}
   \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Menu.cpp}, 
-		\hyperpage{56}
+		\hyperpage{101}
   \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Menu.h}, 
-		\hyperpage{59}
+		\hyperpage{107}
+  \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.cpp}, 
+		\hyperpage{117}
+  \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/Parts.h}, 
+		\hyperpage{132}
+  \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.cpp}, 
+		\hyperpage{149}
+  \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/schtring.hpp}, 
+		\hyperpage{151}
+  \item {C:/Users/cxl20/Documents/Visual Studio 2017/Prog2HF/Prog2HF/SFML\_test.cpp}, 
+		\hyperpage{156}
   \item {c\_str}
-    \subitem {String}, \hyperpage{36}
-  \item {Case}, \hyperpage{5}
-    \subitem {Case}, \hyperpage{6}
-    \subitem {print}, \hyperpage{6, 7}
+    \subitem {String}, \hyperpage{62}
+  \item {Case}, \hyperpage{8}
+    \subitem {Case}, \hyperpage{10}
+    \subitem {print}, \hyperpage{10, 11}
   \item {chipset}
-    \subitem {TempInput}, \hyperpage{40}
+    \subitem {TempInput}, \hyperpage{68}
+  \item {clearcmd}
+    \subitem {Menu.h}, \hyperpage{111}
   \item {clk}
-    \subitem {TempInput}, \hyperpage{40}
+    \subitem {TempInput}, \hyperpage{69}
   \item {clname}
-    \subitem {TempInput}, \hyperpage{41}
+    \subitem {TempInput}, \hyperpage{69}
   \item {Compatibility.cpp}
-    \subitem {operator$<$$<$}, \hyperpage{49}
+    \subitem {operator$<$$<$}, \hyperpage{82}
   \item {Compatibility.h}
-    \subitem {compatible}, \hyperpage{49}
-    \subitem {operator$<$$<$}, \hyperpage{49}
-  \item {CompatibilityList}, \hyperpage{7}
-    \subitem {$\sim$CompatibilityList}, \hyperpage{8}
-    \subitem {addItems}, \hyperpage{8}
-    \subitem {CompatibilityList}, \hyperpage{7, 8}
-    \subitem {get\_length}, \hyperpage{8}
-    \subitem {get\_listp}, \hyperpage{8}
-    \subitem {operator==}, \hyperpage{8}
+    \subitem {compatible}, \hyperpage{84}
+    \subitem {operator$<$$<$}, \hyperpage{84}
+  \item {CompatibilityList}, \hyperpage{12}
+    \subitem {$\sim$CompatibilityList}, \hyperpage{13}
+    \subitem {addItems}, \hyperpage{13}
+    \subitem {CompatibilityList}, \hyperpage{12}
+    \subitem {get\_length}, \hyperpage{13}
+    \subitem {get\_listp}, \hyperpage{14}
+    \subitem {operator==}, \hyperpage{14}
   \item {compatible}
-    \subitem {Compatibility.h}, \hyperpage{49}
+    \subitem {Compatibility.h}, \hyperpage{84}
   \item {complete}
-    \subitem {Orders}, \hyperpage{21}
+    \subitem {Orders}, \hyperpage{36}
   \item {completeOrderHelper}
-    \subitem {Menu.cpp}, \hyperpage{57}
+    \subitem {Menu.cpp}, \hyperpage{103}
+    \subitem {Menu.h}, \hyperpage{112}
   \item {cores}
-    \subitem {TempInput}, \hyperpage{41}
-  \item {CPU}, \hyperpage{9}
-    \subitem {CPU}, \hyperpage{9, 10}
-    \subitem {print}, \hyperpage{10}
+    \subitem {TempInput}, \hyperpage{69}
+  \item {CPU}, \hyperpage{15}
+    \subitem {CPU}, \hyperpage{16}
+    \subitem {print}, \hyperpage{16, 17}
 
   \indexspace
 
+  \item {eBuildsAdd}
+    \subitem {Menu.h}, \hyperpage{110}
+  \item {eBuildsComplete}
+    \subitem {Menu.h}, \hyperpage{110}
+  \item {eBuildsList}
+    \subitem {Menu.h}, \hyperpage{110}
+  \item {eBuildsRemove}
+    \subitem {Menu.h}, \hyperpage{110}
+  \item {eCase}
+    \subitem {Parts.h}, \hyperpage{135}
+  \item {eCPU}
+    \subitem {Parts.h}, \hyperpage{135}
+  \item {eExit}
+    \subitem {Menu.h}, \hyperpage{110}
+  \item {eGPU}
+    \subitem {Parts.h}, \hyperpage{135}
+  \item {eHDD}
+    \subitem {Parts.h}, \hyperpage{135}
+  \item {eInvalid}
+    \subitem {Parts.h}, \hyperpage{135}
+  \item {eMain}
+    \subitem {Menu.h}, \hyperpage{110}
+  \item {eMOBO}
+    \subitem {Parts.h}, \hyperpage{135}
+  \item {enumMenu}
+    \subitem {Menu.h}, \hyperpage{109}
+  \item {enumPart}
+    \subitem {Parts.h}, \hyperpage{135}
+  \item {ePartsAdd}
+    \subitem {Menu.h}, \hyperpage{110}
+  \item {ePartsList}
+    \subitem {Menu.h}, \hyperpage{110}
+  \item {ePartsRemove}
+    \subitem {Menu.h}, \hyperpage{110}
+  \item {ePSU}
+    \subitem {Parts.h}, \hyperpage{135}
+  \item {eRAM}
+    \subitem {Parts.h}, \hyperpage{135}
   \item {erase}
-    \subitem {String}, \hyperpage{36}
+    \subitem {String}, \hyperpage{62}
+  \item {eSSD}
+    \subitem {Parts.h}, \hyperpage{135}
   \item {evaluateCommand}
-    \subitem {Menu.cpp}, \hyperpage{57}
+    \subitem {Menu.cpp}, \hyperpage{103}
+    \subitem {Menu.h}, \hyperpage{113}
   \item {evaluateInput}
-    \subitem {Menu.cpp}, \hyperpage{58}
+    \subitem {Menu.cpp}, \hyperpage{104}
+    \subitem {Menu.h}, \hyperpage{113}
 
   \indexspace
 
+  \item {findbyIndex}
+    \subitem {Inventory}, \hyperpage{26}
   \item {findbyType}
-    \subitem {Inventory}, \hyperpage{16}
+    \subitem {Inventory}, \hyperpage{27}
   \item {flashtype}
-    \subitem {TempInput}, \hyperpage{41}
+    \subitem {TempInput}, \hyperpage{69}
   \item {formfactor}
-    \subitem {TempInput}, \hyperpage{41}
+    \subitem {TempInput}, \hyperpage{69}
 
   \indexspace
 
   \item {get\_length}
-    \subitem {CompatibilityList}, \hyperpage{8}
+    \subitem {CompatibilityList}, \hyperpage{13}
   \item {get\_listp}
-    \subitem {CompatibilityList}, \hyperpage{8}
+    \subitem {CompatibilityList}, \hyperpage{14}
   \item {get\_price}
-    \subitem {Build}, \hyperpage{4}
-    \subitem {Part}, \hyperpage{23}
+    \subitem {Build}, \hyperpage{5}
+    \subitem {Part}, \hyperpage{41}
   \item {get\_size}
-    \subitem {Inventory}, \hyperpage{16}
-    \subitem {Orders}, \hyperpage{21}
+    \subitem {Inventory}, \hyperpage{27}
+    \subitem {Orders}, \hyperpage{37}
   \item {get\_type}
-    \subitem {Inventory}, \hyperpage{16}
-    \subitem {Part}, \hyperpage{23}
-  \item {GPU}, \hyperpage{11}
-    \subitem {GPU}, \hyperpage{11, 12}
-    \subitem {print}, \hyperpage{12}
+    \subitem {Inventory}, \hyperpage{28}
+    \subitem {Part}, \hyperpage{41}
+  \item {GotoLine}
+    \subitem {Menu.h}, \hyperpage{113}
+  \item {GPU}, \hyperpage{18}
+    \subitem {GPU}, \hyperpage{19}
+    \subitem {print}, \hyperpage{20, 21}
 
   \indexspace
 
-  \item {HDD}, \hyperpage{13}
-    \subitem {HDD}, \hyperpage{13, 14}
-    \subitem {print}, \hyperpage{14}
+  \item {HDD}, \hyperpage{22}
+    \subitem {HDD}, \hyperpage{23}
+    \subitem {print}, \hyperpage{23--25}
 
   \indexspace
 
   \item {instruction}
-    \subitem {TempInput}, \hyperpage{41}
-  \item {Inventory}, \hyperpage{15}
-    \subitem {$\sim$Inventory}, \hyperpage{16}
-    \subitem {findbyType}, \hyperpage{16}
-    \subitem {get\_size}, \hyperpage{16}
-    \subitem {get\_type}, \hyperpage{16}
-    \subitem {Inventory}, \hyperpage{15}
-    \subitem {loadPart}, \hyperpage{16}
-    \subitem {operator[]}, \hyperpage{17}
-    \subitem {print}, \hyperpage{17}
-    \subitem {push\_back}, \hyperpage{17}
-    \subitem {remove}, \hyperpage{17}
-    \subitem {save}, \hyperpage{17}
+    \subitem {TempInput}, \hyperpage{69}
+  \item {Inventory}, \hyperpage{25}
+    \subitem {$\sim$Inventory}, \hyperpage{26}
+    \subitem {findbyIndex}, \hyperpage{26}
+    \subitem {findbyType}, \hyperpage{27}
+    \subitem {get\_size}, \hyperpage{27}
+    \subitem {get\_type}, \hyperpage{28}
+    \subitem {Inventory}, \hyperpage{26}
+    \subitem {loadPart}, \hyperpage{28, 29}
+    \subitem {operator[]}, \hyperpage{29, 30}
+    \subitem {print}, \hyperpage{30}
+    \subitem {push\_back}, \hyperpage{30}
+    \subitem {remove}, \hyperpage{31}
+    \subitem {save}, \hyperpage{31}
   \item {Inventory.cpp}
-    \subitem {loadBaseParams}, \hyperpage{50}
-    \subitem {loadCaseParams}, \hyperpage{50}
-    \subitem {loadCPUParams}, \hyperpage{50}
-    \subitem {loadGPUParams}, \hyperpage{50}
-    \subitem {loadHDDParams}, \hyperpage{51}
-    \subitem {loadMOBOParams}, \hyperpage{51}
-    \subitem {loadParams}, \hyperpage{51}
-    \subitem {loadPSUParams}, \hyperpage{51}
-    \subitem {loadRAMParams}, \hyperpage{51}
-    \subitem {loadSSDParams}, \hyperpage{51}
+    \subitem {loadBaseParams}, \hyperpage{86}
+    \subitem {loadCaseParams}, \hyperpage{86}
+    \subitem {loadCPUParams}, \hyperpage{86}
+    \subitem {loadGPUParams}, \hyperpage{87}
+    \subitem {loadHDDParams}, \hyperpage{87}
+    \subitem {loadMOBOParams}, \hyperpage{87}
+    \subitem {loadParams}, \hyperpage{88}
+    \subitem {loadPSUParams}, \hyperpage{88}
+    \subitem {loadRAMParams}, \hyperpage{89}
+    \subitem {loadSSDParams}, \hyperpage{89}
   \item {Inventory.h}
-    \subitem {loadBaseParams}, \hyperpage{52}
-    \subitem {loadCaseParams}, \hyperpage{52}
-    \subitem {loadCPUParams}, \hyperpage{52}
-    \subitem {loadGPUParams}, \hyperpage{53}
-    \subitem {loadHDDParams}, \hyperpage{53}
-    \subitem {loadMOBOParams}, \hyperpage{53}
-    \subitem {loadParams}, \hyperpage{53}
-    \subitem {loadPSUParams}, \hyperpage{53}
-    \subitem {loadRAMParams}, \hyperpage{53}
-    \subitem {loadSSDParams}, \hyperpage{54}
+    \subitem {loadBaseParams}, \hyperpage{92}
+    \subitem {loadCaseParams}, \hyperpage{92}
+    \subitem {loadCPUParams}, \hyperpage{92}
+    \subitem {loadGPUParams}, \hyperpage{92}
+    \subitem {loadHDDParams}, \hyperpage{93}
+    \subitem {loadMOBOParams}, \hyperpage{93}
+    \subitem {loadParams}, \hyperpage{93}
+    \subitem {loadPSUParams}, \hyperpage{94}
+    \subitem {loadRAMParams}, \hyperpage{94}
+    \subitem {loadSSDParams}, \hyperpage{95}
 
   \indexspace
 
   \item {length}
-    \subitem {String}, \hyperpage{37}
+    \subitem {String}, \hyperpage{62}
   \item {load}
-    \subitem {Build}, \hyperpage{4}
-    \subitem {Orders}, \hyperpage{21}
+    \subitem {Build}, \hyperpage{5}
+    \subitem {Orders}, \hyperpage{37}
   \item {loadBaseParams}
-    \subitem {Inventory.cpp}, \hyperpage{50}
-    \subitem {Inventory.h}, \hyperpage{52}
+    \subitem {Inventory.cpp}, \hyperpage{86}
+    \subitem {Inventory.h}, \hyperpage{92}
   \item {loadCaseParams}
-    \subitem {Inventory.cpp}, \hyperpage{50}
-    \subitem {Inventory.h}, \hyperpage{52}
+    \subitem {Inventory.cpp}, \hyperpage{86}
+    \subitem {Inventory.h}, \hyperpage{92}
   \item {loadCPUParams}
-    \subitem {Inventory.cpp}, \hyperpage{50}
-    \subitem {Inventory.h}, \hyperpage{52}
+    \subitem {Inventory.cpp}, \hyperpage{86}
+    \subitem {Inventory.h}, \hyperpage{92}
   \item {loadGPUParams}
-    \subitem {Inventory.cpp}, \hyperpage{50}
-    \subitem {Inventory.h}, \hyperpage{53}
+    \subitem {Inventory.cpp}, \hyperpage{87}
+    \subitem {Inventory.h}, \hyperpage{92}
   \item {loadHDDParams}
-    \subitem {Inventory.cpp}, \hyperpage{51}
-    \subitem {Inventory.h}, \hyperpage{53}
+    \subitem {Inventory.cpp}, \hyperpage{87}
+    \subitem {Inventory.h}, \hyperpage{93}
   \item {loadMOBOParams}
-    \subitem {Inventory.cpp}, \hyperpage{51}
-    \subitem {Inventory.h}, \hyperpage{53}
+    \subitem {Inventory.cpp}, \hyperpage{87}
+    \subitem {Inventory.h}, \hyperpage{93}
   \item {loadParams}
-    \subitem {Inventory.cpp}, \hyperpage{51}
-    \subitem {Inventory.h}, \hyperpage{53}
+    \subitem {Inventory.cpp}, \hyperpage{88}
+    \subitem {Inventory.h}, \hyperpage{93}
   \item {loadPart}
-    \subitem {Inventory}, \hyperpage{16}
+    \subitem {Inventory}, \hyperpage{28, 29}
   \item {loadPSUParams}
-    \subitem {Inventory.cpp}, \hyperpage{51}
-    \subitem {Inventory.h}, \hyperpage{53}
+    \subitem {Inventory.cpp}, \hyperpage{88}
+    \subitem {Inventory.h}, \hyperpage{94}
   \item {loadRAMParams}
-    \subitem {Inventory.cpp}, \hyperpage{51}
-    \subitem {Inventory.h}, \hyperpage{53}
+    \subitem {Inventory.cpp}, \hyperpage{89}
+    \subitem {Inventory.h}, \hyperpage{94}
   \item {loadSSDParams}
-    \subitem {Inventory.cpp}, \hyperpage{51}
-    \subitem {Inventory.h}, \hyperpage{54}
+    \subitem {Inventory.cpp}, \hyperpage{89}
+    \subitem {Inventory.h}, \hyperpage{95}
 
   \indexspace
 
   \item {main}
-    \subitem {main.cpp}, \hyperpage{54}
-    \subitem {main.h}, \hyperpage{55}
+    \subitem {main.cpp}, \hyperpage{96}
+    \subitem {main.h}, \hyperpage{99}
   \item {main.cpp}
-    \subitem {main}, \hyperpage{54}
-    \subitem {save}, \hyperpage{54}
+    \subitem {main}, \hyperpage{96}
+    \subitem {save}, \hyperpage{97}
   \item {main.h}
-    \subitem {main}, \hyperpage{55}
-    \subitem {save}, \hyperpage{56}
+    \subitem {main}, \hyperpage{99}
+    \subitem {save}, \hyperpage{100}
   \item {Menu.cpp}
-    \subitem {addBuildHelper}, \hyperpage{57}
-    \subitem {addPartHelper}, \hyperpage{57}
-    \subitem {animate}, \hyperpage{57}
-    \subitem {completeOrderHelper}, \hyperpage{57}
-    \subitem {evaluateCommand}, \hyperpage{57}
-    \subitem {evaluateInput}, \hyperpage{58}
-    \subitem {partSelector}, \hyperpage{58}
-    \subitem {printMain}, \hyperpage{58}
-    \subitem {printOrdersList}, \hyperpage{58}
-    \subitem {printPartsList}, \hyperpage{58}
-    \subitem {removeOrderHelper}, \hyperpage{58}
-    \subitem {removePartHelper}, \hyperpage{59}
-    \subitem {setEnumfromInt}, \hyperpage{59}
-  \item {MOBO}, \hyperpage{18}
-    \subitem {MOBO}, \hyperpage{18, 19}
-    \subitem {print}, \hyperpage{19}
+    \subitem {addBuildHelper}, \hyperpage{102}
+    \subitem {addPartHelper}, \hyperpage{102}
+    \subitem {animate}, \hyperpage{103}
+    \subitem {completeOrderHelper}, \hyperpage{103}
+    \subitem {evaluateCommand}, \hyperpage{103}
+    \subitem {evaluateInput}, \hyperpage{104}
+    \subitem {partSelector}, \hyperpage{104}
+    \subitem {printMain}, \hyperpage{104}
+    \subitem {printOrdersList}, \hyperpage{105}
+    \subitem {printPartsList}, \hyperpage{105}
+    \subitem {removeOrderHelper}, \hyperpage{106}
+    \subitem {removePartHelper}, \hyperpage{106}
+    \subitem {setEnumfromInt}, \hyperpage{107}
+  \item {Menu.h}
+    \subitem {addBuildHelper}, \hyperpage{110}
+    \subitem {addPartHelper}, \hyperpage{110}
+    \subitem {animate}, \hyperpage{111}
+    \subitem {clearcmd}, \hyperpage{111}
+    \subitem {completeOrderHelper}, \hyperpage{112}
+    \subitem {eBuildsAdd}, \hyperpage{110}
+    \subitem {eBuildsComplete}, \hyperpage{110}
+    \subitem {eBuildsList}, \hyperpage{110}
+    \subitem {eBuildsRemove}, \hyperpage{110}
+    \subitem {eExit}, \hyperpage{110}
+    \subitem {eMain}, \hyperpage{110}
+    \subitem {enumMenu}, \hyperpage{109}
+    \subitem {ePartsAdd}, \hyperpage{110}
+    \subitem {ePartsList}, \hyperpage{110}
+    \subitem {ePartsRemove}, \hyperpage{110}
+    \subitem {evaluateCommand}, \hyperpage{113}
+    \subitem {evaluateInput}, \hyperpage{113}
+    \subitem {GotoLine}, \hyperpage{113}
+    \subitem {partSelector}, \hyperpage{113}
+    \subitem {printMain}, \hyperpage{114}
+    \subitem {printOrdersList}, \hyperpage{114}
+    \subitem {printPartsList}, \hyperpage{115}
+    \subitem {removeOrderHelper}, \hyperpage{115}
+    \subitem {removePartHelper}, \hyperpage{116}
+    \subitem {setEnumfromInt}, \hyperpage{116}
+  \item {MOBO}, \hyperpage{32}
+    \subitem {MOBO}, \hyperpage{33}
+    \subitem {print}, \hyperpage{34, 35}
   \item {multithreading}
-    \subitem {TempInput}, \hyperpage{41}
+    \subitem {TempInput}, \hyperpage{69}
 
   \indexspace
 
   \item {operator$<$$<$}
-    \subitem {Builds.cpp}, \hyperpage{47}
-    \subitem {Builds.h}, \hyperpage{48}
-    \subitem {Compatibility.cpp}, \hyperpage{49}
-    \subitem {Compatibility.h}, \hyperpage{49}
+    \subitem {Builds.cpp}, \hyperpage{78}
+    \subitem {Builds.h}, \hyperpage{80, 81}
+    \subitem {Compatibility.cpp}, \hyperpage{82}
+    \subitem {Compatibility.h}, \hyperpage{84}
+    \subitem {Parts.cpp}, \hyperpage{118--131}
+    \subitem {Parts.h}, \hyperpage{135--148}
+    \subitem {schtring.cpp}, \hyperpage{149, 150}
+    \subitem {schtring.hpp}, \hyperpage{153, 154}
+  \item {operator$>$$>$}
+    \subitem {schtring.cpp}, \hyperpage{150}
+    \subitem {schtring.hpp}, \hyperpage{155}
   \item {operator+}
-    \subitem {String}, \hyperpage{37}
+    \subitem {schtring.hpp}, \hyperpage{153}
+    \subitem {String}, \hyperpage{63}
   \item {operator+=}
-    \subitem {String}, \hyperpage{37}
+    \subitem {String}, \hyperpage{63}
   \item {operator-\/-\/}
-    \subitem {String}, \hyperpage{37}
+    \subitem {String}, \hyperpage{64}
   \item {operator=}
-    \subitem {String}, \hyperpage{37}
+    \subitem {String}, \hyperpage{64}
   \item {operator==}
-    \subitem {CompatibilityList}, \hyperpage{8}
-    \subitem {String}, \hyperpage{38}
+    \subitem {CompatibilityList}, \hyperpage{14}
+    \subitem {String}, \hyperpage{64, 65}
   \item {operator[]}
-    \subitem {Build}, \hyperpage{4, 5}
-    \subitem {Inventory}, \hyperpage{17}
-    \subitem {Orders}, \hyperpage{21}
-    \subitem {String}, \hyperpage{38}
-  \item {Orders}, \hyperpage{20}
-    \subitem {$\sim$Orders}, \hyperpage{20}
-    \subitem {complete}, \hyperpage{21}
-    \subitem {get\_size}, \hyperpage{21}
-    \subitem {load}, \hyperpage{21}
-    \subitem {operator[]}, \hyperpage{21}
-    \subitem {Orders}, \hyperpage{20}
-    \subitem {print}, \hyperpage{21}
-    \subitem {push\_back}, \hyperpage{22}
-    \subitem {remove}, \hyperpage{22}
-    \subitem {save}, \hyperpage{22}
+    \subitem {Build}, \hyperpage{6}
+    \subitem {Inventory}, \hyperpage{29, 30}
+    \subitem {Orders}, \hyperpage{37, 38}
+    \subitem {String}, \hyperpage{66}
+  \item {Orders}, \hyperpage{36}
+    \subitem {$\sim$Orders}, \hyperpage{36}
+    \subitem {complete}, \hyperpage{36}
+    \subitem {get\_size}, \hyperpage{37}
+    \subitem {load}, \hyperpage{37}
+    \subitem {operator[]}, \hyperpage{37, 38}
+    \subitem {Orders}, \hyperpage{36}
+    \subitem {print}, \hyperpage{38}
+    \subitem {push\_back}, \hyperpage{38}
+    \subitem {remove}, \hyperpage{39}
+    \subitem {save}, \hyperpage{39}
   \item {os}
-    \subitem {simple\_ostream}, \hyperpage{29}
-    \subitem {typ\_ostream}, \hyperpage{43}
-    \subitem {utos\_ostream}, \hyperpage{44}
+    \subitem {simple\_ostream}, \hyperpage{51}
+    \subitem {typ\_ostream}, \hyperpage{71}
+    \subitem {utos\_ostream}, \hyperpage{72}
 
   \indexspace
 
-  \item {Part}, \hyperpage{22}
-    \subitem {$\sim$Part}, \hyperpage{23}
-    \subitem {brand}, \hyperpage{24}
-    \subitem {get\_price}, \hyperpage{23}
-    \subitem {get\_type}, \hyperpage{23}
-    \subitem {Part}, \hyperpage{23}
-    \subitem {price}, \hyperpage{24}
-    \subitem {print}, \hyperpage{24}
-    \subitem {type}, \hyperpage{25}
+  \item {Part}, \hyperpage{40}
+    \subitem {$\sim$Part}, \hyperpage{41}
+    \subitem {brand}, \hyperpage{43}
+    \subitem {get\_price}, \hyperpage{41}
+    \subitem {get\_type}, \hyperpage{41}
+    \subitem {Part}, \hyperpage{41}
+    \subitem {price}, \hyperpage{43}
+    \subitem {print}, \hyperpage{42, 43}
+    \subitem {type}, \hyperpage{43}
+  \item {Parts.cpp}
+    \subitem {operator$<$$<$}, \hyperpage{118--131}
+    \subitem {setEnumfromString}, \hyperpage{131}
+  \item {Parts.h}
+    \subitem {eCase}, \hyperpage{135}
+    \subitem {eCPU}, \hyperpage{135}
+    \subitem {eGPU}, \hyperpage{135}
+    \subitem {eHDD}, \hyperpage{135}
+    \subitem {eInvalid}, \hyperpage{135}
+    \subitem {eMOBO}, \hyperpage{135}
+    \subitem {enumPart}, \hyperpage{135}
+    \subitem {ePSU}, \hyperpage{135}
+    \subitem {eRAM}, \hyperpage{135}
+    \subitem {eSSD}, \hyperpage{135}
+    \subitem {operator$<$$<$}, \hyperpage{135--148}
+    \subitem {setEnumfromString}, \hyperpage{148}
   \item {partSelector}
-    \subitem {Menu.cpp}, \hyperpage{58}
+    \subitem {Menu.cpp}, \hyperpage{104}
+    \subitem {Menu.h}, \hyperpage{113}
   \item {price}
-    \subitem {Part}, \hyperpage{24}
-    \subitem {TempInput}, \hyperpage{41}
+    \subitem {Part}, \hyperpage{43}
+    \subitem {TempInput}, \hyperpage{70}
   \item {print}
-    \subitem {Build}, \hyperpage{5}
-    \subitem {Case}, \hyperpage{6, 7}
-    \subitem {CPU}, \hyperpage{10}
-    \subitem {GPU}, \hyperpage{12}
-    \subitem {HDD}, \hyperpage{14}
-    \subitem {Inventory}, \hyperpage{17}
-    \subitem {MOBO}, \hyperpage{19}
-    \subitem {Orders}, \hyperpage{21}
-    \subitem {Part}, \hyperpage{24}
-    \subitem {PSU}, \hyperpage{26}
-    \subitem {RAM}, \hyperpage{28}
-    \subitem {SSD}, \hyperpage{31}
-    \subitem {Storage}, \hyperpage{33}
+    \subitem {Build}, \hyperpage{6}
+    \subitem {Case}, \hyperpage{10, 11}
+    \subitem {CPU}, \hyperpage{16, 17}
+    \subitem {GPU}, \hyperpage{20, 21}
+    \subitem {HDD}, \hyperpage{23--25}
+    \subitem {Inventory}, \hyperpage{30}
+    \subitem {MOBO}, \hyperpage{34, 35}
+    \subitem {Orders}, \hyperpage{38}
+    \subitem {Part}, \hyperpage{42, 43}
+    \subitem {PSU}, \hyperpage{45, 46}
+    \subitem {RAM}, \hyperpage{49, 50}
+    \subitem {SSD}, \hyperpage{53--55}
+    \subitem {Storage}, \hyperpage{57--59}
   \item {printMain}
-    \subitem {Menu.cpp}, \hyperpage{58}
+    \subitem {Menu.cpp}, \hyperpage{104}
+    \subitem {Menu.h}, \hyperpage{114}
   \item {printOrdersList}
-    \subitem {Menu.cpp}, \hyperpage{58}
+    \subitem {Menu.cpp}, \hyperpage{105}
+    \subitem {Menu.h}, \hyperpage{114}
   \item {printPartsList}
-    \subitem {Menu.cpp}, \hyperpage{58}
-  \item {PSU}, \hyperpage{25}
-    \subitem {print}, \hyperpage{26}
-    \subitem {PSU}, \hyperpage{26}
+    \subitem {Menu.cpp}, \hyperpage{105}
+    \subitem {Menu.h}, \hyperpage{115}
+  \item {PSU}, \hyperpage{44}
+    \subitem {print}, \hyperpage{45, 46}
+    \subitem {PSU}, \hyperpage{45}
   \item {push\_back}
-    \subitem {Build}, \hyperpage{5}
-    \subitem {Inventory}, \hyperpage{17}
-    \subitem {Orders}, \hyperpage{22}
+    \subitem {Build}, \hyperpage{7}
+    \subitem {Inventory}, \hyperpage{30}
+    \subitem {Orders}, \hyperpage{38}
 
   \indexspace
 
-  \item {RAM}, \hyperpage{27}
-    \subitem {print}, \hyperpage{28}
-    \subitem {RAM}, \hyperpage{27, 28}
+  \item {RAM}, \hyperpage{47}
+    \subitem {print}, \hyperpage{49, 50}
+    \subitem {RAM}, \hyperpage{48}
   \item {readspeed}
-    \subitem {Storage}, \hyperpage{34}
-    \subitem {TempInput}, \hyperpage{42}
+    \subitem {Storage}, \hyperpage{59}
+    \subitem {TempInput}, \hyperpage{70}
   \item {remove}
-    \subitem {Inventory}, \hyperpage{17}
-    \subitem {Orders}, \hyperpage{22}
+    \subitem {Inventory}, \hyperpage{31}
+    \subitem {Orders}, \hyperpage{39}
   \item {removeFirstX}
-    \subitem {String}, \hyperpage{39}
+    \subitem {String}, \hyperpage{66}
   \item {removeOrderHelper}
-    \subitem {Menu.cpp}, \hyperpage{58}
+    \subitem {Menu.cpp}, \hyperpage{106}
+    \subitem {Menu.h}, \hyperpage{115}
   \item {removePartHelper}
-    \subitem {Menu.cpp}, \hyperpage{59}
+    \subitem {Menu.cpp}, \hyperpage{106}
+    \subitem {Menu.h}, \hyperpage{116}
   \item {rpm}
-    \subitem {TempInput}, \hyperpage{42}
+    \subitem {TempInput}, \hyperpage{70}
 
   \indexspace
 
   \item {save}
-    \subitem {Build}, \hyperpage{5}
-    \subitem {Inventory}, \hyperpage{17}
-    \subitem {main.cpp}, \hyperpage{54}
-    \subitem {main.h}, \hyperpage{56}
-    \subitem {Orders}, \hyperpage{22}
+    \subitem {Build}, \hyperpage{8}
+    \subitem {Inventory}, \hyperpage{31}
+    \subitem {main.cpp}, \hyperpage{97}
+    \subitem {main.h}, \hyperpage{100}
+    \subitem {Orders}, \hyperpage{39}
+  \item {schtring.cpp}
+    \subitem {operator$<$$<$}, \hyperpage{149, 150}
+    \subitem {operator$>$$>$}, \hyperpage{150}
+    \subitem {stolower}, \hyperpage{150}
+  \item {schtring.hpp}
+    \subitem {operator$<$$<$}, \hyperpage{153, 154}
+    \subitem {operator$>$$>$}, \hyperpage{155}
+    \subitem {operator+}, \hyperpage{153}
+    \subitem {simple}, \hyperpage{155}
+    \subitem {stolower}, \hyperpage{155}
+    \subitem {typ}, \hyperpage{155}
+    \subitem {utos}, \hyperpage{156}
   \item {setEnumfromInt}
-    \subitem {Menu.cpp}, \hyperpage{59}
-  \item {simple\_ostream}, \hyperpage{29}
-    \subitem {os}, \hyperpage{29}
-  \item {simple\_t}, \hyperpage{29}
+    \subitem {Menu.cpp}, \hyperpage{107}
+    \subitem {Menu.h}, \hyperpage{116}
+  \item {setEnumfromString}
+    \subitem {Parts.cpp}, \hyperpage{131}
+    \subitem {Parts.h}, \hyperpage{148}
+  \item {simple}
+    \subitem {schtring.hpp}, \hyperpage{155}
+  \item {simple\_ostream}, \hyperpage{51}
+    \subitem {os}, \hyperpage{51}
+  \item {simple\_t}, \hyperpage{51}
   \item {size}
-    \subitem {Storage}, \hyperpage{34}
-    \subitem {String}, \hyperpage{39}
-    \subitem {TempInput}, \hyperpage{42}
+    \subitem {Storage}, \hyperpage{59}
+    \subitem {String}, \hyperpage{67}
+    \subitem {TempInput}, \hyperpage{70}
   \item {socket}
-    \subitem {TempInput}, \hyperpage{42}
-  \item {SSD}, \hyperpage{30}
-    \subitem {print}, \hyperpage{31}
-    \subitem {SSD}, \hyperpage{30, 31}
-  \item {Storage}, \hyperpage{32}
-    \subitem {print}, \hyperpage{33}
-    \subitem {readspeed}, \hyperpage{34}
-    \subitem {size}, \hyperpage{34}
-    \subitem {Storage}, \hyperpage{33}
-    \subitem {writespeed}, \hyperpage{34}
-  \item {String}, \hyperpage{34}
-    \subitem {$\sim$String}, \hyperpage{36}
-    \subitem {c\_str}, \hyperpage{36}
-    \subitem {erase}, \hyperpage{36}
-    \subitem {length}, \hyperpage{37}
-    \subitem {operator+}, \hyperpage{37}
-    \subitem {operator+=}, \hyperpage{37}
-    \subitem {operator-\/-\/}, \hyperpage{37}
-    \subitem {operator=}, \hyperpage{37}
-    \subitem {operator==}, \hyperpage{38}
-    \subitem {operator[]}, \hyperpage{38}
-    \subitem {removeFirstX}, \hyperpage{39}
-    \subitem {size}, \hyperpage{39}
-    \subitem {String}, \hyperpage{35, 36}
+    \subitem {TempInput}, \hyperpage{70}
+  \item {SSD}, \hyperpage{52}
+    \subitem {print}, \hyperpage{53--55}
+    \subitem {SSD}, \hyperpage{53}
+  \item {stolower}
+    \subitem {schtring.cpp}, \hyperpage{150}
+    \subitem {schtring.hpp}, \hyperpage{155}
+  \item {Storage}, \hyperpage{56}
+    \subitem {print}, \hyperpage{57--59}
+    \subitem {readspeed}, \hyperpage{59}
+    \subitem {size}, \hyperpage{59}
+    \subitem {Storage}, \hyperpage{57}
+    \subitem {writespeed}, \hyperpage{59}
+  \item {String}, \hyperpage{60}
+    \subitem {$\sim$String}, \hyperpage{62}
+    \subitem {c\_str}, \hyperpage{62}
+    \subitem {erase}, \hyperpage{62}
+    \subitem {length}, \hyperpage{62}
+    \subitem {operator+}, \hyperpage{63}
+    \subitem {operator+=}, \hyperpage{63}
+    \subitem {operator-\/-\/}, \hyperpage{64}
+    \subitem {operator=}, \hyperpage{64}
+    \subitem {operator==}, \hyperpage{64, 65}
+    \subitem {operator[]}, \hyperpage{66}
+    \subitem {removeFirstX}, \hyperpage{66}
+    \subitem {size}, \hyperpage{67}
+    \subitem {String}, \hyperpage{61}
 
   \indexspace
 
-  \item {TempInput}, \hyperpage{39}
-    \subitem {brand}, \hyperpage{40}
-    \subitem {chipset}, \hyperpage{40}
-    \subitem {clk}, \hyperpage{40}
-    \subitem {clname}, \hyperpage{41}
-    \subitem {cores}, \hyperpage{41}
-    \subitem {flashtype}, \hyperpage{41}
-    \subitem {formfactor}, \hyperpage{41}
-    \subitem {instruction}, \hyperpage{41}
-    \subitem {multithreading}, \hyperpage{41}
-    \subitem {price}, \hyperpage{41}
-    \subitem {readspeed}, \hyperpage{42}
-    \subitem {rpm}, \hyperpage{42}
-    \subitem {size}, \hyperpage{42}
-    \subitem {socket}, \hyperpage{42}
-    \subitem {type}, \hyperpage{42}
-    \subitem {wattage}, \hyperpage{42}
-    \subitem {writespeed}, \hyperpage{42}
+  \item {TempInput}, \hyperpage{67}
+    \subitem {brand}, \hyperpage{68}
+    \subitem {chipset}, \hyperpage{68}
+    \subitem {clk}, \hyperpage{69}
+    \subitem {clname}, \hyperpage{69}
+    \subitem {cores}, \hyperpage{69}
+    \subitem {flashtype}, \hyperpage{69}
+    \subitem {formfactor}, \hyperpage{69}
+    \subitem {instruction}, \hyperpage{69}
+    \subitem {multithreading}, \hyperpage{69}
+    \subitem {price}, \hyperpage{70}
+    \subitem {readspeed}, \hyperpage{70}
+    \subitem {rpm}, \hyperpage{70}
+    \subitem {size}, \hyperpage{70}
+    \subitem {socket}, \hyperpage{70}
+    \subitem {type}, \hyperpage{70}
+    \subitem {wattage}, \hyperpage{70}
+    \subitem {writespeed}, \hyperpage{71}
   \item {test1}
-    \subitem {atest.cpp}, \hyperpage{45}
-    \subitem {atest.h}, \hyperpage{46}
+    \subitem {atest.cpp}, \hyperpage{73}
+    \subitem {atest.h}, \hyperpage{76}
   \item {test3}
-    \subitem {atest.cpp}, \hyperpage{45}
-    \subitem {atest.h}, \hyperpage{46}
+    \subitem {atest.cpp}, \hyperpage{73}
+    \subitem {atest.h}, \hyperpage{76}
   \item {test4}
-    \subitem {atest.cpp}, \hyperpage{45}
-    \subitem {atest.h}, \hyperpage{46}
+    \subitem {atest.cpp}, \hyperpage{74}
+    \subitem {atest.h}, \hyperpage{76}
   \item {test5}
-    \subitem {atest.cpp}, \hyperpage{45}
-    \subitem {atest.h}, \hyperpage{47}
-  \item {typ\_ostream}, \hyperpage{43}
-    \subitem {os}, \hyperpage{43}
-  \item {typ\_t}, \hyperpage{43}
+    \subitem {atest.cpp}, \hyperpage{74}
+    \subitem {atest.h}, \hyperpage{76}
+  \item {typ}
+    \subitem {schtring.hpp}, \hyperpage{155}
+  \item {typ\_ostream}, \hyperpage{71}
+    \subitem {os}, \hyperpage{71}
+  \item {typ\_t}, \hyperpage{71}
   \item {type}
-    \subitem {Part}, \hyperpage{25}
-    \subitem {TempInput}, \hyperpage{42}
+    \subitem {Part}, \hyperpage{43}
+    \subitem {TempInput}, \hyperpage{70}
 
   \indexspace
 
-  \item {utos\_ostream}, \hyperpage{44}
-    \subitem {os}, \hyperpage{44}
-  \item {utos\_t}, \hyperpage{44}
+  \item {utos}
+    \subitem {schtring.hpp}, \hyperpage{156}
+  \item {utos\_ostream}, \hyperpage{72}
+    \subitem {os}, \hyperpage{72}
+  \item {utos\_t}, \hyperpage{72}
 
   \indexspace
 
   \item {wattage}
-    \subitem {TempInput}, \hyperpage{42}
+    \subitem {TempInput}, \hyperpage{70}
   \item {writespeed}
-    \subitem {Storage}, \hyperpage{34}
-    \subitem {TempInput}, \hyperpage{42}
+    \subitem {Storage}, \hyperpage{59}
+    \subitem {TempInput}, \hyperpage{71}
 
 \end{theindex}

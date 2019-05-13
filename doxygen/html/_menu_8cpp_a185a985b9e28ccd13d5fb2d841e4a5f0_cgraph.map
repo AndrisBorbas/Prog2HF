@@ -1,0 +1,13 @@
+<map id="addBuildHelper" name="addBuildHelper">
+<area shape="rect" id="node1" title="egy configot lehet csinálni vele" alt="" coords="5,176,115,203"/>
+<area shape="rect" id="node2" href="$_menu_8h.html#aaa6e5fc0d7c515998e48fe6ae944ca40" title="kitörli a terminált" alt="" coords="379,5,453,32"/>
+<area shape="rect" id="node3" href="$class_build.html#aba0548391a8c613ed2a9d81d4d3b2a4b" title="végére beszúrás" alt="" coords="167,252,290,279"/>
+<area shape="rect" id="node5" href="$_menu_8cpp.html#aa66bedcbb6a6b03cde60b3441e6ae031" title="konfighoz választ alkatrészt" alt="" coords="183,100,275,127"/>
+<area shape="rect" id="node6" href="$class_inventory.html#ae141405ba9deea67f5c1be1850d136fe" title="Raktár kiírása egy streamre." alt="" coords="363,68,469,95"/>
+<area shape="rect" id="node8" href="$_menu_8cpp.html#a7618dfe88319843fa7ec62da27b1a007" title="átalakítja a beírt számot indexelővé" alt="" coords="367,144,465,171"/>
+<area shape="rect" id="node9" href="$class_inventory.html#acb0afe61bcfc92a963f803f1b70676dc" title="Megkeres egy alkatrészt index alapján és visszaadja a típusát." alt="" coords="343,199,489,225"/>
+<area shape="rect" id="node10" href="$class_orders.html#a6d8d6db032983700fa68cca43dc75a38" title="végére beszúrás" alt="" coords="163,303,295,329"/>
+<area shape="rect" id="node11" href="$class_orders.html#a9b6a5342d1fe2954f061d91609d3fe89" title=" " alt="" coords="169,353,288,380"/>
+<area shape="rect" id="node4" href="$class_part.html#a38bcd0481433acc24db7d5f978f2c839" title=" " alt="" coords="363,252,469,279"/>
+<area shape="rect" id="node7" href="$class_inventory.html#a217895dbb60e3d7643c41fdeeb775bc9" title=" " alt="" coords="537,68,668,95"/>
+</map>
